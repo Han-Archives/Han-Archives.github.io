@@ -1,3 +1,15 @@
+---
+emoji: 👨‍💻 
+title: 생일 빈도수 분석
+date: '2022-01-16 23:00:00'
+author: HwanHee Park
+tags: Data Analysis, Python, Birth
+categories: Data Analysis
+---
+
+
+
+
 ### 분석 목적
 
 이번 분석 목적은 단순히 어떤 날에 생일이 제일 많은 지 알아보는 분석이다.
