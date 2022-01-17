@@ -4,7 +4,7 @@ title: 생일 빈도수 분석
 date: '2022-01-16 23:00:00'
 author: HwanHee Park
 tags: Data Analysis, Python, Birth
-categories: Data Analysis
+categories: DataAnalysis
 ---
 
 
