@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-template-js",
+    "path": "/posts/Data",
+    "result": {"pageContext":{"currentCategory":"Data","categories":["All","Data","Analysis","블로그","featured"],"edges":[{"node":{"id":"48a60867-7fd1-5b2e-b95d-ff634d88420b","excerpt":"분석 목적 이번 분석 목적은 단순히 어떤 날에 생일이 제일 많은 지 알아보는 분석이다. 데이터 수집 경로 대부분의 데이터는 하루치로 수치가 나오는 것이 아닌 Monthly로 데이터를 제공하기에 구글링을 하여 아래의 사이트를 통해 데이터를 제공받아 분석을 진행하였다. 아래의 데이터는 2000년부터 2014년의 출생 기록으로 미국 사회보장국에서 제공된 데이터이다. https://github.com/fivethirtyeight/data/tree/master/births - SSA 데이터 년도 별로 파악하기 2000년, 2004년, 2009년, 2014년도 생일 빈도수를 알아보자 출생이 많은 날 Top 5 11월 21일 > 9월 6일 > 12월 28일 > 7월 6일 > 9월 19일 순으로 나타남 출생이 적은 날 top 5 12월 25일 > 12월 24일 > 4월 23일 > 4월 2일 > 5월 14일 순으로 나타남     년도를 통합해서 알아보자  일별로 랭크를 매겨 순위를 알아보자","fields":{"slug":"/Frequency of Birth/Frequency of Birth Day/"},"frontmatter":{"categories":"Data Analysis","title":"생일 빈도수 분석","date":"January 16, 2022"}},"next":{"fields":{"slug":"/gatsby-github-blog/"}},"previous":null}]}},
+    "staticQueryHashes": ["1073350324","1956554647","2938748437"]}
