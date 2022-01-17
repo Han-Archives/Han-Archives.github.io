@@ -1,0 +1,4074 @@
+### 분석 목적
+
+이번 분석 목적은 단순히 어떤 날에 생일이 제일 많은 지 알아보는 분석이다.
+
+#### 데이터 수집 경로
+
+대부분의 데이터는 하루치로 수치가 나오는 것이 아닌 Monthly로 데이터를 제공하기에 구글링을 하여 아래의 사이트를 통해 데이터를 제공받아 분석을 진행하였다. 아래의 데이터는 2000년부터 2014년의 출생 기록으로 미국 사회보장국에서 제공된 데이터이다.
+
+https://github.com/fivethirtyeight/data/tree/master/births - SSA 데이터
+
+
+```python
+import pandas as pd
+import numpy as np
+import os
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+os.chdir(r"C:\Users\USER\Desktop\Data")
+```
+
+
+```python
+df = pd.read_csv("US_births.csv")
+```
+
+
+```python
+df
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>year</th>
+      <th>month</th>
+      <th>date_of_month</th>
+      <th>day_of_week</th>
+      <th>births</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2000</td>
+      <td>1</td>
+      <td>1</td>
+      <td>6</td>
+      <td>9083</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2000</td>
+      <td>1</td>
+      <td>2</td>
+      <td>7</td>
+      <td>8006</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2000</td>
+      <td>1</td>
+      <td>3</td>
+      <td>1</td>
+      <td>11363</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2000</td>
+      <td>1</td>
+      <td>4</td>
+      <td>2</td>
+      <td>13032</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2000</td>
+      <td>1</td>
+      <td>5</td>
+      <td>3</td>
+      <td>12558</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>5474</th>
+      <td>2014</td>
+      <td>12</td>
+      <td>27</td>
+      <td>6</td>
+      <td>8656</td>
+    </tr>
+    <tr>
+      <th>5475</th>
+      <td>2014</td>
+      <td>12</td>
+      <td>28</td>
+      <td>7</td>
+      <td>7724</td>
+    </tr>
+    <tr>
+      <th>5476</th>
+      <td>2014</td>
+      <td>12</td>
+      <td>29</td>
+      <td>1</td>
+      <td>12811</td>
+    </tr>
+    <tr>
+      <th>5477</th>
+      <td>2014</td>
+      <td>12</td>
+      <td>30</td>
+      <td>2</td>
+      <td>13634</td>
+    </tr>
+    <tr>
+      <th>5478</th>
+      <td>2014</td>
+      <td>12</td>
+      <td>31</td>
+      <td>3</td>
+      <td>11990</td>
+    </tr>
+  </tbody>
+</table>
+<p>5479 rows × 5 columns</p>
+</div>
+
+
+
+
+```python
+# 칼럼 rename 및 제외
+df = df[['year','month','date_of_month','births']]  # 불필요한 칼럼 제외
+df.columns = ['year','month','date','births']
+
+df = df.astype('int')
+```
+
+### 년도 별로 파악하기
+
+2000년, 2004년, 2009년, 2014년도 생일 빈도수를 알아보자
+
+
+```python
+## 년도 별로 파악하기
+# year = 2000
+df_2000 = df[df['year'] == 2000]
+
+df_2000.sort_values('births', ascending=False)
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>year</th>
+      <th>month</th>
+      <th>date</th>
+      <th>births</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>325</th>
+      <td>2000</td>
+      <td>11</td>
+      <td>21</td>
+      <td>13991</td>
+    </tr>
+    <tr>
+      <th>249</th>
+      <td>2000</td>
+      <td>9</td>
+      <td>6</td>
+      <td>13917</td>
+    </tr>
+    <tr>
+      <th>362</th>
+      <td>2000</td>
+      <td>12</td>
+      <td>28</td>
+      <td>13900</td>
+    </tr>
+    <tr>
+      <th>187</th>
+      <td>2000</td>
+      <td>7</td>
+      <td>6</td>
+      <td>13853</td>
+    </tr>
+    <tr>
+      <th>262</th>
+      <td>2000</td>
+      <td>9</td>
+      <td>19</td>
+      <td>13850</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>134</th>
+      <td>2000</td>
+      <td>5</td>
+      <td>14</td>
+      <td>7617</td>
+    </tr>
+    <tr>
+      <th>92</th>
+      <td>2000</td>
+      <td>4</td>
+      <td>2</td>
+      <td>7540</td>
+    </tr>
+    <tr>
+      <th>113</th>
+      <td>2000</td>
+      <td>4</td>
+      <td>23</td>
+      <td>7483</td>
+    </tr>
+    <tr>
+      <th>358</th>
+      <td>2000</td>
+      <td>12</td>
+      <td>24</td>
+      <td>6971</td>
+    </tr>
+    <tr>
+      <th>359</th>
+      <td>2000</td>
+      <td>12</td>
+      <td>25</td>
+      <td>6719</td>
+    </tr>
+  </tbody>
+</table>
+<p>366 rows × 4 columns</p>
+</div>
+
+
+
+- 출생이 많은 날 Top 5
+
+11월 21일 > 9월 6일 > 12월 28일 > 7월 6일 > 9월 19일 순으로 나타남
+
+- 출생이 적은 날 top 5
+
+12월 25일 > 12월 24일 > 4월 23일 > 4월 2일 > 5월 14일 순으로 나타남
+
+
+```python
+df_2000 = df_2000.pivot('date','month','births')
+
+# Nan 값 0으로 대체
+df_2000 = df_2000.fillna(0)
+
+# float -> int로 대체
+df_2000 = df_2000.astype('int')
+```
+
+
+```python
+df_2000
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>month</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+      <th>10</th>
+      <th>11</th>
+      <th>12</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>9083</td>
+      <td>12614</td>
+      <td>12672</td>
+      <td>8388</td>
+      <td>11621</td>
+      <td>13363</td>
+      <td>9376</td>
+      <td>13356</td>
+      <td>13145</td>
+      <td>8453</td>
+      <td>12927</td>
+      <td>12545</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>8006</td>
+      <td>12465</td>
+      <td>12524</td>
+      <td>7540</td>
+      <td>12934</td>
+      <td>12695</td>
+      <td>8100</td>
+      <td>12835</td>
+      <td>9265</td>
+      <td>12223</td>
+      <td>13066</td>
+      <td>8914</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>11363</td>
+      <td>12062</td>
+      <td>12390</td>
+      <td>11397</td>
+      <td>12259</td>
+      <td>8940</td>
+      <td>11345</td>
+      <td>13092</td>
+      <td>8248</td>
+      <td>13245</td>
+      <td>12630</td>
+      <td>7930</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>13032</td>
+      <td>12035</td>
+      <td>9054</td>
+      <td>12797</td>
+      <td>12434</td>
+      <td>7983</td>
+      <td>9550</td>
+      <td>12940</td>
+      <td>8603</td>
+      <td>13154</td>
+      <td>9084</td>
+      <td>11501</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>12558</td>
+      <td>8624</td>
+      <td>7734</td>
+      <td>12209</td>
+      <td>12539</td>
+      <td>11647</td>
+      <td>12346</td>
+      <td>9398</td>
+      <td>12200</td>
+      <td>13288</td>
+      <td>8078</td>
+      <td>12997</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>12466</td>
+      <td>7862</td>
+      <td>11375</td>
+      <td>12192</td>
+      <td>8814</td>
+      <td>12765</td>
+      <td>13853</td>
+      <td>8350</td>
+      <td>13917</td>
+      <td>12774</td>
+      <td>11862</td>
+      <td>12697</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>12516</td>
+      <td>11630</td>
+      <td>12420</td>
+      <td>12213</td>
+      <td>7797</td>
+      <td>12474</td>
+      <td>13658</td>
+      <td>11864</td>
+      <td>13512</td>
+      <td>9131</td>
+      <td>12822</td>
+      <td>12820</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>8934</td>
+      <td>12879</td>
+      <td>12338</td>
+      <td>8743</td>
+      <td>11604</td>
+      <td>12751</td>
+      <td>9631</td>
+      <td>13693</td>
+      <td>13487</td>
+      <td>8119</td>
+      <td>12829</td>
+      <td>12548</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>7949</td>
+      <td>12315</td>
+      <td>12615</td>
+      <td>7759</td>
+      <td>12744</td>
+      <td>12504</td>
+      <td>8586</td>
+      <td>13170</td>
+      <td>9860</td>
+      <td>11343</td>
+      <td>12778</td>
+      <td>8853</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>11668</td>
+      <td>12612</td>
+      <td>12152</td>
+      <td>11333</td>
+      <td>12607</td>
+      <td>9134</td>
+      <td>12420</td>
+      <td>12953</td>
+      <td>8552</td>
+      <td>13124</td>
+      <td>12554</td>
+      <td>8022</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>12611</td>
+      <td>12411</td>
+      <td>8822</td>
+      <td>12850</td>
+      <td>12442</td>
+      <td>8116</td>
+      <td>13584</td>
+      <td>12729</td>
+      <td>12405</td>
+      <td>12907</td>
+      <td>9318</td>
+      <td>11811</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>12398</td>
+      <td>8836</td>
+      <td>7937</td>
+      <td>12545</td>
+      <td>12132</td>
+      <td>11848</td>
+      <td>12827</td>
+      <td>9305</td>
+      <td>13649</td>
+      <td>13038</td>
+      <td>8070</td>
+      <td>13627</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>11815</td>
+      <td>7933</td>
+      <td>11157</td>
+      <td>11907</td>
+      <td>8747</td>
+      <td>12683</td>
+      <td>12980</td>
+      <td>8313</td>
+      <td>13299</td>
+      <td>11723</td>
+      <td>11480</td>
+      <td>12567</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>12180</td>
+      <td>12152</td>
+      <td>12773</td>
+      <td>12053</td>
+      <td>7617</td>
+      <td>12849</td>
+      <td>13230</td>
+      <td>11927</td>
+      <td>13739</td>
+      <td>9163</td>
+      <td>13153</td>
+      <td>12640</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>8525</td>
+      <td>13017</td>
+      <td>12428</td>
+      <td>8887</td>
+      <td>11587</td>
+      <td>12798</td>
+      <td>9627</td>
+      <td>13374</td>
+      <td>13552</td>
+      <td>8156</td>
+      <td>12953</td>
+      <td>12656</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>7657</td>
+      <td>12504</td>
+      <td>12431</td>
+      <td>7859</td>
+      <td>12898</td>
+      <td>12727</td>
+      <td>8423</td>
+      <td>13174</td>
+      <td>9780</td>
+      <td>12001</td>
+      <td>13061</td>
+      <td>9184</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>10824</td>
+      <td>12520</td>
+      <td>12385</td>
+      <td>11322</td>
+      <td>12729</td>
+      <td>9143</td>
+      <td>12053</td>
+      <td>13099</td>
+      <td>8683</td>
+      <td>13106</td>
+      <td>12888</td>
+      <td>8026</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>12350</td>
+      <td>12406</td>
+      <td>8677</td>
+      <td>12783</td>
+      <td>12580</td>
+      <td>8162</td>
+      <td>13663</td>
+      <td>13124</td>
+      <td>12554</td>
+      <td>12816</td>
+      <td>9137</td>
+      <td>12590</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>12405</td>
+      <td>8861</td>
+      <td>7782</td>
+      <td>12562</td>
+      <td>12174</td>
+      <td>11649</td>
+      <td>13001</td>
+      <td>9276</td>
+      <td>13850</td>
+      <td>12502</td>
+      <td>8077</td>
+      <td>13829</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>12506</td>
+      <td>7943</td>
+      <td>11595</td>
+      <td>12301</td>
+      <td>8673</td>
+      <td>13017</td>
+      <td>13173</td>
+      <td>8346</td>
+      <td>13775</td>
+      <td>12471</td>
+      <td>12974</td>
+      <td>13762</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>11953</td>
+      <td>10610</td>
+      <td>12689</td>
+      <td>11257</td>
+      <td>7887</td>
+      <td>12729</td>
+      <td>13027</td>
+      <td>12003</td>
+      <td>13350</td>
+      <td>8956</td>
+      <td>13991</td>
+      <td>13524</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>8855</td>
+      <td>12664</td>
+      <td>12272</td>
+      <td>8367</td>
+      <td>11582</td>
+      <td>12809</td>
+      <td>9463</td>
+      <td>13406</td>
+      <td>13189</td>
+      <td>7938</td>
+      <td>12420</td>
+      <td>12248</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>7856</td>
+      <td>12252</td>
+      <td>12396</td>
+      <td>7483</td>
+      <td>13097</td>
+      <td>12603</td>
+      <td>8166</td>
+      <td>12929</td>
+      <td>9494</td>
+      <td>11810</td>
+      <td>8144</td>
+      <td>8484</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>11449</td>
+      <td>12423</td>
+      <td>12327</td>
+      <td>11309</td>
+      <td>12669</td>
+      <td>9094</td>
+      <td>12128</td>
+      <td>13021</td>
+      <td>8539</td>
+      <td>12995</td>
+      <td>9805</td>
+      <td>6971</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>12593</td>
+      <td>12204</td>
+      <td>9155</td>
+      <td>12488</td>
+      <td>13026</td>
+      <td>8178</td>
+      <td>13176</td>
+      <td>12926</td>
+      <td>12432</td>
+      <td>12780</td>
+      <td>8537</td>
+      <td>6719</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>12143</td>
+      <td>9026</td>
+      <td>7815</td>
+      <td>12245</td>
+      <td>12726</td>
+      <td>12164</td>
+      <td>12931</td>
+      <td>9341</td>
+      <td>13540</td>
+      <td>12787</td>
+      <td>7950</td>
+      <td>10395</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>12408</td>
+      <td>7836</td>
+      <td>11291</td>
+      <td>12235</td>
+      <td>8991</td>
+      <td>13354</td>
+      <td>13155</td>
+      <td>8240</td>
+      <td>13467</td>
+      <td>12333</td>
+      <td>12175</td>
+      <td>13252</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>11934</td>
+      <td>11455</td>
+      <td>12650</td>
+      <td>11989</td>
+      <td>7873</td>
+      <td>13033</td>
+      <td>12890</td>
+      <td>12074</td>
+      <td>13515</td>
+      <td>8978</td>
+      <td>13799</td>
+      <td>13900</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>8805</td>
+      <td>11895</td>
+      <td>12077</td>
+      <td>8703</td>
+      <td>8272</td>
+      <td>13462</td>
+      <td>9465</td>
+      <td>13237</td>
+      <td>13045</td>
+      <td>8124</td>
+      <td>13114</td>
+      <td>13607</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>7764</td>
+      <td>0</td>
+      <td>12071</td>
+      <td>7641</td>
+      <td>11954</td>
+      <td>13225</td>
+      <td>8444</td>
+      <td>13111</td>
+      <td>9335</td>
+      <td>11558</td>
+      <td>12818</td>
+      <td>9405</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>11133</td>
+      <td>0</td>
+      <td>11820</td>
+      <td>0</td>
+      <td>12941</td>
+      <td>0</td>
+      <td>11860</td>
+      <td>13287</td>
+      <td>0</td>
+      <td>11372</td>
+      <td>0</td>
+      <td>7892</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+## seaborn heatmap
+plt.figure(figsize=(15,10))
+ax = sns.heatmap(df_2000, annot=True, fmt='d', cmap='RdYlGn')
+plt.title('Year of 2000 births')
+plt.show()
+```
+
+
+![png](output_11_0.png)
+
+
+
+```python
+def yearly_births(df,year_num):
+    df = df[df['year'] == year_num]
+    df = df.sort_values('births', ascending=False) # 최대값, 최소값 확인
+    
+    df_pivot = df.pivot('date','month','births')
+    df_pivot = df_pivot.fillna(0)
+    df_pivot = df_pivot.astype('int')
+    
+    return df, df_pivot
+```
+
+
+```python
+df_2004 = yearly_births(df, 2004)
+
+df_2004[0]
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>year</th>
+      <th>month</th>
+      <th>date</th>
+      <th>births</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1713</th>
+      <td>2004</td>
+      <td>9</td>
+      <td>9</td>
+      <td>14526</td>
+    </tr>
+    <tr>
+      <th>1649</th>
+      <td>2004</td>
+      <td>7</td>
+      <td>7</td>
+      <td>14496</td>
+    </tr>
+    <tr>
+      <th>1712</th>
+      <td>2004</td>
+      <td>9</td>
+      <td>8</td>
+      <td>14492</td>
+    </tr>
+    <tr>
+      <th>1816</th>
+      <td>2004</td>
+      <td>12</td>
+      <td>21</td>
+      <td>14390</td>
+    </tr>
+    <tr>
+      <th>1788</th>
+      <td>2004</td>
+      <td>11</td>
+      <td>23</td>
+      <td>14238</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1520</th>
+      <td>2004</td>
+      <td>2</td>
+      <td>29</td>
+      <td>7301</td>
+    </tr>
+    <tr>
+      <th>1492</th>
+      <td>2004</td>
+      <td>2</td>
+      <td>1</td>
+      <td>7270</td>
+    </tr>
+    <tr>
+      <th>1821</th>
+      <td>2004</td>
+      <td>12</td>
+      <td>26</td>
+      <td>7087</td>
+    </tr>
+    <tr>
+      <th>1562</th>
+      <td>2004</td>
+      <td>4</td>
+      <td>11</td>
+      <td>6969</td>
+    </tr>
+    <tr>
+      <th>1820</th>
+      <td>2004</td>
+      <td>12</td>
+      <td>25</td>
+      <td>6259</td>
+    </tr>
+  </tbody>
+</table>
+<p>366 rows × 4 columns</p>
+</div>
+
+
+
+
+```python
+df_2004[1]
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>month</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+      <th>10</th>
+      <th>11</th>
+      <th>12</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>8205</td>
+      <td>7270</td>
+      <td>12017</td>
+      <td>12138</td>
+      <td>8259</td>
+      <td>12440</td>
+      <td>13887</td>
+      <td>7837</td>
+      <td>13418</td>
+      <td>13256</td>
+      <td>12173</td>
+      <td>13385</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>10586</td>
+      <td>11686</td>
+      <td>12943</td>
+      <td>12776</td>
+      <td>7433</td>
+      <td>13785</td>
+      <td>13271</td>
+      <td>12428</td>
+      <td>13539</td>
+      <td>8886</td>
+      <td>13212</td>
+      <td>12989</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>8337</td>
+      <td>13211</td>
+      <td>12696</td>
+      <td>8479</td>
+      <td>11839</td>
+      <td>13644</td>
+      <td>8900</td>
+      <td>13249</td>
+      <td>13245</td>
+      <td>7719</td>
+      <td>13004</td>
+      <td>12604</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>7359</td>
+      <td>12580</td>
+      <td>12611</td>
+      <td>7559</td>
+      <td>12824</td>
+      <td>13059</td>
+      <td>7820</td>
+      <td>13498</td>
+      <td>8881</td>
+      <td>12591</td>
+      <td>13075</td>
+      <td>8616</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>11489</td>
+      <td>12572</td>
+      <td>12407</td>
+      <td>12013</td>
+      <td>12852</td>
+      <td>8706</td>
+      <td>8978</td>
+      <td>13234</td>
+      <td>7875</td>
+      <td>13707</td>
+      <td>12900</td>
+      <td>7606</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>12755</td>
+      <td>12371</td>
+      <td>8532</td>
+      <td>13122</td>
+      <td>12707</td>
+      <td>7451</td>
+      <td>13221</td>
+      <td>12935</td>
+      <td>8281</td>
+      <td>13317</td>
+      <td>8789</td>
+      <td>12054</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>12716</td>
+      <td>8533</td>
+      <td>7304</td>
+      <td>12929</td>
+      <td>12582</td>
+      <td>12173</td>
+      <td>14496</td>
+      <td>8860</td>
+      <td>12884</td>
+      <td>13383</td>
+      <td>7734</td>
+      <td>13372</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>12781</td>
+      <td>7440</td>
+      <td>11816</td>
+      <td>12836</td>
+      <td>8599</td>
+      <td>13339</td>
+      <td>14056</td>
+      <td>7773</td>
+      <td>14492</td>
+      <td>13122</td>
+      <td>12420</td>
+      <td>13179</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>12469</td>
+      <td>11654</td>
+      <td>12988</td>
+      <td>11695</td>
+      <td>7380</td>
+      <td>12806</td>
+      <td>13874</td>
+      <td>12310</td>
+      <td>14526</td>
+      <td>8716</td>
+      <td>13351</td>
+      <td>12872</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>8337</td>
+      <td>13139</td>
+      <td>12777</td>
+      <td>8148</td>
+      <td>12243</td>
+      <td>13141</td>
+      <td>9040</td>
+      <td>13571</td>
+      <td>14081</td>
+      <td>7709</td>
+      <td>13017</td>
+      <td>12719</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>7316</td>
+      <td>12966</td>
+      <td>12797</td>
+      <td>6969</td>
+      <td>13229</td>
+      <td>12691</td>
+      <td>7862</td>
+      <td>13405</td>
+      <td>9253</td>
+      <td>11758</td>
+      <td>12976</td>
+      <td>8550</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>11813</td>
+      <td>12957</td>
+      <td>12519</td>
+      <td>11751</td>
+      <td>12989</td>
+      <td>8581</td>
+      <td>12621</td>
+      <td>13448</td>
+      <td>8281</td>
+      <td>13405</td>
+      <td>12783</td>
+      <td>7649</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>12639</td>
+      <td>11749</td>
+      <td>8398</td>
+      <td>12613</td>
+      <td>12373</td>
+      <td>7649</td>
+      <td>13214</td>
+      <td>12275</td>
+      <td>12644</td>
+      <td>13069</td>
+      <td>8626</td>
+      <td>11809</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>12965</td>
+      <td>8944</td>
+      <td>7401</td>
+      <td>12732</td>
+      <td>12688</td>
+      <td>12200</td>
+      <td>13610</td>
+      <td>8884</td>
+      <td>14172</td>
+      <td>13259</td>
+      <td>7503</td>
+      <td>13360</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>12837</td>
+      <td>7603</td>
+      <td>11903</td>
+      <td>12785</td>
+      <td>8498</td>
+      <td>13317</td>
+      <td>13601</td>
+      <td>7885</td>
+      <td>13641</td>
+      <td>13111</td>
+      <td>12293</td>
+      <td>13380</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>12424</td>
+      <td>11280</td>
+      <td>12873</td>
+      <td>12482</td>
+      <td>7614</td>
+      <td>13141</td>
+      <td>13411</td>
+      <td>12328</td>
+      <td>13432</td>
+      <td>8802</td>
+      <td>13528</td>
+      <td>13418</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>8442</td>
+      <td>12790</td>
+      <td>12979</td>
+      <td>8584</td>
+      <td>12172</td>
+      <td>13165</td>
+      <td>9067</td>
+      <td>13551</td>
+      <td>13577</td>
+      <td>7661</td>
+      <td>13124</td>
+      <td>13090</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>7512</td>
+      <td>12954</td>
+      <td>12710</td>
+      <td>7447</td>
+      <td>13294</td>
+      <td>12785</td>
+      <td>7797</td>
+      <td>13274</td>
+      <td>9387</td>
+      <td>12252</td>
+      <td>13348</td>
+      <td>8623</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>11152</td>
+      <td>12709</td>
+      <td>12480</td>
+      <td>11792</td>
+      <td>12576</td>
+      <td>8492</td>
+      <td>12286</td>
+      <td>13088</td>
+      <td>8251</td>
+      <td>13271</td>
+      <td>13063</td>
+      <td>7552</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>12810</td>
+      <td>12720</td>
+      <td>8329</td>
+      <td>13128</td>
+      <td>13036</td>
+      <td>7629</td>
+      <td>13804</td>
+      <td>13228</td>
+      <td>12963</td>
+      <td>12967</td>
+      <td>8694</td>
+      <td>13587</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>12753</td>
+      <td>8481</td>
+      <td>7548</td>
+      <td>12787</td>
+      <td>12625</td>
+      <td>12093</td>
+      <td>13370</td>
+      <td>8944</td>
+      <td>13932</td>
+      <td>12959</td>
+      <td>7742</td>
+      <td>14390</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>12675</td>
+      <td>7552</td>
+      <td>11842</td>
+      <td>12866</td>
+      <td>8614</td>
+      <td>13237</td>
+      <td>13574</td>
+      <td>7950</td>
+      <td>13749</td>
+      <td>12887</td>
+      <td>13463</td>
+      <td>13006</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>12643</td>
+      <td>11565</td>
+      <td>12978</td>
+      <td>12442</td>
+      <td>7628</td>
+      <td>13096</td>
+      <td>12974</td>
+      <td>12285</td>
+      <td>13969</td>
+      <td>8627</td>
+      <td>14238</td>
+      <td>11043</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>8632</td>
+      <td>13009</td>
+      <td>12765</td>
+      <td>8595</td>
+      <td>12341</td>
+      <td>13267</td>
+      <td>9046</td>
+      <td>13556</td>
+      <td>13722</td>
+      <td>7699</td>
+      <td>12430</td>
+      <td>7813</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>7556</td>
+      <td>12800</td>
+      <td>12835</td>
+      <td>7507</td>
+      <td>13451</td>
+      <td>13074</td>
+      <td>7549</td>
+      <td>13116</td>
+      <td>9142</td>
+      <td>12341</td>
+      <td>7614</td>
+      <td>6259</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>11611</td>
+      <td>12621</td>
+      <td>12372</td>
+      <td>12020</td>
+      <td>12891</td>
+      <td>8786</td>
+      <td>12266</td>
+      <td>13196</td>
+      <td>8143</td>
+      <td>13464</td>
+      <td>9370</td>
+      <td>7087</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>12892</td>
+      <td>12403</td>
+      <td>8602</td>
+      <td>13147</td>
+      <td>13470</td>
+      <td>7715</td>
+      <td>13454</td>
+      <td>12971</td>
+      <td>12674</td>
+      <td>13178</td>
+      <td>8118</td>
+      <td>12276</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>12373</td>
+      <td>8488</td>
+      <td>7549</td>
+      <td>12756</td>
+      <td>12941</td>
+      <td>12383</td>
+      <td>13258</td>
+      <td>9049</td>
+      <td>13882</td>
+      <td>13287</td>
+      <td>7540</td>
+      <td>13965</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>12313</td>
+      <td>7301</td>
+      <td>11788</td>
+      <td>12617</td>
+      <td>8720</td>
+      <td>13587</td>
+      <td>13281</td>
+      <td>7783</td>
+      <td>13416</td>
+      <td>12473</td>
+      <td>12315</td>
+      <td>13642</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>12375</td>
+      <td>0</td>
+      <td>13078</td>
+      <td>12364</td>
+      <td>7511</td>
+      <td>13444</td>
+      <td>12934</td>
+      <td>12342</td>
+      <td>13443</td>
+      <td>8616</td>
+      <td>13916</td>
+      <td>13314</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>8310</td>
+      <td>0</td>
+      <td>12542</td>
+      <td>0</td>
+      <td>7869</td>
+      <td>0</td>
+      <td>8858</td>
+      <td>13582</td>
+      <td>0</td>
+      <td>7556</td>
+      <td>0</td>
+      <td>10130</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+plt.figure(figsize=(15,10))
+ax = sns.heatmap(df_2004[1], annot=True, fmt='d', cmap='RdYlGn')
+plt.title('Year of 2004 births')
+plt.show()
+```
+
+
+![png](output_15_0.png)
+
+
+
+```python
+df_2009 = yearly_births(df, 2009)
+
+df_2009[0]
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>year</th>
+      <th>month</th>
+      <th>date</th>
+      <th>births</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>3539</th>
+      <td>2009</td>
+      <td>9</td>
+      <td>9</td>
+      <td>16081</td>
+    </tr>
+    <tr>
+      <th>3540</th>
+      <td>2009</td>
+      <td>9</td>
+      <td>10</td>
+      <td>14887</td>
+    </tr>
+    <tr>
+      <th>3650</th>
+      <td>2009</td>
+      <td>12</td>
+      <td>29</td>
+      <td>14600</td>
+    </tr>
+    <tr>
+      <th>3545</th>
+      <td>2009</td>
+      <td>9</td>
+      <td>15</td>
+      <td>14558</td>
+    </tr>
+    <tr>
+      <th>3434</th>
+      <td>2009</td>
+      <td>5</td>
+      <td>27</td>
+      <td>14350</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>3627</th>
+      <td>2009</td>
+      <td>12</td>
+      <td>6</td>
+      <td>7103</td>
+    </tr>
+    <tr>
+      <th>3634</th>
+      <td>2009</td>
+      <td>12</td>
+      <td>13</td>
+      <td>7027</td>
+    </tr>
+    <tr>
+      <th>3617</th>
+      <td>2009</td>
+      <td>11</td>
+      <td>26</td>
+      <td>6864</td>
+    </tr>
+    <tr>
+      <th>3389</th>
+      <td>2009</td>
+      <td>4</td>
+      <td>12</td>
+      <td>6864</td>
+    </tr>
+    <tr>
+      <th>3646</th>
+      <td>2009</td>
+      <td>12</td>
+      <td>25</td>
+      <td>6160</td>
+    </tr>
+  </tbody>
+</table>
+<p>365 rows × 4 columns</p>
+</div>
+
+
+
+
+```python
+df_2009[1]
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>month</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+      <th>10</th>
+      <th>11</th>
+      <th>12</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>8145</td>
+      <td>7255</td>
+      <td>7342</td>
+      <td>12247</td>
+      <td>12930</td>
+      <td>12541</td>
+      <td>14311</td>
+      <td>8684</td>
+      <td>14107</td>
+      <td>13628</td>
+      <td>7519</td>
+      <td>13900</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>10995</td>
+      <td>12525</td>
+      <td>12276</td>
+      <td>13233</td>
+      <td>8169</td>
+      <td>13408</td>
+      <td>13931</td>
+      <td>7492</td>
+      <td>13659</td>
+      <td>13264</td>
+      <td>12212</td>
+      <td>13267</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>8338</td>
+      <td>13330</td>
+      <td>13265</td>
+      <td>13078</td>
+      <td>7220</td>
+      <td>13080</td>
+      <td>10630</td>
+      <td>12642</td>
+      <td>13900</td>
+      <td>8548</td>
+      <td>13205</td>
+      <td>12952</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>7283</td>
+      <td>12894</td>
+      <td>12903</td>
+      <td>8389</td>
+      <td>12126</td>
+      <td>13036</td>
+      <td>7978</td>
+      <td>13937</td>
+      <td>13622</td>
+      <td>7443</td>
+      <td>12743</td>
+      <td>12131</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>12125</td>
+      <td>12817</td>
+      <td>13176</td>
+      <td>7238</td>
+      <td>13358</td>
+      <td>12648</td>
+      <td>7333</td>
+      <td>13510</td>
+      <td>8959</td>
+      <td>12559</td>
+      <td>12805</td>
+      <td>7855</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>13222</td>
+      <td>12517</td>
+      <td>13081</td>
+      <td>12200</td>
+      <td>12686</td>
+      <td>8428</td>
+      <td>12415</td>
+      <td>13377</td>
+      <td>7587</td>
+      <td>13674</td>
+      <td>12314</td>
+      <td>7103</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>13119</td>
+      <td>8451</td>
+      <td>8556</td>
+      <td>13589</td>
+      <td>13088</td>
+      <td>7221</td>
+      <td>14208</td>
+      <td>13122</td>
+      <td>7947</td>
+      <td>13078</td>
+      <td>8044</td>
+      <td>11732</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>13019</td>
+      <td>7462</td>
+      <td>7314</td>
+      <td>13177</td>
+      <td>12738</td>
+      <td>12472</td>
+      <td>14252</td>
+      <td>8830</td>
+      <td>13555</td>
+      <td>13174</td>
+      <td>7260</td>
+      <td>12823</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>12647</td>
+      <td>12484</td>
+      <td>12400</td>
+      <td>13278</td>
+      <td>8180</td>
+      <td>13368</td>
+      <td>13566</td>
+      <td>7683</td>
+      <td>16081</td>
+      <td>12706</td>
+      <td>11874</td>
+      <td>12497</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>8233</td>
+      <td>13612</td>
+      <td>13568</td>
+      <td>12007</td>
+      <td>7339</td>
+      <td>13248</td>
+      <td>13276</td>
+      <td>12759</td>
+      <td>14887</td>
+      <td>8577</td>
+      <td>13287</td>
+      <td>12299</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>7122</td>
+      <td>13219</td>
+      <td>12999</td>
+      <td>7906</td>
+      <td>12410</td>
+      <td>13079</td>
+      <td>8769</td>
+      <td>14021</td>
+      <td>13032</td>
+      <td>7268</td>
+      <td>12889</td>
+      <td>11834</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>12178</td>
+      <td>13635</td>
+      <td>13134</td>
+      <td>6864</td>
+      <td>13415</td>
+      <td>12780</td>
+      <td>7627</td>
+      <td>13764</td>
+      <td>9264</td>
+      <td>12105</td>
+      <td>12751</td>
+      <td>8082</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>12597</td>
+      <td>11832</td>
+      <td>12087</td>
+      <td>11617</td>
+      <td>12920</td>
+      <td>8376</td>
+      <td>12570</td>
+      <td>13391</td>
+      <td>7871</td>
+      <td>12941</td>
+      <td>11739</td>
+      <td>7027</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>13013</td>
+      <td>8550</td>
+      <td>8396</td>
+      <td>13415</td>
+      <td>13033</td>
+      <td>7380</td>
+      <td>14086</td>
+      <td>13398</td>
+      <td>13393</td>
+      <td>12882</td>
+      <td>8281</td>
+      <td>12254</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>12800</td>
+      <td>7434</td>
+      <td>7130</td>
+      <td>12804</td>
+      <td>12874</td>
+      <td>12465</td>
+      <td>13939</td>
+      <td>8566</td>
+      <td>14558</td>
+      <td>13115</td>
+      <td>7232</td>
+      <td>13347</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>12542</td>
+      <td>11731</td>
+      <td>12264</td>
+      <td>13095</td>
+      <td>8327</td>
+      <td>13542</td>
+      <td>14012</td>
+      <td>7750</td>
+      <td>14130</td>
+      <td>12605</td>
+      <td>11940</td>
+      <td>12961</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>8175</td>
+      <td>13151</td>
+      <td>13542</td>
+      <td>12481</td>
+      <td>7256</td>
+      <td>13440</td>
+      <td>13258</td>
+      <td>13104</td>
+      <td>14095</td>
+      <td>8155</td>
+      <td>12950</td>
+      <td>13425</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>7151</td>
+      <td>13324</td>
+      <td>12987</td>
+      <td>8364</td>
+      <td>12467</td>
+      <td>13611</td>
+      <td>8626</td>
+      <td>14226</td>
+      <td>13951</td>
+      <td>7356</td>
+      <td>12866</td>
+      <td>13478</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>11353</td>
+      <td>13171</td>
+      <td>12706</td>
+      <td>7309</td>
+      <td>13543</td>
+      <td>12846</td>
+      <td>7536</td>
+      <td>13634</td>
+      <td>9032</td>
+      <td>12056</td>
+      <td>12822</td>
+      <td>8436</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>12935</td>
+      <td>12995</td>
+      <td>12927</td>
+      <td>12252</td>
+      <td>13694</td>
+      <td>8603</td>
+      <td>12612</td>
+      <td>13994</td>
+      <td>8014</td>
+      <td>13142</td>
+      <td>13002</td>
+      <td>7225</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>12822</td>
+      <td>8628</td>
+      <td>8286</td>
+      <td>13273</td>
+      <td>13569</td>
+      <td>7559</td>
+      <td>13974</td>
+      <td>13291</td>
+      <td>13415</td>
+      <td>12924</td>
+      <td>8335</td>
+      <td>13512</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>13125</td>
+      <td>7286</td>
+      <td>7168</td>
+      <td>12958</td>
+      <td>13314</td>
+      <td>12396</td>
+      <td>13657</td>
+      <td>8952</td>
+      <td>14318</td>
+      <td>12935</td>
+      <td>7230</td>
+      <td>14102</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>12995</td>
+      <td>12363</td>
+      <td>12056</td>
+      <td>12872</td>
+      <td>8618</td>
+      <td>13700</td>
+      <td>13880</td>
+      <td>7650</td>
+      <td>13973</td>
+      <td>12621</td>
+      <td>13125</td>
+      <td>11819</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>8357</td>
+      <td>13110</td>
+      <td>13309</td>
+      <td>12231</td>
+      <td>7481</td>
+      <td>13268</td>
+      <td>13132</td>
+      <td>12664</td>
+      <td>14048</td>
+      <td>8353</td>
+      <td>13907</td>
+      <td>8441</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>7261</td>
+      <td>13084</td>
+      <td>13027</td>
+      <td>8191</td>
+      <td>8058</td>
+      <td>13362</td>
+      <td>8887</td>
+      <td>13928</td>
+      <td>13449</td>
+      <td>7120</td>
+      <td>11986</td>
+      <td>6160</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>12156</td>
+      <td>13134</td>
+      <td>12785</td>
+      <td>7198</td>
+      <td>13239</td>
+      <td>12981</td>
+      <td>7716</td>
+      <td>13770</td>
+      <td>9013</td>
+      <td>12238</td>
+      <td>6864</td>
+      <td>7172</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>13107</td>
+      <td>12732</td>
+      <td>12692</td>
+      <td>12199</td>
+      <td>14350</td>
+      <td>8474</td>
+      <td>12684</td>
+      <td>13861</td>
+      <td>7817</td>
+      <td>13230</td>
+      <td>8750</td>
+      <td>7480</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>12703</td>
+      <td>8396</td>
+      <td>8381</td>
+      <td>13243</td>
+      <td>14057</td>
+      <td>7471</td>
+      <td>14163</td>
+      <td>13530</td>
+      <td>12723</td>
+      <td>13043</td>
+      <td>7604</td>
+      <td>13354</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>12729</td>
+      <td>0</td>
+      <td>7348</td>
+      <td>12701</td>
+      <td>13290</td>
+      <td>12776</td>
+      <td>13619</td>
+      <td>8805</td>
+      <td>13829</td>
+      <td>12683</td>
+      <td>7169</td>
+      <td>14600</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>12527</td>
+      <td>0</td>
+      <td>12330</td>
+      <td>12413</td>
+      <td>8602</td>
+      <td>14061</td>
+      <td>13537</td>
+      <td>7702</td>
+      <td>13465</td>
+      <td>11978</td>
+      <td>12542</td>
+      <td>13829</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>8201</td>
+      <td>0</td>
+      <td>13136</td>
+      <td>0</td>
+      <td>7480</td>
+      <td>0</td>
+      <td>13307</td>
+      <td>12758</td>
+      <td>0</td>
+      <td>7658</td>
+      <td>0</td>
+      <td>11667</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+plt.figure(figsize=(15,10))
+ax = sns.heatmap(df_2009[1], annot=True, fmt='d', cmap='RdYlGn')
+plt.title('Year of 2009 births')
+plt.show()
+```
+
+
+![png](output_18_0.png)
+
+
+
+```python
+df_2014 = yearly_births(df, 2014)
+
+df_2014[0]
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>year</th>
+      <th>month</th>
+      <th>date</th>
+      <th>births</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>5359</th>
+      <td>2014</td>
+      <td>9</td>
+      <td>3</td>
+      <td>13863</td>
+    </tr>
+    <tr>
+      <th>5372</th>
+      <td>2014</td>
+      <td>9</td>
+      <td>16</td>
+      <td>13661</td>
+    </tr>
+    <tr>
+      <th>5477</th>
+      <td>2014</td>
+      <td>12</td>
+      <td>30</td>
+      <td>13634</td>
+    </tr>
+    <tr>
+      <th>5365</th>
+      <td>2014</td>
+      <td>9</td>
+      <td>9</td>
+      <td>13629</td>
+    </tr>
+    <tr>
+      <th>5295</th>
+      <td>2014</td>
+      <td>7</td>
+      <td>1</td>
+      <td>13575</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>5188</th>
+      <td>2014</td>
+      <td>3</td>
+      <td>16</td>
+      <td>6973</td>
+    </tr>
+    <tr>
+      <th>5132</th>
+      <td>2014</td>
+      <td>1</td>
+      <td>19</td>
+      <td>6924</td>
+    </tr>
+    <tr>
+      <th>5223</th>
+      <td>2014</td>
+      <td>4</td>
+      <td>20</td>
+      <td>6877</td>
+    </tr>
+    <tr>
+      <th>5181</th>
+      <td>2014</td>
+      <td>3</td>
+      <td>9</td>
+      <td>6789</td>
+    </tr>
+    <tr>
+      <th>5472</th>
+      <td>2014</td>
+      <td>12</td>
+      <td>25</td>
+      <td>6749</td>
+    </tr>
+  </tbody>
+</table>
+<p>365 rows × 4 columns</p>
+</div>
+
+
+
+
+```python
+df_2014[1]
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>month</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+      <th>10</th>
+      <th>11</th>
+      <th>12</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>8018</td>
+      <td>8206</td>
+      <td>8186</td>
+      <td>11710</td>
+      <td>12412</td>
+      <td>7474</td>
+      <td>13575</td>
+      <td>12782</td>
+      <td>8043</td>
+      <td>13082</td>
+      <td>8367</td>
+      <td>12584</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>11171</td>
+      <td>7265</td>
+      <td>7267</td>
+      <td>12003</td>
+      <td>12011</td>
+      <td>11885</td>
+      <td>13183</td>
+      <td>8814</td>
+      <td>13071</td>
+      <td>12841</td>
+      <td>7736</td>
+      <td>13083</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>12317</td>
+      <td>11825</td>
+      <td>11793</td>
+      <td>11984</td>
+      <td>8015</td>
+      <td>12246</td>
+      <td>13043</td>
+      <td>7679</td>
+      <td>13863</td>
+      <td>12539</td>
+      <td>12309</td>
+      <td>12427</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>8199</td>
+      <td>12519</td>
+      <td>12065</td>
+      <td>12319</td>
+      <td>7171</td>
+      <td>12320</td>
+      <td>9278</td>
+      <td>12511</td>
+      <td>13556</td>
+      <td>8425</td>
+      <td>12748</td>
+      <td>12384</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>7174</td>
+      <td>11914</td>
+      <td>12129</td>
+      <td>7926</td>
+      <td>11788</td>
+      <td>12256</td>
+      <td>7778</td>
+      <td>13415</td>
+      <td>13457</td>
+      <td>7484</td>
+      <td>12461</td>
+      <td>11964</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>11400</td>
+      <td>11807</td>
+      <td>12069</td>
+      <td>7127</td>
+      <td>12487</td>
+      <td>11965</td>
+      <td>7568</td>
+      <td>12900</td>
+      <td>8806</td>
+      <td>11893</td>
+      <td>12489</td>
+      <td>8280</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>12310</td>
+      <td>12246</td>
+      <td>12035</td>
+      <td>11508</td>
+      <td>12127</td>
+      <td>8164</td>
+      <td>13038</td>
+      <td>13152</td>
+      <td>7770</td>
+      <td>12860</td>
+      <td>12422</td>
+      <td>7196</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>11829</td>
+      <td>8129</td>
+      <td>8140</td>
+      <td>12187</td>
+      <td>12166</td>
+      <td>7359</td>
+      <td>13500</td>
+      <td>12887</td>
+      <td>12743</td>
+      <td>12363</td>
+      <td>8268</td>
+      <td>11773</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>11827</td>
+      <td>7060</td>
+      <td>6789</td>
+      <td>11875</td>
+      <td>11949</td>
+      <td>11886</td>
+      <td>12577</td>
+      <td>8958</td>
+      <td>13629</td>
+      <td>12130</td>
+      <td>7479</td>
+      <td>12419</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>11989</td>
+      <td>11886</td>
+      <td>11620</td>
+      <td>12026</td>
+      <td>8100</td>
+      <td>12513</td>
+      <td>13146</td>
+      <td>7832</td>
+      <td>13230</td>
+      <td>12155</td>
+      <td>11898</td>
+      <td>12203</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>8292</td>
+      <td>12311</td>
+      <td>12084</td>
+      <td>12018</td>
+      <td>7145</td>
+      <td>12090</td>
+      <td>12699</td>
+      <td>12589</td>
+      <td>12104</td>
+      <td>8262</td>
+      <td>12794</td>
+      <td>12042</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>7298</td>
+      <td>12154</td>
+      <td>11819</td>
+      <td>7980</td>
+      <td>11671</td>
+      <td>12442</td>
+      <td>8650</td>
+      <td>13413</td>
+      <td>13415</td>
+      <td>7283</td>
+      <td>12244</td>
+      <td>12001</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>11714</td>
+      <td>11384</td>
+      <td>11623</td>
+      <td>7181</td>
+      <td>12057</td>
+      <td>11651</td>
+      <td>7626</td>
+      <td>12817</td>
+      <td>8903</td>
+      <td>11241</td>
+      <td>12103</td>
+      <td>8596</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>12598</td>
+      <td>12494</td>
+      <td>11841</td>
+      <td>11912</td>
+      <td>12234</td>
+      <td>8199</td>
+      <td>12394</td>
+      <td>13031</td>
+      <td>8109</td>
+      <td>12658</td>
+      <td>12234</td>
+      <td>7291</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>11785</td>
+      <td>8391</td>
+      <td>8080</td>
+      <td>12274</td>
+      <td>12387</td>
+      <td>7375</td>
+      <td>13207</td>
+      <td>13048</td>
+      <td>13018</td>
+      <td>12405</td>
+      <td>8305</td>
+      <td>12013</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>11822</td>
+      <td>7259</td>
+      <td>6973</td>
+      <td>11858</td>
+      <td>12065</td>
+      <td>12068</td>
+      <td>12881</td>
+      <td>8885</td>
+      <td>13661</td>
+      <td>12506</td>
+      <td>7219</td>
+      <td>12748</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>11932</td>
+      <td>11144</td>
+      <td>11936</td>
+      <td>12070</td>
+      <td>8051</td>
+      <td>12555</td>
+      <td>12817</td>
+      <td>7783</td>
+      <td>13341</td>
+      <td>12087</td>
+      <td>11784</td>
+      <td>12684</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>8143</td>
+      <td>12331</td>
+      <td>12231</td>
+      <td>11132</td>
+      <td>7200</td>
+      <td>12524</td>
+      <td>12439</td>
+      <td>12582</td>
+      <td>13451</td>
+      <td>8305</td>
+      <td>12822</td>
+      <td>12816</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>6924</td>
+      <td>11932</td>
+      <td>11953</td>
+      <td>7641</td>
+      <td>11925</td>
+      <td>12217</td>
+      <td>8720</td>
+      <td>13198</td>
+      <td>13129</td>
+      <td>7279</td>
+      <td>12100</td>
+      <td>12714</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>11024</td>
+      <td>12142</td>
+      <td>12266</td>
+      <td>6877</td>
+      <td>12854</td>
+      <td>12532</td>
+      <td>7567</td>
+      <td>13167</td>
+      <td>9202</td>
+      <td>11744</td>
+      <td>12541</td>
+      <td>8465</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>12177</td>
+      <td>11988</td>
+      <td>11987</td>
+      <td>11664</td>
+      <td>12545</td>
+      <td>8299</td>
+      <td>12497</td>
+      <td>13153</td>
+      <td>8002</td>
+      <td>12565</td>
+      <td>12638</td>
+      <td>7382</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>11936</td>
+      <td>8049</td>
+      <td>8109</td>
+      <td>12528</td>
+      <td>12634</td>
+      <td>7414</td>
+      <td>13239</td>
+      <td>12891</td>
+      <td>12713</td>
+      <td>12282</td>
+      <td>8647</td>
+      <td>12799</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>12162</td>
+      <td>7092</td>
+      <td>7147</td>
+      <td>12014</td>
+      <td>12631</td>
+      <td>11939</td>
+      <td>12692</td>
+      <td>8912</td>
+      <td>13149</td>
+      <td>12162</td>
+      <td>7497</td>
+      <td>12604</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>11840</td>
+      <td>11621</td>
+      <td>11542</td>
+      <td>12178</td>
+      <td>8456</td>
+      <td>12704</td>
+      <td>12929</td>
+      <td>7630</td>
+      <td>13033</td>
+      <td>12119</td>
+      <td>12791</td>
+      <td>9308</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>8190</td>
+      <td>12291</td>
+      <td>12342</td>
+      <td>11811</td>
+      <td>7393</td>
+      <td>12499</td>
+      <td>12662</td>
+      <td>12346</td>
+      <td>12908</td>
+      <td>8256</td>
+      <td>13349</td>
+      <td>6749</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>7424</td>
+      <td>11932</td>
+      <td>11809</td>
+      <td>7949</td>
+      <td>7657</td>
+      <td>12621</td>
+      <td>8740</td>
+      <td>13278</td>
+      <td>12478</td>
+      <td>7576</td>
+      <td>11747</td>
+      <td>10386</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>11561</td>
+      <td>11856</td>
+      <td>11823</td>
+      <td>7184</td>
+      <td>12490</td>
+      <td>12236</td>
+      <td>7822</td>
+      <td>13113</td>
+      <td>8797</td>
+      <td>12007</td>
+      <td>7351</td>
+      <td>8656</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>12031</td>
+      <td>11671</td>
+      <td>11730</td>
+      <td>11681</td>
+      <td>13411</td>
+      <td>8441</td>
+      <td>12532</td>
+      <td>13418</td>
+      <td>7639</td>
+      <td>12831</td>
+      <td>9049</td>
+      <td>7724</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>11381</td>
+      <td>0</td>
+      <td>8153</td>
+      <td>12121</td>
+      <td>12753</td>
+      <td>7563</td>
+      <td>13252</td>
+      <td>13099</td>
+      <td>12318</td>
+      <td>12102</td>
+      <td>8035</td>
+      <td>12811</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>11651</td>
+      <td>0</td>
+      <td>7215</td>
+      <td>11591</td>
+      <td>12257</td>
+      <td>12243</td>
+      <td>12752</td>
+      <td>8899</td>
+      <td>12959</td>
+      <td>12192</td>
+      <td>7228</td>
+      <td>13634</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>11843</td>
+      <td>0</td>
+      <td>11511</td>
+      <td>0</td>
+      <td>8462</td>
+      <td>0</td>
+      <td>12673</td>
+      <td>7884</td>
+      <td>0</td>
+      <td>10837</td>
+      <td>0</td>
+      <td>11990</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+plt.figure(figsize=(15,10))
+ax = sns.heatmap(df_2014[1], annot=True, fmt='d', cmap='RdYlGn')
+plt.title('Year of 2014 births')
+plt.show()
+```
+
+
+![png](output_21_0.png)
+
+
+### 년도를 통합해서 알아보자
+
+
+
+```python
+total_df = df.pivot_table(values='births',index='date',columns='month',aggfunc=sum)
+# Nan 값 0으로 대체
+total_df = total_df.fillna(0)
+
+# float -> int로 대체
+total_df = total_df.astype('int')
+```
+
+
+```python
+total_df
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>month</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+      <th>10</th>
+      <th>11</th>
+      <th>12</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>116030</td>
+      <td>169444</td>
+      <td>171698</td>
+      <td>154737</td>
+      <td>169438</td>
+      <td>171348</td>
+      <td>177820</td>
+      <td>183254</td>
+      <td>163979</td>
+      <td>179334</td>
+      <td>176290</td>
+      <td>170255</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>144083</td>
+      <td>166066</td>
+      <td>164841</td>
+      <td>168693</td>
+      <td>171861</td>
+      <td>171526</td>
+      <td>180817</td>
+      <td>178928</td>
+      <td>165886</td>
+      <td>178548</td>
+      <td>170473</td>
+      <td>168725</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>170115</td>
+      <td>163254</td>
+      <td>166872</td>
+      <td>168316</td>
+      <td>168072</td>
+      <td>168576</td>
+      <td>175346</td>
+      <td>173219</td>
+      <td>167330</td>
+      <td>181481</td>
+      <td>168772</td>
+      <td>171088</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>171663</td>
+      <td>166661</td>
+      <td>164685</td>
+      <td>174347</td>
+      <td>162243</td>
+      <td>171559</td>
+      <td>132229</td>
+      <td>174071</td>
+      <td>172536</td>
+      <td>177327</td>
+      <td>167638</td>
+      <td>169826</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>166682</td>
+      <td>163391</td>
+      <td>167257</td>
+      <td>168654</td>
+      <td>166073</td>
+      <td>171822</td>
+      <td>161091</td>
+      <td>174444</td>
+      <td>178833</td>
+      <td>172521</td>
+      <td>171722</td>
+      <td>173695</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>164167</td>
+      <td>166125</td>
+      <td>167603</td>
+      <td>162287</td>
+      <td>163325</td>
+      <td>173566</td>
+      <td>176278</td>
+      <td>177008</td>
+      <td>175863</td>
+      <td>170513</td>
+      <td>171454</td>
+      <td>169540</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>167622</td>
+      <td>173627</td>
+      <td>171634</td>
+      <td>163074</td>
+      <td>166789</td>
+      <td>172165</td>
+      <td>183246</td>
+      <td>178909</td>
+      <td>176509</td>
+      <td>169674</td>
+      <td>175619</td>
+      <td>164548</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>163078</td>
+      <td>170915</td>
+      <td>169037</td>
+      <td>163080</td>
+      <td>168607</td>
+      <td>168962</td>
+      <td>179420</td>
+      <td>186328</td>
+      <td>181846</td>
+      <td>172969</td>
+      <td>172970</td>
+      <td>164440</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>163838</td>
+      <td>164291</td>
+      <td>164696</td>
+      <td>165299</td>
+      <td>170670</td>
+      <td>167096</td>
+      <td>180238</td>
+      <td>181514</td>
+      <td>184662</td>
+      <td>171801</td>
+      <td>167177</td>
+      <td>163318</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>171353</td>
+      <td>165466</td>
+      <td>164649</td>
+      <td>166771</td>
+      <td>170894</td>
+      <td>168219</td>
+      <td>180936</td>
+      <td>175301</td>
+      <td>186668</td>
+      <td>180271</td>
+      <td>167194</td>
+      <td>168432</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>170299</td>
+      <td>168381</td>
+      <td>163429</td>
+      <td>171436</td>
+      <td>164192</td>
+      <td>170388</td>
+      <td>183410</td>
+      <td>175218</td>
+      <td>175491</td>
+      <td>174393</td>
+      <td>168687</td>
+      <td>168774</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>165975</td>
+      <td>166773</td>
+      <td>168054</td>
+      <td>168896</td>
+      <td>165193</td>
+      <td>172764</td>
+      <td>178705</td>
+      <td>176153</td>
+      <td>191024</td>
+      <td>169006</td>
+      <td>170386</td>
+      <td>179554</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>159289</td>
+      <td>162957</td>
+      <td>163494</td>
+      <td>157511</td>
+      <td>159795</td>
+      <td>171122</td>
+      <td>170080</td>
+      <td>175084</td>
+      <td>183131</td>
+      <td>162310</td>
+      <td>166498</td>
+      <td>168793</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>168390</td>
+      <td>179978</td>
+      <td>172129</td>
+      <td>163144</td>
+      <td>169045</td>
+      <td>174340</td>
+      <td>175676</td>
+      <td>180133</td>
+      <td>182875</td>
+      <td>167291</td>
+      <td>175402</td>
+      <td>167888</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>161300</td>
+      <td>172798</td>
+      <td>169076</td>
+      <td>163083</td>
+      <td>171529</td>
+      <td>169104</td>
+      <td>176148</td>
+      <td>185391</td>
+      <td>182974</td>
+      <td>172428</td>
+      <td>174530</td>
+      <td>168638</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>163044</td>
+      <td>165174</td>
+      <td>164018</td>
+      <td>166774</td>
+      <td>174965</td>
+      <td>169648</td>
+      <td>179766</td>
+      <td>182187</td>
+      <td>181365</td>
+      <td>171885</td>
+      <td>169573</td>
+      <td>170252</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>169280</td>
+      <td>163089</td>
+      <td>167609</td>
+      <td>167526</td>
+      <td>171265</td>
+      <td>169293</td>
+      <td>180276</td>
+      <td>176471</td>
+      <td>185792</td>
+      <td>176021</td>
+      <td>168713</td>
+      <td>176237</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>168555</td>
+      <td>167037</td>
+      <td>164085</td>
+      <td>170365</td>
+      <td>165771</td>
+      <td>173961</td>
+      <td>182886</td>
+      <td>176013</td>
+      <td>186387</td>
+      <td>172822</td>
+      <td>168878</td>
+      <td>180913</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>161843</td>
+      <td>162690</td>
+      <td>166721</td>
+      <td>167745</td>
+      <td>165141</td>
+      <td>171835</td>
+      <td>177966</td>
+      <td>174576</td>
+      <td>190435</td>
+      <td>166444</td>
+      <td>173247</td>
+      <td>186685</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>162332</td>
+      <td>167262</td>
+      <td>169955</td>
+      <td>163566</td>
+      <td>167876</td>
+      <td>177985</td>
+      <td>174276</td>
+      <td>180359</td>
+      <td>188123</td>
+      <td>166994</td>
+      <td>177926</td>
+      <td>186593</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>164719</td>
+      <td>170500</td>
+      <td>173095</td>
+      <td>162374</td>
+      <td>172074</td>
+      <td>174078</td>
+      <td>175720</td>
+      <td>179467</td>
+      <td>181071</td>
+      <td>166381</td>
+      <td>180074</td>
+      <td>179645</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>162851</td>
+      <td>171365</td>
+      <td>168874</td>
+      <td>162558</td>
+      <td>173607</td>
+      <td>169511</td>
+      <td>174622</td>
+      <td>183835</td>
+      <td>179829</td>
+      <td>171230</td>
+      <td>160582</td>
+      <td>172148</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>167275</td>
+      <td>164932</td>
+      <td>164082</td>
+      <td>165528</td>
+      <td>178891</td>
+      <td>169315</td>
+      <td>178421</td>
+      <td>180161</td>
+      <td>180319</td>
+      <td>170999</td>
+      <td>148131</td>
+      <td>155501</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>171684</td>
+      <td>163266</td>
+      <td>164130</td>
+      <td>166650</td>
+      <td>174916</td>
+      <td>169441</td>
+      <td>178750</td>
+      <td>174864</td>
+      <td>182777</td>
+      <td>175840</td>
+      <td>150369</td>
+      <td>120516</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>169222</td>
+      <td>167594</td>
+      <td>164548</td>
+      <td>170685</td>
+      <td>166475</td>
+      <td>174558</td>
+      <td>181972</td>
+      <td>174832</td>
+      <td>183073</td>
+      <td>173330</td>
+      <td>149677</td>
+      <td>96568</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>164093</td>
+      <td>163313</td>
+      <td>165840</td>
+      <td>167615</td>
+      <td>154955</td>
+      <td>175103</td>
+      <td>178278</td>
+      <td>174655</td>
+      <td>186322</td>
+      <td>167233</td>
+      <td>155791</td>
+      <td>148113</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>162595</td>
+      <td>166548</td>
+      <td>167368</td>
+      <td>162582</td>
+      <td>159894</td>
+      <td>179952</td>
+      <td>174187</td>
+      <td>179733</td>
+      <td>182576</td>
+      <td>167019</td>
+      <td>150190</td>
+      <td>182839</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>165496</td>
+      <td>170927</td>
+      <td>171550</td>
+      <td>162544</td>
+      <td>161719</td>
+      <td>178489</td>
+      <td>174153</td>
+      <td>183202</td>
+      <td>175661</td>
+      <td>167608</td>
+      <td>157291</td>
+      <td>182888</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>161292</td>
+      <td>41869</td>
+      <td>166675</td>
+      <td>160991</td>
+      <td>165097</td>
+      <td>173792</td>
+      <td>173548</td>
+      <td>185073</td>
+      <td>173932</td>
+      <td>168606</td>
+      <td>167069</td>
+      <td>181021</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>165439</td>
+      <td>0</td>
+      <td>163623</td>
+      <td>163919</td>
+      <td>169548</td>
+      <td>173842</td>
+      <td>176980</td>
+      <td>182411</td>
+      <td>172323</td>
+      <td>166644</td>
+      <td>166427</td>
+      <td>178769</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>168984</td>
+      <td>0</td>
+      <td>161634</td>
+      <td>0</td>
+      <td>165525</td>
+      <td>0</td>
+      <td>177177</td>
+      <td>177376</td>
+      <td>0</td>
+      <td>153942</td>
+      <td>0</td>
+      <td>158230</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+plt.figure(figsize=(15,10))
+ax = sns.heatmap(total_df, annot=True, fmt='d', cmap='RdYlGn')
+plt.title('Total of births')
+plt.show()
+```
+
+
+![png](output_25_0.png)
+
+
+### 일별로 랭크를 매겨 순위를 알아보자
+
+
+```python
+group_df = df.groupby(by=['month','date'])['births'].sum()
+```
+
+
+```python
+group_df = pd.DataFrame(group_df)
+```
+
+
+```python
+group_df = group_df.sort_values('births', ascending=False)
+```
+
+
+```python
+rank = []
+for i in range(1,len(group_df)+1):
+    rank.append(i)
+    
+
+```
+
+
+```python
+group_df['rank'] = rank
+```
+
+
+```python
+group_df
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th></th>
+      <th>births</th>
+      <th>rank</th>
+    </tr>
+    <tr>
+      <th>month</th>
+      <th>date</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="3" valign="top">9</th>
+      <th>12</th>
+      <td>191024</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>190435</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>188123</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <th>19</th>
+      <td>186685</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <th>10</th>
+      <td>186668</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <th>4</th>
+      <td>132229</td>
+      <td>362</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <th>24</th>
+      <td>120516</td>
+      <td>363</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <th>1</th>
+      <td>116030</td>
+      <td>364</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <th>25</th>
+      <td>96568</td>
+      <td>365</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <th>29</th>
+      <td>41869</td>
+      <td>366</td>
+    </tr>
+  </tbody>
+</table>
+<p>366 rows × 2 columns</p>
+</div>
+
+
+
+
+```python
+group_df = group_df.pivot_table(values='rank',index='date',columns='month')
+
+group_df = group_df.fillna(0)
+
+group_df = group_df.astype('int')
+```
+
+
+```python
+group_df
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>month</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+      <th>10</th>
+      <th>11</th>
+      <th>12</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>364</td>
+      <td>192</td>
+      <td>150</td>
+      <td>354</td>
+      <td>194</td>
+      <td>162</td>
+      <td>72</td>
+      <td>16</td>
+      <td>305</td>
+      <td>57</td>
+      <td>80</td>
+      <td>180</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>361</td>
+      <td>273</td>
+      <td>289</td>
+      <td>214</td>
+      <td>145</td>
+      <td>157</td>
+      <td>39</td>
+      <td>58</td>
+      <td>275</td>
+      <td>65</td>
+      <td>175</td>
+      <td>212</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>182</td>
+      <td>317</td>
+      <td>254</td>
+      <td>225</td>
+      <td>227</td>
+      <td>220</td>
+      <td>95</td>
+      <td>129</td>
+      <td>241</td>
+      <td>33</td>
+      <td>211</td>
+      <td>166</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>152</td>
+      <td>262</td>
+      <td>292</td>
+      <td>111</td>
+      <td>336</td>
+      <td>154</td>
+      <td>362</td>
+      <td>117</td>
+      <td>136</td>
+      <td>74</td>
+      <td>232</td>
+      <td>185</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>260</td>
+      <td>312</td>
+      <td>245</td>
+      <td>216</td>
+      <td>272</td>
+      <td>147</td>
+      <td>342</td>
+      <td>109</td>
+      <td>61</td>
+      <td>137</td>
+      <td>149</td>
+      <td>122</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>299</td>
+      <td>271</td>
+      <td>237</td>
+      <td>335</td>
+      <td>313</td>
+      <td>125</td>
+      <td>81</td>
+      <td>76</td>
+      <td>87</td>
+      <td>173</td>
+      <td>158</td>
+      <td>190</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>233</td>
+      <td>123</td>
+      <td>153</td>
+      <td>323</td>
+      <td>255</td>
+      <td>140</td>
+      <td>17</td>
+      <td>59</td>
+      <td>78</td>
+      <td>186</td>
+      <td>92</td>
+      <td>294</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>322</td>
+      <td>169</td>
+      <td>202</td>
+      <td>321</td>
+      <td>218</td>
+      <td>205</td>
+      <td>56</td>
+      <td>8</td>
+      <td>31</td>
+      <td>132</td>
+      <td>131</td>
+      <td>296</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>307</td>
+      <td>297</td>
+      <td>291</td>
+      <td>283</td>
+      <td>172</td>
+      <td>249</td>
+      <td>44</td>
+      <td>32</td>
+      <td>13</td>
+      <td>148</td>
+      <td>248</td>
+      <td>314</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>161</td>
+      <td>281</td>
+      <td>293</td>
+      <td>258</td>
+      <td>170</td>
+      <td>226</td>
+      <td>37</td>
+      <td>96</td>
+      <td>5</td>
+      <td>43</td>
+      <td>247</td>
+      <td>222</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>179</td>
+      <td>224</td>
+      <td>311</td>
+      <td>159</td>
+      <td>298</td>
+      <td>176</td>
+      <td>15</td>
+      <td>97</td>
+      <td>93</td>
+      <td>110</td>
+      <td>215</td>
+      <td>210</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>274</td>
+      <td>257</td>
+      <td>228</td>
+      <td>206</td>
+      <td>284</td>
+      <td>135</td>
+      <td>64</td>
+      <td>83</td>
+      <td>1</td>
+      <td>203</td>
+      <td>177</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>347</td>
+      <td>325</td>
+      <td>310</td>
+      <td>349</td>
+      <td>346</td>
+      <td>165</td>
+      <td>183</td>
+      <td>99</td>
+      <td>19</td>
+      <td>334</td>
+      <td>266</td>
+      <td>209</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>223</td>
+      <td>48</td>
+      <td>142</td>
+      <td>318</td>
+      <td>201</td>
+      <td>112</td>
+      <td>90</td>
+      <td>46</td>
+      <td>24</td>
+      <td>242</td>
+      <td>94</td>
+      <td>229</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>340</td>
+      <td>134</td>
+      <td>200</td>
+      <td>320</td>
+      <td>156</td>
+      <td>199</td>
+      <td>84</td>
+      <td>11</td>
+      <td>21</td>
+      <td>138</td>
+      <td>108</td>
+      <td>217</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>324</td>
+      <td>285</td>
+      <td>304</td>
+      <td>256</td>
+      <td>100</td>
+      <td>187</td>
+      <td>51</td>
+      <td>29</td>
+      <td>34</td>
+      <td>144</td>
+      <td>188</td>
+      <td>181</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>197</td>
+      <td>319</td>
+      <td>235</td>
+      <td>239</td>
+      <td>163</td>
+      <td>196</td>
+      <td>42</td>
+      <td>79</td>
+      <td>10</td>
+      <td>85</td>
+      <td>213</td>
+      <td>82</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>221</td>
+      <td>251</td>
+      <td>302</td>
+      <td>178</td>
+      <td>277</td>
+      <td>118</td>
+      <td>23</td>
+      <td>86</td>
+      <td>7</td>
+      <td>133</td>
+      <td>207</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>337</td>
+      <td>327</td>
+      <td>259</td>
+      <td>231</td>
+      <td>286</td>
+      <td>146</td>
+      <td>70</td>
+      <td>106</td>
+      <td>2</td>
+      <td>268</td>
+      <td>128</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>333</td>
+      <td>244</td>
+      <td>184</td>
+      <td>309</td>
+      <td>230</td>
+      <td>69</td>
+      <td>113</td>
+      <td>40</td>
+      <td>3</td>
+      <td>253</td>
+      <td>71</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>290</td>
+      <td>174</td>
+      <td>130</td>
+      <td>332</td>
+      <td>143</td>
+      <td>116</td>
+      <td>89</td>
+      <td>55</td>
+      <td>35</td>
+      <td>270</td>
+      <td>47</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>326</td>
+      <td>160</td>
+      <td>208</td>
+      <td>330</td>
+      <td>124</td>
+      <td>191</td>
+      <td>105</td>
+      <td>14</td>
+      <td>50</td>
+      <td>164</td>
+      <td>344</td>
+      <td>141</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>243</td>
+      <td>288</td>
+      <td>303</td>
+      <td>278</td>
+      <td>60</td>
+      <td>195</td>
+      <td>67</td>
+      <td>45</td>
+      <td>41</td>
+      <td>167</td>
+      <td>359</td>
+      <td>352</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>151</td>
+      <td>316</td>
+      <td>300</td>
+      <td>263</td>
+      <td>101</td>
+      <td>193</td>
+      <td>63</td>
+      <td>102</td>
+      <td>26</td>
+      <td>88</td>
+      <td>356</td>
+      <td>363</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>198</td>
+      <td>238</td>
+      <td>295</td>
+      <td>171</td>
+      <td>267</td>
+      <td>107</td>
+      <td>30</td>
+      <td>103</td>
+      <td>20</td>
+      <td>127</td>
+      <td>358</td>
+      <td>365</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>301</td>
+      <td>315</td>
+      <td>276</td>
+      <td>234</td>
+      <td>353</td>
+      <td>98</td>
+      <td>68</td>
+      <td>104</td>
+      <td>9</td>
+      <td>246</td>
+      <td>351</td>
+      <td>360</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>328</td>
+      <td>265</td>
+      <td>240</td>
+      <td>329</td>
+      <td>345</td>
+      <td>49</td>
+      <td>114</td>
+      <td>52</td>
+      <td>27</td>
+      <td>252</td>
+      <td>357</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>280</td>
+      <td>168</td>
+      <td>155</td>
+      <td>331</td>
+      <td>338</td>
+      <td>66</td>
+      <td>115</td>
+      <td>18</td>
+      <td>91</td>
+      <td>236</td>
+      <td>350</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>341</td>
+      <td>366</td>
+      <td>261</td>
+      <td>343</td>
+      <td>287</td>
+      <td>121</td>
+      <td>126</td>
+      <td>12</td>
+      <td>119</td>
+      <td>219</td>
+      <td>250</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>282</td>
+      <td>0</td>
+      <td>308</td>
+      <td>306</td>
+      <td>189</td>
+      <td>120</td>
+      <td>77</td>
+      <td>28</td>
+      <td>139</td>
+      <td>264</td>
+      <td>269</td>
+      <td>62</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>204</td>
+      <td>0</td>
+      <td>339</td>
+      <td>0</td>
+      <td>279</td>
+      <td>0</td>
+      <td>75</td>
+      <td>73</td>
+      <td>0</td>
+      <td>355</td>
+      <td>0</td>
+      <td>348</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+plt.figure(figsize=(15,10))
+ax = sns.heatmap(group_df, annot=True, fmt='d', cmap='RdYlGn')
+plt.title('Rank of births')
+plt.show()
+```
+
+
+![png](output_35_0.png)
+
