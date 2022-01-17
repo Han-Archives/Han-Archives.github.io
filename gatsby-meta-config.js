@@ -20,7 +20,7 @@ module.exports = {
     social: {
       github: `https://github.com/Han-Archives`, // `https://github.com/Han-Archives`,
       linkedIn: ``,
-      email: `qkrghksgml01@gmail.com`, // `qkrghksgml01@gmail.com`,
+      email: ``, // `qkrghksgml01@gmail.com`,
     },
   },
 
