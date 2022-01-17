@@ -1,1 +1,1 @@
-{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"title":"생일 빈도수 분석","categories":"Data_Analysis"},"fields":{"slug":"/Frequency of Birth/Frequency of Birth Day/"}}}]}}}
+{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"title":"한국 - 출생이 많은 달","categories":"Data_Analysis"},"fields":{"slug":"/Month of Birth_Korea/한국의 출생 많은 달/"}}},{"node":{"frontmatter":{"title":"생일 빈도수 분석","categories":"Data_Analysis"},"fields":{"slug":"/Frequency of Birth/Frequency of Birth Day/"}}}]}}}
