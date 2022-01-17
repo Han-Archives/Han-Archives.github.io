@@ -855,7 +855,7 @@ plt.show()
 ```
 
 
-![png](output_11_0.png)
+![1.png](1.png)
 
 
 
@@ -1526,7 +1526,7 @@ plt.show()
 ```
 
 
-![png](output_15_0.png)
+![2.png](2.png)
 
 
 
@@ -2184,7 +2184,7 @@ plt.show()
 ```
 
 
-![png](output_18_0.png)
+![3.png](3.png)
 
 
 
@@ -2842,7 +2842,7 @@ plt.show()
 ```
 
 
-![png](output_21_0.png)
+![4.png](4.png)
 
 
 ### 년도를 통합해서 알아보자
@@ -3394,7 +3394,7 @@ plt.show()
 ```
 
 
-![png](output_25_0.png)
+![5.png](5.png)
 
 
 ### 일별로 랭크를 매겨 순위를 알아보자
@@ -4082,5 +4082,5 @@ plt.show()
 ```
 
 
-![png](output_35_0.png)
+![6.png](6.png)
 
