@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-template-js",
+    "path": "/posts/ML",
+    "result": {"pageContext":{"currentCategory":"ML","categories":["All","Data_Analysis","QGIS","ML"],"edges":[{"node":{"id":"fc2c6bb7-684e-568a-84cd-3697cb338e7e","excerpt":"- 연관 분석 서울시의 생활이동 데이터의 출발지와 도착지 연관분석을 실시해보자 위의 사례를 통해 의미있는 결과를 얻으려면 이동량이 많은 부분만 추려야 한다. 따라서 10000건 이상인 경우의 이동형태만 추출한다. 위 과정이 워낙 많은 시간을 소요하는 과정이므로 pickle로 저장한 후 추후에 불러와서 사용 - Trouble Shooting 4_1.PNG - FP Growth 참고 사이트 :https://zephyrus1111.tistory.com/119 - 연관 분석 - Trouble Shooting - FP Growth","fields":{"slug":"/Seoul_Movement/Seoul_movement [4] - 연관분석/"},"frontmatter":{"categories":"Data_Analysis ML","title":"서울 생활 이동 [4] - 연관성 분석","date":"January 19, 2022"}},"next":{"fields":{"slug":"/Seoul_Movement/Seoul_movement [1] - 데이터 설명 및 전처리/"}},"previous":{"fields":{"slug":"/Seoul_Movement/Seoul_movement [3] - QGIS 활용/"}}}]}},
+    "staticQueryHashes": ["1073350324","1956554647","2938748437"]}
