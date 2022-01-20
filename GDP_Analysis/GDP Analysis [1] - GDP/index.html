@@ -1,0 +1,1647 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.58c7447b9282ecfbd3c6.css" data-identity="gatsby-global-css">@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-8d7d79679b70dbe27172b6460e7a7910.woff2) format("woff2"),url(/static/montserrat-latin-100-ec38980a9e0119a379e2a9b3dbb1901a.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-e279051046ba1286706adc886cf1c96b.woff2) format("woff2"),url(/static/montserrat-latin-100italic-3b325a3173c8207435cd1b76e19bf501.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-9d266fbbfa6cab7009bd56003b1eeb67.woff2) format("woff2"),url(/static/montserrat-latin-200-2d8ba08717110d27122e54c34b8a5798.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-6e5b3756583bb2263eb062eae992735e.woff2) format("woff2"),url(/static/montserrat-latin-200italic-a0d6f343e4b536c582926255367a57da.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-00b3e893aab5a8fd632d6342eb72551a.woff2) format("woff2"),url(/static/montserrat-latin-300-ea303695ceab35f17e7d062f30e0173b.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-56f34ea368f6aedf89583d444bbcb227.woff2) format("woff2"),url(/static/montserrat-latin-300italic-54b0bf2c8c4c12ffafd803be2466a790.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-b71748ae4f80ec8c014def4c5fa8688b.woff2) format("woff2"),url(/static/montserrat-latin-400-0659a9f4e90db5cf51b50d005bff1e41.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-6eed6b4cbb809c6efc7aa7ddad6dbe3e.woff2) format("woff2"),url(/static/montserrat-latin-400italic-7583622cfde30ae49086d18447ab28e7.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-091b209546e16313fd4f4fc36090c757.woff2) format("woff2"),url(/static/montserrat-latin-500-edd311588712a96bbf435fad264fff62.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c90ced68b46050061d1a41842d6dfb43.woff2) format("woff2"),url(/static/montserrat-latin-500italic-5146cbfe02b1deea5dffea27a5f2f998.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-0480d2f8a71f38db8633b84d8722e0c2.woff2) format("woff2"),url(/static/montserrat-latin-600-b77863a375260a05dd13f86a1cee598f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-cf46ffb11f3a60d7df0567f8851a1d00.woff2) format("woff2"),url(/static/montserrat-latin-600italic-c4fcfeeb057724724097167e57bd7801.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7dbcc8a5ea2289d83f657c25b4be6193.woff2) format("woff2"),url(/static/montserrat-latin-700-99271a835e1cae8c76ef8bba99a8cc4e.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-c41ad6bdb4bd504a843d546d0a47958d.woff2) format("woff2"),url(/static/montserrat-latin-700italic-6779372f04095051c62ed36bc1dcc142.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-db9a3e0ba7eaea32e5f55328ace6cf23.woff2) format("woff2"),url(/static/montserrat-latin-800-4e3c615967a2360f5db87d2f0fd2456f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-bf45bfa14805969eda318973947bc42b.woff2) format("woff2"),url(/static/montserrat-latin-800italic-fe82abb0bcede51bf724254878e0c374.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-e66c7edc609e24bacbb705175669d814.woff2) format("woff2"),url(/static/montserrat-latin-900-8211f418baeb8ec880b80ba3c682f957.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-4454c775e48152c1a72510ceed3603e2.woff2) format("woff2"),url(/static/montserrat-latin-900italic-efcaa0f6a82ee0640b83a0916e6e8d68.woff) format("woff")}.search-input-wrapper{align-items:center;display:none;margin-top:3px;width:180px}@media(min-width:768px){.search-input-wrapper{display:flex}}.search-icon{color:var(--primary-text-color);margin-right:2px}.search-input{height:100%;width:100%}.search-input .MuiAutocomplete-inputRoot{padding-right:0!important}.search-input .MuiInputBase-input{color:var(--primary-text-color)!important;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:16px;font-weight:500;padding-bottom:2px!important}.search-input .MuiInput-underline:before{border-bottom-width:1px}.search-input .MuiInput-underline:after,.search-input .MuiInput-underline:before{border-bottom-color:var(--primary-text-color)}.page-header-wrapper{display:flex;height:60px;justify-content:center;width:100%}.page-header-wrapper .page-header{align-items:center;display:flex;justify-content:space-between;max-width:720px;width:100%}.page-header-wrapper .page-header .link{color:var(--primary-text-color);font-size:17px;font-weight:700}@media(min-width:768px){.page-header-wrapper .page-header .link{font-size:20px;font-weight:700}}.page-header-wrapper .page-header .trailing-section{align-items:center;display:flex}.page-header-wrapper .page-header .trailing-section .link{margin-right:10px}@media(min-width:768px){.page-header-wrapper .page-header .trailing-section .link{margin-right:20px}}.page-footer-wrapper{align-items:center;display:flex;height:62px;justify-content:center;margin-top:auto;width:100%}.page-footer-wrapper .page-footer{max-width:720px;text-align:center;width:100%}.page-footer-wrapper .page-footer .link{color:var(--primary-text-color);font-size:20px;font-weight:700;margin-right:20px}.page-footer-wrapper .page-footer a{color:#3a95ff}.dark-mode-button-wrapper{align-items:center;bottom:20px;display:flex;justify-content:center;position:fixed;right:20px}.dark-mode-button{-webkit-backdrop-filter:blur(30px);backdrop-filter:blur(30px);background-color:#363f47!important;border-radius:50px;box-shadow:0 5px 25px rgba(0,0,0,.12);cursor:pointer;height:50px;width:50px;z-index:3}.dark-mode-icon{color:#fff}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{border:0;font-size:100%;font:inherit;margin:0;padding:0;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}a{outline:none;text-decoration:none}html{--background-color:#fff;--primary-text-color:#000;--secondary-text-color:#9e9e9e;--content-text-color:#37352f;--button-background-color:#f3f3f4;--button-text-color:#363f47;--tab-text-color:#6e6d7a;--tab-hover-text-color:#0d0c22;--tab-selected-background-color:rgba(13,12,34,.05);--bio-link-icon-color:rgba(0,0,0,.54);--about-link-icon-color:#a8a8a8;--chip-background-color:#f3f3f4;--link-text-color:rgba(55,53,47,.7);--post-card-border-color:rgba(0,0,0,.12);--markdown-table-even-cell-background-color:#f6f8fa;--markdown-table-border-color:#dfe2e5;--markdown-blockquote-border-color:#dfe2e5;--markdown-border-color:#e1e4e8}html[data-theme=dark]{--background-color:#232326;--primary-text-color:#e6e6e6;--secondary-text-color:#768390;--content-text-color:#e6e6e6;--button-background-color:#444c56;--button-text-color:#363f47;--tab-text-color:#768390;--tab-hover-text-color:#acbac7;--tab-selected-background-color:#373e47;--chip-background-color:#323a42;--bio-link-icon-color:#e6e6e6;--about-link-icon-color:#a8a8a8;--link-text-color:#90b0ec;--post-card-border-color:#363f47;--markdown-table-even-cell-background-color:#2d333b;--markdown-table-border-color:#444c56;--markdown-blockquote-border-color:#4f5864;--markdown-border-color:#e1e4e8}*{-webkit-appearance:none;appearance:none;box-sizing:border-box}html{font-size:14px;height:100%;overflow-y:scroll;width:100%}body{background-color:var(--background-color)!important}a{color:var(--link-text-color)}.page-wrapper{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:var(--primary-text-color);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;justify-content:center;min-height:100vh;padding-left:15px;padding-right:15px;word-break:keep-all}.page-wrapper,.page-wrapper .page-content{align-items:center;display:flex;flex-direction:column;width:100%}.page-wrapper .page-content{max-width:720px}.icon{color:var(--about-link-icon-color);font-size:20px}.social-links .icon{color:var(--bio-link-icon-color);font-size:30px}@keyframes blinking-cursor{0%{opacity:0}50%{opacity:1}to{opacity:0}}.bio{color:var(--primary-text-color);display:flex;flex-direction:column;justify-content:space-between;margin-bottom:120px;margin-top:120px;width:100%}@media(min-width:768px){.bio{align-items:center;flex-direction:row}}.bio .introduction{display:flex;flex-direction:column;word-break:keep-all}.bio .introduction .react-rotating-text-cursor{animation:blinking-cursor .8s cubic-bezier(.68,.01,.01,.99) 0s infinite}.bio .introduction strong{display:inline-block;font-weight:600}.bio .introduction.korean{font-size:32px;font-weight:100;line-height:1.2}.bio .introduction.korean .title .react-rotating-text-cursor{font-size:35px;line-height:35px}@media(min-width:768px){.bio .introduction.korean{font-size:40px}.bio .introduction.korean .title .react-rotating-text-cursor{font-size:45px;line-height:45px}}.bio .introduction.english{font-family:montserrat;font-size:25px;line-height:1.2}@media(min-width:768px){.bio .introduction.english{font-size:45px}}.bio .introduction.english .name{font-size:35px;font-weight:600}.bio .introduction.english .job{font-size:35px}.bio .introduction.english .description{font-size:20px;font-weight:200;margin-top:8px}.bio .introduction.english .social-links{display:flex;margin-top:20px}.bio .thumbnail{display:none;width:250px}@media(min-width:768px){.bio .thumbnail{display:block}}.section-header-wrapper{display:flex;justify-content:center;margin-bottom:32px;width:100%}.section-header-wrapper .section-header{border-bottom:4px solid var(--primary-text-color);color:var(--primary-text-color);font-size:30px;font-weight:700;padding-bottom:5px}.timestamp-section{align-items:center;display:flex;flex-direction:column;justify-content:center;margin-bottom:50px;width:100%;word-break:keep-all}.timestamp-section .body{padding:0 10px;width:100%}.timestamp-section .body .timestamp{border-left:2px solid #bdbdbd;display:flex;font-size:18px;font-weight:400;justify-items:center;margin-left:5px;padding:10px 0;width:100%}.timestamp-section .body .timestamp:first-child{padding-top:7px}.timestamp-section .body .timestamp:last-child{padding-bottom:7px}.timestamp-section .body .timestamp:before{align-self:center;background-color:var(--background-color);border:2px solid #828282;border-radius:10px;content:"";height:10px;left:-1px;position:relative;transform:translatex(-50%);width:10px}.timestamp-section .body .timestamp .date{align-self:center;color:#828282;margin-left:5px;margin-right:5px;min-width:115px;width:115px}@media(min-width:768px){.timestamp-section .body .timestamp .date{min-width:200px;width:200px}}.timestamp-section .body .timestamp .activity{line-height:23px;width:100%}.project-section{align-items:center;justify-content:center}.project-section,.project-section .project{display:flex;flex-direction:column;width:100%}.project-section .project{margin-bottom:30px;padding:15px}.project-section .project .head{font-size:20px;font-weight:700;line-height:30px;margin-bottom:10px}.project-section .project .body{display:flex;flex-direction:column;width:100%}.project-section .project .body .thumbnail{margin-bottom:10px;width:100%}.project-section .project .body .tech-stack{display:flex;margin-bottom:10px}.project-section .project .body .tech-stack .tech{background-color:var(--chip-background-color);border-radius:10px;font-size:15px;font-weight:500;margin-right:5px;padding:5px 7px}.project-section .project .body .description{font-size:16px;font-weight:400;line-height:1.4}@media(min-width:768px){.project-section .project .body{flex-direction:column}.project-section .project .body .content{margin-top:0}}.post-header{border-bottom:1px solid var(--post-card-border-color);display:flex;flex-direction:column;justify-content:center;margin-bottom:40px;margin-top:20px;padding-bottom:10px;width:100%;word-break:keep-all}.post-header .emoji{font-size:78px;margin-bottom:20px}.post-header .categories{margin-bottom:5px}.post-header .categories .category{color:var(--primary-text-color);font-weight:600;margin-right:4px}.post-header .categories .category:hover{text-decoration:underline}.post-header .title{color:var(--primary-text-color);font-size:32px;font-weight:600;line-height:1.3;margin-bottom:6px}.post-header .info{color:var(--secondary-text-color);display:flex;flex-wrap:wrap;font-size:16px;font-weight:500;line-height:1.5;width:100%}.post-header .info .author{margin-right:4px}.post-header .info strong{color:var(--primary-text-color);font-weight:600}.post-navigator{column-gap:1.4%;display:grid;grid-template-columns:49.3% 49.3%;width:100%}.post-navigator .post-card{border:1px solid var(--post-card-border-color);border-radius:6px;color:var(--primary-text-color);cursor:pointer;display:flex;flex-direction:column;padding:15px;transition:transform .2s;width:100%}.post-navigator .post-card:hover .title{text-decoration:underline}.post-navigator .post-card.prev{margin-right:auto}.post-navigator .post-card.next{margin-left:auto}.post-navigator .post-card .direction{color:gray;font-size:14px;font-weight:500;margin-bottom:5px}.post-navigator .post-card .title{font-size:16px;font-weight:600;line-height:1.4;margin-bottom:7px}.markdown .octicon{fill:currentColor;display:inline-block;vertical-align:text-bottom}.markdown .anchor{float:left;line-height:1;margin-left:-20px;padding-right:4px}.markdown .anchor:focus{outline:none}.markdown h1 .octicon-link,.markdown h2 .octicon-link,.markdown h3 .octicon-link,.markdown h4 .octicon-link,.markdown h5 .octicon-link,.markdown h6 .octicon-link{color:#1b1f23;vertical-align:middle;visibility:hidden}.markdown h1:hover .anchor,.markdown h2:hover .anchor,.markdown h3:hover .anchor,.markdown h4:hover .anchor,.markdown h5:hover .anchor,.markdown h6:hover .anchor{text-decoration:none}.markdown h1:hover .anchor .octicon-link,.markdown h2:hover .anchor .octicon-link,.markdown h3:hover .anchor .octicon-link,.markdown h4:hover .anchor .octicon-link,.markdown h5:hover .anchor .octicon-link,.markdown h6:hover .anchor .octicon-link{visibility:visible}.markdown h1:hover .anchor .octicon-link:before,.markdown h2:hover .anchor .octicon-link:before,.markdown h3:hover .anchor .octicon-link:before,.markdown h4:hover .anchor .octicon-link:before,.markdown h5:hover .anchor .octicon-link:before,.markdown h6:hover .anchor .octicon-link:before{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' aria-hidden='true' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'/%3E%3C/svg%3E");content:" ";display:inline-block;height:16px;width:16px}.markdown{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;word-wrap:break-word;color:var(--content-text-color);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:16px;font-weight:500;line-height:1.5}.markdown details{display:block}.markdown summary{display:list-item}.markdown a{background-color:initial}.markdown a:active,.markdown a:hover{outline-width:0}.markdown strong{font-weight:inherit;font-weight:bolder}.markdown h1{margin:.67em 0}.markdown img{border-style:none}.markdown code,.markdown kbd,.markdown pre{font-family:monospace,monospace;font-size:1em}.markdown hr{box-sizing:initial;overflow:visible}.markdown input{font:inherit;margin:0;overflow:visible}.markdown [type=checkbox]{box-sizing:border-box;padding:0}.markdown *{box-sizing:border-box}.markdown input{font-family:inherit;font-size:inherit;line-height:inherit}.markdown a{border-bottom:.05em solid;border-bottom-color:var(--link-text-color);border-left-color:var(--link-text-color);border-right-color:var(--link-text-color);border-top-color:var(--link-text-color);color:var(--link-text-color);text-decoration:none}.markdown a.anchor{border-bottom:none}.markdown strong{font-weight:700}.markdown hr{background:transparent;border-bottom:1px solid var(--markdown-blockquote-border-color);height:0;margin:15px 0;overflow:hidden}.markdown hr:after,.markdown hr:before{content:"";display:table}.markdown hr:after{clear:both}.markdown table{border-collapse:collapse;border-spacing:0}.markdown td,.markdown th{padding:0}.markdown details summary{cursor:pointer}.markdown h1,.markdown h2,.markdown h3,.markdown h4,.markdown h5,.markdown h6{margin-bottom:0;margin-top:0}.markdown h1{font-size:32px}.markdown h1,.markdown h2{font-weight:600}.markdown h2{font-size:24px}.markdown h3{font-size:20px}.markdown h3,.markdown h4{font-weight:600}.markdown h4{font-size:16px}.markdown h5{font-size:14px}.markdown h5,.markdown h6{font-weight:600}.markdown h6{font-size:12px}.markdown p{margin-bottom:10px;margin-top:0}.markdown blockquote{margin:0}.markdown ol,.markdown ul{margin-bottom:0;margin-top:0;padding-left:0}.markdown ol ol,.markdown ul ol{list-style-type:lower-roman}.markdown ol ol ol,.markdown ol ul ol,.markdown ul ol ol,.markdown ul ul ol{list-style-type:lower-alpha}.markdown dd{margin-left:0}.markdown code,.markdown pre{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px}.markdown code.language-text{border-radius:3px;font-size:85%;padding:.2em .4em}.markdown :not(pre)>code.language-text{background:hsla(44,6%,50%,.15);color:#eb5757;overflow-wrap:break-word}.markdown pre{margin-bottom:0;margin-top:0}.markdown input::-webkit-inner-spin-button,.markdown input::-webkit-outer-spin-button{-webkit-appearance:none;appearance:none;margin:0}.markdown :checked+.radio-label{border-color:#0366d6;position:relative;z-index:1}.markdown .border{border:1px solid var(--markdown-border-color)!important}.markdown .border-0{border:0!important}.markdown .border-bottom{border-bottom:1px solid var(--markdown-border-color)!important}.markdown .rounded-1{border-radius:3px!important}.markdown .bg-white{background-color:transparent!important}.markdown .bg-gray-light{background-color:#fafbfc!important}.markdown .text-gray-light{color:#6a737d!important}.markdown .pl-3,.markdown .px-3{padding-left:16px!important}.markdown .px-3{padding-right:16px!important}.markdown .f6{font-size:12px!important}.markdown .lh-condensed{line-height:1.25!important}.markdown .text-bold{font-weight:600!important}.markdown .pl-c{color:#6a737d}.markdown .pl-c1,.markdown .pl-s .pl-v{color:#005cc5}.markdown .pl-e,.markdown .pl-en{color:#6f42c1}.markdown .pl-s .pl-s1,.markdown .pl-smi{color:#24292e}.markdown .pl-ent{color:#22863a}.markdown .pl-k{color:#d73a49}.markdown .pl-pds,.markdown .pl-s,.markdown .pl-s .pl-pse .pl-s1,.markdown .pl-sr,.markdown .pl-sr .pl-cce,.markdown .pl-sr .pl-sra,.markdown .pl-sr .pl-sre{color:#032f62}.markdown .pl-smw,.markdown .pl-v{color:#e36209}.markdown .pl-bu{color:#b31d28}.markdown .pl-ii{background-color:#b31d28;color:#fafbfc}.markdown .pl-c2{background-color:#d73a49;color:#fafbfc}.markdown .pl-c2:before{content:"^M"}.markdown .pl-sr .pl-cce{color:#22863a;font-weight:700}.markdown .pl-ml{color:#735c0f}.markdown .pl-mh,.markdown .pl-mh .pl-en,.markdown .pl-ms{color:#005cc5;font-weight:700}.markdown .pl-mi{color:#24292e;font-style:italic}.markdown .pl-mb{color:#24292e;font-weight:700}.markdown .pl-md{background-color:#ffeef0;color:#b31d28}.markdown .pl-mi1{background-color:#f0fff4;color:#22863a}.markdown .pl-mc{background-color:#ffebda;color:#e36209}.markdown .pl-mi2{background-color:#005cc5;color:#f6f8fa}.markdown .pl-mdr{color:#6f42c1;font-weight:700}.markdown .pl-ba{color:#586069}.markdown .pl-sg{color:#959da5}.markdown .pl-corl{color:#032f62;text-decoration:underline}.markdown .mb-0{margin-bottom:0!important}.markdown .my-2{margin-bottom:8px!important;margin-top:8px!important}.markdown .pl-0{padding-left:0!important}.markdown .py-0{padding-bottom:0!important;padding-top:0!important}.markdown .pl-1{padding-left:4px!important}.markdown .pl-2{padding-left:8px!important}.markdown .py-2{padding-bottom:8px!important;padding-top:8px!important}.markdown .pl-3{padding-left:16px!important}.markdown .pl-4{padding-left:24px!important}.markdown .pl-5{padding-left:32px!important}.markdown .pl-6{padding-left:40px!important}.markdown .pl-7{padding-left:48px!important}.markdown .pl-8{padding-left:64px!important}.markdown .pl-9{padding-left:80px!important}.markdown .pl-10{padding-left:96px!important}.markdown .pl-11{padding-left:112px!important}.markdown .pl-12{padding-left:128px!important}.markdown hr{border-bottom-color:#eee}.markdown kbd{background-color:#fafbfc;border:1px solid #d1d5da;border-radius:3px;box-shadow:inset 0 -1px 0 #d1d5da;color:#444d56;display:inline-block;font:11px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;line-height:10px;padding:3px 5px;vertical-align:middle}.markdown:after,.markdown:before{content:"";display:table}.markdown:after{clear:both}.markdown>:first-child{margin-top:0!important}.markdown>:last-child{margin-bottom:0!important}.markdown a:not([href]){color:inherit;text-decoration:none}.markdown blockquote,.markdown details,.markdown dl,.markdown ol,.markdown p,.markdown pre,.markdown table,.markdown ul{margin-bottom:16px;margin-top:0}.markdown hr{background-color:var(--markdown-border-color);border:0;height:.25em;margin:24px 0;padding:0}.markdown blockquote{border-left:.25em solid var(--markdown-blockquote-border-color);color:#6a737d;padding:0 1em}.markdown blockquote>:first-child{margin-top:0}.markdown blockquote>:last-child{margin-bottom:0}.markdown h1,.markdown h2,.markdown h3,.markdown h4,.markdown h5,.markdown h6{font-weight:600;line-height:1.25;margin-bottom:16px;margin-top:24px}.markdown h1{font-size:2em}.markdown h2{font-size:1.5em}.markdown h3{font-size:1.25em}.markdown h4{font-size:1em}.markdown h5{font-size:.875em}.markdown h6{color:#6a737d;font-size:.85em}.markdown ol,.markdown ul{padding-left:2em}.markdown ol ol,.markdown ol ul,.markdown ul ol,.markdown ul ul{margin-bottom:0;margin-top:0}.markdown ol{list-style-type:decimal}.markdown ul{list-style-type:disc}.markdown li{word-wrap:break-all;display:list-item;text-align:-webkit-match-parent}.markdown li>p{margin-top:16px}.markdown li+li{margin-top:.25em}.markdown dl{padding:0}.markdown dl dt{font-size:1em;font-style:italic;font-weight:600;margin-top:16px;padding:0}.markdown dl dd{margin-bottom:16px;padding:0 16px}.markdown table{display:block;overflow:auto;width:100%}.markdown table th{font-weight:600}.markdown table td,.markdown table th{border:1px solid var(--markdown-table-border-color);padding:6px 13px}.markdown table tr{border-top:1px solid var(--markdown-table-border-color)}.markdown table tr:nth-child(2n){background-color:var(--markdown-table-even-cell-background-color)}.markdown img{background-color:transparent;box-sizing:initial;display:block;margin:0 auto;max-width:100%}.markdown img[align=right]{padding-left:20px}.markdown img[align=left]{padding-right:20px}.markdown code{background-color:rgba(27,31,35,.05);border-radius:3px;font-size:85%;margin:0;padding:.2em .4em}.markdown pre{word-wrap:normal}.markdown pre>code{background:transparent;border:0;font-size:100%;margin:0;padding:0;white-space:pre;word-break:normal}.markdown .highlight{margin-bottom:16px}.markdown .highlight pre{margin-bottom:0;word-break:normal}.markdown .highlight pre,.markdown pre{background-color:#f6f8fa;border-radius:3px;font-size:85%;line-height:1.45;overflow:auto;padding:16px}.markdown pre code{word-wrap:normal;background-color:initial;border:0;display:inline;line-height:inherit;margin:0;max-width:auto;overflow:visible;padding:0}.markdown .commit-tease-sha{color:#444d56;display:inline-block;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:90%}.markdown .full-commit .btn-outline:not(:disabled):hover{border-color:#005cc5;color:#005cc5}.markdown .blob-wrapper{overflow-x:auto;overflow-y:hidden}.markdown .blob-wrapper-embedded{max-height:240px;overflow-y:auto}.markdown .blob-num{color:rgba(27,31,35,.3);cursor:pointer;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px;line-height:20px;min-width:50px;padding-left:10px;padding-right:10px;text-align:right;-webkit-user-select:none;-ms-user-select:none;user-select:none;vertical-align:top;white-space:nowrap;width:1%}.markdown .blob-num:hover{color:rgba(27,31,35,.6)}.markdown .blob-num:before{content:attr(data-line-number)}.markdown .blob-code{line-height:20px;padding-left:10px;padding-right:10px;position:relative;vertical-align:top}.markdown .blob-code-inner{word-wrap:normal;color:#24292e;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px;overflow:visible;white-space:pre}.markdown .pl-token.active,.markdown .pl-token:hover{background:#ffea7f;cursor:pointer}.markdown .tab-size[data-tab-size="1"]{-moz-tab-size:1;-o-tab-size:1;tab-size:1}.markdown .tab-size[data-tab-size="2"]{-moz-tab-size:2;-o-tab-size:2;tab-size:2}.markdown .tab-size[data-tab-size="3"]{-moz-tab-size:3;-o-tab-size:3;tab-size:3}.markdown .tab-size[data-tab-size="4"]{-moz-tab-size:4;-o-tab-size:4;tab-size:4}.markdown .tab-size[data-tab-size="5"]{-moz-tab-size:5;-o-tab-size:5;tab-size:5}.markdown .tab-size[data-tab-size="6"]{-moz-tab-size:6;-o-tab-size:6;tab-size:6}.markdown .tab-size[data-tab-size="7"]{-moz-tab-size:7;-o-tab-size:7;tab-size:7}.markdown .tab-size[data-tab-size="8"]{-moz-tab-size:8;-o-tab-size:8;tab-size:8}.markdown .tab-size[data-tab-size="9"]{-moz-tab-size:9;-o-tab-size:9;tab-size:9}.markdown .tab-size[data-tab-size="10"]{-moz-tab-size:10;-o-tab-size:10;tab-size:10}.markdown .tab-size[data-tab-size="11"]{-moz-tab-size:11;-o-tab-size:11;tab-size:11}.markdown .tab-size[data-tab-size="12"]{-moz-tab-size:12;-o-tab-size:12;tab-size:12}.markdown .task-list-item{list-style-type:none}.markdown .task-list-item+.task-list-item{margin-top:3px}.markdown .task-list-item input{margin:0 .2em .25em -1.6em;vertical-align:middle}.markdown .table-of-contents{align-items:flex-start;display:flex;flex-direction:column;justify-content:center;position:fixed;right:0;top:75px;width:340px}@media(max-width:1300px){.markdown .table-of-contents{display:none}}.markdown .table-of-contents ul{cursor:pointer;list-style-type:none}.markdown .table-of-contents ul li a{border-bottom:none;color:var(--secondary-text-color);font-size:14px;height:30px;padding:6px 2px;width:100%}.markdown .table-of-contents ul p{margin:0}.markdown .gatsby-resp-image-wrapper{display:flex!important;justify-content:center!important;max-height:560px!important;width:100%!important}.markdown .gatsby-resp-image-wrapper img{height:auto!important;max-height:560px!important;max-width:100%!important;position:relative!important;width:auto!important}.markdown .gatsby-resp-image-wrapper+em{color:#6a737d;display:block;font-size:15px;font-style:italic;text-align:center}code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#ccc;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}.post-content{margin-bottom:20px;width:100%}.category-page-header-wrapper,.post-content{display:flex;flex-direction:column;justify-content:center}.category-page-header-wrapper{align-items:center;margin-bottom:30px;margin-top:30px}.category-page-header-wrapper .category-page-title{border-bottom:3px solid var(--primary-text-color);font-size:40px;font-weight:700;margin-bottom:15px;padding-bottom:7px;text-align:center;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content}.category-page-header-wrapper .category-page-subtitle{font-size:20px;font-weight:500;padding-bottom:10px;text-align:center}.post-card-wrapper{display:flex;justify-content:center;min-height:150px;width:100%}.post-card-wrapper .post-card{border:1px solid var(--post-card-border-color);border-radius:6px;color:var(--primary-text-color);cursor:pointer;display:flex;flex-direction:column;height:100%;margin-bottom:15px;max-width:720px;padding:15px;transition:transform .2s;width:100%}.post-card-wrapper .post-card:hover .title{text-decoration:underline}@media(min-width:768px){.post-card-wrapper .post-card{margin-bottom:0}}.post-card-wrapper .post-card .title{font-size:18px;font-weight:600;line-height:1.4;margin-bottom:7px}.post-card-wrapper .post-card .description{-webkit-line-clamp:3;-webkit-box-orient:vertical;color:var(--primary-text-color);display:-webkit-box;font-size:13px;line-height:20px;margin-bottom:10px;overflow:hidden;text-overflow:ellipsis}.post-card-wrapper .post-card .info{color:var(--about-link-icon-color);display:flex;font-size:14px;justify-content:space-between;margin-top:auto}.post-card-wrapper .post-card .info .categories{display:flex}.post-card-wrapper .post-card .info .categories .category{margin-left:4px}.post-card-wrapper .post-card .info .categories .category:hover{text-decoration:underline}.post-card-column-wrapper{display:flex;justify-content:center;width:100%}.post-card-column-wrapper .post-card-column{align-items:center;display:flex;flex-direction:column}.post-card-column-wrapper .post-card-column .post-card-wrapper{margin-bottom:10px}.post-card-column-wrapper .post-card-column .more-post-card-button{background-color:var(--button-background-color);font-size:15px;font-weight:500;height:40px}.post-tabs-wrapper{align-self:flex-start;display:flex;flex-direction:column;justify-content:center;top:0;width:100%}.post-tabs-wrapper .post-tabs{display:flex;height:40px;justify-content:center;margin-bottom:12px;max-width:760px;width:100%}.post-tabs-wrapper .post-tabs .mui-tabs .MuiTab-root{color:var(--tab-text-color);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:17px;font-weight:500;height:40px;min-height:auto;min-width:auto;padding:10px 12px;transition:all .2s ease}.post-tabs-wrapper .post-tabs .mui-tabs .Mui-selected,.post-tabs-wrapper .post-tabs .mui-tabs .MuiTab-root :hover{color:var(--tab-hover-text-color);transition:all .2s ease}.post-tabs-wrapper .post-tabs .mui-tabs .Mui-selected{background-color:var(--tab-selected-background-color);border-radius:8px;font-weight:600}.post-tabs-wrapper .post-tabs .mui-tabs .MuiTabScrollButton-root{height:40px;width:20px}.post-tabs-wrapper .post-tabs .mui-tabs .MuiTabs-scrollable{height:40px}.post-tabs-wrapper .post-tabs .mui-tabs .MuiTabs-indicator{display:none}</style><meta name="generator" content="Gatsby 3.14.5"/><style data-emotion="css-global o6gwfi">html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;box-sizing:border-box;-webkit-text-size-adjust:100%;}*,*::before,*::after{box-sizing:inherit;}strong,b{font-weight:700;}body{margin:0;color:rgba(0, 0, 0, 0.87);font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:400;font-size:1rem;line-height:1.5;letter-spacing:0.00938em;background-color:#fff;}@media print{body{background-color:#fff;}}body::backdrop{background-color:#fff;}</style><style data-emotion="css-global 1prfaxn">@-webkit-keyframes mui-auto-fill{from{display:block;}}@keyframes mui-auto-fill{from{display:block;}}@-webkit-keyframes mui-auto-fill-cancel{from{display:block;}}@keyframes mui-auto-fill-cancel{from{display:block;}}</style><style data-emotion="css 1l6di18 feqhe6 11tfndm mnn31 vubbuv 1yxmbwk 6flbmm">.css-1l6di18.Mui-focused .MuiAutocomplete-clearIndicator{visibility:visible;}@media (pointer: fine){.css-1l6di18:hover .MuiAutocomplete-clearIndicator{visibility:visible;}}.css-1l6di18 .MuiAutocomplete-tag{margin:3px;max-width:calc(100% - 6px);}.css-1l6di18 .MuiAutocomplete-inputRoot{-webkit-box-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;}.MuiAutocomplete-hasPopupIcon.css-1l6di18 .MuiAutocomplete-inputRoot,.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiAutocomplete-inputRoot{padding-right:30px;}.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiAutocomplete-inputRoot{padding-right:56px;}.css-1l6di18 .MuiAutocomplete-inputRoot .MuiAutocomplete-input{width:0;min-width:30px;}.css-1l6di18 .MuiInput-root{padding-bottom:1px;}.css-1l6di18 .MuiInput-root .MuiInput-input{padding:4px 4px 4px 0px;}.css-1l6di18 .MuiInput-root.MuiInputBase-sizeSmall .MuiInput-input{padding:2px 4px 3px 0;}.css-1l6di18 .MuiOutlinedInput-root{padding:9px;}.MuiAutocomplete-hasPopupIcon.css-1l6di18 .MuiOutlinedInput-root,.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiOutlinedInput-root{padding-right:39px;}.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiOutlinedInput-root{padding-right:65px;}.css-1l6di18 .MuiOutlinedInput-root .MuiAutocomplete-input{padding:7.5px 4px 7.5px 6px;}.css-1l6di18 .MuiOutlinedInput-root .MuiAutocomplete-endAdornment{right:9px;}.css-1l6di18 .MuiOutlinedInput-root.MuiInputBase-sizeSmall{padding:6px;}.css-1l6di18 .MuiOutlinedInput-root.MuiInputBase-sizeSmall .MuiAutocomplete-input{padding:2.5px 4px 2.5px 6px;}.css-1l6di18 .MuiFilledInput-root{padding-top:19px;padding-left:8px;}.MuiAutocomplete-hasPopupIcon.css-1l6di18 .MuiFilledInput-root,.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiFilledInput-root{padding-right:39px;}.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiFilledInput-root{padding-right:65px;}.css-1l6di18 .MuiFilledInput-root .MuiFilledInput-input{padding:7px 4px;}.css-1l6di18 .MuiFilledInput-root .MuiAutocomplete-endAdornment{right:9px;}.css-1l6di18 .MuiFilledInput-root.MuiInputBase-sizeSmall{padding-bottom:1px;}.css-1l6di18 .MuiFilledInput-root.MuiInputBase-sizeSmall .MuiFilledInput-input{padding:2.5px 4px;}.css-1l6di18 .MuiInputBase-hiddenLabel{padding-top:8px;}.css-1l6di18 .MuiAutocomplete-input{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;text-overflow:ellipsis;opacity:1;}.css-feqhe6{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;position:relative;min-width:0;padding:0;margin:0;border:0;vertical-align:top;width:100%;}.css-11tfndm{font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:400;font-size:1rem;line-height:1.4375em;letter-spacing:0.00938em;color:rgba(0, 0, 0, 0.87);box-sizing:border-box;position:relative;cursor:text;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:100%;position:relative;}.css-11tfndm.Mui-disabled{color:rgba(0, 0, 0, 0.38);cursor:default;}label+.css-11tfndm{margin-top:16px;}.css-11tfndm:after{border-bottom:2px solid #1976d2;left:0;bottom:0;content:"";position:absolute;right:0;-webkit-transform:scaleX(0);-moz-transform:scaleX(0);-ms-transform:scaleX(0);transform:scaleX(0);-webkit-transition:-webkit-transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;transition:transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;pointer-events:none;}.css-11tfndm.Mui-focused:after{-webkit-transform:scaleX(1);-moz-transform:scaleX(1);-ms-transform:scaleX(1);transform:scaleX(1);}.css-11tfndm.Mui-error:after{border-bottom-color:#d32f2f;-webkit-transform:scaleX(1);-moz-transform:scaleX(1);-ms-transform:scaleX(1);transform:scaleX(1);}.css-11tfndm:before{border-bottom:1px solid rgba(0, 0, 0, 0.42);left:0;bottom:0;content:"\00a0";position:absolute;right:0;-webkit-transition:border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;pointer-events:none;}.css-11tfndm:hover:not(.Mui-disabled):before{border-bottom:2px solid rgba(0, 0, 0, 0.87);}@media (hover: none){.css-11tfndm:hover:not(.Mui-disabled):before{border-bottom:1px solid rgba(0, 0, 0, 0.42);}}.css-11tfndm.Mui-disabled:before{border-bottom-style:dotted;}.css-mnn31{font:inherit;letter-spacing:inherit;color:currentColor;padding:4px 0 5px;border:0;box-sizing:content-box;background:none;height:1.4375em;margin:0;-webkit-tap-highlight-color:transparent;display:block;min-width:0;width:100%;-webkit-animation-name:mui-auto-fill-cancel;animation-name:mui-auto-fill-cancel;-webkit-animation-duration:10ms;animation-duration:10ms;}.css-mnn31::-webkit-input-placeholder{color:currentColor;opacity:0.42;-webkit-transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-mnn31::-moz-placeholder{color:currentColor;opacity:0.42;-webkit-transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-mnn31:-ms-input-placeholder{color:currentColor;opacity:0.42;-webkit-transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-mnn31::-ms-input-placeholder{color:currentColor;opacity:0.42;-webkit-transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-mnn31:focus{outline:0;}.css-mnn31:invalid{box-shadow:none;}.css-mnn31::-webkit-search-decoration{-webkit-appearance:none;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31::-webkit-input-placeholder{opacity:0!important;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31::-moz-placeholder{opacity:0!important;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:-ms-input-placeholder{opacity:0!important;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31::-ms-input-placeholder{opacity:0!important;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:focus::-webkit-input-placeholder{opacity:0.42;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:focus::-moz-placeholder{opacity:0.42;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:focus:-ms-input-placeholder{opacity:0.42;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:focus::-ms-input-placeholder{opacity:0.42;}.css-mnn31.Mui-disabled{opacity:1;-webkit-text-fill-color:rgba(0, 0, 0, 0.38);}.css-mnn31:-webkit-autofill{-webkit-animation-duration:5000s;animation-duration:5000s;-webkit-animation-name:mui-auto-fill;animation-name:mui-auto-fill;}.css-vubbuv{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:1em;height:1em;display:inline-block;fill:currentColor;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;font-size:1.5rem;}.css-1yxmbwk{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;position:relative;box-sizing:border-box;-webkit-tap-highlight-color:transparent;background-color:transparent;outline:0;border:0;margin:0;border-radius:0;padding:0;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;vertical-align:middle;-moz-appearance:none;-webkit-appearance:none;-webkit-text-decoration:none;text-decoration:none;color:inherit;text-align:center;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;font-size:1.5rem;padding:8px;border-radius:50%;overflow:visible;color:rgba(0, 0, 0, 0.54);-webkit-transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-1yxmbwk::-moz-focus-inner{border-style:none;}.css-1yxmbwk.Mui-disabled{pointer-events:none;cursor:default;}@media print{.css-1yxmbwk{-webkit-print-color-adjust:exact;color-adjust:exact;}}.css-1yxmbwk:hover{background-color:rgba(0, 0, 0, 0.04);}@media (hover: none){.css-1yxmbwk:hover{background-color:transparent;}}.css-1yxmbwk.Mui-disabled{background-color:transparent;color:rgba(0, 0, 0, 0.26);}.css-6flbmm{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:1em;height:1em;display:inline-block;fill:currentColor;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;font-size:2.1875rem;}</style><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GSPTK2B65F"></script><script>
+    window.GATSBY_GTAG_PLUGIN_GA_TRACKING_ID = (
+      'G-GSPTK2B65F'
+    );
+    window.GATSBY_GTAG_PLUGIN_ANONYMIZE = true;
+
+    var options = {
+      send_page_view: false
+    };
+    if (true) {
+      options.anonymize_ip = true;
+    }
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', 'G-GSPTK2B65F', options);
+  </script><link rel="icon" href="/favicon-32x32.png?v=fae257d65054f3b79b365f6b90168dd5" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=fae257d65054f3b79b365f6b90168dd5"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=fae257d65054f3b79b365f6b90168dd5"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=fae257d65054f3b79b365f6b90168dd5"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=fae257d65054f3b79b365f6b90168dd5"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=fae257d65054f3b79b365f6b90168dd5"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=fae257d65054f3b79b365f6b90168dd5"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=fae257d65054f3b79b365f6b90168dd5"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=fae257d65054f3b79b365f6b90168dd5"/><style type="text/css">
+    .anchor.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .anchor.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg,
+    h1 .anchor:focus svg,
+    h2 .anchor:focus svg,
+    h3 .anchor:focus svg,
+    h4 .anchor:focus svg,
+    h5 .anchor:focus svg,
+    h6 .anchor:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><title data-react-helmet="true">GDP Analysis [1] - GDP</title><meta data-react-helmet="true" name="viewport" content="initial-scale=1, width=device-width"/><meta data-react-helmet="true" property="og:title" content="GDP Analysis [1] - GDP"/><meta data-react-helmet="true" property="og:site_title" content="GDP Analysis [1] - GDP"/><meta data-react-helmet="true" name="description" content="GDP란 무엇인가? 한 나라의 영역 내에서 가계, 기업, 정부 등 모든 경제주체가 일정기간 동안 생산한 재화 및 서비스의 부가가치를 시장가격으로 평가하여 합산한 것으로 여기에는 비거주자가 제공한 노동, 자본 등 생산요소에 의하여 창출된 것도 포함되어 있다. (출처: 네이버 지식백과) 세계 GDP 수치 데이터 (출처) : https://data.worldbank.org/indicator/NY.GDP.MKTP.CD - 분석 과제 세계 GDP 자료를 분석하여 국가별 GDP 변화를 파악하고 GDP 변화에 패턴이 있는 지 파악해보자. - 데이터의 이해 분석에 사용되는 데이터는 위와 같이 266여개의 도시 및 국가별 GDP를 1960-2020년도까지 1billion($) 단위로 표기한 데이터로 Na 값은 0으로 표기됨 CountryName : 국가 및 도시 이름 CountryCode : 국가 코드 Indicator Name : 지표명 년도 (1960~ 2020) - EDA - OECD (경제…"/><meta data-react-helmet="true" property="og:description" content="GDP란 무엇인가? 한 나라의 영역 내에서 가계, 기업, 정부 등 모든 경제주체가 일정기간 동안 생산한 재화 및 서비스의 부가가치를 시장가격으로 평가하여 합산한 것으로 여기에는 비거주자가 제공한 노동, 자본 등 생산요소에 의하여 창출된 것도 포함되어 있다. (출처: 네이버 지식백과) 세계 GDP 수치 데이터 (출처) : https://data.worldbank.org/indicator/NY.GDP.MKTP.CD - 분석 과제 세계 GDP 자료를 분석하여 국가별 GDP 변화를 파악하고 GDP 변화에 패턴이 있는 지 파악해보자. - 데이터의 이해 분석에 사용되는 데이터는 위와 같이 266여개의 도시 및 국가별 GDP를 1960-2020년도까지 1billion($) 단위로 표기한 데이터로 Na 값은 0으로 표기됨 CountryName : 국가 및 도시 이름 CountryCode : 국가 코드 Indicator Name : 지표명 년도 (1960~ 2020) - EDA - OECD (경제…"/><meta data-react-helmet="true" property="og:author" content="Han-기록소"/><meta data-react-helmet="true" property="og:image" content="/og-image.png"/><meta data-react-helmet="true" property="og:type" content="website"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxK.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"/><style>@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff")}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link as="script" rel="preload" href="/webpack-runtime-3fbe5c9bb3bdef55776d.js"/><link as="script" rel="preload" href="/framework-0e1bf37de02f7cef2174.js"/><link as="script" rel="preload" href="/app-1c48eadf34e7f53f402f.js"/><link as="script" rel="preload" href="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-3528d048b96f92ca0d99.js"/><link as="script" rel="preload" href="/component---src-templates-blog-template-js-ef83b594aa693e649d30.js"/><link as="fetch" rel="preload" href="/page-data/GDP_Analysis/GDP Analysis [1] - GDP/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1073350324.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1956554647.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2938748437.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper"><header class="page-header-wrapper"><div class="page-header"><div class="front-section"><a class="link" href="/">Han-기록소</a></div><div class="trailing-section"><a class="link" href="/about">about</a><a class="link" href="/posts">posts</a><div class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-1l6di18" role="combobox" aria-expanded="false"><div class="search-input-wrapper"><div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root search-input css-feqhe6"><div class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-11tfndm"><input type="text" aria-invalid="false" autoComplete="off" value="" class="MuiInput-input MuiInputBase-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-mnn31" aria-autocomplete="list" autoCapitalize="none" spellcheck="false"/><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium search-icon css-vubbuv" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="SearchOutlinedIcon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div></div></div></div></div></div></header><main class="page-content"><header class="post-header"><div class="emoji">👨‍💻</div><div class="info"><div class="categories"><a class="category" href="/posts/Data_Analysis">Data_Analysis</a></div></div><h1 class="title">GDP Analysis [1] - GDP</h1><div class="info"><div class="author">posted by <strong>HwanHee Park</strong>,</div> <!-- -->January 20, 2022</div></header><div class="post-content"><div class="markdown"><h3 id="gdp란-무엇인가" style="position:relative;"><a href="#gdp%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80" aria-label="gdp란 무엇인가 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>GDP란 무엇인가?</h3>
+<p>한 나라의 영역 내에서 가계, 기업, 정부 등 모든 경제주체가 일정기간 동안 생산한 재화 및 서비스의 부가가치를 시장가격으로 평가하여 합산한 것으로 여기에는 비거주자가 제공한 노동, 자본 등 생산요소에 의하여 창출된 것도 포함되어 있다.</p>
+<p>(출처: 네이버 지식백과)</p>
+<p>세계 GDP 수치 데이터</p>
+<p>(출처) : <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.CD">https://data.worldbank.org/indicator/NY.GDP.MKTP.CD</a></p>
+<h3 id="--분석-과제" style="position:relative;"><a href="#--%EB%B6%84%EC%84%9D-%EA%B3%BC%EC%A0%9C" aria-label="  분석 과제 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>- 분석 과제</h3>
+<p>세계 GDP 자료를 분석하여 국가별 GDP 변화를 파악하고 GDP 변화에 패턴이 있는 지 파악해보자.</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># import library</span>
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+<span class="token keyword">import</span> os
+
+os<span class="token punctuation">.</span>chdir<span class="token punctuation">(</span><span class="token string">r"C:\\Users\\USER\\Desktop\\Data"</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># upload data</span>
+world_gdp <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span><span class="token string">"gdp.csv"</span><span class="token punctuation">)</span>
+
+world_gdp1 <span class="token operator">=</span> world_gdp</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">world_gdp</code></pre></div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}</code></pre></div>
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country Name</th>
+      <th>Country Code</th>
+      <th>Indicator Name</th>
+      <th>1960</th>
+      <th>1961</th>
+      <th>1962</th>
+      <th>1963</th>
+      <th>1964</th>
+      <th>1965</th>
+      <th>1966</th>
+      <th>...</th>
+      <th>2011</th>
+      <th>2012</th>
+      <th>2013</th>
+      <th>2014</th>
+      <th>2015</th>
+      <th>2016</th>
+      <th>2017</th>
+      <th>2018</th>
+      <th>2019</th>
+      <th>2020</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Aruba</td>
+      <td>ABW</td>
+      <td>GDP (current US 1billion$)</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>...</td>
+      <td>2.55</td>
+      <td>2.53</td>
+      <td>2.73</td>
+      <td>2.79</td>
+      <td>2.96</td>
+      <td>2.98</td>
+      <td>3.09</td>
+      <td>3.20</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Africa Eastern and Southern</td>
+      <td>AFE</td>
+      <td>GDP (current US 1billion$)</td>
+      <td>19.29</td>
+      <td>19.70</td>
+      <td>21.47</td>
+      <td>25.70</td>
+      <td>23.50</td>
+      <td>26.78</td>
+      <td>29.12</td>
+      <td>...</td>
+      <td>896.26</td>
+      <td>913.20</td>
+      <td>927.66</td>
+      <td>956.32</td>
+      <td>893.10</td>
+      <td>854.75</td>
+      <td>962.27</td>
+      <td>984.03</td>
+      <td>977.81</td>
+      <td>898.47</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Afghanistan</td>
+      <td>AFG</td>
+      <td>GDP (current US 1billion$)</td>
+      <td>0.54</td>
+      <td>0.55</td>
+      <td>0.55</td>
+      <td>0.75</td>
+      <td>0.80</td>
+      <td>1.01</td>
+      <td>1.40</td>
+      <td>...</td>
+      <td>17.80</td>
+      <td>20.00</td>
+      <td>20.56</td>
+      <td>20.48</td>
+      <td>19.91</td>
+      <td>18.02</td>
+      <td>18.87</td>
+      <td>18.35</td>
+      <td>19.29</td>
+      <td>19.81</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Africa Western and Central</td>
+      <td>AFW</td>
+      <td>GDP (current US 1billion$)</td>
+      <td>10.41</td>
+      <td>11.13</td>
+      <td>11.95</td>
+      <td>12.68</td>
+      <td>13.84</td>
+      <td>14.87</td>
+      <td>15.84</td>
+      <td>...</td>
+      <td>658.43</td>
+      <td>716.94</td>
+      <td>807.82</td>
+      <td>846.94</td>
+      <td>757.49</td>
+      <td>687.48</td>
+      <td>680.99</td>
+      <td>738.13</td>
+      <td>792.08</td>
+      <td>786.58</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Angola</td>
+      <td>AGO</td>
+      <td>GDP (current US 1billion$)</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>...</td>
+      <td>111.79</td>
+      <td>128.05</td>
+      <td>136.71</td>
+      <td>145.71</td>
+      <td>116.19</td>
+      <td>101.12</td>
+      <td>122.12</td>
+      <td>101.35</td>
+      <td>89.42</td>
+      <td>62.31</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>261</th>
+      <td>Kosovo</td>
+      <td>XKX</td>
+      <td>GDP (current US 1billion$)</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>...</td>
+      <td>6.70</td>
+      <td>6.50</td>
+      <td>7.07</td>
+      <td>7.40</td>
+      <td>6.44</td>
+      <td>6.72</td>
+      <td>7.25</td>
+      <td>7.94</td>
+      <td>7.95</td>
+      <td>7.61</td>
+    </tr>
+    <tr>
+      <th>262</th>
+      <td>Yemen, Rep.</td>
+      <td>YEM</td>
+      <td>GDP (current US 1billion$)</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>...</td>
+      <td>32.73</td>
+      <td>35.40</td>
+      <td>40.42</td>
+      <td>43.23</td>
+      <td>42.45</td>
+      <td>30.93</td>
+      <td>26.74</td>
+      <td>23.49</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>263</th>
+      <td>South Africa</td>
+      <td>ZAF</td>
+      <td>GDP (current US 1billion$)</td>
+      <td>7.58</td>
+      <td>7.97</td>
+      <td>8.50</td>
+      <td>9.42</td>
+      <td>10.37</td>
+      <td>11.33</td>
+      <td>12.35</td>
+      <td>...</td>
+      <td>416.42</td>
+      <td>396.33</td>
+      <td>366.83</td>
+      <td>350.90</td>
+      <td>317.62</td>
+      <td>296.36</td>
+      <td>349.55</td>
+      <td>368.29</td>
+      <td>351.43</td>
+      <td>301.92</td>
+    </tr>
+    <tr>
+      <th>264</th>
+      <td>Zambia</td>
+      <td>ZMB</td>
+      <td>GDP (current US 1billion$)</td>
+      <td>0.71</td>
+      <td>0.70</td>
+      <td>0.69</td>
+      <td>0.72</td>
+      <td>0.84</td>
+      <td>1.08</td>
+      <td>1.26</td>
+      <td>...</td>
+      <td>23.46</td>
+      <td>25.50</td>
+      <td>28.04</td>
+      <td>27.14</td>
+      <td>21.25</td>
+      <td>20.96</td>
+      <td>25.87</td>
+      <td>26.31</td>
+      <td>23.31</td>
+      <td>19.32</td>
+    </tr>
+    <tr>
+      <th>265</th>
+      <td>Zimbabwe</td>
+      <td>ZWE</td>
+      <td>GDP (current US 1billion$)</td>
+      <td>1.05</td>
+      <td>1.10</td>
+      <td>1.12</td>
+      <td>1.16</td>
+      <td>1.22</td>
+      <td>1.31</td>
+      <td>1.28</td>
+      <td>...</td>
+      <td>14.10</td>
+      <td>17.11</td>
+      <td>19.09</td>
+      <td>19.50</td>
+      <td>19.96</td>
+      <td>20.55</td>
+      <td>19.02</td>
+      <td>19.52</td>
+      <td>16.93</td>
+      <td>16.77</td>
+    </tr>
+  </tbody>
+</table>
+<p>266 rows × 64 columns</p>
+</div>
+<h3 id="--데이터의-이해" style="position:relative;"><a href="#--%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9D%98-%EC%9D%B4%ED%95%B4" aria-label="  데이터의 이해 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>- 데이터의 이해</h3>
+<p>분석에 사용되는 데이터는 위와 같이 266여개의 도시 및 국가별 GDP를 1960-2020년도까지 1billion($) 단위로 표기한 데이터로 Na 값은 0으로 표기됨</p>
+<p>CountryName : 국가 및 도시 이름</p>
+<p>CountryCode : 국가 코드</p>
+<p>Indicator Name : 지표명</p>
+<p>년도 (1960~ 2020)</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># EDA</span>
+world_gdp<span class="token punctuation">.</span>info<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">&lt;class 'pandas.core.frame.DataFrame'>
+RangeIndex: 266 entries, 0 to 265
+Data columns (total 64 columns):
+ #   Column          Non-Null Count  Dtype  
+---  ------          --------------  -----  
+ 0   Country Name    266 non-null    object 
+ 1   Country Code    266 non-null    object 
+ 2   Indicator Name  266 non-null    object 
+ 3   1960            266 non-null    float64
+ 4   1961            266 non-null    float64
+ 5   1962            266 non-null    float64
+ 6   1963            266 non-null    float64
+ 7   1964            266 non-null    float64
+ 8   1965            266 non-null    float64
+ 9   1966            266 non-null    float64
+ 10  1967            266 non-null    float64
+ 11  1968            266 non-null    float64
+ 12  1969            266 non-null    float64
+ 13  1970            266 non-null    float64
+ 14  1971            266 non-null    float64
+ 15  1972            266 non-null    float64
+ 16  1973            266 non-null    float64
+ 17  1974            266 non-null    float64
+ 18  1975            266 non-null    float64
+ 19  1976            266 non-null    float64
+ 20  1977            266 non-null    float64
+ 21  1978            266 non-null    float64
+ 22  1979            266 non-null    float64
+ 23  1980            266 non-null    float64
+ 24  1981            266 non-null    float64
+ 25  1982            266 non-null    float64
+ 26  1983            266 non-null    float64
+ 27  1984            266 non-null    float64
+ 28  1985            266 non-null    float64
+ 29  1986            266 non-null    float64
+ 30  1987            266 non-null    float64
+ 31  1988            266 non-null    float64
+ 32  1989            266 non-null    float64
+ 33  1990            266 non-null    float64
+ 34  1991            266 non-null    float64
+ 35  1992            266 non-null    float64
+ 36  1993            266 non-null    float64
+ 37  1994            266 non-null    float64
+ 38  1995            266 non-null    float64
+ 39  1996            266 non-null    float64
+ 40  1997            266 non-null    float64
+ 41  1998            266 non-null    float64
+ 42  1999            266 non-null    float64
+ 43  2000            266 non-null    float64
+ 44  2001            266 non-null    float64
+ 45  2002            266 non-null    float64
+ 46  2003            266 non-null    float64
+ 47  2004            266 non-null    float64
+ 48  2005            266 non-null    float64
+ 49  2006            266 non-null    float64
+ 50  2007            266 non-null    float64
+ 51  2008            266 non-null    float64
+ 52  2009            266 non-null    float64
+ 53  2010            266 non-null    float64
+ 54  2011            266 non-null    float64
+ 55  2012            266 non-null    float64
+ 56  2013            266 non-null    float64
+ 57  2014            266 non-null    float64
+ 58  2015            266 non-null    float64
+ 59  2016            266 non-null    float64
+ 60  2017            266 non-null    float64
+ 61  2018            266 non-null    float64
+ 62  2019            266 non-null    float64
+ 63  2020            266 non-null    float64
+dtypes: float64(61), object(3)
+memory usage: 133.1+ KB</code></pre></div>
+<h3 id="--eda" style="position:relative;"><a href="#--eda" aria-label="  eda permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>- EDA</h3>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">world_gdp<span class="token punctuation">.</span>describe<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}</code></pre></div>
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>1960</th>
+      <th>1961</th>
+      <th>1962</th>
+      <th>1963</th>
+      <th>1964</th>
+      <th>1965</th>
+      <th>1966</th>
+      <th>1967</th>
+      <th>1968</th>
+      <th>1969</th>
+      <th>...</th>
+      <th>2011</th>
+      <th>2012</th>
+      <th>2013</th>
+      <th>2014</th>
+      <th>2015</th>
+      <th>2016</th>
+      <th>2017</th>
+      <th>2018</th>
+      <th>2019</th>
+      <th>2020</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>266.000000</td>
+      <td>266.000000</td>
+      <td>266.000000</td>
+      <td>266.000000</td>
+      <td>266.000000</td>
+      <td>266.000000</td>
+      <td>266.000000</td>
+      <td>266.000000</td>
+      <td>266.000000</td>
+      <td>266.000000</td>
+      <td>...</td>
+      <td>266.000000</td>
+      <td>266.000000</td>
+      <td>266.000000</td>
+      <td>266.000000</td>
+      <td>266.000000</td>
+      <td>266.000000</td>
+      <td>266.000000</td>
+      <td>266.000000</td>
+      <td>266.000000</td>
+      <td>266.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>35.505301</td>
+      <td>36.439812</td>
+      <td>39.058308</td>
+      <td>42.076617</td>
+      <td>46.224436</td>
+      <td>50.487594</td>
+      <td>59.197669</td>
+      <td>62.788534</td>
+      <td>67.794586</td>
+      <td>75.020489</td>
+      <td>...</td>
+      <td>2257.603797</td>
+      <td>2319.763308</td>
+      <td>2405.366053</td>
+      <td>2474.740188</td>
+      <td>2329.826729</td>
+      <td>2359.192744</td>
+      <td>2526.584962</td>
+      <td>2684.118308</td>
+      <td>2726.112180</td>
+      <td>2525.722970</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>154.497560</td>
+      <td>160.961527</td>
+      <td>172.989380</td>
+      <td>186.032281</td>
+      <td>203.552416</td>
+      <td>221.425397</td>
+      <td>246.391042</td>
+      <td>262.979689</td>
+      <td>284.211611</td>
+      <td>312.960119</td>
+      <td>...</td>
+      <td>7863.777257</td>
+      <td>8020.770107</td>
+      <td>8260.109259</td>
+      <td>8486.817326</td>
+      <td>8046.493508</td>
+      <td>8178.097973</td>
+      <td>8701.960282</td>
+      <td>9258.397310</td>
+      <td>9395.303782</td>
+      <td>8986.018131</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>6.362500</td>
+      <td>6.410000</td>
+      <td>6.670000</td>
+      <td>6.762500</td>
+      <td>6.295000</td>
+      <td>6.280000</td>
+      <td>6.542500</td>
+      <td>7.130000</td>
+      <td>6.537500</td>
+      <td>3.290000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>0.005000</td>
+      <td>0.010000</td>
+      <td>0.020000</td>
+      <td>0.020000</td>
+      <td>0.030000</td>
+      <td>0.150000</td>
+      <td>0.180000</td>
+      <td>0.235000</td>
+      <td>0.290000</td>
+      <td>0.305000</td>
+      <td>...</td>
+      <td>38.095000</td>
+      <td>43.250000</td>
+      <td>47.280000</td>
+      <td>49.225000</td>
+      <td>44.115000</td>
+      <td>43.880000</td>
+      <td>46.330000</td>
+      <td>51.625000</td>
+      <td>52.040000</td>
+      <td>37.030000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>3.082500</td>
+      <td>3.075000</td>
+      <td>3.580000</td>
+      <td>3.970000</td>
+      <td>4.152500</td>
+      <td>4.885000</td>
+      <td>6.047500</td>
+      <td>6.140000</td>
+      <td>7.402500</td>
+      <td>8.402500</td>
+      <td>...</td>
+      <td>526.887500</td>
+      <td>506.762500</td>
+      <td>521.485000</td>
+      <td>533.670000</td>
+      <td>484.552500</td>
+      <td>472.177500</td>
+      <td>497.727500</td>
+      <td>526.247500</td>
+      <td>531.692500</td>
+      <td>490.177500</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>1384.630000</td>
+      <td>1440.340000</td>
+      <td>1545.700000</td>
+      <td>1665.140000</td>
+      <td>1824.120000</td>
+      <td>1986.370000</td>
+      <td>2155.140000</td>
+      <td>2294.160000</td>
+      <td>2476.490000</td>
+      <td>2732.230000</td>
+      <td>...</td>
+      <td>73479.860000</td>
+      <td>75172.810000</td>
+      <td>77331.910000</td>
+      <td>79468.860000</td>
+      <td>75233.600000</td>
+      <td>76417.250000</td>
+      <td>81326.720000</td>
+      <td>86343.510000</td>
+      <td>87607.770000</td>
+      <td>84705.430000</td>
+    </tr>
+  </tbody>
+</table>
+<p>8 rows × 61 columns</p>
+</div>
+<h4 id="--oecd-경제-협력-개발-기구-란" style="position:relative;"><a href="#--oecd-%EA%B2%BD%EC%A0%9C-%ED%98%91%EB%A0%A5-%EA%B0%9C%EB%B0%9C-%EA%B8%B0%EA%B5%AC-%EB%9E%80" aria-label="  oecd 경제 협력 개발 기구 란 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>- OECD (경제 협력 개발 기구) 란?</h4>
+<p>회원국 사이에 상호 정책 조정 및 협력을 통해 세계경제의 공동 발전 및 성장과 인류의 복지 증진을 도모하는 정부 간의 연구 협력 기구</p>
+<h5 id="oecd-가입-국가-38개--21년-5월-기준" style="position:relative;"><a href="#oecd-%EA%B0%80%EC%9E%85-%EA%B5%AD%EA%B0%80-38%EA%B0%9C--21%EB%85%84-5%EC%9B%94-%EA%B8%B0%EC%A4%80" aria-label="oecd 가입 국가 38개  21년 5월 기준 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>OECD 가입 국가 38개 ( 21년 5월 기준)</h5>
+<h5 id="국가-목록" style="position:relative;"><a href="#%EA%B5%AD%EA%B0%80-%EB%AA%A9%EB%A1%9D" aria-label="국가 목록 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>국가 목록</h5>
+<p>그리스, 네덜란드, 노르웨이, 뉴질랜드, 대한민국, 덴마크, 독일, 라트비아. 룩셈부르크, 리투아니아, 멕시코, 미국, 벨기에, 스웨덴, 스위스, 스페인, 슬로바키아, 슬로베니아, 아이슬란드, 아일랜드, 에스토니아, 영국, 오스트리아, 이스라엘, 이탈리아, 일본, 체코, 칠레, 캐나다, 콜롬비아, 코스타리카, 터키, 포르투칼, 폴란드, 프랑스, 핀란드, 헝가리, 호주</p>
+<h4 id="대표적인-국가의-년도별-gdp-변화를-살펴보자" style="position:relative;"><a href="#%EB%8C%80%ED%91%9C%EC%A0%81%EC%9D%B8-%EA%B5%AD%EA%B0%80%EC%9D%98-%EB%85%84%EB%8F%84%EB%B3%84-gdp-%EB%B3%80%ED%99%94%EB%A5%BC-%EC%82%B4%ED%8E%B4%EB%B3%B4%EC%9E%90" aria-label="대표적인 국가의 년도별 gdp 변화를 살펴보자 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>대표적인 국가의 년도별 GDP 변화를 살펴보자</h4>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># gdp DataFrame으로 변환</span>
+gdp <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>world_gdp<span class="token punctuation">)</span>
+
+<span class="token comment"># 국가별 이름으로 인덱스를 지정</span>
+world_gdp <span class="token operator">=</span> gdp<span class="token punctuation">.</span>set_index<span class="token punctuation">(</span><span class="token string">"Country Name"</span><span class="token punctuation">)</span> 
+
+<span class="token comment"># 불필요한 칼럼 제거</span>
+world_gdp <span class="token operator">=</span> world_gdp<span class="token punctuation">.</span>drop<span class="token punctuation">(</span>columns<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">"Indicator Name"</span><span class="token punctuation">]</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment">## 국가 리스트로 설정</span>
+g8 <span class="token operator">=</span> <span class="token string">" Canada,France,Germany,Italy,Japan,Russian Federation,United Kingdom,United States"</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">","</span><span class="token punctuation">)</span>
+oecd_countries <span class="token operator">=</span> <span class="token string">"Australia,Austria,Belgium,Canada,Chile,Czech Republic,Denmark,Estonia,Finland,France,Germany,Greece,Hungary,Iceland,Ireland,Israel,Italy,Japan,Luxembourg,Mexico,Netherlands,New Zealand,Norway,Poland,Portugal,Slovak Republic,Slovenia,Spain,Sweden,Switzerland,Turkey,United Kingdom,United States,Korea Rep."</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">","</span><span class="token punctuation">)</span>
+top10_gdp_countries <span class="token operator">=</span> <span class="token string">"Canada,France,Germany,Italy,Japan,United Kingdom,United States,Korea Rep.,China,India"</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">","</span><span class="token punctuation">)</span></code></pre></div>
+<h4 id="1-세계-gdp-총합의-그래프를-확인해보자" style="position:relative;"><a href="#1-%EC%84%B8%EA%B3%84-gdp-%EC%B4%9D%ED%95%A9%EC%9D%98-%EA%B7%B8%EB%9E%98%ED%94%84%EB%A5%BC-%ED%99%95%EC%9D%B8%ED%95%B4%EB%B3%B4%EC%9E%90" aria-label="1 세계 gdp 총합의 그래프를 확인해보자 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. 세계 GDP 총합의 그래프를 확인해보자</h4>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># World로 검색하기</span>
+wld_gdp <span class="token operator">=</span> world_gdp<span class="token punctuation">.</span>loc<span class="token punctuation">[</span><span class="token string">"World"</span><span class="token punctuation">,</span> <span class="token punctuation">:</span><span class="token punctuation">]</span>
+<span class="token comment"># DataFrame</span>
+wld_gdp <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>wld_gdp<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+wld_gdp <span class="token operator">=</span> wld_gdp<span class="token punctuation">.</span>reset_index<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>rename<span class="token punctuation">(</span>columns<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string">'index'</span><span class="token punctuation">:</span><span class="token string">"Year"</span><span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># plot 그려보기</span>
+plt<span class="token punctuation">.</span>figure<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+ax <span class="token operator">=</span> plt<span class="token punctuation">.</span>gca<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+wld_gdp<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>kind<span class="token operator">=</span><span class="token string">'line'</span><span class="token punctuation">,</span>x<span class="token operator">=</span><span class="token string">'Year'</span><span class="token punctuation">,</span>y<span class="token operator">=</span><span class="token string">'World'</span><span class="token punctuation">,</span>ax<span class="token operator">=</span>ax<span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">&lt;matplotlib.axes._subplots.AxesSubplot at 0x1a00f5052c8></code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 499px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 63.33333333333333%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAAB10lEQVQ4y5VSv2/TQBQ+ARMVA/kDQAghIWWI2diYkBhotsywwA7iT8iQAbUIygCoYkAUiY2JkT8AZaGhRv0Rx06lNmnSc2I7tu/dvYcuyrlOY6TwpM/33nd3331+d+znj++XnMOjDXt37+v29q/P3Pe3OOdLYzzytwbD009HJ8NvO79b99gdy7oep2KQpClNJhP63wCFxCNBQhF1u94TtrpaLQFAZzYvEFEuAyKSIJUcBIkME5HozZ1O5xGr1WpXhRCeJhBR4UwZERfcaM7wCpGOR7Gphf64rvuYVSqVawCQCRb9Vl7c5EEMFCZguDPBRqNxOe/wX47Ou/OjNM+fCZbL5RtFDotcmdyfCEpBFQvW6/UVIUQ36+E5R6aWCmkUi6lYlMLcQXOClmXN9TAvYkIL8CilBOSC6wWH1Wq1BEI4s3UpEerjAaSCIBbAo3Q6Gh4RixBnz+bF82dXAKSvO5KAokgoChKYQqK+gOUfued5T9nDB/dXWjv2y9a++6HbG6792d3bPO6fvOH89PXBwf7H8Xj0qtfrvfU8710Yhmuu6743ebvd3uz3+xuc83XHcb40m8277Patm4yIphjExHSYmjF2MQwCPV5gjJVs287moijK8jz+AqH4ncNrHfM7AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="1.1.png"
+        title="1.1.png"
+        src="/static/07b44d36d5f939b70b3e81d67729087e/119c7/1.1.png"
+        srcset="/static/07b44d36d5f939b70b3e81d67729087e/e9ff0/1.1.png 180w,
+/static/07b44d36d5f939b70b3e81d67729087e/f21e7/1.1.png 360w,
+/static/07b44d36d5f939b70b3e81d67729087e/119c7/1.1.png 499w"
+        sizes="(max-width: 499px) 100vw, 499px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<h4 id="2-국가-이름-입력해서-만들기" style="position:relative;"><a href="#2-%EA%B5%AD%EA%B0%80-%EC%9D%B4%EB%A6%84-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%84%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0" aria-label="2 국가 이름 입력해서 만들기 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. 국가 이름 입력해서 만들기</h4>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">make_gdp</span><span class="token punctuation">(</span>country_name<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    
+    <span class="token keyword">try</span><span class="token punctuation">:</span>
+        country_gdp <span class="token operator">=</span> world_gdp<span class="token punctuation">.</span>loc<span class="token punctuation">[</span>country_name<span class="token punctuation">,</span> <span class="token punctuation">:</span><span class="token punctuation">]</span>
+    
+    <span class="token keyword">except</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"국가리스트에 없는 국가입니다. 다시 입력하세요."</span><span class="token punctuation">)</span>
+    
+    <span class="token comment"># 국가코드로 변수명 만들기</span>
+    temp<span class="token operator">=</span>country_gdp<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+    name <span class="token operator">=</span> temp<span class="token punctuation">.</span>lower<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token builtin">globals</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span>name<span class="token operator">+</span><span class="token string">"_gdp"</span><span class="token punctuation">]</span> <span class="token operator">=</span> country_gdp<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">.</span>reset_index<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>rename<span class="token punctuation">(</span>columns<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string">'index'</span><span class="token punctuation">:</span><span class="token string">"Year"</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>name<span class="token operator">+</span><span class="token string">"_gdp"</span><span class="token punctuation">)</span>
+    
+    <span class="token keyword">return</span> name<span class="token operator">+</span><span class="token string">"_gdp"</span>
+    
+    </code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># OECD members를 확인해보자</span>
+country_name <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"알고 싶은 국가의 리스트를 입력하시오.(위에 리스트 참조) "</span><span class="token punctuation">)</span>
+
+make_gdp<span class="token punctuation">(</span>country_name<span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">알고 싶은 국가의 리스트를 입력하시오.(위에 리스트 참조) Canada
+can_gdp
+
+
+
+
+
+'can_gdp'</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 추가로 다른 국가 호출</span>
+<span class="token comment"># 중국 호출</span>
+<span class="token comment">#country_name1 = input("알고 싶은 국가의 리스트를 입력하시오.(위에 리스트 참조) ")</span>
+<span class="token comment">#make_gdp(country_name1)</span>
+
+<span class="token comment"># 인도 호출</span>
+<span class="token comment">#country_name2 = input("알고 싶은 국가의 리스트를 입력하시오.(위에 리스트 참조) ")</span>
+<span class="token comment">#make_gdp(country_name2)</span></code></pre></div>
+<h4 id="3리스트에-있는-국가로-입력해서-만들기" style="position:relative;"><a href="#3%EB%A6%AC%EC%8A%A4%ED%8A%B8%EC%97%90-%EC%9E%88%EB%8A%94-%EA%B5%AD%EA%B0%80%EB%A1%9C-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%84%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0" aria-label="3리스트에 있는 국가로 입력해서 만들기 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.리스트에 있는 국가로 입력해서 만들기</h4>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">make_gdp_list</span><span class="token punctuation">(</span>country_list<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    
+    <span class="token keyword">for</span> country <span class="token keyword">in</span> country_list<span class="token punctuation">:</span>
+        <span class="token keyword">try</span><span class="token punctuation">:</span>
+            countries_gdp <span class="token operator">=</span> world_gdp<span class="token punctuation">.</span>loc<span class="token punctuation">[</span>country<span class="token punctuation">,</span> <span class="token punctuation">:</span><span class="token punctuation">]</span>
+            
+            <span class="token comment"># 국가코드를 사용하여 변수명 설정</span>
+            temp<span class="token operator">=</span>countries_gdp<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+            name <span class="token operator">=</span> temp<span class="token punctuation">.</span>lower<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token comment"># globals 변수명 설정</span>
+            <span class="token builtin">globals</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span>name<span class="token operator">+</span><span class="token string">"_gdp"</span><span class="token punctuation">]</span> <span class="token operator">=</span> countries_gdp<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">.</span>reset_index<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>rename<span class="token punctuation">(</span>columns<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string">'index'</span><span class="token punctuation">:</span><span class="token string">"Year"</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+            
+            <span class="token keyword">print</span><span class="token punctuation">(</span>name<span class="token operator">+</span><span class="token string">"_gdp"</span><span class="token punctuation">)</span>
+        <span class="token keyword">except</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"없는 국가이름입니다."</span><span class="token punctuation">)</span>
+        
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"리스트 등록 완료"</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># OECD 국가별 GDP 확인하기</span>
+<span class="token comment">#country_list = oecd_countries</span>
+
+<span class="token comment"># top10 국가별 GDP 리스트</span>
+country_list <span class="token operator">=</span> top10_gdp_countries
+
+make_gdp_list<span class="token punctuation">(</span>country_list<span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">can_gdp
+fra_gdp
+deu_gdp
+ita_gdp
+jpn_gdp
+gbr_gdp
+usa_gdp
+kor_gdp
+chn_gdp
+ind_gdp
+리스트 등록 완료</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># plot 그려보기</span>
+plt<span class="token punctuation">.</span>figure<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+ax <span class="token operator">=</span> plt<span class="token punctuation">.</span>gca<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+jpn_gdp<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>kind<span class="token operator">=</span><span class="token string">'line'</span><span class="token punctuation">,</span>x<span class="token operator">=</span><span class="token string">'Year'</span><span class="token punctuation">,</span>y<span class="token operator">=</span><span class="token string">'Japan'</span><span class="token punctuation">,</span>ax<span class="token operator">=</span>ax<span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">"Red"</span><span class="token punctuation">)</span>
+kor_gdp<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>kind<span class="token operator">=</span><span class="token string">'line'</span><span class="token punctuation">,</span>x<span class="token operator">=</span><span class="token string">'Year'</span><span class="token punctuation">,</span>y<span class="token operator">=</span><span class="token string">'Korea Rep.'</span><span class="token punctuation">,</span>ax<span class="token operator">=</span>ax<span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">"Blue"</span><span class="token punctuation">)</span>
+deu_gdp<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>kind<span class="token operator">=</span><span class="token string">'line'</span><span class="token punctuation">,</span>x<span class="token operator">=</span><span class="token string">'Year'</span><span class="token punctuation">,</span>y<span class="token operator">=</span><span class="token string">'Germany'</span><span class="token punctuation">,</span>ax<span class="token operator">=</span>ax<span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">"Green"</span><span class="token punctuation">)</span>
+usa_gdp<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>kind<span class="token operator">=</span><span class="token string">'line'</span><span class="token punctuation">,</span>x<span class="token operator">=</span><span class="token string">'Year'</span><span class="token punctuation">,</span>y<span class="token operator">=</span><span class="token string">'United States'</span><span class="token punctuation">,</span>ax<span class="token operator">=</span>ax<span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">"Orange"</span><span class="token punctuation">)</span>
+gbr_gdp<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>kind<span class="token operator">=</span><span class="token string">'line'</span><span class="token punctuation">,</span>x<span class="token operator">=</span><span class="token string">'Year'</span><span class="token punctuation">,</span>y<span class="token operator">=</span><span class="token string">'United Kingdom'</span><span class="token punctuation">,</span>ax<span class="token operator">=</span>ax<span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">"Black"</span><span class="token punctuation">)</span>
+chn_gdp<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>kind<span class="token operator">=</span><span class="token string">'line'</span><span class="token punctuation">,</span>x<span class="token operator">=</span><span class="token string">'Year'</span><span class="token punctuation">,</span>y<span class="token operator">=</span><span class="token string">'China'</span><span class="token punctuation">,</span>ax<span class="token operator">=</span>ax<span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">"Purple"</span><span class="token punctuation">)</span>
+<span class="token comment">#oed_gdp.plot(kind='line',x='Year',y='OECD members',ax=ax, color="Olive")</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">&lt;matplotlib.axes._subplots.AxesSubplot at 0x1a00f5c7ac8></code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 610px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 52.222222222222214%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAAB8ElEQVQoz5WQ22sTURDG8z9IK6jgBRV98y9U8VVoiaVGIabFIopiBV/0oQjqQylesKDJNo0h172m2Uuyu+eyM5/sZi31QdAD32HOmeE330wFQGV82L9t9kbmcDT8LoQwckkp/01KGVKKHyo+GkZhUK/kwKE5qjuuA8Mw4Ac+/vuoEICGEPJdAbSGvXXHGuOw05HdbpeEEASAmPnvyvNZSiwDYlKKCUji5E0B9OxJLY1TCCE0ACaiojEzFyofC+Vh4WoGVlHeF5nmTM4k0jR9WwB9f1orzWsuCSdBfALEpAEZgHVS/FHGSKZxlidTUQKDIFgv3ej8+u1soRLEBM5isI7AIJTtIKZpXpPl8bFD13UflHlZzPCHiEAJQUWEmU9IUoLSBJlQanuU2hbp6EipuY8kjhc7jKKodrwj0sU4rBLwzAOHLuTURmiPMZk4cO0x3MEA/YMOOgc9DBwP3W4fzsTPHe4UQNu2707MkTY7LXPUNtzWfsvd3/3qfHr/2dv78M39stt0jNbA+dm2nLbhuE3D9CwrcaJ55kah8uZzMuO5TsMwfF5ZXVmpNBqNU6vV6vUMWH76Yvvis+3XlwAsPXy8eXVn7+N5AKfv3Lx1wxr0z3Y7zXNPtjauAbz86uXWhfqj6mUgWtrYvH9lbe3emV8G5dTOZ6K7nAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="1.2.png"
+        title="1.2.png"
+        src="/static/efdcc7d38dbb34536215ee7271d15d15/5aae9/1.2.png"
+        srcset="/static/efdcc7d38dbb34536215ee7271d15d15/e9ff0/1.2.png 180w,
+/static/efdcc7d38dbb34536215ee7271d15d15/f21e7/1.2.png 360w,
+/static/efdcc7d38dbb34536215ee7271d15d15/5aae9/1.2.png 610w"
+        sizes="(max-width: 610px) 100vw, 610px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>위 그래프를 통해 주목해야 할 점은 미국과 중국으로 미국은 2000년대와 비교하여 GDP가 2배 가까이 성장한 것을 확인할 수 있고 중국의 경우 14배 가까이 성장한 것을 확인할 수 있다. 즉 전세계 GDP 총합 성장의 이유로 미국과 중국의 성장이 주요했다는 것을 볼 수 있다.</p>
+<p>한편으로 일본의 경우 1995년 이후 GDP 변화가 크지 않다는 것을 확인할 수 있다. 그 외 국가들도 어느 정도의 성장세는 확인되지만 눈에 띄는 변화는 보이지 않는다는 것을 확인할 수 있다.</p>
+<h3 id="--전-세계-top-10-국가의-gdp-비율을-파악해보자" style="position:relative;"><a href="#--%EC%A0%84-%EC%84%B8%EA%B3%84-top-10-%EA%B5%AD%EA%B0%80%EC%9D%98-gdp-%EB%B9%84%EC%9C%A8%EC%9D%84-%ED%8C%8C%EC%95%85%ED%95%B4%EB%B3%B4%EC%9E%90" aria-label="  전 세계 top 10 국가의 gdp 비율을 파악해보자 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>- 전 세계 Top 10 국가의 GDP 비율을 파악해보자</h3>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">world_gdp<span class="token operator">=</span> wld_gdp
+world_gdp <span class="token operator">=</span> pd<span class="token punctuation">.</span>merge<span class="token punctuation">(</span>wld_gdp<span class="token punctuation">,</span> usa_gdp<span class="token punctuation">,</span> how<span class="token operator">=</span><span class="token string">"left"</span><span class="token punctuation">)</span> 
+world_gdp <span class="token operator">=</span> pd<span class="token punctuation">.</span>merge<span class="token punctuation">(</span>world_gdp<span class="token punctuation">,</span> kor_gdp<span class="token punctuation">,</span> how<span class="token operator">=</span><span class="token string">"left"</span><span class="token punctuation">)</span>
+world_gdp <span class="token operator">=</span> pd<span class="token punctuation">.</span>merge<span class="token punctuation">(</span>world_gdp<span class="token punctuation">,</span> deu_gdp<span class="token punctuation">,</span> how<span class="token operator">=</span><span class="token string">"left"</span><span class="token punctuation">)</span>
+world_gdp <span class="token operator">=</span> pd<span class="token punctuation">.</span>merge<span class="token punctuation">(</span>world_gdp<span class="token punctuation">,</span> jpn_gdp<span class="token punctuation">,</span> how<span class="token operator">=</span><span class="token string">"left"</span><span class="token punctuation">)</span>
+world_gdp <span class="token operator">=</span> pd<span class="token punctuation">.</span>merge<span class="token punctuation">(</span>world_gdp<span class="token punctuation">,</span> gbr_gdp<span class="token punctuation">,</span> how<span class="token operator">=</span><span class="token string">"left"</span><span class="token punctuation">)</span>
+world_gdp <span class="token operator">=</span> pd<span class="token punctuation">.</span>merge<span class="token punctuation">(</span>world_gdp<span class="token punctuation">,</span> chn_gdp<span class="token punctuation">,</span> how<span class="token operator">=</span><span class="token string">"left"</span><span class="token punctuation">)</span>
+world_gdp <span class="token operator">=</span> pd<span class="token punctuation">.</span>merge<span class="token punctuation">(</span>world_gdp<span class="token punctuation">,</span> fra_gdp<span class="token punctuation">,</span> how<span class="token operator">=</span><span class="token string">"left"</span><span class="token punctuation">)</span>
+world_gdp <span class="token operator">=</span> pd<span class="token punctuation">.</span>merge<span class="token punctuation">(</span>world_gdp<span class="token punctuation">,</span> ita_gdp<span class="token punctuation">,</span> how<span class="token operator">=</span><span class="token string">"left"</span><span class="token punctuation">)</span>
+world_gdp <span class="token operator">=</span> pd<span class="token punctuation">.</span>merge<span class="token punctuation">(</span>world_gdp<span class="token punctuation">,</span> can_gdp<span class="token punctuation">,</span> how<span class="token operator">=</span><span class="token string">"left"</span><span class="token punctuation">)</span>
+world_gdp <span class="token operator">=</span> pd<span class="token punctuation">.</span>merge<span class="token punctuation">(</span>world_gdp<span class="token punctuation">,</span> ind_gdp<span class="token punctuation">,</span> how<span class="token operator">=</span><span class="token string">"left"</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment">#world_gdp = pd.DataFrame(world_gdp)</span>
+<span class="token comment">#world_gdp.set_index('Year', drop=False)</span>
+world_gdp</code></pre></div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}</code></pre></div>
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+      <th>World</th>
+      <th>United States</th>
+      <th>Korea Rep.</th>
+      <th>Germany</th>
+      <th>Japan</th>
+      <th>United Kingdom</th>
+      <th>China</th>
+      <th>France</th>
+      <th>Italy</th>
+      <th>Canada</th>
+      <th>India</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1960</td>
+      <td>1384.63</td>
+      <td>543.30</td>
+      <td>3.96</td>
+      <td>0.00</td>
+      <td>44.31</td>
+      <td>73.23</td>
+      <td>59.72</td>
+      <td>62.23</td>
+      <td>40.39</td>
+      <td>40.46</td>
+      <td>37.03</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1961</td>
+      <td>1440.34</td>
+      <td>563.30</td>
+      <td>2.42</td>
+      <td>0.00</td>
+      <td>53.51</td>
+      <td>77.74</td>
+      <td>50.06</td>
+      <td>67.46</td>
+      <td>44.84</td>
+      <td>40.93</td>
+      <td>39.23</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1962</td>
+      <td>1545.70</td>
+      <td>605.10</td>
+      <td>2.81</td>
+      <td>0.00</td>
+      <td>60.72</td>
+      <td>81.25</td>
+      <td>47.21</td>
+      <td>75.61</td>
+      <td>50.38</td>
+      <td>42.23</td>
+      <td>42.16</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1963</td>
+      <td>1665.14</td>
+      <td>638.60</td>
+      <td>3.99</td>
+      <td>0.00</td>
+      <td>69.50</td>
+      <td>86.56</td>
+      <td>50.71</td>
+      <td>84.76</td>
+      <td>57.71</td>
+      <td>45.03</td>
+      <td>48.42</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1964</td>
+      <td>1824.12</td>
+      <td>685.80</td>
+      <td>3.46</td>
+      <td>0.00</td>
+      <td>81.75</td>
+      <td>94.41</td>
+      <td>59.71</td>
+      <td>94.01</td>
+      <td>63.18</td>
+      <td>49.38</td>
+      <td>56.48</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>2016</td>
+      <td>76417.25</td>
+      <td>18745.08</td>
+      <td>1500.11</td>
+      <td>3467.50</td>
+      <td>4922.54</td>
+      <td>2693.25</td>
+      <td>11233.28</td>
+      <td>2471.29</td>
+      <td>1875.80</td>
+      <td>1527.99</td>
+      <td>2294.80</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>2017</td>
+      <td>81326.72</td>
+      <td>19542.98</td>
+      <td>1623.90</td>
+      <td>3673.51</td>
+      <td>4866.86</td>
+      <td>2662.48</td>
+      <td>12310.41</td>
+      <td>2588.74</td>
+      <td>1956.95</td>
+      <td>1649.27</td>
+      <td>2651.47</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>2018</td>
+      <td>86343.51</td>
+      <td>20611.86</td>
+      <td>1724.85</td>
+      <td>3961.83</td>
+      <td>4954.81</td>
+      <td>2857.32</td>
+      <td>13894.82</td>
+      <td>2786.50</td>
+      <td>2091.12</td>
+      <td>1721.85</td>
+      <td>2701.11</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>2019</td>
+      <td>87607.77</td>
+      <td>21433.22</td>
+      <td>1646.74</td>
+      <td>3861.12</td>
+      <td>5064.87</td>
+      <td>2830.81</td>
+      <td>14279.94</td>
+      <td>2715.52</td>
+      <td>2004.91</td>
+      <td>1741.58</td>
+      <td>2870.50</td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td>2020</td>
+      <td>84705.43</td>
+      <td>20936.60</td>
+      <td>1630.53</td>
+      <td>3806.06</td>
+      <td>5048.69</td>
+      <td>2707.74</td>
+      <td>14722.73</td>
+      <td>2603.00</td>
+      <td>1886.45</td>
+      <td>1643.41</td>
+      <td>2622.98</td>
+    </tr>
+  </tbody>
+</table>
+<p>61 rows × 12 columns</p>
+</div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># world_gdp.csv로 저장</span>
+world_gdp<span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span><span class="token string">"world_gdp.csv"</span><span class="token punctuation">,</span> header<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> index<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># csv에서 각 값을 세계 총합으로 나눈뒤 소수 2자리로 나타냄</span>
+world_gdp_prop <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span><span class="token string">"world_gdp_prop.csv"</span><span class="token punctuation">)</span>
+
+world_gdp_prop</code></pre></div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}</code></pre></div>
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+      <th>United States</th>
+      <th>Korea Rep.</th>
+      <th>Germany</th>
+      <th>Japan</th>
+      <th>United Kingdom</th>
+      <th>China</th>
+      <th>France</th>
+      <th>Italy</th>
+      <th>Canada</th>
+      <th>India</th>
+      <th>others</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1960</td>
+      <td>39.24</td>
+      <td>0.29</td>
+      <td>0.00</td>
+      <td>3.20</td>
+      <td>5.29</td>
+      <td>4.31</td>
+      <td>4.49</td>
+      <td>2.92</td>
+      <td>2.92</td>
+      <td>2.67</td>
+      <td>34.67</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1961</td>
+      <td>39.11</td>
+      <td>0.17</td>
+      <td>0.00</td>
+      <td>3.72</td>
+      <td>5.40</td>
+      <td>3.48</td>
+      <td>4.68</td>
+      <td>3.11</td>
+      <td>2.84</td>
+      <td>2.72</td>
+      <td>34.77</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1962</td>
+      <td>39.15</td>
+      <td>0.18</td>
+      <td>0.00</td>
+      <td>3.93</td>
+      <td>5.26</td>
+      <td>3.05</td>
+      <td>4.89</td>
+      <td>3.26</td>
+      <td>2.73</td>
+      <td>2.73</td>
+      <td>34.82</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1963</td>
+      <td>38.35</td>
+      <td>0.24</td>
+      <td>0.00</td>
+      <td>4.17</td>
+      <td>5.20</td>
+      <td>3.05</td>
+      <td>5.09</td>
+      <td>3.47</td>
+      <td>2.70</td>
+      <td>2.91</td>
+      <td>34.82</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1964</td>
+      <td>37.60</td>
+      <td>0.19</td>
+      <td>0.00</td>
+      <td>4.48</td>
+      <td>5.18</td>
+      <td>3.27</td>
+      <td>5.15</td>
+      <td>3.46</td>
+      <td>2.71</td>
+      <td>3.10</td>
+      <td>34.86</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>2016</td>
+      <td>24.53</td>
+      <td>1.96</td>
+      <td>4.54</td>
+      <td>6.44</td>
+      <td>3.52</td>
+      <td>14.70</td>
+      <td>3.23</td>
+      <td>2.45</td>
+      <td>2.00</td>
+      <td>3.00</td>
+      <td>33.63</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>2017</td>
+      <td>24.03</td>
+      <td>2.00</td>
+      <td>4.52</td>
+      <td>5.98</td>
+      <td>3.27</td>
+      <td>15.14</td>
+      <td>3.18</td>
+      <td>2.41</td>
+      <td>2.03</td>
+      <td>3.26</td>
+      <td>34.18</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>2018</td>
+      <td>23.87</td>
+      <td>2.00</td>
+      <td>4.59</td>
+      <td>5.74</td>
+      <td>3.31</td>
+      <td>16.09</td>
+      <td>3.23</td>
+      <td>2.42</td>
+      <td>1.99</td>
+      <td>3.13</td>
+      <td>33.63</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>2019</td>
+      <td>24.46</td>
+      <td>1.88</td>
+      <td>4.41</td>
+      <td>5.78</td>
+      <td>3.23</td>
+      <td>16.30</td>
+      <td>3.10</td>
+      <td>2.29</td>
+      <td>1.99</td>
+      <td>3.28</td>
+      <td>33.28</td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td>2020</td>
+      <td>24.72</td>
+      <td>1.92</td>
+      <td>4.49</td>
+      <td>5.96</td>
+      <td>3.20</td>
+      <td>17.38</td>
+      <td>3.07</td>
+      <td>2.23</td>
+      <td>1.94</td>
+      <td>3.10</td>
+      <td>31.99</td>
+    </tr>
+  </tbody>
+</table>
+<p>61 rows × 12 columns</p>
+</div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">world_gdp_2020 <span class="token operator">=</span> world_gdp_prop<span class="token punctuation">.</span>iloc<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token punctuation">:</span><span class="token punctuation">]</span>
+world_gdp_2020 <span class="token operator">=</span> world_gdp_2020<span class="token punctuation">.</span>drop<span class="token punctuation">(</span><span class="token string">'Year'</span><span class="token punctuation">)</span>
+
+world_gdp_2020</code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">United States     24.72
+Korea Rep.         1.92
+Germany            4.49
+Japan              5.96
+United Kingdom     3.20
+China             17.38
+France             3.07
+Italy              2.23
+Canada             1.94
+India              3.10
+others            31.99
+Name: 60, dtype: float64</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># pie 차트 형태로 나타내기</span>
+plt<span class="token punctuation">.</span>figure<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+colors <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'red'</span><span class="token punctuation">,</span> <span class="token string">'orange'</span><span class="token punctuation">,</span> <span class="token string">'yellow'</span><span class="token punctuation">,</span> <span class="token string">'green'</span><span class="token punctuation">,</span> <span class="token string">'skyblue'</span><span class="token punctuation">,</span> <span class="token string">'blue'</span><span class="token punctuation">,</span><span class="token string">'purple'</span><span class="token punctuation">,</span><span class="token string">'gray'</span><span class="token punctuation">,</span><span class="token string">'olive'</span><span class="token punctuation">,</span><span class="token string">'yellowgreen'</span><span class="token punctuation">,</span><span class="token string">'lightskyblue'</span><span class="token punctuation">]</span>
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'2020'</span><span class="token punctuation">)</span>
+world_gdp_2020<span class="token punctuation">.</span>plot<span class="token punctuation">.</span>pie<span class="token punctuation">(</span>autopct<span class="token operator">=</span><span class="token string">'%.2f%%'</span><span class="token punctuation">,</span> colors<span class="token operator">=</span>colors<span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">&lt;matplotlib.axes._subplots.AxesSubplot at 0x1a010c73d48></code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 571px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 100.55555555555556%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAAEOUlEQVQ4y32VXWxURRiG35mzu912m0qltCTKX9G2QVuqBoyxkaAJUS5QRBGExAgJCf4kemFNAdvan3N2WwFLazVY440GTE2jtITEC5GI1W57TkPSKlSsIZjQXpCW0nb3/Mx8Zs7uVjDoSb58k92TZ973m9l3gX8/HLgrAhQt+uejFzYhvDoLhQRgWANTPVP//+QDiAB5qm1GCEA2gCwiYKIyBZBBQAKaBJgDYA2A4J1YodwcrNr2GIoqy4LL7lseKryi4dAGLD4Xx/rrP+JFWo/tEqiS2ciX8KE+ePN/iYsULM8sA9Vq07e13S0/YYAIQoyB5MNQQklyTEqgQwJLBYAjKYGaBrBbeXnBSO5ixSUiLdSYdQIHQGs7GQmCpGvwqAKeBIRkIAm/Jgl4HABbDRQByMkIQiR/SbCgODdLfXl0dLZ755kOwkE4qIHbM8pE8irEdCk8AiQxCAJsSkETBFS4AG4A/PsUsAx5hcSBSXVue8ueSFDzObJ3fRcT2A/57BcQlGDCXeODyOOQ8wAJwElDf5kCMArASQGvsGCYoAVnAoD8FSDKXuS4u5tmxZZvakVQh/z9GhP0CPMEQC6HvAlID/5MvbT9LelrpKnGgAnV1ylHXPNH5G++8SUSazsPeA0DcKmKCxsaySCXxLmUnEvBuSs4J8G1rsypA9gTTt+wV1Ig4TE2K8HUmATdvYxkVfN7yUQJXEq9IG/pXnp99mbBUkzcX64sb8pNA/cvADEj/REFfaX0UMlwouvjr93u9tN0sr1XnmzvzXRPrb9qP9XfV9+lnWr8XAHVgVxX/bnUplKApSyX4Q+xr7ze+fDbGrvxMlHdRZL1qi4tlFt/iahujPpafp5Ba/+0uovTLABCCLMrAEoo2CpcFC/jU9H05Fte24kyt2VkWOhxoujgrIyZSYoOJWR0cJ6ig/NudDBBsfhcnW450C0nAGAcNfiMbeQxrGLj3TvwJemR2mTN1jdFtVHktQ285ukWScNMkG7asqF/WjbF58iwHKGbtuqOYTklhuXAsBylsAS72B4NT0E7jh3l+oqDydo36qiupdQ+3HuPiMbjQjeJDCspFfD981PUFJ+ThuXYaWBUN23ops1VTycDULxypfrZ4VD0yPa6xgpq68mlT0Zet3VTuoaZ9AzTFobleMawqxRRunqahxJIq8MCMIAwgDCWFOarANP0ztDTx4ceHP/A/IGalTpl13KUZUqrkvpQ8ui6rXs1fSjpWz38G0G37IzAEO4N+HHBi4tLIypmG3q35UatG/t00+0xTNsyTHvEsOyzumm3to7SA8qNCpWOq8Sq+8ZQ+czO2+MrO5uDM4ZwXhgOPcqOmc8jak5Bt9TObsgw7WzDTNmKXZA4Q+TH1bE/Ce+evnznTOQakJWTSqGP+stZzPpL003iuuXCMO3MnAKxC5JvePUd/73zdPsfwd/8S4snUf0sagAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="1.3.png"
+        title="1.3.png"
+        src="/static/8f3aee25561119bba8df625949fabe59/17d73/1.3.png"
+        srcset="/static/8f3aee25561119bba8df625949fabe59/e9ff0/1.3.png 180w,
+/static/8f3aee25561119bba8df625949fabe59/f21e7/1.3.png 360w,
+/static/8f3aee25561119bba8df625949fabe59/17d73/1.3.png 571w"
+        sizes="(max-width: 571px) 100vw, 571px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 2018, 2019년도의 비율을 파악해보자</span>
+world_gdp_2019 <span class="token operator">=</span> world_gdp_prop<span class="token punctuation">.</span>iloc<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">:</span><span class="token punctuation">]</span>
+world_gdp_2018 <span class="token operator">=</span> world_gdp_prop<span class="token punctuation">.</span>iloc<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token punctuation">:</span><span class="token punctuation">]</span>
+
+world_gdp_2019 <span class="token operator">=</span> world_gdp_2019<span class="token punctuation">.</span>drop<span class="token punctuation">(</span><span class="token string">'Year'</span><span class="token punctuation">)</span>
+world_gdp_2018 <span class="token operator">=</span> world_gdp_2018<span class="token punctuation">.</span>drop<span class="token punctuation">(</span><span class="token string">'Year'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>world_gdp_2019<span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">United States     24.46
+Korea Rep.         1.88
+Germany            4.41
+Japan              5.78
+United Kingdom     3.23
+China             16.30
+France             3.10
+Italy              2.29
+Canada             1.99
+India              3.28
+others            33.28
+Name: 59, dtype: float64</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">plt<span class="token punctuation">.</span>figure<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'2019'</span><span class="token punctuation">)</span>
+world_gdp_2019<span class="token punctuation">.</span>plot<span class="token punctuation">.</span>pie<span class="token punctuation">(</span>autopct<span class="token operator">=</span><span class="token string">'%.2f%%'</span><span class="token punctuation">,</span> colors<span class="token operator">=</span>colors<span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">&lt;matplotlib.axes._subplots.AxesSubplot at 0x1a0114d4408></code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 571px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 100.55555555555556%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAAEH0lEQVQ4y4WUf2wURRTHvzvb4+5Kc0XayoWkJuiJiBilEQk/YhM1GH+EEAwY/2hUNEb0LygqrZYe4O1eC7Ha00RSjL9igsFYAhiif4goQul1F0PQABITTNRUI/Lz9nZv5j0zt9vaGo2TvLyZzZvPfN+8nQf8c9QAdUkgM/PvT6sfQiJTiyYGcNyEoT0BYPzfaAqtFkCqDTEASQBTmAHvvggSq3qTEYLXAWj8N1YiVY+lnc9gzv3LzNmZlvj0QRPrF6HhiyNY+LuL1eoBPMLAUqrFNWPqOARjanTypFHXOGcSH+2xtrZBHGOGpF/BdC+0UGaBUQLeYCAdQcXaaJMxAZCKJVLXAqhn5vjMvts+RCe4sUfwLyUQX4aku1AhQJEBJlRtlIElmjMLSGtN47Rp6aVG9nBGMDM6D1z5eGPxG663Z/hohywMCVUeBZ2/A7Kq0IBiwOcQ6vnA7VrpfsBcPk402AQ8ncBTqRk+PzfA/oahTxXWm7TgTRB7QqnFIVAJ0BWAJRBUDwCG3gXwOoALIU3zOwGoGhj0fRgj5bI1gXr8wAfStEDFn6C41ZBKgwToIkAyCozSXz5WJAB7zKhmC6oZGaTCWKL5rawWFgqyYwiS7zZkAJMpJoiFIBKClBAVJQQrYe6k8N/UwOfjIZAeC0FKAn+QKUoESE42MC3K9vpXb0IlSpEmeBnND15uSGP0xlt1yg/XAqc0cK2OMSBlNRODGQZTAiVaMv9rb+eOPZXd/ft5V2Ef7SrsG/NSzz8q7D2yPztg7t36TvUORahQrQgPYwWD6Hr8qFbEP5MvrXzUL3zVG2w5w9x9iil7mjl7uuq1VfS6+wzv6z16CduOXDAQww8G8LMGN9fjz9JCDPGT6Jcv3NAh8+vuqRQOLa7YJy6RPRxwvliinpEy5Yse5Yslva7kix73DF/tttwAlhvUVOvcgnScwdgIa7dd18nW6s3l9hdb1eb3U/LV43tVboTZdj2yRsq89dgVspwy226gLMfXPrDdYLbtBrDdwICJJDLT58b135if1XXLpnVd5ZdfuZP7diX9/uE1KleUZLvVjZQrlmjTod84V/TIdgM/AuYjmLBdX7+/OEwkMK85ldDNq6v7ulXb32vggW9beLtb9C2XK7bjScsJlO0G0j5e0Yo4ssHs4fOwRsoIof6EttUIo2na1On6+b013PBgwe0+aznMdpgea5VaUaSKciNe36otb4stRy8iVywZkcqQl06nx9vFzS1zk8wD2HqOk5bjPW05wSeWG7i265+0HP+g5fjbek/wvLGupAVos51gcvt64lnd0QRSzRm4vEFkzzIsJ4Dt+Nqm2G6QtPRcV9Px0XuCRdeXo4ZOWdt/jkSquepfO+looGk7vrCi+4mANZbji47Pz2Hlph1oH/xuEuAv2dObfM2DBJ0AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="1.4.png"
+        title="1.4.png"
+        src="/static/93e8799bbd94ea1ed2d885a165c2f051/17d73/1.4.png"
+        srcset="/static/93e8799bbd94ea1ed2d885a165c2f051/e9ff0/1.4.png 180w,
+/static/93e8799bbd94ea1ed2d885a165c2f051/f21e7/1.4.png 360w,
+/static/93e8799bbd94ea1ed2d885a165c2f051/17d73/1.4.png 571w"
+        sizes="(max-width: 571px) 100vw, 571px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">plt<span class="token punctuation">.</span>figure<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'2018'</span><span class="token punctuation">)</span>
+
+world_gdp_2018<span class="token punctuation">.</span>plot<span class="token punctuation">.</span>pie<span class="token punctuation">(</span>autopct<span class="token operator">=</span><span class="token string">'%.2f%%'</span><span class="token punctuation">,</span> colors<span class="token operator">=</span>colors<span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">&lt;matplotlib.axes._subplots.AxesSubplot at 0x1a011549048></code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 571px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 100.55555555555556%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAAEJklEQVQ4y4WUfWwURRjGn529O64fttSrQEsQPwqpthW1QtSKSY34jwmVGEWCgglCaDTGQiKhBdpydLdQP47WP2olSkwaS5pUbTVp/EKDFuh1FytGS/2I0X+gakIpvbvdm5nXzN6WFqJxkjfPzGb2t88zs3mBa0cYyM0CqspmHz3yMLKXF6AQCwEKQusG8AoAwv+NJQBuBXIBXP8iAgDmEQF/jANKUQKdcjwQ+xvQyIf+KzhvQRE2fd6NlZufZitueygc6dGwrRLzz46hklJY+1cdnvkVWDORhUhqFqQrZQCC1wILl1aDiLzygu8Mbn7wKE4TQcgEiHZ6JokYzkvgDQIW+VB2i89gc3i5wfD8BQAKiChc0bWuGw2gQDOjby9AEoGLWqQlICUDSXh1gYAq9fJNQJEKeYWWnV+j9VMJU+6ef/dSb8vZn2jp4bsc1IE3fKILdxJiYj2471AQ4FAGmkwBdyqn3UBgx6zBhA54J/NcKDtNG6LCabItwRoiclkbpMuZkE+BK2eCQV4GiAMuZe7qVAxAM4BkBqb4LygNQJM/ZPYIfv+6tNg++DHXjZD84jdwelLj3AdOApJnNnI//tqZSwIwqGegYpW3R5NC09QeIW+/h8QDh4/yulPgVAPuQicZZJIYk5IxKRhLC8ZIMP2IBCAzwKaQD3x2xh3wp9T1aQlwCuWRvLcx5kyVI+1HlHOU+/PjU5FFOL+sQkWuyQFGFb9WgyDNAyqn3l8i83BRrq78MnnkzQ/Tve0D1NMxIHs6rihX82Md/UMfNb2l90ff8c6QZRzKx3wQz8KUvAO22Jjbxxs3PO50fB1z948TNY6RbDpH1HTOU1VptW4cp4FDJy+hbeiihnycZMqhDlpyM35J1OADqoPB61e8LMzdq9PtJ9akzdGUNIcdao0nZOtIUrbGVSXUOt0aT9LB4elGw3Zh2G7Au+fFrCiLQGjFrl6zeA9FtzandtSvEtH3IuLVMydEywiRaSelMZKiA8PT0rAcMm1XKDUsxzUtd7lpuzAtR0MYQZQWlc5T4IbqWNm+PbtSe6Nl1N6X5cTiu8WBOEnTTiqAVLB9X01QSzwpTdt1fHCrB7NdphQMAegIoqQ4nAMgtLe+4InXjxVS12g1HbR/dwyb0qaV4oblCNN2uXkm7Zq2S369v39oEoaVgu9wpjMAWkTTigtzrgOgdQ7nPxqz3v65xSIyrSQZPsCP6Lk1RlKvbekc1KKnL6NlJKldBczPzwfRj968YmVp+Bt6CQ1jlG1aiW2G5faZlmObtvO9YTnHDctpO/QdlftWQjMdyos7d9xdFVbmkHPDYnzGt7OGMfKiGJb35ZBpu1n+WXnPt3Z9qm9s69G2dA5iU6zvv5t2OO9GT9tGJzTDcnXTcpjhg/wKGFbKa30LS8px3/raqwD/AD1Unq2JeL1jAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="1.5.png"
+        title="1.5.png"
+        src="/static/2a57d47cfd5a3ee5b5736299d9a5dd50/17d73/1.5.png"
+        srcset="/static/2a57d47cfd5a3ee5b5736299d9a5dd50/e9ff0/1.5.png 180w,
+/static/2a57d47cfd5a3ee5b5736299d9a5dd50/f21e7/1.5.png 360w,
+/static/2a57d47cfd5a3ee5b5736299d9a5dd50/17d73/1.5.png 571w"
+        sizes="(max-width: 571px) 100vw, 571px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<h3 id="--gdp-변화를-살펴보자" style="position:relative;"><a href="#--gdp-%EB%B3%80%ED%99%94%EB%A5%BC-%EC%82%B4%ED%8E%B4%EB%B3%B4%EC%9E%90" aria-label="  gdp 변화를 살펴보자 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>- GDP 변화를 살펴보자</h3>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 년도별 파이차트 확인 2020, 2019, 2018</span>
+plt<span class="token punctuation">.</span>figure<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>subplot<span class="token punctuation">(</span><span class="token number">131</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'2018'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>pie<span class="token punctuation">(</span>world_gdp_2018<span class="token punctuation">,</span> autopct<span class="token operator">=</span><span class="token string">'%.2f%%'</span><span class="token punctuation">,</span> colors<span class="token operator">=</span>colors<span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>subplot<span class="token punctuation">(</span><span class="token number">132</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'2019'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>pie<span class="token punctuation">(</span>world_gdp_2019<span class="token punctuation">,</span> autopct<span class="token operator">=</span><span class="token string">'%.2f%%'</span><span class="token punctuation">,</span> colors<span class="token operator">=</span>colors<span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>subplot<span class="token punctuation">(</span><span class="token number">133</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'2020'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>pie<span class="token punctuation">(</span>world_gdp_2020<span class="token punctuation">,</span> autopct<span class="token operator">=</span><span class="token string">'%.2f%%'</span><span class="token punctuation">,</span>colors<span class="token operator">=</span>colors<span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">([&lt;matplotlib.patches.Wedge at 0x1a0116ee608>,
+  &lt;matplotlib.patches.Wedge at 0x1a0116eefc8>,
+  &lt;matplotlib.patches.Wedge at 0x1a0116f4f08>,
+  &lt;matplotlib.patches.Wedge at 0x1a0116fae88>,
+  &lt;matplotlib.patches.Wedge at 0x1a011706208>,
+  &lt;matplotlib.patches.Wedge at 0x1a01170b208>,
+  &lt;matplotlib.patches.Wedge at 0x1a01170bd48>,
+  &lt;matplotlib.patches.Wedge at 0x1a011711c88>,
+  &lt;matplotlib.patches.Wedge at 0x1a011700dc8>,
+  &lt;matplotlib.patches.Wedge at 0x1a011706dc8>,
+  &lt;matplotlib.patches.Wedge at 0x1a011724908>],
+ [Text(0.7846293246502134, 0.7709454085076001, ''),
+  Text(-0.046983906447389576, 1.0989961385441456, ''),
+  Text(-0.26585324383221987, 1.0673903000982754, ''),
+  Text(-0.5958144347907166, 0.9246648902683712, ''),
+  Text(-0.8337473946993346, 0.7175411359859951, ''),
+  Text(-1.0977417344017466, 0.07044916289527714, ''),
+  Text(-0.9210920342000977, -0.6013230949607093, ''),
+  Text(-0.808692499986852, -0.7456650994012094, ''),
+  Text(-0.7043567221523628, -0.8449151483780957, ''),
+  Text(-0.5623234848791665, -0.9454058907968312, ''),
+  Text(0.5897011521674757, -0.9285755495016826, '')],
+ [Text(0.42797963162738906, 0.4205156773677818, '24.72%'),
+  Text(-0.025627585334939765, 0.5994524392058975, '1.92%'),
+  Text(-0.14501086027211993, 0.5822128909626957, '4.49%'),
+  Text(-0.3249896917040272, 0.5043626674191115, '5.96%'),
+  Text(-0.45477130619963696, 0.3913860741741791, '3.20%'),
+  Text(-0.598768218764589, 0.03842681612469662, '17.38%'),
+  Text(-0.5024138368364168, -0.3279944154331142, '3.07%'),
+  Text(-0.4411049999928283, -0.4067264178552051, '2.23%'),
+  Text(-0.3841945757194706, -0.46086280820623393, '1.94%'),
+  Text(-0.3067219008431817, -0.5156759404346352, '3.10%'),
+  Text(0.32165517390953213, -0.506495754273645, '31.99%')])</code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 31.666666666666664%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsSAAALEgHS3X78AAABx0lEQVQY0zXPT0iTAQAF8Pd92xRz7o8Xd9DU0ENFZKIr85DHCGSoCBY2JZImgggG00IXq+VI+4KovoEiHvyTYk4lUiixKIw1NsqZY+nFhPQghYFf29BebBLv+OM9eACAZSuxEMCp/UupZUQiwBu1VgBKEakkPn3A6f3S1HMbRNLm9TkCzDasVRKRt5qi+ImUs7s9hwZMmZBvn7jT9S6NLAHjgJf5SEnORoBch+e+e0FFFoIxYILZUCebG8DRB919T16DzE72hmmAAEA5jjQelDQM8OdJMRoX0/nLmNUgowUZ2D4DHXm+8fHf34VCNKZKmOnyU6ENBuyYNSayounegXJMiEVVWirGTAuOaFhcgCXWVo/Fnr0KK57pMD0jgZZrtk1k6lmeBz9ra8aj8tyqIidsOHjdemMTWiMr9PhOy8XZP/J8SJG9YfY/D1zBTQLS7bIhyT9D5zLpCPFLK2m0SUSEQK+9fFTye/+bv5nUmesTn4lbdVWTD98P0BkiHStcaiLTMSjZ8ZEXBFeQFrdvz+p5+c3QsUXcXVwTH/W5sEqIriCr3D7lav/MV13HD6J9bl1sdnaChLrn806N2xevH3rh03ZuE/8AVqvo1FMuBdAAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="1.6.png"
+        title="1.6.png"
+        src="/static/ff08663d31b016c6c3f3bbd4dabae022/37523/1.6.png"
+        srcset="/static/ff08663d31b016c6c3f3bbd4dabae022/e9ff0/1.6.png 180w,
+/static/ff08663d31b016c6c3f3bbd4dabae022/f21e7/1.6.png 360w,
+/static/ff08663d31b016c6c3f3bbd4dabae022/37523/1.6.png 720w,
+/static/ff08663d31b016c6c3f3bbd4dabae022/302a4/1.6.png 1080w,
+/static/ff08663d31b016c6c3f3bbd4dabae022/d56e1/1.6.png 1130w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<h3 id="--gdp-순위-top-10" style="position:relative;"><a href="#--gdp-%EC%88%9C%EC%9C%84-top-10" aria-label="  gdp 순위 top 10 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>- GDP 순위 Top 10</h3>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">gdp_rank <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span><span class="token string">"gdp_rank.csv"</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">"cp949"</span><span class="token punctuation">)</span>
+
+gdp_rank <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>gdp_rank<span class="token punctuation">)</span>
+gdp_rank<span class="token punctuation">.</span>set_index<span class="token punctuation">(</span><span class="token string">'Country'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Top 10</span>
+gdp_rank<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span></code></pre></div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}</code></pre></div>
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country</th>
+      <th>Ranking</th>
+      <th>Economy</th>
+      <th>US dollars</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>USA</td>
+      <td>1</td>
+      <td>United States</td>
+      <td>20,936,600</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>CHN</td>
+      <td>2</td>
+      <td>China</td>
+      <td>14,722,731</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>JPN</td>
+      <td>3</td>
+      <td>Japan</td>
+      <td>5,064,873</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>DEU</td>
+      <td>4</td>
+      <td>Germany</td>
+      <td>3,806,060</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>GBR</td>
+      <td>5</td>
+      <td>United Kingdom</td>
+      <td>2,707,744</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>IND</td>
+      <td>6</td>
+      <td>India</td>
+      <td>2,622,984</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>FRA</td>
+      <td>7</td>
+      <td>France</td>
+      <td>2,603,004</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>ITA</td>
+      <td>8</td>
+      <td>Italy</td>
+      <td>1,886,445</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>CAN</td>
+      <td>9</td>
+      <td>Canada</td>
+      <td>1,643,408</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>KOR</td>
+      <td>10</td>
+      <td>Korea, Rep.</td>
+      <td>1,630,525</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<h3 id="--요약" style="position:relative;"><a href="#--%EC%9A%94%EC%95%BD" aria-label="  요약 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>- 요약</h3>
+<p>위 분석 과정을 통해 확인할 수 있는 것은</p>
+<p>(1) 미국의 GDP 비율은 약간 감소, 중국의 GDP 비율은 증가했다.</p>
+<p>(2) Others 즉 top10 국가를 제외한 비율이 1/3 가량을 계속해서 유지</p>
+<p>(3) (미국 + 중국)은 전세계 40% GDP를 차지한다.</p>
+<p>(4) 미국, 중국을 제외한 8개의 국가의 GDP 비율은 25%</p>
+<p>(5) 2018~2020년도 파이 그래프를 통해 G3 미국, 중국, 일본은 GDP 성장한 반면 그 외 국가들은 GDP가 다소 감소</p>
+<div class="table-of-contents">
+<ul>
+<li>
+<p><a href="#gdp%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80">GDP란 무엇인가?</a></p>
+</li>
+<li>
+<p><a href="#--%EB%B6%84%EC%84%9D-%EA%B3%BC%EC%A0%9C">- 분석 과제</a></p>
+</li>
+<li>
+<p><a href="#--%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9D%98-%EC%9D%B4%ED%95%B4">- 데이터의 이해</a></p>
+</li>
+<li>
+<p><a href="#--eda">- EDA</a></p>
+<ul>
+<li>
+<p><a href="#--oecd-%EA%B2%BD%EC%A0%9C-%ED%98%91%EB%A0%A5-%EA%B0%9C%EB%B0%9C-%EA%B8%B0%EA%B5%AC-%EB%9E%80">- OECD (경제 협력 개발 기구) 란?</a></p>
+<ul>
+<li><a href="#oecd-%EA%B0%80%EC%9E%85-%EA%B5%AD%EA%B0%80-38%EA%B0%9C--21%EB%85%84-5%EC%9B%94-%EA%B8%B0%EC%A4%80">OECD 가입 국가 38개 ( 21년 5월 기준)</a></li>
+<li><a href="#%EA%B5%AD%EA%B0%80-%EB%AA%A9%EB%A1%9D">국가 목록</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#%EB%8C%80%ED%91%9C%EC%A0%81%EC%9D%B8-%EA%B5%AD%EA%B0%80%EC%9D%98-%EB%85%84%EB%8F%84%EB%B3%84-gdp-%EB%B3%80%ED%99%94%EB%A5%BC-%EC%82%B4%ED%8E%B4%EB%B3%B4%EC%9E%90">대표적인 국가의 년도별 GDP 변화를 살펴보자</a></p>
+</li>
+<li>
+<p><a href="#1-%EC%84%B8%EA%B3%84-gdp-%EC%B4%9D%ED%95%A9%EC%9D%98-%EA%B7%B8%EB%9E%98%ED%94%84%EB%A5%BC-%ED%99%95%EC%9D%B8%ED%95%B4%EB%B3%B4%EC%9E%90">1. 세계 GDP 총합의 그래프를 확인해보자</a></p>
+</li>
+<li>
+<p><a href="#2-%EA%B5%AD%EA%B0%80-%EC%9D%B4%EB%A6%84-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%84%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0">2. 국가 이름 입력해서 만들기</a></p>
+</li>
+<li>
+<p><a href="#3%EB%A6%AC%EC%8A%A4%ED%8A%B8%EC%97%90-%EC%9E%88%EB%8A%94-%EA%B5%AD%EA%B0%80%EB%A1%9C-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%84%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0">3.리스트에 있는 국가로 입력해서 만들기</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="#--%EC%A0%84-%EC%84%B8%EA%B3%84-top-10-%EA%B5%AD%EA%B0%80%EC%9D%98-gdp-%EB%B9%84%EC%9C%A8%EC%9D%84-%ED%8C%8C%EC%95%85%ED%95%B4%EB%B3%B4%EC%9E%90">- 전 세계 Top 10 국가의 GDP 비율을 파악해보자</a></p>
+</li>
+<li>
+<p><a href="#--gdp-%EB%B3%80%ED%99%94%EB%A5%BC-%EC%82%B4%ED%8E%B4%EB%B3%B4%EC%9E%90">- GDP 변화를 살펴보자</a></p>
+</li>
+<li>
+<p><a href="#--gdp-%EC%88%9C%EC%9C%84-top-10">- GDP 순위 Top 10</a></p>
+</li>
+<li>
+<p><a href="#--%EC%9A%94%EC%95%BD">- 요약</a></p>
+</li>
+</ul>
+</div></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/GDP_Analysis/GDP Analysis [2] - GDP Growth/"><div class="direction">이전 글</div><div class="title">GDP Analysis [2] - GDP Growth</div></a></div><div class="post-navigator-card-wrapper"><a class="post-card next" href="/GDP_Analysis/GDP Analysis [3] - 군집 분석/"><div class="direction">다음 글</div><div class="title">GDP Analysis [3] - 군집 분석</div></a></div></div><div class="utterances"></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2022<!-- --> <a href="https://github.com/Han-Archives">Han-기록소</a> powered by<a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog"> zoomkoding-gatsby-blog</a></p></footer><div class="dark-mode-button-wrapper"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium dark-mode-button css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge dark-mode-icon css-6flbmm" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="DarkModeIcon"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path></svg></button></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/GDP_Analysis/GDP Analysis [1] - GDP/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-cd840d73727c2e366b63.js"],"app":["/app-1c48eadf34e7f53f402f.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-3c26d4b7e3608ed0ece4.js"],"component---src-pages-404-js":["/component---src-pages-404-js-4917da7ef5b541e98a81.js"],"component---src-pages-about-js":["/component---src-pages-about-js-b5804eba3d16afcb3700.js"],"component---src-pages-index-js":["/component---src-pages-index-js-bc882cd03f70c89c8148.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-ef83b594aa693e649d30.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-fea460fedd50cffb10cd.js"]};/*]]>*/</script><script src="/polyfill-cd840d73727c2e366b63.js" nomodule=""></script><script src="/component---src-templates-blog-template-js-ef83b594aa693e649d30.js" async=""></script><script src="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-3528d048b96f92ca0d99.js" async=""></script><script src="/app-1c48eadf34e7f53f402f.js" async=""></script><script src="/framework-0e1bf37de02f7cef2174.js" async=""></script><script src="/webpack-runtime-3fbe5c9bb3bdef55776d.js" async=""></script></body></html>
