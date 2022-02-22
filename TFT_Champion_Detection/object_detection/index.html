@@ -1,0 +1,1507 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.58c7447b9282ecfbd3c6.css" data-identity="gatsby-global-css">@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-8d7d79679b70dbe27172b6460e7a7910.woff2) format("woff2"),url(/static/montserrat-latin-100-ec38980a9e0119a379e2a9b3dbb1901a.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-e279051046ba1286706adc886cf1c96b.woff2) format("woff2"),url(/static/montserrat-latin-100italic-3b325a3173c8207435cd1b76e19bf501.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-9d266fbbfa6cab7009bd56003b1eeb67.woff2) format("woff2"),url(/static/montserrat-latin-200-2d8ba08717110d27122e54c34b8a5798.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-6e5b3756583bb2263eb062eae992735e.woff2) format("woff2"),url(/static/montserrat-latin-200italic-a0d6f343e4b536c582926255367a57da.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-00b3e893aab5a8fd632d6342eb72551a.woff2) format("woff2"),url(/static/montserrat-latin-300-ea303695ceab35f17e7d062f30e0173b.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-56f34ea368f6aedf89583d444bbcb227.woff2) format("woff2"),url(/static/montserrat-latin-300italic-54b0bf2c8c4c12ffafd803be2466a790.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-b71748ae4f80ec8c014def4c5fa8688b.woff2) format("woff2"),url(/static/montserrat-latin-400-0659a9f4e90db5cf51b50d005bff1e41.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-6eed6b4cbb809c6efc7aa7ddad6dbe3e.woff2) format("woff2"),url(/static/montserrat-latin-400italic-7583622cfde30ae49086d18447ab28e7.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-091b209546e16313fd4f4fc36090c757.woff2) format("woff2"),url(/static/montserrat-latin-500-edd311588712a96bbf435fad264fff62.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c90ced68b46050061d1a41842d6dfb43.woff2) format("woff2"),url(/static/montserrat-latin-500italic-5146cbfe02b1deea5dffea27a5f2f998.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-0480d2f8a71f38db8633b84d8722e0c2.woff2) format("woff2"),url(/static/montserrat-latin-600-b77863a375260a05dd13f86a1cee598f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-cf46ffb11f3a60d7df0567f8851a1d00.woff2) format("woff2"),url(/static/montserrat-latin-600italic-c4fcfeeb057724724097167e57bd7801.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7dbcc8a5ea2289d83f657c25b4be6193.woff2) format("woff2"),url(/static/montserrat-latin-700-99271a835e1cae8c76ef8bba99a8cc4e.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-c41ad6bdb4bd504a843d546d0a47958d.woff2) format("woff2"),url(/static/montserrat-latin-700italic-6779372f04095051c62ed36bc1dcc142.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-db9a3e0ba7eaea32e5f55328ace6cf23.woff2) format("woff2"),url(/static/montserrat-latin-800-4e3c615967a2360f5db87d2f0fd2456f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-bf45bfa14805969eda318973947bc42b.woff2) format("woff2"),url(/static/montserrat-latin-800italic-fe82abb0bcede51bf724254878e0c374.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-e66c7edc609e24bacbb705175669d814.woff2) format("woff2"),url(/static/montserrat-latin-900-8211f418baeb8ec880b80ba3c682f957.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-4454c775e48152c1a72510ceed3603e2.woff2) format("woff2"),url(/static/montserrat-latin-900italic-efcaa0f6a82ee0640b83a0916e6e8d68.woff) format("woff")}.search-input-wrapper{align-items:center;display:none;margin-top:3px;width:180px}@media(min-width:768px){.search-input-wrapper{display:flex}}.search-icon{color:var(--primary-text-color);margin-right:2px}.search-input{height:100%;width:100%}.search-input .MuiAutocomplete-inputRoot{padding-right:0!important}.search-input .MuiInputBase-input{color:var(--primary-text-color)!important;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:16px;font-weight:500;padding-bottom:2px!important}.search-input .MuiInput-underline:before{border-bottom-width:1px}.search-input .MuiInput-underline:after,.search-input .MuiInput-underline:before{border-bottom-color:var(--primary-text-color)}.page-header-wrapper{display:flex;height:60px;justify-content:center;width:100%}.page-header-wrapper .page-header{align-items:center;display:flex;justify-content:space-between;max-width:720px;width:100%}.page-header-wrapper .page-header .link{color:var(--primary-text-color);font-size:17px;font-weight:700}@media(min-width:768px){.page-header-wrapper .page-header .link{font-size:20px;font-weight:700}}.page-header-wrapper .page-header .trailing-section{align-items:center;display:flex}.page-header-wrapper .page-header .trailing-section .link{margin-right:10px}@media(min-width:768px){.page-header-wrapper .page-header .trailing-section .link{margin-right:20px}}.page-footer-wrapper{align-items:center;display:flex;height:62px;justify-content:center;margin-top:auto;width:100%}.page-footer-wrapper .page-footer{max-width:720px;text-align:center;width:100%}.page-footer-wrapper .page-footer .link{color:var(--primary-text-color);font-size:20px;font-weight:700;margin-right:20px}.page-footer-wrapper .page-footer a{color:#3a95ff}.dark-mode-button-wrapper{align-items:center;bottom:20px;display:flex;justify-content:center;position:fixed;right:20px}.dark-mode-button{-webkit-backdrop-filter:blur(30px);backdrop-filter:blur(30px);background-color:#363f47!important;border-radius:50px;box-shadow:0 5px 25px rgba(0,0,0,.12);cursor:pointer;height:50px;width:50px;z-index:3}.dark-mode-icon{color:#fff}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{border:0;font-size:100%;font:inherit;margin:0;padding:0;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}a{outline:none;text-decoration:none}html{--background-color:#fff;--primary-text-color:#000;--secondary-text-color:#9e9e9e;--content-text-color:#37352f;--button-background-color:#f3f3f4;--button-text-color:#363f47;--tab-text-color:#6e6d7a;--tab-hover-text-color:#0d0c22;--tab-selected-background-color:rgba(13,12,34,.05);--bio-link-icon-color:rgba(0,0,0,.54);--about-link-icon-color:#a8a8a8;--chip-background-color:#f3f3f4;--link-text-color:rgba(55,53,47,.7);--post-card-border-color:rgba(0,0,0,.12);--markdown-table-even-cell-background-color:#f6f8fa;--markdown-table-border-color:#dfe2e5;--markdown-blockquote-border-color:#dfe2e5;--markdown-border-color:#e1e4e8}html[data-theme=dark]{--background-color:#232326;--primary-text-color:#e6e6e6;--secondary-text-color:#768390;--content-text-color:#e6e6e6;--button-background-color:#444c56;--button-text-color:#363f47;--tab-text-color:#768390;--tab-hover-text-color:#acbac7;--tab-selected-background-color:#373e47;--chip-background-color:#323a42;--bio-link-icon-color:#e6e6e6;--about-link-icon-color:#a8a8a8;--link-text-color:#90b0ec;--post-card-border-color:#363f47;--markdown-table-even-cell-background-color:#2d333b;--markdown-table-border-color:#444c56;--markdown-blockquote-border-color:#4f5864;--markdown-border-color:#e1e4e8}*{-webkit-appearance:none;appearance:none;box-sizing:border-box}html{font-size:14px;height:100%;overflow-y:scroll;width:100%}body{background-color:var(--background-color)!important}a{color:var(--link-text-color)}.page-wrapper{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:var(--primary-text-color);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;justify-content:center;min-height:100vh;padding-left:15px;padding-right:15px;word-break:keep-all}.page-wrapper,.page-wrapper .page-content{align-items:center;display:flex;flex-direction:column;width:100%}.page-wrapper .page-content{max-width:720px}.icon{color:var(--about-link-icon-color);font-size:20px}.social-links .icon{color:var(--bio-link-icon-color);font-size:30px}@keyframes blinking-cursor{0%{opacity:0}50%{opacity:1}to{opacity:0}}.bio{color:var(--primary-text-color);display:flex;flex-direction:column;justify-content:space-between;margin-bottom:120px;margin-top:120px;width:100%}@media(min-width:768px){.bio{align-items:center;flex-direction:row}}.bio .introduction{display:flex;flex-direction:column;word-break:keep-all}.bio .introduction .react-rotating-text-cursor{animation:blinking-cursor .8s cubic-bezier(.68,.01,.01,.99) 0s infinite}.bio .introduction strong{display:inline-block;font-weight:600}.bio .introduction.korean{font-size:32px;font-weight:100;line-height:1.2}.bio .introduction.korean .title .react-rotating-text-cursor{font-size:35px;line-height:35px}@media(min-width:768px){.bio .introduction.korean{font-size:40px}.bio .introduction.korean .title .react-rotating-text-cursor{font-size:45px;line-height:45px}}.bio .introduction.english{font-family:montserrat;font-size:25px;line-height:1.2}@media(min-width:768px){.bio .introduction.english{font-size:45px}}.bio .introduction.english .name{font-size:35px;font-weight:600}.bio .introduction.english .job{font-size:35px}.bio .introduction.english .description{font-size:20px;font-weight:200;margin-top:8px}.bio .introduction.english .social-links{display:flex;margin-top:20px}.bio .thumbnail{display:none;width:250px}@media(min-width:768px){.bio .thumbnail{display:block}}.section-header-wrapper{display:flex;justify-content:center;margin-bottom:32px;width:100%}.section-header-wrapper .section-header{border-bottom:4px solid var(--primary-text-color);color:var(--primary-text-color);font-size:30px;font-weight:700;padding-bottom:5px}.timestamp-section{align-items:center;display:flex;flex-direction:column;justify-content:center;margin-bottom:50px;width:100%;word-break:keep-all}.timestamp-section .body{padding:0 10px;width:100%}.timestamp-section .body .timestamp{border-left:2px solid #bdbdbd;display:flex;font-size:18px;font-weight:400;justify-items:center;margin-left:5px;padding:10px 0;width:100%}.timestamp-section .body .timestamp:first-child{padding-top:7px}.timestamp-section .body .timestamp:last-child{padding-bottom:7px}.timestamp-section .body .timestamp:before{align-self:center;background-color:var(--background-color);border:2px solid #828282;border-radius:10px;content:"";height:10px;left:-1px;position:relative;transform:translatex(-50%);width:10px}.timestamp-section .body .timestamp .date{align-self:center;color:#828282;margin-left:5px;margin-right:5px;min-width:115px;width:115px}@media(min-width:768px){.timestamp-section .body .timestamp .date{min-width:200px;width:200px}}.timestamp-section .body .timestamp .activity{line-height:23px;width:100%}.project-section{align-items:center;justify-content:center}.project-section,.project-section .project{display:flex;flex-direction:column;width:100%}.project-section .project{margin-bottom:30px;padding:15px}.project-section .project .head{font-size:20px;font-weight:700;line-height:30px;margin-bottom:10px}.project-section .project .body{display:flex;flex-direction:column;width:100%}.project-section .project .body .thumbnail{margin-bottom:10px;width:100%}.project-section .project .body .tech-stack{display:flex;margin-bottom:10px}.project-section .project .body .tech-stack .tech{background-color:var(--chip-background-color);border-radius:10px;font-size:15px;font-weight:500;margin-right:5px;padding:5px 7px}.project-section .project .body .description{font-size:16px;font-weight:400;line-height:1.4}@media(min-width:768px){.project-section .project .body{flex-direction:column}.project-section .project .body .content{margin-top:0}}.post-header{border-bottom:1px solid var(--post-card-border-color);display:flex;flex-direction:column;justify-content:center;margin-bottom:40px;margin-top:20px;padding-bottom:10px;width:100%;word-break:keep-all}.post-header .emoji{font-size:78px;margin-bottom:20px}.post-header .categories{margin-bottom:5px}.post-header .categories .category{color:var(--primary-text-color);font-weight:600;margin-right:4px}.post-header .categories .category:hover{text-decoration:underline}.post-header .title{color:var(--primary-text-color);font-size:32px;font-weight:600;line-height:1.3;margin-bottom:6px}.post-header .info{color:var(--secondary-text-color);display:flex;flex-wrap:wrap;font-size:16px;font-weight:500;line-height:1.5;width:100%}.post-header .info .author{margin-right:4px}.post-header .info strong{color:var(--primary-text-color);font-weight:600}.post-navigator{column-gap:1.4%;display:grid;grid-template-columns:49.3% 49.3%;width:100%}.post-navigator .post-card{border:1px solid var(--post-card-border-color);border-radius:6px;color:var(--primary-text-color);cursor:pointer;display:flex;flex-direction:column;padding:15px;transition:transform .2s;width:100%}.post-navigator .post-card:hover .title{text-decoration:underline}.post-navigator .post-card.prev{margin-right:auto}.post-navigator .post-card.next{margin-left:auto}.post-navigator .post-card .direction{color:gray;font-size:14px;font-weight:500;margin-bottom:5px}.post-navigator .post-card .title{font-size:16px;font-weight:600;line-height:1.4;margin-bottom:7px}.markdown .octicon{fill:currentColor;display:inline-block;vertical-align:text-bottom}.markdown .anchor{float:left;line-height:1;margin-left:-20px;padding-right:4px}.markdown .anchor:focus{outline:none}.markdown h1 .octicon-link,.markdown h2 .octicon-link,.markdown h3 .octicon-link,.markdown h4 .octicon-link,.markdown h5 .octicon-link,.markdown h6 .octicon-link{color:#1b1f23;vertical-align:middle;visibility:hidden}.markdown h1:hover .anchor,.markdown h2:hover .anchor,.markdown h3:hover .anchor,.markdown h4:hover .anchor,.markdown h5:hover .anchor,.markdown h6:hover .anchor{text-decoration:none}.markdown h1:hover .anchor .octicon-link,.markdown h2:hover .anchor .octicon-link,.markdown h3:hover .anchor .octicon-link,.markdown h4:hover .anchor .octicon-link,.markdown h5:hover .anchor .octicon-link,.markdown h6:hover .anchor .octicon-link{visibility:visible}.markdown h1:hover .anchor .octicon-link:before,.markdown h2:hover .anchor .octicon-link:before,.markdown h3:hover .anchor .octicon-link:before,.markdown h4:hover .anchor .octicon-link:before,.markdown h5:hover .anchor .octicon-link:before,.markdown h6:hover .anchor .octicon-link:before{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' aria-hidden='true' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'/%3E%3C/svg%3E");content:" ";display:inline-block;height:16px;width:16px}.markdown{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;word-wrap:break-word;color:var(--content-text-color);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:16px;font-weight:500;line-height:1.5}.markdown details{display:block}.markdown summary{display:list-item}.markdown a{background-color:initial}.markdown a:active,.markdown a:hover{outline-width:0}.markdown strong{font-weight:inherit;font-weight:bolder}.markdown h1{margin:.67em 0}.markdown img{border-style:none}.markdown code,.markdown kbd,.markdown pre{font-family:monospace,monospace;font-size:1em}.markdown hr{box-sizing:initial;overflow:visible}.markdown input{font:inherit;margin:0;overflow:visible}.markdown [type=checkbox]{box-sizing:border-box;padding:0}.markdown *{box-sizing:border-box}.markdown input{font-family:inherit;font-size:inherit;line-height:inherit}.markdown a{border-bottom:.05em solid;border-bottom-color:var(--link-text-color);border-left-color:var(--link-text-color);border-right-color:var(--link-text-color);border-top-color:var(--link-text-color);color:var(--link-text-color);text-decoration:none}.markdown a.anchor{border-bottom:none}.markdown strong{font-weight:700}.markdown hr{background:transparent;border-bottom:1px solid var(--markdown-blockquote-border-color);height:0;margin:15px 0;overflow:hidden}.markdown hr:after,.markdown hr:before{content:"";display:table}.markdown hr:after{clear:both}.markdown table{border-collapse:collapse;border-spacing:0}.markdown td,.markdown th{padding:0}.markdown details summary{cursor:pointer}.markdown h1,.markdown h2,.markdown h3,.markdown h4,.markdown h5,.markdown h6{margin-bottom:0;margin-top:0}.markdown h1{font-size:32px}.markdown h1,.markdown h2{font-weight:600}.markdown h2{font-size:24px}.markdown h3{font-size:20px}.markdown h3,.markdown h4{font-weight:600}.markdown h4{font-size:16px}.markdown h5{font-size:14px}.markdown h5,.markdown h6{font-weight:600}.markdown h6{font-size:12px}.markdown p{margin-bottom:10px;margin-top:0}.markdown blockquote{margin:0}.markdown ol,.markdown ul{margin-bottom:0;margin-top:0;padding-left:0}.markdown ol ol,.markdown ul ol{list-style-type:lower-roman}.markdown ol ol ol,.markdown ol ul ol,.markdown ul ol ol,.markdown ul ul ol{list-style-type:lower-alpha}.markdown dd{margin-left:0}.markdown code,.markdown pre{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px}.markdown code.language-text{border-radius:3px;font-size:85%;padding:.2em .4em}.markdown :not(pre)>code.language-text{background:hsla(44,6%,50%,.15);color:#eb5757;overflow-wrap:break-word}.markdown pre{margin-bottom:0;margin-top:0}.markdown input::-webkit-inner-spin-button,.markdown input::-webkit-outer-spin-button{-webkit-appearance:none;appearance:none;margin:0}.markdown :checked+.radio-label{border-color:#0366d6;position:relative;z-index:1}.markdown .border{border:1px solid var(--markdown-border-color)!important}.markdown .border-0{border:0!important}.markdown .border-bottom{border-bottom:1px solid var(--markdown-border-color)!important}.markdown .rounded-1{border-radius:3px!important}.markdown .bg-white{background-color:transparent!important}.markdown .bg-gray-light{background-color:#fafbfc!important}.markdown .text-gray-light{color:#6a737d!important}.markdown .pl-3,.markdown .px-3{padding-left:16px!important}.markdown .px-3{padding-right:16px!important}.markdown .f6{font-size:12px!important}.markdown .lh-condensed{line-height:1.25!important}.markdown .text-bold{font-weight:600!important}.markdown .pl-c{color:#6a737d}.markdown .pl-c1,.markdown .pl-s .pl-v{color:#005cc5}.markdown .pl-e,.markdown .pl-en{color:#6f42c1}.markdown .pl-s .pl-s1,.markdown .pl-smi{color:#24292e}.markdown .pl-ent{color:#22863a}.markdown .pl-k{color:#d73a49}.markdown .pl-pds,.markdown .pl-s,.markdown .pl-s .pl-pse .pl-s1,.markdown .pl-sr,.markdown .pl-sr .pl-cce,.markdown .pl-sr .pl-sra,.markdown .pl-sr .pl-sre{color:#032f62}.markdown .pl-smw,.markdown .pl-v{color:#e36209}.markdown .pl-bu{color:#b31d28}.markdown .pl-ii{background-color:#b31d28;color:#fafbfc}.markdown .pl-c2{background-color:#d73a49;color:#fafbfc}.markdown .pl-c2:before{content:"^M"}.markdown .pl-sr .pl-cce{color:#22863a;font-weight:700}.markdown .pl-ml{color:#735c0f}.markdown .pl-mh,.markdown .pl-mh .pl-en,.markdown .pl-ms{color:#005cc5;font-weight:700}.markdown .pl-mi{color:#24292e;font-style:italic}.markdown .pl-mb{color:#24292e;font-weight:700}.markdown .pl-md{background-color:#ffeef0;color:#b31d28}.markdown .pl-mi1{background-color:#f0fff4;color:#22863a}.markdown .pl-mc{background-color:#ffebda;color:#e36209}.markdown .pl-mi2{background-color:#005cc5;color:#f6f8fa}.markdown .pl-mdr{color:#6f42c1;font-weight:700}.markdown .pl-ba{color:#586069}.markdown .pl-sg{color:#959da5}.markdown .pl-corl{color:#032f62;text-decoration:underline}.markdown .mb-0{margin-bottom:0!important}.markdown .my-2{margin-bottom:8px!important;margin-top:8px!important}.markdown .pl-0{padding-left:0!important}.markdown .py-0{padding-bottom:0!important;padding-top:0!important}.markdown .pl-1{padding-left:4px!important}.markdown .pl-2{padding-left:8px!important}.markdown .py-2{padding-bottom:8px!important;padding-top:8px!important}.markdown .pl-3{padding-left:16px!important}.markdown .pl-4{padding-left:24px!important}.markdown .pl-5{padding-left:32px!important}.markdown .pl-6{padding-left:40px!important}.markdown .pl-7{padding-left:48px!important}.markdown .pl-8{padding-left:64px!important}.markdown .pl-9{padding-left:80px!important}.markdown .pl-10{padding-left:96px!important}.markdown .pl-11{padding-left:112px!important}.markdown .pl-12{padding-left:128px!important}.markdown hr{border-bottom-color:#eee}.markdown kbd{background-color:#fafbfc;border:1px solid #d1d5da;border-radius:3px;box-shadow:inset 0 -1px 0 #d1d5da;color:#444d56;display:inline-block;font:11px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;line-height:10px;padding:3px 5px;vertical-align:middle}.markdown:after,.markdown:before{content:"";display:table}.markdown:after{clear:both}.markdown>:first-child{margin-top:0!important}.markdown>:last-child{margin-bottom:0!important}.markdown a:not([href]){color:inherit;text-decoration:none}.markdown blockquote,.markdown details,.markdown dl,.markdown ol,.markdown p,.markdown pre,.markdown table,.markdown ul{margin-bottom:16px;margin-top:0}.markdown hr{background-color:var(--markdown-border-color);border:0;height:.25em;margin:24px 0;padding:0}.markdown blockquote{border-left:.25em solid var(--markdown-blockquote-border-color);color:#6a737d;padding:0 1em}.markdown blockquote>:first-child{margin-top:0}.markdown blockquote>:last-child{margin-bottom:0}.markdown h1,.markdown h2,.markdown h3,.markdown h4,.markdown h5,.markdown h6{font-weight:600;line-height:1.25;margin-bottom:16px;margin-top:24px}.markdown h1{font-size:2em}.markdown h2{font-size:1.5em}.markdown h3{font-size:1.25em}.markdown h4{font-size:1em}.markdown h5{font-size:.875em}.markdown h6{color:#6a737d;font-size:.85em}.markdown ol,.markdown ul{padding-left:2em}.markdown ol ol,.markdown ol ul,.markdown ul ol,.markdown ul ul{margin-bottom:0;margin-top:0}.markdown ol{list-style-type:decimal}.markdown ul{list-style-type:disc}.markdown li{word-wrap:break-all;display:list-item;text-align:-webkit-match-parent}.markdown li>p{margin-top:16px}.markdown li+li{margin-top:.25em}.markdown dl{padding:0}.markdown dl dt{font-size:1em;font-style:italic;font-weight:600;margin-top:16px;padding:0}.markdown dl dd{margin-bottom:16px;padding:0 16px}.markdown table{display:block;overflow:auto;width:100%}.markdown table th{font-weight:600}.markdown table td,.markdown table th{border:1px solid var(--markdown-table-border-color);padding:6px 13px}.markdown table tr{border-top:1px solid var(--markdown-table-border-color)}.markdown table tr:nth-child(2n){background-color:var(--markdown-table-even-cell-background-color)}.markdown img{background-color:transparent;box-sizing:initial;display:block;margin:0 auto;max-width:100%}.markdown img[align=right]{padding-left:20px}.markdown img[align=left]{padding-right:20px}.markdown code{background-color:rgba(27,31,35,.05);border-radius:3px;font-size:85%;margin:0;padding:.2em .4em}.markdown pre{word-wrap:normal}.markdown pre>code{background:transparent;border:0;font-size:100%;margin:0;padding:0;white-space:pre;word-break:normal}.markdown .highlight{margin-bottom:16px}.markdown .highlight pre{margin-bottom:0;word-break:normal}.markdown .highlight pre,.markdown pre{background-color:#f6f8fa;border-radius:3px;font-size:85%;line-height:1.45;overflow:auto;padding:16px}.markdown pre code{word-wrap:normal;background-color:initial;border:0;display:inline;line-height:inherit;margin:0;max-width:auto;overflow:visible;padding:0}.markdown .commit-tease-sha{color:#444d56;display:inline-block;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:90%}.markdown .full-commit .btn-outline:not(:disabled):hover{border-color:#005cc5;color:#005cc5}.markdown .blob-wrapper{overflow-x:auto;overflow-y:hidden}.markdown .blob-wrapper-embedded{max-height:240px;overflow-y:auto}.markdown .blob-num{color:rgba(27,31,35,.3);cursor:pointer;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px;line-height:20px;min-width:50px;padding-left:10px;padding-right:10px;text-align:right;-webkit-user-select:none;-ms-user-select:none;user-select:none;vertical-align:top;white-space:nowrap;width:1%}.markdown .blob-num:hover{color:rgba(27,31,35,.6)}.markdown .blob-num:before{content:attr(data-line-number)}.markdown .blob-code{line-height:20px;padding-left:10px;padding-right:10px;position:relative;vertical-align:top}.markdown .blob-code-inner{word-wrap:normal;color:#24292e;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px;overflow:visible;white-space:pre}.markdown .pl-token.active,.markdown .pl-token:hover{background:#ffea7f;cursor:pointer}.markdown .tab-size[data-tab-size="1"]{-moz-tab-size:1;-o-tab-size:1;tab-size:1}.markdown .tab-size[data-tab-size="2"]{-moz-tab-size:2;-o-tab-size:2;tab-size:2}.markdown .tab-size[data-tab-size="3"]{-moz-tab-size:3;-o-tab-size:3;tab-size:3}.markdown .tab-size[data-tab-size="4"]{-moz-tab-size:4;-o-tab-size:4;tab-size:4}.markdown .tab-size[data-tab-size="5"]{-moz-tab-size:5;-o-tab-size:5;tab-size:5}.markdown .tab-size[data-tab-size="6"]{-moz-tab-size:6;-o-tab-size:6;tab-size:6}.markdown .tab-size[data-tab-size="7"]{-moz-tab-size:7;-o-tab-size:7;tab-size:7}.markdown .tab-size[data-tab-size="8"]{-moz-tab-size:8;-o-tab-size:8;tab-size:8}.markdown .tab-size[data-tab-size="9"]{-moz-tab-size:9;-o-tab-size:9;tab-size:9}.markdown .tab-size[data-tab-size="10"]{-moz-tab-size:10;-o-tab-size:10;tab-size:10}.markdown .tab-size[data-tab-size="11"]{-moz-tab-size:11;-o-tab-size:11;tab-size:11}.markdown .tab-size[data-tab-size="12"]{-moz-tab-size:12;-o-tab-size:12;tab-size:12}.markdown .task-list-item{list-style-type:none}.markdown .task-list-item+.task-list-item{margin-top:3px}.markdown .task-list-item input{margin:0 .2em .25em -1.6em;vertical-align:middle}.markdown .table-of-contents{align-items:flex-start;display:flex;flex-direction:column;justify-content:center;position:fixed;right:0;top:75px;width:340px}@media(max-width:1300px){.markdown .table-of-contents{display:none}}.markdown .table-of-contents ul{cursor:pointer;list-style-type:none}.markdown .table-of-contents ul li a{border-bottom:none;color:var(--secondary-text-color);font-size:14px;height:30px;padding:6px 2px;width:100%}.markdown .table-of-contents ul p{margin:0}.markdown .gatsby-resp-image-wrapper{display:flex!important;justify-content:center!important;max-height:560px!important;width:100%!important}.markdown .gatsby-resp-image-wrapper img{height:auto!important;max-height:560px!important;max-width:100%!important;position:relative!important;width:auto!important}.markdown .gatsby-resp-image-wrapper+em{color:#6a737d;display:block;font-size:15px;font-style:italic;text-align:center}code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#ccc;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}.post-content{margin-bottom:20px;width:100%}.category-page-header-wrapper,.post-content{display:flex;flex-direction:column;justify-content:center}.category-page-header-wrapper{align-items:center;margin-bottom:30px;margin-top:30px}.category-page-header-wrapper .category-page-title{border-bottom:3px solid var(--primary-text-color);font-size:40px;font-weight:700;margin-bottom:15px;padding-bottom:7px;text-align:center;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content}.category-page-header-wrapper .category-page-subtitle{font-size:20px;font-weight:500;padding-bottom:10px;text-align:center}.post-card-wrapper{display:flex;justify-content:center;min-height:150px;width:100%}.post-card-wrapper .post-card{border:1px solid var(--post-card-border-color);border-radius:6px;color:var(--primary-text-color);cursor:pointer;display:flex;flex-direction:column;height:100%;margin-bottom:15px;max-width:720px;padding:15px;transition:transform .2s;width:100%}.post-card-wrapper .post-card:hover .title{text-decoration:underline}@media(min-width:768px){.post-card-wrapper .post-card{margin-bottom:0}}.post-card-wrapper .post-card .title{font-size:18px;font-weight:600;line-height:1.4;margin-bottom:7px}.post-card-wrapper .post-card .description{-webkit-line-clamp:3;-webkit-box-orient:vertical;color:var(--primary-text-color);display:-webkit-box;font-size:13px;line-height:20px;margin-bottom:10px;overflow:hidden;text-overflow:ellipsis}.post-card-wrapper .post-card .info{color:var(--about-link-icon-color);display:flex;font-size:14px;justify-content:space-between;margin-top:auto}.post-card-wrapper .post-card .info .categories{display:flex}.post-card-wrapper .post-card .info .categories .category{margin-left:4px}.post-card-wrapper .post-card .info .categories .category:hover{text-decoration:underline}.post-card-column-wrapper{display:flex;justify-content:center;width:100%}.post-card-column-wrapper .post-card-column{align-items:center;display:flex;flex-direction:column}.post-card-column-wrapper .post-card-column .post-card-wrapper{margin-bottom:10px}.post-card-column-wrapper .post-card-column .more-post-card-button{background-color:var(--button-background-color);font-size:15px;font-weight:500;height:40px}.post-tabs-wrapper{align-self:flex-start;display:flex;flex-direction:column;justify-content:center;top:0;width:100%}.post-tabs-wrapper .post-tabs{display:flex;height:40px;justify-content:center;margin-bottom:12px;max-width:760px;width:100%}.post-tabs-wrapper .post-tabs .mui-tabs .MuiTab-root{color:var(--tab-text-color);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:17px;font-weight:500;height:40px;min-height:auto;min-width:auto;padding:10px 12px;transition:all .2s ease}.post-tabs-wrapper .post-tabs .mui-tabs .Mui-selected,.post-tabs-wrapper .post-tabs .mui-tabs .MuiTab-root :hover{color:var(--tab-hover-text-color);transition:all .2s ease}.post-tabs-wrapper .post-tabs .mui-tabs .Mui-selected{background-color:var(--tab-selected-background-color);border-radius:8px;font-weight:600}.post-tabs-wrapper .post-tabs .mui-tabs .MuiTabScrollButton-root{height:40px;width:20px}.post-tabs-wrapper .post-tabs .mui-tabs .MuiTabs-scrollable{height:40px}.post-tabs-wrapper .post-tabs .mui-tabs .MuiTabs-indicator{display:none}</style><meta name="generator" content="Gatsby 3.14.5"/><style data-emotion="css-global o6gwfi">html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;box-sizing:border-box;-webkit-text-size-adjust:100%;}*,*::before,*::after{box-sizing:inherit;}strong,b{font-weight:700;}body{margin:0;color:rgba(0, 0, 0, 0.87);font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:400;font-size:1rem;line-height:1.5;letter-spacing:0.00938em;background-color:#fff;}@media print{body{background-color:#fff;}}body::backdrop{background-color:#fff;}</style><style data-emotion="css-global 1prfaxn">@-webkit-keyframes mui-auto-fill{from{display:block;}}@keyframes mui-auto-fill{from{display:block;}}@-webkit-keyframes mui-auto-fill-cancel{from{display:block;}}@keyframes mui-auto-fill-cancel{from{display:block;}}</style><style data-emotion="css 1l6di18 feqhe6 11tfndm mnn31 vubbuv 1yxmbwk 6flbmm">.css-1l6di18.Mui-focused .MuiAutocomplete-clearIndicator{visibility:visible;}@media (pointer: fine){.css-1l6di18:hover .MuiAutocomplete-clearIndicator{visibility:visible;}}.css-1l6di18 .MuiAutocomplete-tag{margin:3px;max-width:calc(100% - 6px);}.css-1l6di18 .MuiAutocomplete-inputRoot{-webkit-box-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;}.MuiAutocomplete-hasPopupIcon.css-1l6di18 .MuiAutocomplete-inputRoot,.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiAutocomplete-inputRoot{padding-right:30px;}.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiAutocomplete-inputRoot{padding-right:56px;}.css-1l6di18 .MuiAutocomplete-inputRoot .MuiAutocomplete-input{width:0;min-width:30px;}.css-1l6di18 .MuiInput-root{padding-bottom:1px;}.css-1l6di18 .MuiInput-root .MuiInput-input{padding:4px 4px 4px 0px;}.css-1l6di18 .MuiInput-root.MuiInputBase-sizeSmall .MuiInput-input{padding:2px 4px 3px 0;}.css-1l6di18 .MuiOutlinedInput-root{padding:9px;}.MuiAutocomplete-hasPopupIcon.css-1l6di18 .MuiOutlinedInput-root,.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiOutlinedInput-root{padding-right:39px;}.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiOutlinedInput-root{padding-right:65px;}.css-1l6di18 .MuiOutlinedInput-root .MuiAutocomplete-input{padding:7.5px 4px 7.5px 6px;}.css-1l6di18 .MuiOutlinedInput-root .MuiAutocomplete-endAdornment{right:9px;}.css-1l6di18 .MuiOutlinedInput-root.MuiInputBase-sizeSmall{padding:6px;}.css-1l6di18 .MuiOutlinedInput-root.MuiInputBase-sizeSmall .MuiAutocomplete-input{padding:2.5px 4px 2.5px 6px;}.css-1l6di18 .MuiFilledInput-root{padding-top:19px;padding-left:8px;}.MuiAutocomplete-hasPopupIcon.css-1l6di18 .MuiFilledInput-root,.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiFilledInput-root{padding-right:39px;}.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiFilledInput-root{padding-right:65px;}.css-1l6di18 .MuiFilledInput-root .MuiFilledInput-input{padding:7px 4px;}.css-1l6di18 .MuiFilledInput-root .MuiAutocomplete-endAdornment{right:9px;}.css-1l6di18 .MuiFilledInput-root.MuiInputBase-sizeSmall{padding-bottom:1px;}.css-1l6di18 .MuiFilledInput-root.MuiInputBase-sizeSmall .MuiFilledInput-input{padding:2.5px 4px;}.css-1l6di18 .MuiInputBase-hiddenLabel{padding-top:8px;}.css-1l6di18 .MuiAutocomplete-input{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;text-overflow:ellipsis;opacity:1;}.css-feqhe6{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;position:relative;min-width:0;padding:0;margin:0;border:0;vertical-align:top;width:100%;}.css-11tfndm{font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:400;font-size:1rem;line-height:1.4375em;letter-spacing:0.00938em;color:rgba(0, 0, 0, 0.87);box-sizing:border-box;position:relative;cursor:text;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:100%;position:relative;}.css-11tfndm.Mui-disabled{color:rgba(0, 0, 0, 0.38);cursor:default;}label+.css-11tfndm{margin-top:16px;}.css-11tfndm:after{border-bottom:2px solid #1976d2;left:0;bottom:0;content:"";position:absolute;right:0;-webkit-transform:scaleX(0);-moz-transform:scaleX(0);-ms-transform:scaleX(0);transform:scaleX(0);-webkit-transition:-webkit-transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;transition:transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;pointer-events:none;}.css-11tfndm.Mui-focused:after{-webkit-transform:scaleX(1);-moz-transform:scaleX(1);-ms-transform:scaleX(1);transform:scaleX(1);}.css-11tfndm.Mui-error:after{border-bottom-color:#d32f2f;-webkit-transform:scaleX(1);-moz-transform:scaleX(1);-ms-transform:scaleX(1);transform:scaleX(1);}.css-11tfndm:before{border-bottom:1px solid rgba(0, 0, 0, 0.42);left:0;bottom:0;content:"\00a0";position:absolute;right:0;-webkit-transition:border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;pointer-events:none;}.css-11tfndm:hover:not(.Mui-disabled):before{border-bottom:2px solid rgba(0, 0, 0, 0.87);}@media (hover: none){.css-11tfndm:hover:not(.Mui-disabled):before{border-bottom:1px solid rgba(0, 0, 0, 0.42);}}.css-11tfndm.Mui-disabled:before{border-bottom-style:dotted;}.css-mnn31{font:inherit;letter-spacing:inherit;color:currentColor;padding:4px 0 5px;border:0;box-sizing:content-box;background:none;height:1.4375em;margin:0;-webkit-tap-highlight-color:transparent;display:block;min-width:0;width:100%;-webkit-animation-name:mui-auto-fill-cancel;animation-name:mui-auto-fill-cancel;-webkit-animation-duration:10ms;animation-duration:10ms;}.css-mnn31::-webkit-input-placeholder{color:currentColor;opacity:0.42;-webkit-transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-mnn31::-moz-placeholder{color:currentColor;opacity:0.42;-webkit-transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-mnn31:-ms-input-placeholder{color:currentColor;opacity:0.42;-webkit-transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-mnn31::-ms-input-placeholder{color:currentColor;opacity:0.42;-webkit-transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-mnn31:focus{outline:0;}.css-mnn31:invalid{box-shadow:none;}.css-mnn31::-webkit-search-decoration{-webkit-appearance:none;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31::-webkit-input-placeholder{opacity:0!important;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31::-moz-placeholder{opacity:0!important;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:-ms-input-placeholder{opacity:0!important;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31::-ms-input-placeholder{opacity:0!important;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:focus::-webkit-input-placeholder{opacity:0.42;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:focus::-moz-placeholder{opacity:0.42;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:focus:-ms-input-placeholder{opacity:0.42;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:focus::-ms-input-placeholder{opacity:0.42;}.css-mnn31.Mui-disabled{opacity:1;-webkit-text-fill-color:rgba(0, 0, 0, 0.38);}.css-mnn31:-webkit-autofill{-webkit-animation-duration:5000s;animation-duration:5000s;-webkit-animation-name:mui-auto-fill;animation-name:mui-auto-fill;}.css-vubbuv{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:1em;height:1em;display:inline-block;fill:currentColor;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;font-size:1.5rem;}.css-1yxmbwk{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;position:relative;box-sizing:border-box;-webkit-tap-highlight-color:transparent;background-color:transparent;outline:0;border:0;margin:0;border-radius:0;padding:0;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;vertical-align:middle;-moz-appearance:none;-webkit-appearance:none;-webkit-text-decoration:none;text-decoration:none;color:inherit;text-align:center;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;font-size:1.5rem;padding:8px;border-radius:50%;overflow:visible;color:rgba(0, 0, 0, 0.54);-webkit-transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-1yxmbwk::-moz-focus-inner{border-style:none;}.css-1yxmbwk.Mui-disabled{pointer-events:none;cursor:default;}@media print{.css-1yxmbwk{-webkit-print-color-adjust:exact;color-adjust:exact;}}.css-1yxmbwk:hover{background-color:rgba(0, 0, 0, 0.04);}@media (hover: none){.css-1yxmbwk:hover{background-color:transparent;}}.css-1yxmbwk.Mui-disabled{background-color:transparent;color:rgba(0, 0, 0, 0.26);}.css-6flbmm{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:1em;height:1em;display:inline-block;fill:currentColor;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;font-size:2.1875rem;}</style><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GSPTK2B65F"></script><script>
+    window.GATSBY_GTAG_PLUGIN_GA_TRACKING_ID = (
+      'G-GSPTK2B65F'
+    );
+    window.GATSBY_GTAG_PLUGIN_ANONYMIZE = true;
+
+    var options = {
+      send_page_view: false
+    };
+    if (true) {
+      options.anonymize_ip = true;
+    }
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', 'G-GSPTK2B65F', options);
+  </script><link rel="icon" href="/favicon-32x32.png?v=fae257d65054f3b79b365f6b90168dd5" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=fae257d65054f3b79b365f6b90168dd5"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=fae257d65054f3b79b365f6b90168dd5"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=fae257d65054f3b79b365f6b90168dd5"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=fae257d65054f3b79b365f6b90168dd5"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=fae257d65054f3b79b365f6b90168dd5"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=fae257d65054f3b79b365f6b90168dd5"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=fae257d65054f3b79b365f6b90168dd5"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=fae257d65054f3b79b365f6b90168dd5"/><style type="text/css">
+    .anchor.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .anchor.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg,
+    h1 .anchor:focus svg,
+    h2 .anchor:focus svg,
+    h3 .anchor:focus svg,
+    h4 .anchor:focus svg,
+    h5 .anchor:focus svg,
+    h6 .anchor:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><title data-react-helmet="true">TFT_Champion_Detection</title><meta data-react-helmet="true" name="viewport" content="initial-scale=1, width=device-width"/><meta data-react-helmet="true" property="og:title" content="TFT_Champion_Detection"/><meta data-react-helmet="true" property="og:site_title" content="TFT_Champion_Detection"/><meta data-react-helmet="true" name="description" content="Yolov5를 활용한 TFT 챔피언 객체 탐지 프로젝트 진행 과정    이 페이지에서는 진행과정의 2,4,5의 과정을 기록 더 자세한 진행 과정은 아래의 사이트에 기록 https://han-depository.tistory.com/40?category=1005490 Step2. 영상을 프레임으로 나누기 기억해야 할 점 코덱이 있어야 동영상을 저장할 수 있다. 윈도우 os 상에서는 DIVX 코덱을 사용한다. VideoWriter에서 프레임 수를 지정할 수 있다. cap.get(1)으로 프레임수를 확인 및 mod를 사용하여 프레임 수를 제한할 수 있다. 윈도우 64bit에서 waitKey를 사용할 때 0xFF를 같이 사용한다. Step4. Yolov5를 이용해 객체 인지 학습 아래의 과정은 Colab 환경에서 진행 Yolov5 Yolo란? 실시간으로 물체 인식이 가능한 모델로 객체 인식에 분야에서 제일 잘 알려진 모델 1.PNG 특징 1.이미지 전체를 한번만 본다.
+Yolo가 나오기 …"/><meta data-react-helmet="true" property="og:description" content="Yolov5를 활용한 TFT 챔피언 객체 탐지 프로젝트 진행 과정    이 페이지에서는 진행과정의 2,4,5의 과정을 기록 더 자세한 진행 과정은 아래의 사이트에 기록 https://han-depository.tistory.com/40?category=1005490 Step2. 영상을 프레임으로 나누기 기억해야 할 점 코덱이 있어야 동영상을 저장할 수 있다. 윈도우 os 상에서는 DIVX 코덱을 사용한다. VideoWriter에서 프레임 수를 지정할 수 있다. cap.get(1)으로 프레임수를 확인 및 mod를 사용하여 프레임 수를 제한할 수 있다. 윈도우 64bit에서 waitKey를 사용할 때 0xFF를 같이 사용한다. Step4. Yolov5를 이용해 객체 인지 학습 아래의 과정은 Colab 환경에서 진행 Yolov5 Yolo란? 실시간으로 물체 인식이 가능한 모델로 객체 인식에 분야에서 제일 잘 알려진 모델 1.PNG 특징 1.이미지 전체를 한번만 본다.
+Yolo가 나오기 …"/><meta data-react-helmet="true" property="og:author" content="Han-기록소"/><meta data-react-helmet="true" property="og:image" content="/og-image.png"/><meta data-react-helmet="true" property="og:type" content="website"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxK.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"/><style>@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff")}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link as="script" rel="preload" href="/webpack-runtime-3fbe5c9bb3bdef55776d.js"/><link as="script" rel="preload" href="/framework-0e1bf37de02f7cef2174.js"/><link as="script" rel="preload" href="/app-1c48eadf34e7f53f402f.js"/><link as="script" rel="preload" href="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-3528d048b96f92ca0d99.js"/><link as="script" rel="preload" href="/component---src-templates-blog-template-js-ef83b594aa693e649d30.js"/><link as="fetch" rel="preload" href="/page-data/TFT_Champion_Detection/object_detection/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1073350324.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1956554647.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2938748437.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper"><header class="page-header-wrapper"><div class="page-header"><div class="front-section"><a class="link" href="/">Han-기록소</a></div><div class="trailing-section"><a class="link" href="/about">about</a><a class="link" href="/posts">posts</a><div class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-1l6di18" role="combobox" aria-expanded="false"><div class="search-input-wrapper"><div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root search-input css-feqhe6"><div class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-11tfndm"><input type="text" aria-invalid="false" autoComplete="off" value="" class="MuiInput-input MuiInputBase-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-mnn31" aria-autocomplete="list" autoCapitalize="none" spellcheck="false"/><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium search-icon css-vubbuv" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="SearchOutlinedIcon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div></div></div></div></div></div></header><main class="page-content"><header class="post-header"><div class="emoji">👨‍💻</div><div class="info"><div class="categories"><a class="category" href="/posts/Toy_Project">Toy_Project</a></div></div><h1 class="title">TFT_Champion_Detection</h1><div class="info"><div class="author">posted by <strong>HwanHee Park</strong>,</div> <!-- -->February 22, 2022</div></header><div class="post-content"><div class="markdown"><h1 id="yolov5를-활용한-tft-챔피언-객체-탐지" style="position:relative;"><a href="#yolov5%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-tft-%EC%B1%94%ED%94%BC%EC%96%B8-%EA%B0%9D%EC%B2%B4-%ED%83%90%EC%A7%80" aria-label="yolov5를 활용한 tft 챔피언 객체 탐지 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Yolov5를 활용한 TFT 챔피언 객체 탐지</h1>
+<h2 id="프로젝트-진행-과정" style="position:relative;"><a href="#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A7%84%ED%96%89-%EA%B3%BC%EC%A0%95" aria-label="프로젝트 진행 과정 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>프로젝트 진행 과정</h2>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 61.11111111111111%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAABo0lEQVQoz5VTyUoDQRCdrxFv3gVRjyKI4CUiKngQPLqAB4MIevHiQVAQFxT8BRGDBy8SsvgBCZklmcxmEiZ7Qi5PXkmHoKKx4U31dFW/elXdrZmmiUwmI8hms31rWRboIzgfFloul0M8HkcqlUIymUQikUA6ne4TDtq/wDiNn3w+LwuGYcCyPlVxTgyS/gQVo+I0FVwsFvEevMNxPDiOA9/z4fu+JKO/UChIjG3bAvWv1voKmYEE6bck1tYXED3cQPRoB5vbqzjY3xNSXdfRaDTQ6XTQarXQ6/UEpVIJ5XIZ3W4XQRCIWiHkplgshonJEexuTeM4Oou5yChWF+dFqWEaCMNQ4iqViliqISHV0UdiJhZC1/Xw+vKMyPw4ViJT2FibQmR5DCtLM9IC0zRQrVZlk9pMRSyX++v1upCLQnUotm3i7v4WJ6fnOLu4wvXNJR6fHuD7AXQ9J2VxNJtN1Go1tNttsSydo1/yZzMNeJ4nmaphKKASqmLzmZR9ZgytOgjXdWWNUIenqeMmO+/kVwz6f8O3a/PXhR36Yv/nWQ3z9D4Ajz9P8czpl4MAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="process1.png"
+        title="process1.png"
+        src="/static/54003ce1317901742a19aa461e15a32c/37523/process1.png"
+        srcset="/static/54003ce1317901742a19aa461e15a32c/e9ff0/process1.png 180w,
+/static/54003ce1317901742a19aa461e15a32c/f21e7/process1.png 360w,
+/static/54003ce1317901742a19aa461e15a32c/37523/process1.png 720w,
+/static/54003ce1317901742a19aa461e15a32c/302a4/process1.png 1080w,
+/static/54003ce1317901742a19aa461e15a32c/07a9c/process1.png 1440w,
+/static/54003ce1317901742a19aa461e15a32c/0faf1/process1.png 1956w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 61.11111111111111%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB1ElEQVQoz61TS2/TQBD27+DOqX8AIYGESi88egiXHPozkHLhoYLUQwr0woX/0dJW5R4l5kipEns3D8evxN5dr6PUctV8aDaKFYqQisRIn2Y0O/t5PPOt1e/30e12DXq9XuUHgwHojEDxbWG5rotWqwXbttHpdNBut2F/t/8guy2xtQqGwxE8z8N47Bk/HI1MnnFekZHnnIPzledruWVsUTCZTOCPPXDXQddxwekDgz5C30cuFeIowrIuhlIKIk2gpDSxlNJAaw3f9+mXHZTlFfaa7/D8xT00XtXxslFHrbaJg88H4NpDEAfgjEPrDGRpqiBVhizTmM1yzOdzlGWJMAxhOc6ScPd1A9u1Dey/fYb3u1vYfHIXzWYTTGiMwxCcMWTZklDrGZIkxWVRYLFYVDCE1OFlUeLLhzd4vLWB7acPUd95hPsP7uDTxz0srq4RxzHc3whzCJGartbNEDLGkOc5zi9+4PTsGw4PT3B8fIajr0c4v/iJVAhMp1NQHc2JLEkEkiQxM6S7RVGYfBRFsGgztFUpJHKtzeCpIyGEAcV0TkuhC0pJs0TqJggCA8pTLdVZKzmQHgkrCVBHLnMrOVDdujxuarSSzU3B/u11/LOw/xd+AfaFVQxxRpoSAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="process2.png"
+        title="process2.png"
+        src="/static/9eada362dc2428411fd95158a7c5329f/37523/process2.png"
+        srcset="/static/9eada362dc2428411fd95158a7c5329f/e9ff0/process2.png 180w,
+/static/9eada362dc2428411fd95158a7c5329f/f21e7/process2.png 360w,
+/static/9eada362dc2428411fd95158a7c5329f/37523/process2.png 720w,
+/static/9eada362dc2428411fd95158a7c5329f/302a4/process2.png 1080w,
+/static/9eada362dc2428411fd95158a7c5329f/07a9c/process2.png 1440w,
+/static/9eada362dc2428411fd95158a7c5329f/0faf1/process2.png 1956w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 61.11111111111111%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAACJUlEQVQoz5WTTWsTURSGs/AvuHFXQVy5ERWxopZS8ANEXWiRUqKNsYQKVsXuEgRpaelKELpQWhBEQaRuWkFQUSEkqSiuTCYzc2fyVcjkY9I6SWoyj8ykEysi1MVz7+Xe97wczjnXp6oqyWSSVCrl4p2FEF0cjcPWu3/hS6fTRKNREokE8XicWCxGYmUFVf3TyNsVRcGJkWV5k87Ze/c5i6ZpLrqmoguFjFDQVBld/G2Wy+UolcoUiyUMo0OxaHR1Pk9cNWsI00ZZg7QJsgma2aZWq7lCJyvTNFlaXmJ4aJBQKEBwdIRAwM/tW+Osrq6SyWQ2DVWFlg1PX3/ixp0gk9N3uRme4NXHb7Rt3MwkSWKjucHcozl29ezg/JU+LvvPcaK/h+PHDlM2imSz2Y6hqsi0gIfzCwR6d3IvuJ+Lg3uYf76IjWMok05LWFadl8+eMHjpKA+mhnk8fYGx8SMEhk5TLhpkPEOhqjR/2ix++MLE/UkiMzOEZ6d48znFRquN6jZC4ofVYPnFAr2HdnN24CBnTh1g4ORe+vv2kcsX3Pq6hpoQ1BsNNNMmabT5qpl8N2xEtUWj0ejWcH19nbfv3+H3+wlcG+XqyHVCoTHCkQiVSnVLDYWgUCiQ1TUymkJWF5u7Rj6f746PrutUK1WazSZrazUqlTL1uoVlWW5TnFHzee12Ct8JFFv4fe/pnEwlKdWdRadZDo7OncPt/oBt/5TtiP6HX3qHMQni5IFSAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="process3.png"
+        title="process3.png"
+        src="/static/26900969ca381839c79815fdcd0e4e48/37523/process3.png"
+        srcset="/static/26900969ca381839c79815fdcd0e4e48/e9ff0/process3.png 180w,
+/static/26900969ca381839c79815fdcd0e4e48/f21e7/process3.png 360w,
+/static/26900969ca381839c79815fdcd0e4e48/37523/process3.png 720w,
+/static/26900969ca381839c79815fdcd0e4e48/302a4/process3.png 1080w,
+/static/26900969ca381839c79815fdcd0e4e48/07a9c/process3.png 1440w,
+/static/26900969ca381839c79815fdcd0e4e48/0faf1/process3.png 1956w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<h3 id="이-페이지에서는-진행과정의-245의-과정을-기록" style="position:relative;"><a href="#%EC%9D%B4-%ED%8E%98%EC%9D%B4%EC%A7%80%EC%97%90%EC%84%9C%EB%8A%94-%EC%A7%84%ED%96%89%EA%B3%BC%EC%A0%95%EC%9D%98-245%EC%9D%98-%EA%B3%BC%EC%A0%95%EC%9D%84-%EA%B8%B0%EB%A1%9D" aria-label="이 페이지에서는 진행과정의 245의 과정을 기록 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>이 페이지에서는 진행과정의 2,4,5의 과정을 기록</h3>
+<p>더 자세한 진행 과정은 아래의 사이트에 기록</p>
+<p><a href="https://han-depository.tistory.com/40?category=1005490">https://han-depository.tistory.com/40?category=1005490</a></p>
+<h2 id="step2-영상을-프레임으로-나누기" style="position:relative;"><a href="#step2-%EC%98%81%EC%83%81%EC%9D%84-%ED%94%84%EB%A0%88%EC%9E%84%EC%9C%BC%EB%A1%9C-%EB%82%98%EB%88%84%EA%B8%B0" aria-label="step2 영상을 프레임으로 나누기 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step2. 영상을 프레임으로 나누기</h2>
+<p>기억해야 할 점</p>
+<ol>
+<li>코덱이 있어야 동영상을 저장할 수 있다. 윈도우 os 상에서는 DIVX 코덱을 사용한다.</li>
+<li>VideoWriter에서 프레임 수를 지정할 수 있다.</li>
+<li>cap.get(1)으로 프레임수를 확인 및 mod를 사용하여 프레임 수를 제한할 수 있다.</li>
+<li>윈도우 64bit에서 waitKey를 사용할 때 0xFF를 같이 사용한다.</li>
+</ol>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">import</span> cv2
+<span class="token keyword">import</span> os
+
+os<span class="token punctuation">.</span>chdir<span class="token punctuation">(</span><span class="token string">"C:\\Users\\USER\\Project\\2022\\Computer_vision"</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment">## 동영상 1초당 2프레임으로 저장</span>
+cap <span class="token operator">=</span> cv2<span class="token punctuation">.</span>VideoCapture<span class="token punctuation">(</span><span class="token string">"video1.mp4"</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 코덱 정의</span>
+fourcc <span class="token operator">=</span> cv2<span class="token punctuation">.</span>VideoWriter_fourcc<span class="token punctuation">(</span><span class="token operator">*</span><span class="token string">'DIVX'</span><span class="token punctuation">)</span> <span class="token comment"># window의 경우 DIVX</span>
+
+<span class="token comment"># 프레임 크기, FPS</span>
+width <span class="token operator">=</span> <span class="token builtin">round</span><span class="token punctuation">(</span>cap<span class="token punctuation">.</span>get<span class="token punctuation">(</span>cv2<span class="token punctuation">.</span>CAP_PROP_FRAME_WIDTH<span class="token punctuation">)</span><span class="token punctuation">)</span>
+height <span class="token operator">=</span> <span class="token builtin">round</span><span class="token punctuation">(</span>cap<span class="token punctuation">.</span>get<span class="token punctuation">(</span>cv2<span class="token punctuation">.</span>CAP_PROP_FRAME_HEIGHT<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+count <span class="token operator">=</span> <span class="token number">0</span> <span class="token comment"># 프레임 번호 할당</span>
+
+<span class="token keyword">while</span> cap<span class="token punctuation">.</span>isOpened<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    ret<span class="token punctuation">,</span> frame <span class="token operator">=</span> cap<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    
+    <span class="token keyword">if</span> <span class="token keyword">not</span> ret<span class="token punctuation">:</span>
+        <span class="token keyword">break</span>
+    
+    <span class="token comment"># 1초당 1프레임을 png로 저장</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">(</span>cap<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">%</span> <span class="token number">30</span><span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        cv2<span class="token punctuation">.</span>imwrite<span class="token punctuation">(</span><span class="token string">'C:\\Users\\USER\\Project\\2022\\Computer_vision\\Frames\\frame%d.jpg'</span> <span class="token operator">%</span> count<span class="token punctuation">,</span> frame<span class="token punctuation">)</span> <span class="token comment"># 0.jpg, 1.jpg</span>
+        count <span class="token operator">+=</span> <span class="token number">1</span>
+    
+    frame <span class="token operator">=</span> cv2<span class="token punctuation">.</span>resize<span class="token punctuation">(</span>frame<span class="token punctuation">,</span> dsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">,</span> fx<span class="token operator">=</span><span class="token number">0.5</span><span class="token punctuation">,</span> fy<span class="token operator">=</span><span class="token number">0.5</span><span class="token punctuation">,</span> interpolation<span class="token operator">=</span>cv2<span class="token punctuation">.</span>INTER_AREA<span class="token punctuation">)</span>
+    cv2<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span><span class="token string">'video'</span><span class="token punctuation">,</span> frame<span class="token punctuation">)</span>
+    
+    <span class="token keyword">if</span> cv2<span class="token punctuation">.</span>waitKey<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">&amp;</span> <span class="token number">0xFF</span> <span class="token operator">==</span> <span class="token builtin">ord</span><span class="token punctuation">(</span><span class="token string">'q'</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">break</span>
+        
+cap<span class="token punctuation">.</span>release<span class="token punctuation">(</span><span class="token punctuation">)</span>
+cv2<span class="token punctuation">.</span>destroyAllWindows<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<h2 id="step4-yolov5를-이용해-객체-인지-학습" style="position:relative;"><a href="#step4-yolov5%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4-%EA%B0%9D%EC%B2%B4-%EC%9D%B8%EC%A7%80-%ED%95%99%EC%8A%B5" aria-label="step4 yolov5를 이용해 객체 인지 학습 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step4. Yolov5를 이용해 객체 인지 학습</h2>
+<p>아래의 과정은 Colab 환경에서 진행</p>
+<h2 id="yolov5" style="position:relative;"><a href="#yolov5" aria-label="yolov5 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Yolov5</h2>
+<ul>
+<li>Yolo란?</li>
+</ul>
+<p>실시간으로 물체 인식이 가능한 모델로 객체 인식에 분야에서 제일 잘 알려진 모델</p>
+<p><img src="/bca563173c4f2ede31baea5995823bbd/1.png" alt="1.PNG"></p>
+<ul>
+<li>특징</li>
+</ul>
+<p>1.이미지 전체를 한번만 본다.
+Yolo가 나오기 전의 R-CNN 방법은 이미지를 여러개로 분할한 뒤 CNN 모델을 이용해 이미지를 분석했다. Yolo의 경우 이미지를 한번만 보는 특징을 지닌다. (프레임 속도 빠름)</p>
+<p>2.통합된 모델을 사용한다.
+기존의 방식의 모델은 다양한 전처리 모델과 인공 신경망을 결합한 뒤 사용. Yolo의 경우 통합된 모델을 사용한다. ( 더 간단하다.)</p>
+<p>3.실시간으로 객체를 탐지할 수 있다.
+Yolo가 높은 성능을 가지는 것은 아니지만 준수한 성능으로 실시간 객체탐지가 가능하다.</p>
+<ul>
+<li>장단점</li>
+</ul>
+<p>장점: 처리속도 빠르고 이미지를 한번 보는 방식으로 객체에 대한 맥락적인 이해도가 높고 테스트를 해도 다른 모델에 비해 높은 성능을 보인다.</p>
+<p>단점: 다른 모델에 비해 낮은 정확도를 가진다. (특히 작은 객체)</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># import Dataset</span>
+<span class="token keyword">from</span> google<span class="token punctuation">.</span>colab <span class="token keyword">import</span> drive
+drive<span class="token punctuation">.</span>mount<span class="token punctuation">(</span><span class="token string">'/content/drive'</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount("/content/drive", force_remount=True).</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># install yolov5</span>
+<span class="token operator">%</span>cd <span class="token operator">/</span>content
+
+!git clone https<span class="token punctuation">:</span><span class="token operator">//</span>github<span class="token punctuation">.</span>com<span class="token operator">/</span>ultralytics<span class="token operator">/</span>yolov5<span class="token punctuation">.</span>git</code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">/content
+Cloning into 'yolov5'...
+remote: Enumerating objects: 10896, done.[K
+remote: Total 10896 (delta 0), reused 0 (delta 0), pack-reused 10896[K
+Receiving objects: 100% (10896/10896), 11.04 MiB | 25.75 MiB/s, done.
+Resolving deltas: 100% (7524/7524), done.</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token operator">%</span>cd <span class="token operator">/</span>content<span class="token operator">/</span>yolov5<span class="token operator">/</span>
+
+!pip install <span class="token operator">-</span>r requirements<span class="token punctuation">.</span>txt</code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">/content/yolov5
+Requirement already satisfied: matplotlib>=3.2.2 in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 4)) (3.2.2)
+Requirement already satisfied: numpy>=1.18.5 in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 5)) (1.21.5)
+Requirement already satisfied: opencv-python>=4.1.2 in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 6)) (4.1.2.30)
+Requirement already satisfied: Pillow>=7.1.2 in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 7)) (7.1.2)
+Collecting PyYAML>=5.3.1
+  Downloading PyYAML-6.0-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (596 kB)
+[K     |████████████████████████████████| 596 kB 5.2 MB/s 
+[?25hRequirement already satisfied: requests>=2.23.0 in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 9)) (2.23.0)
+Requirement already satisfied: scipy>=1.4.1 in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 10)) (1.4.1)
+Requirement already satisfied: torch>=1.7.0 in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 11)) (1.10.0+cu111)
+Requirement already satisfied: torchvision>=0.8.1 in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 12)) (0.11.1+cu111)
+Requirement already satisfied: tqdm>=4.41.0 in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 13)) (4.62.3)
+Requirement already satisfied: tensorboard>=2.4.1 in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 16)) (2.8.0)
+Requirement already satisfied: pandas>=1.1.4 in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 20)) (1.3.5)
+Requirement already satisfied: seaborn>=0.11.0 in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 21)) (0.11.2)
+Collecting thop
+  Downloading thop-0.0.31.post2005241907-py3-none-any.whl (8.7 kB)
+Requirement already satisfied: kiwisolver>=1.0.1 in /usr/local/lib/python3.7/dist-packages (from matplotlib>=3.2.2->-r requirements.txt (line 4)) (1.3.2)
+Requirement already satisfied: cycler>=0.10 in /usr/local/lib/python3.7/dist-packages (from matplotlib>=3.2.2->-r requirements.txt (line 4)) (0.11.0)
+Requirement already satisfied: python-dateutil>=2.1 in /usr/local/lib/python3.7/dist-packages (from matplotlib>=3.2.2->-r requirements.txt (line 4)) (2.8.2)
+Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1 in /usr/local/lib/python3.7/dist-packages (from matplotlib>=3.2.2->-r requirements.txt (line 4)) (3.0.7)
+Requirement already satisfied: idna&lt;3,>=2.5 in /usr/local/lib/python3.7/dist-packages (from requests>=2.23.0->-r requirements.txt (line 9)) (2.10)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.7/dist-packages (from requests>=2.23.0->-r requirements.txt (line 9)) (2021.10.8)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,&lt;1.26,>=1.21.1 in /usr/local/lib/python3.7/dist-packages (from requests>=2.23.0->-r requirements.txt (line 9)) (1.24.3)
+Requirement already satisfied: chardet&lt;4,>=3.0.2 in /usr/local/lib/python3.7/dist-packages (from requests>=2.23.0->-r requirements.txt (line 9)) (3.0.4)
+Requirement already satisfied: typing-extensions in /usr/local/lib/python3.7/dist-packages (from torch>=1.7.0->-r requirements.txt (line 11)) (3.10.0.2)
+Requirement already satisfied: wheel>=0.26 in /usr/local/lib/python3.7/dist-packages (from tensorboard>=2.4.1->-r requirements.txt (line 16)) (0.37.1)
+Requirement already satisfied: google-auth-oauthlib&lt;0.5,>=0.4.1 in /usr/local/lib/python3.7/dist-packages (from tensorboard>=2.4.1->-r requirements.txt (line 16)) (0.4.6)
+Requirement already satisfied: protobuf>=3.6.0 in /usr/local/lib/python3.7/dist-packages (from tensorboard>=2.4.1->-r requirements.txt (line 16)) (3.17.3)
+Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.7/dist-packages (from tensorboard>=2.4.1->-r requirements.txt (line 16)) (3.3.6)
+Requirement already satisfied: setuptools>=41.0.0 in /usr/local/lib/python3.7/dist-packages (from tensorboard>=2.4.1->-r requirements.txt (line 16)) (57.4.0)
+Requirement already satisfied: grpcio>=1.24.3 in /usr/local/lib/python3.7/dist-packages (from tensorboard>=2.4.1->-r requirements.txt (line 16)) (1.43.0)
+Requirement already satisfied: tensorboard-data-server&lt;0.7.0,>=0.6.0 in /usr/local/lib/python3.7/dist-packages (from tensorboard>=2.4.1->-r requirements.txt (line 16)) (0.6.1)
+Requirement already satisfied: tensorboard-plugin-wit>=1.6.0 in /usr/local/lib/python3.7/dist-packages (from tensorboard>=2.4.1->-r requirements.txt (line 16)) (1.8.1)
+Requirement already satisfied: absl-py>=0.4 in /usr/local/lib/python3.7/dist-packages (from tensorboard>=2.4.1->-r requirements.txt (line 16)) (1.0.0)
+Requirement already satisfied: google-auth&lt;3,>=1.6.3 in /usr/local/lib/python3.7/dist-packages (from tensorboard>=2.4.1->-r requirements.txt (line 16)) (1.35.0)
+Requirement already satisfied: werkzeug>=0.11.15 in /usr/local/lib/python3.7/dist-packages (from tensorboard>=2.4.1->-r requirements.txt (line 16)) (1.0.1)
+Requirement already satisfied: pytz>=2017.3 in /usr/local/lib/python3.7/dist-packages (from pandas>=1.1.4->-r requirements.txt (line 20)) (2018.9)
+Requirement already satisfied: six in /usr/local/lib/python3.7/dist-packages (from absl-py>=0.4->tensorboard>=2.4.1->-r requirements.txt (line 16)) (1.15.0)
+Requirement already satisfied: cachetools&lt;5.0,>=2.0.0 in /usr/local/lib/python3.7/dist-packages (from google-auth&lt;3,>=1.6.3->tensorboard>=2.4.1->-r requirements.txt (line 16)) (4.2.4)
+Requirement already satisfied: pyasn1-modules>=0.2.1 in /usr/local/lib/python3.7/dist-packages (from google-auth&lt;3,>=1.6.3->tensorboard>=2.4.1->-r requirements.txt (line 16)) (0.2.8)
+Requirement already satisfied: rsa&lt;5,>=3.1.4 in /usr/local/lib/python3.7/dist-packages (from google-auth&lt;3,>=1.6.3->tensorboard>=2.4.1->-r requirements.txt (line 16)) (4.8)
+Requirement already satisfied: requests-oauthlib>=0.7.0 in /usr/local/lib/python3.7/dist-packages (from google-auth-oauthlib&lt;0.5,>=0.4.1->tensorboard>=2.4.1->-r requirements.txt (line 16)) (1.3.1)
+Requirement already satisfied: importlib-metadata>=4.4 in /usr/local/lib/python3.7/dist-packages (from markdown>=2.6.8->tensorboard>=2.4.1->-r requirements.txt (line 16)) (4.11.0)
+Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python3.7/dist-packages (from importlib-metadata>=4.4->markdown>=2.6.8->tensorboard>=2.4.1->-r requirements.txt (line 16)) (3.7.0)
+Requirement already satisfied: pyasn1&lt;0.5.0,>=0.4.6 in /usr/local/lib/python3.7/dist-packages (from pyasn1-modules>=0.2.1->google-auth&lt;3,>=1.6.3->tensorboard>=2.4.1->-r requirements.txt (line 16)) (0.4.8)
+Requirement already satisfied: oauthlib>=3.0.0 in /usr/local/lib/python3.7/dist-packages (from requests-oauthlib>=0.7.0->google-auth-oauthlib&lt;0.5,>=0.4.1->tensorboard>=2.4.1->-r requirements.txt (line 16)) (3.2.0)
+Installing collected packages: thop, PyYAML
+  Attempting uninstall: PyYAML
+    Found existing installation: PyYAML 3.13
+    Uninstalling PyYAML-3.13:
+      Successfully uninstalled PyYAML-3.13
+Successfully installed PyYAML-6.0 thop-0.0.31.post2005241907</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># yaml 파일 확인</span>
+<span class="token operator">%</span>cat <span class="token operator">/</span>content<span class="token operator">/</span>dataset<span class="token operator">/</span>data<span class="token punctuation">.</span>yaml</code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text"># Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+# path: ../datasets/coco128  # dataset root dir
+train: /content/dataset/train.txt  
+val: /content/dataset/valid.txt  
+test:  # test images (optional)
+
+# Classes
+nc: 39  # number of classes
+names: ['2-1', 'Darius', 'Graves', 'Caitlyn', 'Garen', 'Ziggs', 'Ezreal', 'Camille', '2-2', 'Illaoi',
+        '2-3', 'Kassadin', 'KogMaw', '2-4', 'Zyra', '2-5', 'Trundle', '2-6', 'Twitch', 'TwistedFate',
+        'Taric', '2-7', 'Poppy', 'Tristana', 'Ekko', 'Swain', 'Warwick', 'miss', 'Singed', 'Quinn',
+        'Lulu', 'Blitzcrank', 'Gangplank', 'Vi', 'Heimerdinger', 'Zac', 'Samira', 'Leona', 'Vex']  # class names</code></pre></div>
+<p>아래의 glob 함수는 파일들의 리스트를 뽑을 때 사용하는데, 파일의 경로명을 알면 마음대로 넣기, 꺼내기 등 많은 것이 가능한 함수</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">from</span> glob <span class="token keyword">import</span> glob
+
+img_list <span class="token operator">=</span> glob<span class="token punctuation">(</span><span class="token string">"/content/dataset/images/*.jpg"</span><span class="token punctuation">)</span> <span class="token comment"># 모든 jpg 파일을 리스트로 저장</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># train_test_split</span>
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>model_selection <span class="token keyword">import</span> train_test_split
+
+train_img_list<span class="token punctuation">,</span> val_img_list <span class="token operator">=</span> train_test_split<span class="token punctuation">(</span>img_list<span class="token punctuation">,</span> test_size<span class="token operator">=</span><span class="token number">0.2</span><span class="token punctuation">,</span> random_state<span class="token operator">=</span><span class="token number">1000</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>train_img_list<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token builtin">len</span><span class="token punctuation">(</span>val_img_list<span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">200 51</code></pre></div>
+<p>Yolo 모델에 실행하기 앞서 yaml 파일 수정 (train, test)</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'/content/dataset/train.txt'</span><span class="token punctuation">,</span><span class="token string">'w'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+  f<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string">'\n'</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span>train_img_list<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">'\n'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'/content/dataset/valid.txt'</span><span class="token punctuation">,</span><span class="token string">'w'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+  f<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string">'\n'</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span>val_img_list<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">'\n'</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">import</span> yaml
+
+<span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'/content/dataset/data.yaml'</span><span class="token punctuation">,</span><span class="token string">'r'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+  data <span class="token operator">=</span> yaml<span class="token punctuation">.</span>safe_load<span class="token punctuation">(</span>f<span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+</code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">{'train': '/content/dataset/train.txt', 'val': '/content/dataset/valid.txt', 'test': None, 'nc': 39, 'names': ['2-1', 'Darius', 'Graves', 'Caitlyn', 'Garen', 'Ziggs', 'Ezreal', 'Camille', '2-2', 'Illaoi', '2-3', 'Kassadin', 'KogMaw', '2-4', 'Zyra', '2-5', 'Trundle', '2-6', 'Twitch', 'TwistedFate', 'Taric', '2-7', 'Poppy', 'Tristana', 'Ekko', 'Swain', 'Warwick', 'miss', 'Singed', 'Quinn', 'Lulu', 'Blitzcrank', 'Gangplank', 'Vi', 'Heimerdinger', 'Zac', 'Samira', 'Leona', 'Vex']}</code></pre></div>
+<h3 id="객체인지-학습" style="position:relative;"><a href="#%EA%B0%9D%EC%B2%B4%EC%9D%B8%EC%A7%80-%ED%95%99%EC%8A%B5" aria-label="객체인지 학습 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>객체인지 학습</h3>
+<p>아래와 같이 학습을 진행할 때 필요한 옵션으로 아래의 값이 클수록 GPU에 무리가 간다.</p>
+<ul>
+<li>img : 이미지 사이즈</li>
+<li>batch : 배치 사이즈</li>
+<li>epochs : 전체 데이터셋에 대한 학습 횟수</li>
+<li>data : 학습에 사용될 데이터</li>
+<li>cfg : 학습 모델 yaml( ex. yolov5s, yolov5m, yolov5l, yolov5x)</li>
+<li>weights : 학습에 사용될 weight ( 학습 모델에 맞게 사용)</li>
+<li>resume : 학습 과정 중 중단 될 경우 !python train.py — resume 과 같은 방식으로 중단된 부분부터 다시 학습 진행</li>
+</ul>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token operator">%</span>cd <span class="token operator">/</span>content<span class="token operator">/</span>yolov5
+
+!python train<span class="token punctuation">.</span>py <span class="token operator">-</span><span class="token operator">-</span>img <span class="token number">416</span> <span class="token operator">-</span><span class="token operator">-</span>batch <span class="token number">16</span> <span class="token operator">-</span><span class="token operator">-</span>epochs <span class="token number">200</span> <span class="token operator">-</span><span class="token operator">-</span>data <span class="token operator">/</span>content<span class="token operator">/</span>dataset<span class="token operator">/</span>data<span class="token punctuation">.</span>yaml <span class="token operator">-</span><span class="token operator">-</span>cfg <span class="token punctuation">.</span><span class="token operator">/</span>models<span class="token operator">/</span>yolov5s<span class="token punctuation">.</span>yaml <span class="token operator">-</span><span class="token operator">-</span>weights yolov5s<span class="token punctuation">.</span>pt <span class="token operator">-</span><span class="token operator">-</span>name ftf_yolov5s_results</code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">/content/yolov5
+Downloading https://ultralytics.com/assets/Arial.ttf to /root/.config/Ultralytics/Arial.ttf...
+[34m[1mtrain: [0mweights=yolov5s.pt, cfg=./models/yolov5s.yaml, data=/content/dataset/data.yaml, hyp=data/hyps/hyp.scratch.yaml, epochs=200, batch_size=16, imgsz=416, rect=False, resume=False, nosave=False, noval=False, noautoanchor=False, evolve=None, bucket=, cache=None, image_weights=False, device=, multi_scale=False, single_cls=False, optimizer=SGD, sync_bn=False, workers=8, project=runs/train, name=ftf_yolov5s_results, exist_ok=False, quad=False, linear_lr=False, label_smoothing=0.0, patience=100, freeze=[0], save_period=-1, local_rank=-1, entity=None, upload_dataset=False, bbox_interval=-1, artifact_alias=latest
+[34m[1mgithub: [0mup to date with https://github.com/ultralytics/yolov5 ✅
+YOLOv5 🚀 v6.0-266-g07221f1 torch 1.10.0+cu111 CUDA:0 (Tesla K80, 11441MiB)
+
+[34m[1mhyperparameters: [0mlr0=0.01, lrf=0.1, momentum=0.937, weight_decay=0.0005, warmup_epochs=3.0, warmup_momentum=0.8, warmup_bias_lr=0.1, box=0.05, cls=0.5, cls_pw=1.0, obj=1.0, obj_pw=1.0, iou_t=0.2, anchor_t=4.0, fl_gamma=0.0, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, degrees=0.0, translate=0.1, scale=0.5, shear=0.0, perspective=0.0, flipud=0.0, fliplr=0.5, mosaic=1.0, mixup=0.0, copy_paste=0.0
+[34m[1mWeights &amp; Biases: [0mrun 'pip install wandb' to automatically track and visualize YOLOv5 🚀 runs (RECOMMENDED)
+[34m[1mTensorBoard: [0mStart with 'tensorboard --logdir runs/train', view at http://localhost:6006/
+Downloading https://github.com/ultralytics/yolov5/releases/download/v6.0/yolov5s.pt to yolov5s.pt...
+100% 14.0M/14.0M [00:00&lt;00:00, 100MB/s] 
+
+Overriding model.yaml nc=80 with nc=39
+
+                 from  n    params  module                                  arguments                     
+  0                -1  1      3520  models.common.Conv                      [3, 32, 6, 2, 2]              
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2]                
+  2                -1  1     18816  models.common.C3                        [64, 64, 1]                   
+  3                -1  1     73984  models.common.Conv                      [64, 128, 3, 2]               
+  4                -1  2    115712  models.common.C3                        [128, 128, 2]                 
+  5                -1  1    295424  models.common.Conv                      [128, 256, 3, 2]              
+  6                -1  3    625152  models.common.C3                        [256, 256, 3]                 
+  7                -1  1   1180672  models.common.Conv                      [256, 512, 3, 2]              
+  8                -1  1   1182720  models.common.C3                        [512, 512, 1]                 
+  9                -1  1    656896  models.common.SPPF                      [512, 512, 5]                 
+ 10                -1  1    131584  models.common.Conv                      [512, 256, 1, 1]              
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']          
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]                           
+ 13                -1  1    361984  models.common.C3                        [512, 256, 1, False]          
+ 14                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]              
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']          
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]                           
+ 17                -1  1     90880  models.common.C3                        [256, 128, 1, False]          
+ 18                -1  1    147712  models.common.Conv                      [128, 128, 3, 2]              
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]                           
+ 20                -1  1    296448  models.common.C3                        [256, 256, 1, False]          
+ 21                -1  1    590336  models.common.Conv                      [256, 256, 3, 2]              
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]                           
+ 23                -1  1   1182720  models.common.C3                        [512, 512, 1, False]          
+ 24      [17, 20, 23]  1    118668  models.yolo.Detect                      [39, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [128, 256, 512]]
+Model Summary: 270 layers, 7124812 parameters, 7124812 gradients, 16.2 GFLOPs
+
+Transferred 342/349 items from yolov5s.pt
+Scaled weight_decay = 0.0005
+[34m[1moptimizer:[0m SGD with parameter groups 57 weight (no decay), 60 weight, 60 bias
+[34m[1malbumentations: [0mversion 1.0.3 required by YOLOv5, but version 0.1.12 is currently installed
+[34m[1mtrain: [0mScanning '/content/dataset/train' images and labels...200 found, 0 missing, 0 empty, 0 corrupt: 100% 200/200 [00:00&lt;00:00, 1146.95it/s]
+[34m[1mtrain: [0mNew cache created: /content/dataset/train.cache
+[34m[1mval: [0mScanning '/content/dataset/valid' images and labels...51 found, 0 missing, 0 empty, 0 corrupt: 100% 51/51 [00:00&lt;00:00, 786.28it/s]
+[34m[1mval: [0mNew cache created: /content/dataset/valid.cache
+Plotting labels to runs/train/ftf_yolov5s_results/labels.jpg... 
+
+[34m[1mAutoAnchor: [0m5.38 anchors/target, 1.000 Best Possible Recall (BPR). Current anchors are a good fit to dataset ✅
+Image sizes 416 train, 416 val
+Using 2 dataloader workers
+Logging results to [1mruns/train/ftf_yolov5s_results[0m
+Starting training for 200 epochs...
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+     0/199     1.47G    0.1283   0.07516   0.09348       203       416: 100% 13/13 [00:37&lt;00:00,  2.89s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.98it/s]
+                 all         51          0          0          0          0          0
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+     1/199      1.6G    0.1239   0.08135   0.09249       130       416: 100% 13/13 [00:37&lt;00:00,  2.90s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.96it/s]
+                 all         51        575   2.64e-05    0.00116   1.35e-05   2.71e-06
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+     2/199      1.6G    0.1204   0.08586    0.0912       155       416: 100% 13/13 [00:39&lt;00:00,  3.06s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.75it/s]
+                 all         51        575   0.000527     0.0137   0.000303   7.31e-05
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+     3/199      1.6G    0.1162   0.08317   0.09026       161       416: 100% 13/13 [00:37&lt;00:00,  2.89s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.50it/s]
+                 all         51        575      0.225     0.0204    0.00234   0.000448
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+     4/199      1.6G    0.1121   0.08016   0.08933       132       416: 100% 13/13 [00:39&lt;00:00,  3.04s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:02&lt;00:00,  1.04s/it]
+                 all         51        575     0.0588      0.084    0.00474   0.000934
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+     5/199      1.6G    0.1049   0.07283   0.08883       150       416: 100% 13/13 [00:36&lt;00:00,  2.84s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:03&lt;00:00,  1.57s/it]
+                 all         51        575        0.2      0.105    0.00867    0.00251
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+     6/199      1.6G   0.09307    0.0708   0.08735       151       416: 100% 13/13 [00:37&lt;00:00,  2.92s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:04&lt;00:00,  2.05s/it]
+                 all         51        575     0.0136      0.282     0.0186    0.00611
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+     7/199     1.67G   0.08462   0.07215   0.08623       185       416: 100% 13/13 [00:34&lt;00:00,  2.69s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:03&lt;00:00,  1.94s/it]
+                 all         51        575      0.101      0.309     0.0332     0.0118
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+     8/199     1.67G   0.07684     0.068   0.08553       150       416: 100% 13/13 [00:37&lt;00:00,  2.87s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:03&lt;00:00,  1.64s/it]
+                 all         51        575      0.576     0.0946     0.0428     0.0137
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+     9/199     1.67G   0.07398   0.06374   0.08417       148       416: 100% 13/13 [00:35&lt;00:00,  2.74s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:02&lt;00:00,  1.40s/it]
+                 all         51        575      0.136      0.274     0.0493     0.0176
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    10/199     1.67G   0.06985   0.06286   0.08291       146       416: 100% 13/13 [00:37&lt;00:00,  2.90s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:02&lt;00:00,  1.10s/it]
+                 all         51        575      0.398      0.152     0.0547     0.0233
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    11/199     1.67G   0.06704   0.06066   0.08149       149       416: 100% 13/13 [00:36&lt;00:00,  2.84s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:02&lt;00:00,  1.13s/it]
+                 all         51        575      0.117      0.429     0.0639     0.0297
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    12/199     1.67G   0.06495    0.0585    0.0799       139       416: 100% 13/13 [00:38&lt;00:00,  2.97s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:02&lt;00:00,  1.12s/it]
+                 all         51        575      0.118      0.324     0.0502     0.0164
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    13/199     1.67G   0.08283   0.05878   0.07962       148       416: 100% 13/13 [00:37&lt;00:00,  2.86s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:02&lt;00:00,  1.03s/it]
+                 all         51        575        0.7     0.0759     0.0411     0.0154
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    14/199     1.67G   0.07707   0.05916   0.07789       194       416: 100% 13/13 [00:38&lt;00:00,  2.99s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:02&lt;00:00,  1.08s/it]
+                 all         51        575      0.146      0.296     0.0429     0.0199
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    15/199     1.67G   0.07656   0.05711   0.07879       159       416: 100% 13/13 [00:36&lt;00:00,  2.79s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.03it/s]
+                 all         51        575      0.183       0.26      0.054     0.0212
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    16/199     1.67G   0.07589   0.05911   0.07778       164       416: 100% 13/13 [00:39&lt;00:00,  3.01s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.02it/s]
+                 all         51        575      0.165      0.316     0.0667     0.0336
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    17/199     1.67G   0.07277     0.058   0.07757       174       416: 100% 13/13 [00:36&lt;00:00,  2.77s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:02&lt;00:00,  1.11s/it]
+                 all         51        575      0.185      0.334      0.059     0.0249
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    18/199     1.67G   0.06965   0.05927   0.07642       155       416: 100% 13/13 [00:39&lt;00:00,  3.04s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.01it/s]
+                 all         51        575      0.173      0.415     0.0831     0.0388
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    19/199     1.67G   0.07101   0.05747   0.07618       153       416: 100% 13/13 [00:37&lt;00:00,  2.86s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:02&lt;00:00,  1.01s/it]
+                 all         51        575      0.148      0.364      0.085     0.0391
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    20/199     1.67G   0.06788   0.05771   0.07541       214       416: 100% 13/13 [00:39&lt;00:00,  3.00s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:02&lt;00:00,  1.02s/it]
+                 all         51        575     0.0987      0.397     0.0732     0.0348
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    21/199     1.67G   0.06755   0.05471   0.07402       146       416: 100% 13/13 [00:38&lt;00:00,  2.93s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:02&lt;00:00,  1.07s/it]
+                 all         51        575      0.326      0.237     0.0598     0.0246
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    22/199     1.67G   0.06556   0.05465   0.07465       119       416: 100% 13/13 [00:40&lt;00:00,  3.08s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.01it/s]
+                 all         51        575        0.2      0.417      0.102     0.0548
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    23/199     1.67G   0.06395   0.05655   0.07381       184       416: 100% 13/13 [00:36&lt;00:00,  2.80s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:02&lt;00:00,  1.04s/it]
+                 all         51        575      0.074      0.379     0.0572     0.0194
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    24/199     1.67G   0.06647   0.05331   0.07295       170       416: 100% 13/13 [00:38&lt;00:00,  2.98s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.03it/s]
+                 all         51        575      0.233      0.439      0.113     0.0531
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    25/199     1.67G    0.0656   0.05212   0.07351       182       416: 100% 13/13 [00:37&lt;00:00,  2.85s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:02&lt;00:00,  1.01s/it]
+                 all         51        575      0.673      0.136     0.0748     0.0287
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    26/199     1.67G   0.06268   0.05411   0.07173       139       416: 100% 13/13 [00:38&lt;00:00,  2.98s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.05it/s]
+                 all         51        575      0.152      0.468      0.119     0.0562
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    27/199     1.67G   0.06366   0.05464   0.07141       106       416: 100% 13/13 [00:36&lt;00:00,  2.80s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.02it/s]
+                 all         51        575      0.213      0.397     0.0981     0.0478
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    28/199     1.67G   0.06131   0.05197   0.07114       172       416: 100% 13/13 [00:38&lt;00:00,  2.99s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:02&lt;00:00,  1.00s/it]
+                 all         51        575      0.248      0.413      0.164     0.0728
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    29/199     1.67G   0.06185   0.05354   0.07069       146       416: 100% 13/13 [00:36&lt;00:00,  2.77s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:02&lt;00:00,  1.00s/it]
+                 all         51        575      0.243      0.422      0.144      0.052
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    30/199     1.67G   0.05946   0.05508   0.07053       175       416: 100% 13/13 [00:38&lt;00:00,  3.00s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.07it/s]
+                 all         51        575      0.515      0.327      0.176     0.0827
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    31/199     1.67G   0.06226   0.05301    0.0701       147       416: 100% 13/13 [00:35&lt;00:00,  2.77s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.02it/s]
+                 all         51        575      0.723      0.163      0.141     0.0549
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    32/199     1.67G   0.05562   0.05138   0.07026       210       416: 100% 13/13 [00:38&lt;00:00,  2.97s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.09it/s]
+                 all         51        575      0.742      0.173      0.187     0.0936
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    33/199     1.67G   0.05692   0.05137   0.06875       167       416: 100% 13/13 [00:35&lt;00:00,  2.74s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:02&lt;00:00,  1.00s/it]
+                 all         51        575       0.68      0.236      0.165     0.0718
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    34/199     1.67G   0.05658   0.05112   0.06817       161       416: 100% 13/13 [00:38&lt;00:00,  2.99s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.07it/s]
+                 all         51        575      0.773      0.154      0.182     0.0916
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    35/199     1.67G   0.05745   0.05208   0.06911       158       416: 100% 13/13 [00:36&lt;00:00,  2.83s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.10it/s]
+                 all         51        575      0.924       0.12      0.164      0.081
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    36/199     1.67G   0.05656   0.05212   0.06794       169       416: 100% 13/13 [00:39&lt;00:00,  3.03s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.08it/s]
+                 all         51        575      0.931      0.114      0.173     0.0839
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    37/199     1.67G   0.05586   0.05268   0.06658       134       416: 100% 13/13 [00:37&lt;00:00,  2.88s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.04it/s]
+                 all         51        575      0.932      0.114      0.168     0.0772
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    38/199     1.67G   0.06382   0.05215   0.06763       188       416: 100% 13/13 [00:40&lt;00:00,  3.08s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.15it/s]
+                 all         51        575      0.831      0.147       0.16      0.067
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    39/199     1.67G   0.05979   0.05628   0.06554       209       416: 100% 13/13 [00:37&lt;00:00,  2.86s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.08it/s]
+                 all         51        575      0.923     0.0999      0.176     0.0704
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    40/199     1.67G   0.06085    0.0507   0.06499       117       416: 100% 13/13 [00:40&lt;00:00,  3.09s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.06it/s]
+                 all         51        575       0.92      0.109      0.161     0.0693
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    41/199     1.67G   0.05915   0.05152   0.06489       181       416: 100% 13/13 [00:39&lt;00:00,  3.02s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.02it/s]
+                 all         51        575       0.93      0.139      0.197     0.0848
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    42/199     1.67G   0.06245   0.04832   0.06505       132       416: 100% 13/13 [00:41&lt;00:00,  3.21s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.05it/s]
+                 all         51        575      0.929      0.122       0.18     0.0673
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    43/199     1.67G   0.06099   0.05707   0.06424       175       416: 100% 13/13 [00:39&lt;00:00,  3.07s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:02&lt;00:00,  1.01s/it]
+                 all         51        575      0.531      0.316      0.167     0.0636
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    44/199     1.67G   0.05968    0.0511    0.0631       134       416: 100% 13/13 [00:41&lt;00:00,  3.22s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.05it/s]
+                 all         51        575       0.59      0.304       0.21     0.0994
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    45/199     1.67G   0.05882    0.0491   0.06285        97       416: 100% 13/13 [00:38&lt;00:00,  2.97s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.01it/s]
+                 all         51        575      0.578      0.309      0.185     0.0727
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    46/199     1.67G   0.05727   0.05073   0.06263       145       416: 100% 13/13 [00:40&lt;00:00,  3.14s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:02&lt;00:00,  1.01s/it]
+                 all         51        575      0.766      0.209      0.161      0.057
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    47/199     1.67G   0.05833   0.04971   0.06186        98       416: 100% 13/13 [00:38&lt;00:00,  3.00s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.10it/s]
+                 all         51        575      0.614      0.267      0.169     0.0771
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    48/199     1.67G   0.05579   0.04972   0.05955       142       416: 100% 13/13 [00:41&lt;00:00,  3.18s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.07it/s]
+                 all         51        575      0.678      0.271      0.219      0.123
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    49/199     1.67G   0.05635   0.05248   0.05942       147       416: 100% 13/13 [00:38&lt;00:00,  2.93s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.10it/s]
+                 all         51        575      0.703       0.25      0.204     0.0843
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    50/199     1.67G   0.05533   0.04969   0.05996       132       416: 100% 13/13 [00:41&lt;00:00,  3.19s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.10it/s]
+                 all         51        575      0.735      0.269      0.233      0.132
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    51/199     1.67G    0.0537   0.04893    0.0588       224       416: 100% 13/13 [00:38&lt;00:00,  2.95s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.07it/s]
+                 all         51        575      0.723      0.262      0.237      0.103
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    52/199     1.67G   0.05513    0.0492    0.0578       139       416: 100% 13/13 [00:41&lt;00:00,  3.19s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.08it/s]
+                 all         51        575      0.801      0.252      0.251      0.133
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    53/199     1.67G   0.05509   0.04934   0.05719       147       416: 100% 13/13 [00:38&lt;00:00,  2.94s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.14it/s]
+                 all         51        575      0.776      0.275      0.237      0.143
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    54/199     1.67G   0.05399   0.05005   0.05863       176       416: 100% 13/13 [00:40&lt;00:00,  3.14s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.06it/s]
+                 all         51        575      0.733      0.295       0.22       0.12
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    55/199     1.67G   0.05265   0.05019   0.05691       198       416: 100% 13/13 [00:39&lt;00:00,  3.03s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.07it/s]
+                 all         51        575      0.751      0.306       0.25      0.118
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    56/199     1.67G   0.05264   0.04983   0.05563       169       416: 100% 13/13 [00:41&lt;00:00,  3.20s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.15it/s]
+                 all         51        575      0.741      0.299      0.269      0.141
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    57/199     1.67G   0.05249    0.0483   0.05603       154       416: 100% 13/13 [00:38&lt;00:00,  2.97s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.07it/s]
+                 all         51        575      0.684      0.345      0.258      0.117
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    58/199     1.67G   0.05353   0.04975   0.05604       198       416: 100% 13/13 [00:41&lt;00:00,  3.21s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.07it/s]
+                 all         51        575      0.689      0.322      0.253      0.128
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    59/199     1.67G   0.05197   0.04681   0.05433        99       416: 100% 13/13 [00:39&lt;00:00,  3.01s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.14it/s]
+                 all         51        575      0.696      0.351      0.264      0.141
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    60/199     1.67G   0.05406   0.05024   0.05394       150       416: 100% 13/13 [00:40&lt;00:00,  3.14s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.15it/s]
+                 all         51        575       0.72      0.341      0.272      0.129
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    61/199     1.67G   0.05125   0.05003   0.05464       197       416: 100% 13/13 [00:39&lt;00:00,  3.04s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.06it/s]
+                 all         51        575      0.691      0.387      0.277      0.157
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    62/199     1.67G   0.05101   0.05147   0.05333       213       416: 100% 13/13 [00:40&lt;00:00,  3.15s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.16it/s]
+                 all         51        575      0.729      0.338      0.296      0.154
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    63/199     1.67G   0.05222   0.04662   0.05243       150       416: 100% 13/13 [00:39&lt;00:00,  3.05s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.12it/s]
+                 all         51        575      0.653      0.371      0.281      0.138
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    64/199     1.67G   0.05528   0.05148   0.05206       243       416: 100% 13/13 [00:41&lt;00:00,  3.21s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.14it/s]
+                 all         51        575      0.692       0.38      0.283      0.144
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    65/199     1.67G   0.05448   0.05046   0.05137       123       416: 100% 13/13 [00:39&lt;00:00,  3.04s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.27it/s]
+                 all         51        575        0.7      0.363      0.325      0.185
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    66/199     1.67G    0.0548   0.04958   0.05125       135       416: 100% 13/13 [00:40&lt;00:00,  3.14s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.06it/s]
+                 all         51        575      0.799      0.287      0.312      0.177
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    67/199     1.67G    0.0541   0.04973    0.0506       153       416: 100% 13/13 [00:39&lt;00:00,  3.04s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.12it/s]
+                 all         51        575      0.744      0.316      0.303      0.135
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    68/199     1.67G   0.05514   0.04748   0.05058       165       416: 100% 13/13 [00:41&lt;00:00,  3.17s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.09it/s]
+                 all         51        575      0.765      0.298      0.335      0.144
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    69/199     1.67G   0.05903   0.05133   0.05027       216       416: 100% 13/13 [00:39&lt;00:00,  3.02s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.10it/s]
+                 all         51        575      0.834      0.276       0.32      0.182
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    70/199     1.67G   0.05545   0.05046   0.05045       195       416: 100% 13/13 [00:41&lt;00:00,  3.17s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.10it/s]
+                 all         51        575      0.831      0.275      0.334      0.172
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    71/199     1.67G   0.05279   0.04763   0.04832       168       416: 100% 13/13 [00:39&lt;00:00,  3.00s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.18it/s]
+                 all         51        575      0.796      0.317      0.332      0.139
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    72/199     1.67G   0.05681   0.05083   0.04733       166       416: 100% 13/13 [00:39&lt;00:00,  3.04s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.17it/s]
+                 all         51        575      0.701      0.358       0.37      0.192
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    73/199     1.67G   0.05466   0.04747   0.04768       203       416: 100% 13/13 [00:36&lt;00:00,  2.82s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.23it/s]
+                 all         51        575      0.769      0.351      0.392      0.218
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    74/199     1.67G   0.05212   0.04553   0.04624       135       416: 100% 13/13 [00:38&lt;00:00,  2.99s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.12it/s]
+                 all         51        575      0.715      0.359      0.394      0.212
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    75/199     1.67G   0.04862   0.04617   0.04691       101       416: 100% 13/13 [00:37&lt;00:00,  2.88s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.16it/s]
+                 all         51        575      0.686      0.406      0.432      0.213
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    76/199     1.67G   0.05149   0.04728   0.04516       122       416: 100% 13/13 [00:38&lt;00:00,  2.97s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.21it/s]
+                 all         51        575       0.77      0.374      0.412      0.243
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    77/199     1.67G   0.05022   0.04777   0.04528       137       416: 100% 13/13 [00:36&lt;00:00,  2.80s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.19it/s]
+                 all         51        575      0.656      0.411      0.421      0.228
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    78/199     1.67G   0.04954   0.04617   0.04388       123       416: 100% 13/13 [00:39&lt;00:00,  3.04s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.19it/s]
+                 all         51        575      0.662      0.423      0.415      0.243
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    79/199     1.67G     0.045   0.04364   0.04507       127       416: 100% 13/13 [00:37&lt;00:00,  2.87s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.15it/s]
+                 all         51        575      0.749      0.364       0.42      0.217
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    80/199     1.67G   0.04721   0.04628   0.04201       149       416: 100% 13/13 [00:39&lt;00:00,  3.01s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.19it/s]
+                 all         51        575       0.76      0.374      0.414      0.222
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    81/199     1.67G   0.04881   0.04654   0.04205       170       416: 100% 13/13 [00:37&lt;00:00,  2.89s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.17it/s]
+                 all         51        575      0.781      0.347      0.436       0.27
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    82/199     1.67G    0.0463   0.04463   0.04068       170       416: 100% 13/13 [00:38&lt;00:00,  2.95s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.08it/s]
+                 all         51        575      0.627      0.488       0.44      0.261
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    83/199     1.67G   0.04509   0.04612   0.04178       198       416: 100% 13/13 [00:36&lt;00:00,  2.82s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.10it/s]
+                 all         51        575      0.519       0.52      0.446      0.235
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    84/199     1.67G   0.04629   0.04478   0.04186       116       416: 100% 13/13 [00:39&lt;00:00,  3.03s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.19it/s]
+                 all         51        575      0.734      0.432      0.447      0.271
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    85/199     1.67G   0.04536   0.04466   0.04033       149       416: 100% 13/13 [00:36&lt;00:00,  2.80s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.15it/s]
+                 all         51        575      0.739      0.442      0.452      0.282
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    86/199     1.67G   0.04578   0.04523   0.03973       149       416: 100% 13/13 [00:38&lt;00:00,  2.97s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.21it/s]
+                 all         51        575      0.787      0.419      0.458      0.244
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    87/199     1.67G   0.04762   0.04541   0.04007       132       416: 100% 13/13 [00:37&lt;00:00,  2.88s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.25it/s]
+                 all         51        575      0.931      0.294      0.449      0.262
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    88/199     1.67G   0.04373   0.04466   0.03876       145       416: 100% 13/13 [00:39&lt;00:00,  3.02s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.21it/s]
+                 all         51        575       0.66      0.488      0.445      0.265
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    89/199     1.67G   0.04394   0.04416   0.03817       150       416: 100% 13/13 [00:37&lt;00:00,  2.91s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.17it/s]
+                 all         51        575      0.686      0.461      0.445      0.287
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    90/199     1.67G   0.04563   0.04846   0.03797       146       416: 100% 13/13 [00:38&lt;00:00,  2.98s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.16it/s]
+                 all         51        575      0.752       0.44      0.443      0.275
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    91/199     1.67G   0.04072   0.04091   0.03796        68       416: 100% 13/13 [00:36&lt;00:00,  2.84s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.21it/s]
+                 all         51        575      0.693       0.46      0.454      0.291
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    92/199     1.67G    0.0429   0.04452   0.03691       158       416: 100% 13/13 [00:38&lt;00:00,  3.00s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.22it/s]
+                 all         51        575      0.691      0.479      0.459      0.266
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    93/199     1.67G   0.04511   0.04538   0.03858       112       416: 100% 13/13 [00:37&lt;00:00,  2.89s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.14it/s]
+                 all         51        575      0.872      0.368       0.46      0.306
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    94/199     1.67G   0.04187    0.0469   0.03743       137       416: 100% 13/13 [00:38&lt;00:00,  2.98s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.22it/s]
+                 all         51        575      0.919      0.329      0.454      0.295
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    95/199     1.67G   0.04537   0.04466   0.03447       153       416: 100% 13/13 [00:37&lt;00:00,  2.85s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.19it/s]
+                 all         51        575      0.962      0.324      0.458      0.269
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    96/199     1.67G   0.04573   0.04385   0.03564       182       416: 100% 13/13 [00:40&lt;00:00,  3.10s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.23it/s]
+                 all         51        575      0.911      0.331      0.459      0.302
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    97/199     1.67G   0.04048   0.04232   0.03446       187       416: 100% 13/13 [00:37&lt;00:00,  2.88s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.15it/s]
+                 all         51        575      0.845      0.374      0.456      0.314
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    98/199     1.67G   0.04716   0.04747   0.03568       133       416: 100% 13/13 [00:38&lt;00:00,  2.98s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.27it/s]
+                 all         51        575      0.862      0.376      0.457      0.274
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+    99/199     1.67G   0.04155   0.04301   0.03635       122       416: 100% 13/13 [00:37&lt;00:00,  2.89s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.25it/s]
+                 all         51        575      0.871      0.351      0.453      0.297
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   100/199     1.67G   0.04263    0.0424   0.03641       139       416: 100% 13/13 [00:39&lt;00:00,  3.05s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.20it/s]
+                 all         51        575      0.875      0.339      0.453      0.285
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   101/199     1.67G   0.04353   0.04484   0.03437       203       416: 100% 13/13 [00:37&lt;00:00,  2.85s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.26it/s]
+                 all         51        575      0.902      0.331      0.439      0.288
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   102/199     1.67G   0.04321   0.04444   0.03505       146       416: 100% 13/13 [00:39&lt;00:00,  3.04s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.19it/s]
+                 all         51        575      0.921      0.335      0.443      0.302
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   103/199     1.67G   0.04008   0.04179   0.03444       127       416: 100% 13/13 [00:36&lt;00:00,  2.82s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.22it/s]
+                 all         51        575      0.917      0.349      0.455      0.281
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   104/199     1.67G   0.04398   0.04457   0.03397       166       416: 100% 13/13 [00:39&lt;00:00,  3.03s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.20it/s]
+                 all         51        575      0.908      0.361      0.453      0.301
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   105/199     1.67G   0.04241   0.04311   0.03472       133       416: 100% 13/13 [00:37&lt;00:00,  2.92s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.22it/s]
+                 all         51        575      0.927      0.351      0.458      0.308
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   106/199     1.67G   0.04277   0.04379   0.03317       177       416: 100% 13/13 [00:39&lt;00:00,  3.02s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.21it/s]
+                 all         51        575      0.736      0.481      0.472      0.285
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   107/199     1.67G   0.03849   0.04296   0.03251       246       416: 100% 13/13 [00:37&lt;00:00,  2.88s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.20it/s]
+                 all         51        575      0.706      0.494      0.473      0.325
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   108/199     1.67G   0.03577   0.03984   0.03305       185       416: 100% 13/13 [00:38&lt;00:00,  2.98s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.20it/s]
+                 all         51        575      0.742      0.469      0.475      0.326
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   109/199     1.67G   0.03824   0.04036   0.03241       144       416: 100% 13/13 [00:36&lt;00:00,  2.82s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.22it/s]
+                 all         51        575      0.787      0.455      0.473      0.327
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   110/199     1.67G   0.03919   0.04317   0.03289       181       416: 100% 13/13 [00:38&lt;00:00,  2.99s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.26it/s]
+                 all         51        575      0.749      0.498      0.486      0.322
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   111/199     1.67G   0.03513   0.04072   0.03213       157       416: 100% 13/13 [00:37&lt;00:00,  2.89s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.13it/s]
+                 all         51        575      0.837      0.415      0.481      0.331
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   112/199     1.67G   0.03706   0.04137   0.03292       166       416: 100% 13/13 [00:38&lt;00:00,  2.93s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.26it/s]
+                 all         51        575      0.833      0.404      0.485      0.334
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   113/199     1.67G   0.03928   0.04183   0.03247       159       416: 100% 13/13 [00:36&lt;00:00,  2.84s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.22it/s]
+                 all         51        575      0.842      0.394      0.486      0.335
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   114/199     1.67G   0.03843    0.0426   0.03164       117       416: 100% 13/13 [00:39&lt;00:00,  3.01s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.22it/s]
+                 all         51        575      0.738      0.478      0.485       0.33
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   115/199     1.67G   0.03705   0.04122   0.03208       144       416: 100% 13/13 [00:37&lt;00:00,  2.87s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.24it/s]
+                 all         51        575      0.673      0.547      0.505      0.357
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   116/199     1.67G   0.03736   0.04086   0.03109       117       416: 100% 13/13 [00:38&lt;00:00,  2.98s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.18it/s]
+                 all         51        575      0.677      0.541      0.509      0.338
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   117/199     1.67G   0.04109   0.04378   0.03093       138       416: 100% 13/13 [00:36&lt;00:00,  2.84s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.18it/s]
+                 all         51        575      0.711       0.53      0.514      0.365
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   118/199     1.67G   0.03803   0.04448   0.03079       234       416: 100% 13/13 [00:38&lt;00:00,  2.94s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.22it/s]
+                 all         51        575       0.73      0.534      0.516      0.358
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   119/199     1.67G   0.03628   0.04001   0.02971       171       416: 100% 13/13 [00:37&lt;00:00,  2.85s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.21it/s]
+                 all         51        575      0.742      0.506      0.521      0.351
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   120/199     1.67G   0.03811   0.04263   0.03068       195       416: 100% 13/13 [00:40&lt;00:00,  3.10s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.19it/s]
+                 all         51        575      0.724      0.546      0.539      0.366
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   121/199     1.67G   0.03997   0.04228   0.02905       166       416: 100% 13/13 [00:37&lt;00:00,  2.86s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.21it/s]
+                 all         51        575      0.675      0.579      0.548       0.38
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   122/199     1.67G   0.03994   0.04129   0.02988       170       416: 100% 13/13 [00:39&lt;00:00,  3.01s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.17it/s]
+                 all         51        575      0.706      0.571      0.555      0.362
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   123/199     1.67G   0.03593   0.04164   0.02871       157       416: 100% 13/13 [00:37&lt;00:00,  2.86s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.17it/s]
+                 all         51        575      0.676      0.575       0.55      0.384
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   124/199     1.67G   0.03494   0.03906   0.02884       162       416: 100% 13/13 [00:40&lt;00:00,  3.13s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.22it/s]
+                 all         51        575      0.666      0.574      0.549      0.374
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   125/199     1.67G   0.03607   0.04081   0.02855       191       416: 100% 13/13 [00:37&lt;00:00,  2.92s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.21it/s]
+                 all         51        575      0.697      0.582      0.555      0.385
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   126/199     1.67G   0.03424   0.04093   0.02913       164       416: 100% 13/13 [00:38&lt;00:00,  2.97s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.17it/s]
+                 all         51        575      0.758      0.557      0.558      0.359
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   127/199     1.67G   0.03515   0.04065   0.02881       158       416: 100% 13/13 [00:37&lt;00:00,  2.85s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.21it/s]
+                 all         51        575      0.778      0.545      0.563      0.398
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   128/199     1.67G   0.03514   0.04075   0.02789       171       416: 100% 13/13 [00:38&lt;00:00,  3.00s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.24it/s]
+                 all         51        575      0.779      0.529      0.559      0.392
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   129/199     1.67G   0.03653   0.04113   0.02717       203       416: 100% 13/13 [00:38&lt;00:00,  2.94s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.22it/s]
+                 all         51        575      0.767      0.554      0.566      0.401
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   130/199     1.67G   0.03282   0.03648   0.02731       180       416: 100% 13/13 [00:38&lt;00:00,  2.99s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.24it/s]
+                 all         51        575      0.785      0.538      0.567      0.395
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   131/199     1.67G   0.03378   0.03846    0.0282       193       416: 100% 13/13 [00:38&lt;00:00,  2.96s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.21it/s]
+                 all         51        575      0.816      0.538      0.572      0.395
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   132/199     1.67G   0.03443   0.03841   0.02713       140       416: 100% 13/13 [00:40&lt;00:00,  3.08s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.26it/s]
+                 all         51        575      0.726      0.588       0.58      0.409
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   133/199     1.67G   0.03653   0.04098   0.02672       226       416: 100% 13/13 [00:36&lt;00:00,  2.83s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.19it/s]
+                 all         51        575      0.893      0.499      0.585      0.419
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   134/199     1.67G   0.03631   0.03927   0.02689       160       416: 100% 13/13 [00:40&lt;00:00,  3.11s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.22it/s]
+                 all         51        575      0.882      0.508      0.585      0.417
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   135/199     1.67G   0.03342    0.0383   0.02665       201       416: 100% 13/13 [00:38&lt;00:00,  2.99s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.24it/s]
+                 all         51        575      0.893      0.501      0.583       0.42
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   136/199     1.67G   0.03235   0.03847   0.02648       140       416: 100% 13/13 [00:39&lt;00:00,  3.07s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.06it/s]
+                 all         51        575      0.909      0.483      0.581      0.415
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   137/199     1.67G   0.03451   0.04074   0.02638       149       416: 100% 13/13 [00:42&lt;00:00,  3.24s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.13it/s]
+                 all         51        575      0.766      0.585      0.581      0.414
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   138/199     1.67G   0.03568   0.03934   0.02542       136       416: 100% 13/13 [00:44&lt;00:00,  3.39s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.19it/s]
+                 all         51        575      0.769      0.582      0.585      0.409
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   139/199     1.67G   0.03421   0.03798   0.02689       179       416: 100% 13/13 [00:41&lt;00:00,  3.23s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.13it/s]
+                 all         51        575      0.769      0.588      0.585      0.416
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   140/199     1.67G   0.03289   0.04006   0.02666       205       416: 100% 13/13 [00:44&lt;00:00,  3.45s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.09it/s]
+                 all         51        575      0.849      0.516      0.586      0.421
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   141/199     1.67G   0.03478   0.03787   0.02522       148       416: 100% 13/13 [00:41&lt;00:00,  3.20s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.13it/s]
+                 all         51        575      0.857      0.518      0.585      0.426
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   142/199     1.67G   0.03305   0.03655   0.02487       129       416: 100% 13/13 [00:43&lt;00:00,  3.32s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.10it/s]
+                 all         51        575      0.852      0.521      0.585      0.426
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   143/199     1.67G   0.03264   0.03833   0.02624       114       416: 100% 13/13 [00:41&lt;00:00,  3.20s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.05it/s]
+                 all         51        575       0.81      0.544      0.587       0.41
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   144/199     1.67G   0.03321   0.03724   0.02608       176       416: 100% 13/13 [00:44&lt;00:00,  3.39s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.07it/s]
+                 all         51        575      0.936      0.489      0.595      0.425
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   145/199     1.67G   0.03362   0.03911   0.02489       148       416: 100% 13/13 [00:41&lt;00:00,  3.21s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.19it/s]
+                 all         51        575      0.933      0.495      0.599      0.419
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   146/199     1.67G   0.03455    0.0393   0.02488       126       416: 100% 13/13 [00:44&lt;00:00,  3.39s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.02it/s]
+                 all         51        575      0.929      0.493      0.603      0.422
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   147/199     1.67G   0.03433    0.0398   0.02545       134       416: 100% 13/13 [00:41&lt;00:00,  3.22s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.11it/s]
+                 all         51        575      0.922      0.503        0.6      0.432
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   148/199     1.67G   0.03201   0.03713   0.02628       103       416: 100% 13/13 [00:43&lt;00:00,  3.38s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.13it/s]
+                 all         51        575      0.912      0.521      0.603      0.428
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   149/199     1.67G    0.0331   0.03871   0.02502       139       416: 100% 13/13 [00:42&lt;00:00,  3.24s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.08it/s]
+                 all         51        575      0.911      0.526      0.612      0.452
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   150/199     1.67G   0.03167   0.03931   0.02425        92       416: 100% 13/13 [00:43&lt;00:00,  3.31s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.22it/s]
+                 all         51        575      0.915      0.524      0.611      0.439
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   151/199     1.67G   0.03181   0.03906   0.02507       204       416: 100% 13/13 [00:42&lt;00:00,  3.24s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.15it/s]
+                 all         51        575      0.915      0.524      0.606      0.448
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   152/199     1.67G   0.03142   0.03783   0.02361       143       416: 100% 13/13 [00:44&lt;00:00,  3.41s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.37it/s]
+                 all         51        575      0.909      0.524      0.608      0.449
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   153/199     1.67G    0.0327   0.03867   0.02373       217       416: 100% 13/13 [00:42&lt;00:00,  3.26s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.28it/s]
+                 all         51        575      0.917      0.523      0.616      0.454
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   154/199     1.67G   0.03257   0.03844   0.02448       206       416: 100% 13/13 [00:43&lt;00:00,  3.34s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.17it/s]
+                 all         51        575      0.922      0.529      0.625      0.438
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   155/199     1.67G   0.03225   0.03758   0.02326       160       416: 100% 13/13 [00:42&lt;00:00,  3.25s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.04it/s]
+                 all         51        575       0.93      0.526      0.623      0.446
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   156/199     1.67G   0.03288   0.03885   0.02356       220       416: 100% 13/13 [00:44&lt;00:00,  3.39s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.12it/s]
+                 all         51        575      0.928      0.528      0.625      0.447
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   157/199     1.67G   0.03277   0.03911   0.02362       176       416: 100% 13/13 [00:42&lt;00:00,  3.25s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.12it/s]
+                 all         51        575      0.933      0.527      0.623      0.463
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   158/199     1.67G   0.03161   0.03863   0.02316       188       416: 100% 13/13 [00:43&lt;00:00,  3.38s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.08it/s]
+                 all         51        575      0.926      0.524      0.631      0.457
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   159/199     1.67G   0.03004   0.03715   0.02218       163       416: 100% 13/13 [00:41&lt;00:00,  3.20s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.20it/s]
+                 all         51        575      0.914      0.526      0.633      0.457
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   160/199     1.67G   0.03204   0.03806   0.02408       167       416: 100% 13/13 [00:44&lt;00:00,  3.43s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.09it/s]
+                 all         51        575      0.912      0.526      0.634      0.466
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   161/199     1.67G   0.03102   0.03589   0.02356       152       416: 100% 13/13 [00:41&lt;00:00,  3.15s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.11it/s]
+                 all         51        575       0.96      0.493      0.633      0.461
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   162/199     1.67G   0.03178   0.03845   0.02314       172       416: 100% 13/13 [00:44&lt;00:00,  3.41s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.11it/s]
+                 all         51        575       0.96      0.498      0.631      0.458
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   163/199     1.67G   0.02971   0.03668   0.02213       137       416: 100% 13/13 [00:41&lt;00:00,  3.16s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.09it/s]
+                 all         51        575       0.97      0.496      0.633      0.474
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   164/199     1.67G   0.03054   0.03701   0.02216       171       416: 100% 13/13 [00:42&lt;00:00,  3.30s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.27it/s]
+                 all         51        575      0.973      0.495      0.636      0.468
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   165/199     1.67G    0.0336    0.0375   0.02324       173       416: 100% 13/13 [00:42&lt;00:00,  3.24s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.23it/s]
+                 all         51        575      0.959      0.506      0.638      0.466
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   166/199     1.67G   0.03268   0.03763    0.0226       141       416: 100% 13/13 [00:44&lt;00:00,  3.39s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.13it/s]
+                 all         51        575      0.956      0.509      0.639      0.469
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   167/199     1.67G   0.03284   0.03938   0.02375       220       416: 100% 13/13 [00:41&lt;00:00,  3.20s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.14it/s]
+                 all         51        575       0.96        0.5      0.642      0.477
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   168/199     1.67G   0.03108   0.03681   0.02354       154       416: 100% 13/13 [00:43&lt;00:00,  3.33s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.21it/s]
+                 all         51        575      0.959      0.501      0.642      0.475
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   169/199     1.67G   0.03043   0.03866   0.02235       201       416: 100% 13/13 [00:41&lt;00:00,  3.19s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.18it/s]
+                 all         51        575      0.965      0.502       0.64      0.475
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   170/199     1.67G   0.03135   0.03816   0.02281       152       416: 100% 13/13 [00:43&lt;00:00,  3.36s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.13it/s]
+                 all         51        575      0.968      0.501       0.64      0.477
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   171/199     1.67G   0.03072   0.03702   0.02178       199       416: 100% 13/13 [00:39&lt;00:00,  3.05s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.18it/s]
+                 all         51        575      0.967        0.5       0.64      0.476
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   172/199     1.67G   0.03131    0.0351   0.02236       100       416: 100% 13/13 [00:42&lt;00:00,  3.28s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.17it/s]
+                 all         51        575      0.964      0.501      0.638      0.474
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   173/199     1.67G    0.0306     0.035    0.0217       146       416: 100% 13/13 [00:40&lt;00:00,  3.15s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.17it/s]
+                 all         51        575      0.966        0.5      0.637      0.477
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   174/199     1.67G   0.03055   0.03874   0.02221       175       416: 100% 13/13 [00:44&lt;00:00,  3.39s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.17it/s]
+                 all         51        575       0.97        0.5      0.639      0.476
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   175/199     1.67G   0.02934   0.03672   0.02218       160       416: 100% 13/13 [00:41&lt;00:00,  3.21s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.24it/s]
+                 all         51        575      0.974        0.5      0.641      0.481
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   176/199     1.67G   0.02981   0.03481   0.02043       149       416: 100% 13/13 [00:42&lt;00:00,  3.31s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.26it/s]
+                 all         51        575      0.975      0.499      0.641      0.481
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   177/199     1.67G   0.03042   0.03758   0.02202       159       416: 100% 13/13 [00:41&lt;00:00,  3.18s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.16it/s]
+                 all         51        575      0.971      0.501      0.643      0.478
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   178/199     1.67G   0.03097   0.03696   0.02305       151       416: 100% 13/13 [00:43&lt;00:00,  3.37s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.10it/s]
+                 all         51        575      0.971        0.5      0.644      0.485
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   179/199     1.67G   0.02923   0.03379   0.01998       149       416: 100% 13/13 [00:40&lt;00:00,  3.14s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.15it/s]
+                 all         51        575      0.969      0.499      0.645      0.485
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   180/199     1.67G   0.02969   0.03659   0.02118       186       416: 100% 13/13 [00:43&lt;00:00,  3.32s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.28it/s]
+                 all         51        575      0.885      0.554      0.645      0.483
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   181/199     1.67G   0.03043   0.03754     0.021       143       416: 100% 13/13 [00:41&lt;00:00,  3.19s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.26it/s]
+                 all         51        575      0.894      0.549      0.646       0.49
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   182/199     1.67G      0.03   0.03654   0.02098       140       416: 100% 13/13 [00:43&lt;00:00,  3.32s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.16it/s]
+                 all         51        575      0.899       0.55      0.645      0.483
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   183/199     1.67G   0.03079   0.03585    0.0207       210       416: 100% 13/13 [00:41&lt;00:00,  3.22s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.12it/s]
+                 all         51        575      0.893      0.555      0.643      0.484
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   184/199     1.67G   0.02937   0.03553     0.021       170       416: 100% 13/13 [00:43&lt;00:00,  3.35s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.16it/s]
+                 all         51        575      0.899      0.549      0.641      0.485
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   185/199     1.67G   0.02965   0.03444    0.0213       159       416: 100% 13/13 [00:41&lt;00:00,  3.18s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.11it/s]
+                 all         51        575      0.894      0.554      0.642      0.481
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   186/199     1.67G   0.02997    0.0362   0.02107       161       416: 100% 13/13 [00:43&lt;00:00,  3.38s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.17it/s]
+                 all         51        575      0.888      0.558       0.64      0.485
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   187/199     1.67G   0.02943    0.0356   0.01959       133       416: 100% 13/13 [00:41&lt;00:00,  3.21s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.18it/s]
+                 all         51        575      0.889      0.558      0.639      0.481
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   188/199     1.67G   0.02933   0.03676   0.01955       154       416: 100% 13/13 [00:44&lt;00:00,  3.40s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.13it/s]
+                 all         51        575      0.886      0.561      0.638      0.479
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   189/199     1.67G      0.03   0.03567   0.01977       150       416: 100% 13/13 [00:41&lt;00:00,  3.17s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.21it/s]
+                 all         51        575      0.887      0.561       0.64      0.485
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   190/199     1.67G   0.03009   0.03725   0.01961       223       416: 100% 13/13 [00:43&lt;00:00,  3.36s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.21it/s]
+                 all         51        575      0.962      0.513      0.641      0.485
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   191/199     1.67G   0.02945   0.03561   0.01907       121       416: 100% 13/13 [00:41&lt;00:00,  3.18s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.17it/s]
+                 all         51        575      0.962      0.515      0.642       0.48
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   192/199     1.67G   0.03023   0.03674   0.01971       170       416: 100% 13/13 [00:44&lt;00:00,  3.41s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.23it/s]
+                 all         51        575      0.936      0.527      0.642      0.481
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   193/199     1.67G   0.02963   0.03528   0.01988       164       416: 100% 13/13 [00:41&lt;00:00,  3.23s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.14it/s]
+                 all         51        575      0.936      0.527      0.643      0.486
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   194/199     1.67G   0.02932   0.03632   0.01931       143       416: 100% 13/13 [00:43&lt;00:00,  3.38s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.17it/s]
+                 all         51        575      0.892      0.563      0.644      0.485
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   195/199     1.67G   0.02955   0.03605   0.02036       131       416: 100% 13/13 [00:41&lt;00:00,  3.18s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.18it/s]
+                 all         51        575      0.893      0.564      0.644      0.485
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   196/199     1.67G   0.02863   0.03671   0.01984       102       416: 100% 13/13 [00:43&lt;00:00,  3.38s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.23it/s]
+                 all         51        575      0.894      0.564      0.644      0.488
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   197/199     1.67G   0.02894   0.03787   0.01995       197       416: 100% 13/13 [00:41&lt;00:00,  3.22s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.12it/s]
+                 all         51        575      0.892      0.564      0.644       0.49
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   198/199     1.67G   0.02997   0.03638    0.0196       182       416: 100% 13/13 [00:43&lt;00:00,  3.38s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.22it/s]
+                 all         51        575      0.892      0.564      0.644      0.486
+
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+   199/199     1.67G   0.02907    0.0358   0.01974       145       416: 100% 13/13 [00:41&lt;00:00,  3.18s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:01&lt;00:00,  1.24it/s]
+                 all         51        575      0.895      0.564      0.644      0.486
+
+200 epochs completed in 2.434 hours.
+Optimizer stripped from runs/train/ftf_yolov5s_results/weights/last.pt, 14.5MB
+Optimizer stripped from runs/train/ftf_yolov5s_results/weights/best.pt, 14.5MB
+
+Validating runs/train/ftf_yolov5s_results/weights/best.pt...
+Fusing layers... 
+Model Summary: 213 layers, 7115308 parameters, 0 gradients, 16.1 GFLOPs
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100% 2/2 [00:05&lt;00:00,  2.64s/it]
+                 all         51        575      0.894       0.55      0.646       0.49
+                 2-1         51          5          1          0      0.116     0.0426
+              Darius         51         45      0.958          1       0.99      0.812
+              Graves         51         78      0.987          1      0.995      0.805
+             Caitlyn         51         47      0.814          1      0.995      0.816
+               Garen         51         25      0.755          1      0.995      0.766
+               Ziggs         51         29      0.918          1      0.995      0.758
+              Ezreal         51         24      0.756          1      0.995      0.795
+             Camille         51         15      0.591          1      0.988      0.776
+                 2-2         51          8          1          0      0.199      0.089
+              Illaoi         51         17      0.862          1      0.995      0.788
+                 2-3         51         11      0.711      0.897      0.714      0.436
+            Kassadin         51         27      0.843      0.963      0.972      0.737
+              KogMaw         51         16      0.946          1      0.995      0.759
+                Zyra         51          6          1          0      0.136      0.101
+                 2-5         51         10          1          0      0.337      0.138
+             Trundle         51         22      0.958          1      0.995      0.794
+                 2-6         51          9          1          0       0.36      0.232
+              Twitch         51          6          1          0      0.576      0.465
+         TwistedFate         51         10          1          0      0.309      0.236
+               Taric         51          5      0.925          1      0.995      0.714
+                 2-7         51          7          1          0      0.141     0.0554
+               Poppy         51         30      0.961          1      0.995      0.734
+            Tristana         51         34      0.926          1      0.995       0.73
+                Ekko         51          9      0.868      0.889      0.916      0.704
+               Swain         51          8      0.502      0.875       0.88      0.728
+             Warwick         51          8      0.569          1      0.995      0.774
+              Singed         51         11          1      0.286      0.876        0.7
+               Quinn         51          8          1          0      0.128     0.0963
+                Lulu         51          5          1          0     0.0614     0.0457
+          Blitzcrank         51         12      0.616          1      0.995      0.804
+           Gangplank         51         10      0.711        0.9      0.946        0.7
+                  Vi         51         10          1          0        0.6      0.464
+        Heimerdinger         51          4          1          0     0.0179     0.0146
+                 Zac         51          1          1          0     0.0158     0.0111
+              Samira         51          1          1          0     0.0169     0.0118
+                 Vex         51          2          1          0     0.0203     0.0183
+Results saved to [1mruns/train/ftf_yolov5s_results[0m</code></pre></div>
+<h2 id="step-5-학습된-자료에-새로운-데이터로-검증하기" style="position:relative;"><a href="#step-5-%ED%95%99%EC%8A%B5%EB%90%9C-%EC%9E%90%EB%A3%8C%EC%97%90-%EC%83%88%EB%A1%9C%EC%9A%B4-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A1%9C-%EA%B2%80%EC%A6%9D%ED%95%98%EA%B8%B0" aria-label="step 5 학습된 자료에 새로운 데이터로 검증하기 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 5 학습된 자료에 새로운 데이터로 검증하기</h2>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">!python detect<span class="token punctuation">.</span>py <span class="token operator">-</span><span class="token operator">-</span>source <span class="token operator">/</span>content<span class="token operator">/</span>dataset<span class="token operator">/</span>output<span class="token punctuation">.</span>mp4 <span class="token operator">-</span><span class="token operator">-</span>weight <span class="token operator">/</span>content<span class="token operator">/</span>yolov5<span class="token operator">/</span>runs<span class="token operator">/</span>train<span class="token operator">/</span>ftf_yolov5s_results<span class="token operator">/</span>weights<span class="token operator">/</span>best<span class="token punctuation">.</span>pt</code></pre></div>
+<h3 id="결과" style="position:relative;"><a href="#%EA%B2%B0%EA%B3%BC" aria-label="결과 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>결과</h3>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 77.22222222222223%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsTAAALEwEAmpwYAAADZklEQVQozy2TaU8iZwCA3zmkLlalXHIIOCogDOAOMDMMM8g5y4DIAh6IiFYFVzwQObyCLOCuq7vVNDXZZHfb2CYm3fQH9FP/Qv9T07jPpyd5Pj+gX44BAACMAAgBAAYAQN8EgiAEgREEhmEIekoAPAn0f4UR8GN+AdOJ5YNi5Q/iSbXU49DJMbHOqsU4VmnQDcmkEt2oxmEZn5Lidg2Oa0ZV0nGNTC0bchj1IL4QdpEKH2WiGSw/56gWQomkc2XDs1Zil5ccuUV8MUvlClxh2VNZD+ZSlPm5yY6beMoWYJ3AK9BTbswdGqciY2xA709MLB4SWzVy+5W7uL+0vlvIFlxC1pLJO297+b0tno2YrDRhM5uCAQ8IzfITLq/ePGJnRoX41PwmWbldqrfj2Vr5zd3f9/f/Jk/uF4uuaNmZy/vjKavHPzpJ+6YZXz5OgzAfNFutDgKjOdVs1HNwsrl2WtzpVS+6a5Xace/DbzdXF19vV7s/bayUeCGGU5QWd3G4YzofJgHj43ALxvgNnF+XjBK52k60cVKqxv84dZ+vOx+77Jcm+b7uPz8NviqH0wmnl9NGX9CFKLcpBEEoOOPA1W5WG2Etezlur55sNTN3Dc/Hs5mvncCvZ967U+7shLx7E+u1Y7GU8blHXVogPx8tFwUPOCykjl5yScF6fbXbON64vIz8/jb80BEeLjNvD5xXTbZ7RL7uMJ3rUKlNCetYeG4ik7YzNLbAM+Cfd42H/YXSBn/crRcaR+1W/rET/3iSvq4vdw99nQp72fSfX3DbF66VlnurwlTLrNurxowKnqHBn6398yL7+PPBTmm+1169aRd7tbVWdb1d2/5007xu7dy0y++6W7982PlyX3pdTfx1vbactpmtIzOsDezvhrIxcyrKeYO0TyDcPgdJORfnX67mM4LgTydfzM4JHO8OJ13JJSqZYrMJ39aSnaDGCMoIYkmStKqVWq1Gb5DIlUDUj4gHrHYb7WVUWi1usxotlrHJyWmCiPC8LxAgGSwWMSh02kGNHhCk3agfHlVKtAqpUjr8vbhfMjig16j1Op1sRDUsU8hHVENSmVSpkqvUUsWIQimRKQeG5VK5Wg0UhgnJgPi7PhQBoA8GIgQSwRAKAAJDaB+KoigMP/30DRRBxc+eifpEKIr+BwAM3KCFJWkVAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="5.png"
+        title="5.png"
+        src="/static/8fb219a885d7006777b6cf91744fc6d9/37523/5.png"
+        srcset="/static/8fb219a885d7006777b6cf91744fc6d9/e9ff0/5.png 180w,
+/static/8fb219a885d7006777b6cf91744fc6d9/f21e7/5.png 360w,
+/static/8fb219a885d7006777b6cf91744fc6d9/37523/5.png 720w,
+/static/8fb219a885d7006777b6cf91744fc6d9/302a4/5.png 1080w,
+/static/8fb219a885d7006777b6cf91744fc6d9/07a9c/5.png 1440w,
+/static/8fb219a885d7006777b6cf91744fc6d9/e1b78/5.png 1809w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<h2 id="reference" style="position:relative;"><a href="#reference" aria-label="reference permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Reference</h2>
+<p><a href="https://www.youtube.com/watch?v=T0DO1C8uYP8&#x26;t=218s">https://www.youtube.com/watch?v=T0DO1C8uYP8&#x26;t=218s</a></p>
+<p><a href="https://lynnshin.tistory.com/47">https://lynnshin.tistory.com/47</a></p>
+<p>-Yolo 모델</p>
+<p><a href="https://medium.com/curg/you-only-look-once-%EB%8B%A4-%EB%8B%A8%EC%A7%80-%ED%95%9C-%EB%B2%88%EB%A7%8C-%EB%B3%B4%EC%95%98%EC%9D%84-%EB%BF%90%EC%9D%B4%EB%9D%BC%EA%B5%AC-bddc8e6238e2">https://medium.com/curg/you-only-look-once-%EB%8B%A4-%EB%8B%A8%EC%A7%80-%ED%95%9C-%EB%B2%88%EB%A7%8C-%EB%B3%B4%EC%95%98%EC%9D%84-%EB%BF%90%EC%9D%B4%EB%9D%BC%EA%B5%AC-bddc8e6238e2</a></p>
+<div class="table-of-contents">
+<ul>
+<li>
+<p><a href="#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A7%84%ED%96%89-%EA%B3%BC%EC%A0%95">프로젝트 진행 과정</a></p>
+<ul>
+<li><a href="#%EC%9D%B4-%ED%8E%98%EC%9D%B4%EC%A7%80%EC%97%90%EC%84%9C%EB%8A%94-%EC%A7%84%ED%96%89%EA%B3%BC%EC%A0%95%EC%9D%98-245%EC%9D%98-%EA%B3%BC%EC%A0%95%EC%9D%84-%EA%B8%B0%EB%A1%9D">이 페이지에서는 진행과정의 2,4,5의 과정을 기록</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#step2-%EC%98%81%EC%83%81%EC%9D%84-%ED%94%84%EB%A0%88%EC%9E%84%EC%9C%BC%EB%A1%9C-%EB%82%98%EB%88%84%EA%B8%B0">Step2. 영상을 프레임으로 나누기</a></p>
+</li>
+<li>
+<p><a href="#step4-yolov5%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4-%EA%B0%9D%EC%B2%B4-%EC%9D%B8%EC%A7%80-%ED%95%99%EC%8A%B5">Step4. Yolov5를 이용해 객체 인지 학습</a></p>
+</li>
+<li>
+<p><a href="#yolov5">Yolov5</a></p>
+<ul>
+<li><a href="#%EA%B0%9D%EC%B2%B4%EC%9D%B8%EC%A7%80-%ED%95%99%EC%8A%B5">객체인지 학습</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#step-5-%ED%95%99%EC%8A%B5%EB%90%9C-%EC%9E%90%EB%A3%8C%EC%97%90-%EC%83%88%EB%A1%9C%EC%9A%B4-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A1%9C-%EA%B2%80%EC%A6%9D%ED%95%98%EA%B8%B0">Step 5 학습된 자료에 새로운 데이터로 검증하기</a></p>
+<ul>
+<li><a href="#%EA%B2%B0%EA%B3%BC">결과</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#reference">Reference</a></p>
+</li>
+</ul>
+</div></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/TFT_Champion_Detection/jpg_to_mp4/"><div class="direction">이전 글</div><div class="title">jpg to mp4</div></a></div><div class="post-navigator-card-wrapper"></div></div><div class="utterances"></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2022<!-- --> <a href="https://github.com/Han-Archives">Han-기록소</a> powered by<a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog"> zoomkoding-gatsby-blog</a></p></footer><div class="dark-mode-button-wrapper"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium dark-mode-button css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge dark-mode-icon css-6flbmm" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="DarkModeIcon"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path></svg></button></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/TFT_Champion_Detection/object_detection/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-cd840d73727c2e366b63.js"],"app":["/app-1c48eadf34e7f53f402f.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-3c26d4b7e3608ed0ece4.js"],"component---src-pages-404-js":["/component---src-pages-404-js-4917da7ef5b541e98a81.js"],"component---src-pages-about-js":["/component---src-pages-about-js-b5804eba3d16afcb3700.js"],"component---src-pages-index-js":["/component---src-pages-index-js-bc882cd03f70c89c8148.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-ef83b594aa693e649d30.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-fea460fedd50cffb10cd.js"]};/*]]>*/</script><script src="/polyfill-cd840d73727c2e366b63.js" nomodule=""></script><script src="/component---src-templates-blog-template-js-ef83b594aa693e649d30.js" async=""></script><script src="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-3528d048b96f92ca0d99.js" async=""></script><script src="/app-1c48eadf34e7f53f402f.js" async=""></script><script src="/framework-0e1bf37de02f7cef2174.js" async=""></script><script src="/webpack-runtime-3fbe5c9bb3bdef55776d.js" async=""></script></body></html>
