@@ -103,7 +103,7 @@ select * from actor
                     <span class="token punctuation">.</span>option<span class="token punctuation">(</span><span class="token string">"password"</span><span class="token punctuation">,</span> passwd<span class="token punctuation">)</span>\
                     <span class="token punctuation">.</span>load<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
 <div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">dvdrental_actor<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
-<p><img src="attachment:7_1.PNG" alt="7_1.PNG"></p>
+<p><img src="/7b62caf89ca6fe9f92c55d07bcdf37a7/7_1.png" alt="7_1.PNG"></p>
 <div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">dvdrental_actor<span class="token punctuation">.</span>createOrReplaceTempView<span class="token punctuation">(</span> <span class="token string">"dvdrental_actor"</span> <span class="token punctuation">)</span>
 
 <span class="token comment"># SQL 쿼리 작성</span>
@@ -112,12 +112,12 @@ spark<span class="token punctuation">.</span>sql<span class="token punctuation">
     from dvdrental_actor
     limit 5
 """</span><span class="token punctuation">)</span><span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
-<p><img src="attachment:7_2.PNG" alt="7_2.PNG"></p>
+<p><img src="/16e87c093a5b383bfbb64bb68ada4ca4/7_2.png" alt="7_2.PNG"></p>
 <h3 id="parquet-불러오기" style="position:relative;"><a href="#parquet-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0" aria-label="parquet 불러오기 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Parquet 불러오기</h3>
 <p>숙박업 분석 과정에서 저장된 parquet을 호출하여 PostgreSQL에 저장하자.</p>
 <div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">lodge <span class="token operator">=</span> spark<span class="token punctuation">.</span>read<span class="token punctuation">.</span>parquet<span class="token punctuation">(</span><span class="token string">"C:\\Users\\USER\\Desktop\\Dataset\\lodge_industry\\lodge.parquet"</span><span class="token punctuation">)</span></code></pre></div>
 <div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">lodge<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
-<p><img src="attachment:8_1.PNG" alt="8_1.PNG"></p>
+<p><img src="/1e4a632c3ce0ede2d32fa3dae12c8f51/8_1.png" alt="8_1.PNG"></p>
 <h3 id="db에-table-업로드하기" style="position:relative;"><a href="#db%EC%97%90-table-%EC%97%85%EB%A1%9C%EB%93%9C%ED%95%98%EA%B8%B0" aria-label="db에 table 업로드하기 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>DB에 table 업로드하기</h3>
 <div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># JDBC 소스로 데이터 저장하기</span>
 lodge<span class="token punctuation">.</span>write<span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span><span class="token string">"jdbc"</span><span class="token punctuation">)</span> \
@@ -127,7 +127,7 @@ lodge<span class="token punctuation">.</span>write<span class="token punctuation
     <span class="token punctuation">.</span>option<span class="token punctuation">(</span><span class="token string">"user"</span><span class="token punctuation">,</span> user<span class="token punctuation">)</span> \
     <span class="token punctuation">.</span>option<span class="token punctuation">(</span><span class="token string">"password"</span><span class="token punctuation">,</span> passwd<span class="token punctuation">)</span> \
     <span class="token punctuation">.</span>save<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
-<p><img src="attachment:8_2.PNG" alt="8_2.PNG"></p>
+<p><img src="/d5fb0cc248ee113cdbeec8a8ef20a00d/8_2.png" alt="8_2.PNG"></p>
 <h3 id="reference" style="position:relative;"><a href="#reference" aria-label="reference permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Reference</h3>
 <p><a href="https://urame.tistory.com/entry/Spark-PostgreSQL-%EC%97%B0%EB%8F%99-%EB%B0%A9%EB%B2%95-jdbc-spark-sql">https://urame.tistory.com/entry/Spark-PostgreSQL-%EC%97%B0%EB%8F%99-%EB%B0%A9%EB%B2%95-jdbc-spark-sql</a></p>
 <p><a href="https://spark-korea.github.io/docs/sql-data-sources-jdbc.html">https://spark-korea.github.io/docs/sql-data-sources-jdbc.html</a></p>
