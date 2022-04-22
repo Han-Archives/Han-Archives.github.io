@@ -1,0 +1,2071 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.58c7447b9282ecfbd3c6.css" data-identity="gatsby-global-css">@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-8d7d79679b70dbe27172b6460e7a7910.woff2) format("woff2"),url(/static/montserrat-latin-100-ec38980a9e0119a379e2a9b3dbb1901a.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-e279051046ba1286706adc886cf1c96b.woff2) format("woff2"),url(/static/montserrat-latin-100italic-3b325a3173c8207435cd1b76e19bf501.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-9d266fbbfa6cab7009bd56003b1eeb67.woff2) format("woff2"),url(/static/montserrat-latin-200-2d8ba08717110d27122e54c34b8a5798.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-6e5b3756583bb2263eb062eae992735e.woff2) format("woff2"),url(/static/montserrat-latin-200italic-a0d6f343e4b536c582926255367a57da.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-00b3e893aab5a8fd632d6342eb72551a.woff2) format("woff2"),url(/static/montserrat-latin-300-ea303695ceab35f17e7d062f30e0173b.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-56f34ea368f6aedf89583d444bbcb227.woff2) format("woff2"),url(/static/montserrat-latin-300italic-54b0bf2c8c4c12ffafd803be2466a790.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-b71748ae4f80ec8c014def4c5fa8688b.woff2) format("woff2"),url(/static/montserrat-latin-400-0659a9f4e90db5cf51b50d005bff1e41.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-6eed6b4cbb809c6efc7aa7ddad6dbe3e.woff2) format("woff2"),url(/static/montserrat-latin-400italic-7583622cfde30ae49086d18447ab28e7.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-091b209546e16313fd4f4fc36090c757.woff2) format("woff2"),url(/static/montserrat-latin-500-edd311588712a96bbf435fad264fff62.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c90ced68b46050061d1a41842d6dfb43.woff2) format("woff2"),url(/static/montserrat-latin-500italic-5146cbfe02b1deea5dffea27a5f2f998.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-0480d2f8a71f38db8633b84d8722e0c2.woff2) format("woff2"),url(/static/montserrat-latin-600-b77863a375260a05dd13f86a1cee598f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-cf46ffb11f3a60d7df0567f8851a1d00.woff2) format("woff2"),url(/static/montserrat-latin-600italic-c4fcfeeb057724724097167e57bd7801.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7dbcc8a5ea2289d83f657c25b4be6193.woff2) format("woff2"),url(/static/montserrat-latin-700-99271a835e1cae8c76ef8bba99a8cc4e.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-c41ad6bdb4bd504a843d546d0a47958d.woff2) format("woff2"),url(/static/montserrat-latin-700italic-6779372f04095051c62ed36bc1dcc142.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-db9a3e0ba7eaea32e5f55328ace6cf23.woff2) format("woff2"),url(/static/montserrat-latin-800-4e3c615967a2360f5db87d2f0fd2456f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-bf45bfa14805969eda318973947bc42b.woff2) format("woff2"),url(/static/montserrat-latin-800italic-fe82abb0bcede51bf724254878e0c374.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-e66c7edc609e24bacbb705175669d814.woff2) format("woff2"),url(/static/montserrat-latin-900-8211f418baeb8ec880b80ba3c682f957.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-4454c775e48152c1a72510ceed3603e2.woff2) format("woff2"),url(/static/montserrat-latin-900italic-efcaa0f6a82ee0640b83a0916e6e8d68.woff) format("woff")}.search-input-wrapper{align-items:center;display:none;margin-top:3px;width:180px}@media(min-width:768px){.search-input-wrapper{display:flex}}.search-icon{color:var(--primary-text-color);margin-right:2px}.search-input{height:100%;width:100%}.search-input .MuiAutocomplete-inputRoot{padding-right:0!important}.search-input .MuiInputBase-input{color:var(--primary-text-color)!important;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:16px;font-weight:500;padding-bottom:2px!important}.search-input .MuiInput-underline:before{border-bottom-width:1px}.search-input .MuiInput-underline:after,.search-input .MuiInput-underline:before{border-bottom-color:var(--primary-text-color)}.page-header-wrapper{display:flex;height:60px;justify-content:center;width:100%}.page-header-wrapper .page-header{align-items:center;display:flex;justify-content:space-between;max-width:720px;width:100%}.page-header-wrapper .page-header .link{color:var(--primary-text-color);font-size:17px;font-weight:700}@media(min-width:768px){.page-header-wrapper .page-header .link{font-size:20px;font-weight:700}}.page-header-wrapper .page-header .trailing-section{align-items:center;display:flex}.page-header-wrapper .page-header .trailing-section .link{margin-right:10px}@media(min-width:768px){.page-header-wrapper .page-header .trailing-section .link{margin-right:20px}}.page-footer-wrapper{align-items:center;display:flex;height:62px;justify-content:center;margin-top:auto;width:100%}.page-footer-wrapper .page-footer{max-width:720px;text-align:center;width:100%}.page-footer-wrapper .page-footer .link{color:var(--primary-text-color);font-size:20px;font-weight:700;margin-right:20px}.page-footer-wrapper .page-footer a{color:#3a95ff}.dark-mode-button-wrapper{align-items:center;bottom:20px;display:flex;justify-content:center;position:fixed;right:20px}.dark-mode-button{-webkit-backdrop-filter:blur(30px);backdrop-filter:blur(30px);background-color:#363f47!important;border-radius:50px;box-shadow:0 5px 25px rgba(0,0,0,.12);cursor:pointer;height:50px;width:50px;z-index:3}.dark-mode-icon{color:#fff}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{border:0;font-size:100%;font:inherit;margin:0;padding:0;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}a{outline:none;text-decoration:none}html{--background-color:#fff;--primary-text-color:#000;--secondary-text-color:#9e9e9e;--content-text-color:#37352f;--button-background-color:#f3f3f4;--button-text-color:#363f47;--tab-text-color:#6e6d7a;--tab-hover-text-color:#0d0c22;--tab-selected-background-color:rgba(13,12,34,.05);--bio-link-icon-color:rgba(0,0,0,.54);--about-link-icon-color:#a8a8a8;--chip-background-color:#f3f3f4;--link-text-color:rgba(55,53,47,.7);--post-card-border-color:rgba(0,0,0,.12);--markdown-table-even-cell-background-color:#f6f8fa;--markdown-table-border-color:#dfe2e5;--markdown-blockquote-border-color:#dfe2e5;--markdown-border-color:#e1e4e8}html[data-theme=dark]{--background-color:#232326;--primary-text-color:#e6e6e6;--secondary-text-color:#768390;--content-text-color:#e6e6e6;--button-background-color:#444c56;--button-text-color:#363f47;--tab-text-color:#768390;--tab-hover-text-color:#acbac7;--tab-selected-background-color:#373e47;--chip-background-color:#323a42;--bio-link-icon-color:#e6e6e6;--about-link-icon-color:#a8a8a8;--link-text-color:#90b0ec;--post-card-border-color:#363f47;--markdown-table-even-cell-background-color:#2d333b;--markdown-table-border-color:#444c56;--markdown-blockquote-border-color:#4f5864;--markdown-border-color:#e1e4e8}*{-webkit-appearance:none;appearance:none;box-sizing:border-box}html{font-size:14px;height:100%;overflow-y:scroll;width:100%}body{background-color:var(--background-color)!important}a{color:var(--link-text-color)}.page-wrapper{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:var(--primary-text-color);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;justify-content:center;min-height:100vh;padding-left:15px;padding-right:15px;word-break:keep-all}.page-wrapper,.page-wrapper .page-content{align-items:center;display:flex;flex-direction:column;width:100%}.page-wrapper .page-content{max-width:720px}.icon{color:var(--about-link-icon-color);font-size:20px}.social-links .icon{color:var(--bio-link-icon-color);font-size:30px}@keyframes blinking-cursor{0%{opacity:0}50%{opacity:1}to{opacity:0}}.bio{color:var(--primary-text-color);display:flex;flex-direction:column;justify-content:space-between;margin-bottom:120px;margin-top:120px;width:100%}@media(min-width:768px){.bio{align-items:center;flex-direction:row}}.bio .introduction{display:flex;flex-direction:column;word-break:keep-all}.bio .introduction .react-rotating-text-cursor{animation:blinking-cursor .8s cubic-bezier(.68,.01,.01,.99) 0s infinite}.bio .introduction strong{display:inline-block;font-weight:600}.bio .introduction.korean{font-size:32px;font-weight:100;line-height:1.2}.bio .introduction.korean .title .react-rotating-text-cursor{font-size:35px;line-height:35px}@media(min-width:768px){.bio .introduction.korean{font-size:40px}.bio .introduction.korean .title .react-rotating-text-cursor{font-size:45px;line-height:45px}}.bio .introduction.english{font-family:montserrat;font-size:25px;line-height:1.2}@media(min-width:768px){.bio .introduction.english{font-size:45px}}.bio .introduction.english .name{font-size:35px;font-weight:600}.bio .introduction.english .job{font-size:35px}.bio .introduction.english .description{font-size:20px;font-weight:200;margin-top:8px}.bio .introduction.english .social-links{display:flex;margin-top:20px}.bio .thumbnail{display:none;width:250px}@media(min-width:768px){.bio .thumbnail{display:block}}.section-header-wrapper{display:flex;justify-content:center;margin-bottom:32px;width:100%}.section-header-wrapper .section-header{border-bottom:4px solid var(--primary-text-color);color:var(--primary-text-color);font-size:30px;font-weight:700;padding-bottom:5px}.timestamp-section{align-items:center;display:flex;flex-direction:column;justify-content:center;margin-bottom:50px;width:100%;word-break:keep-all}.timestamp-section .body{padding:0 10px;width:100%}.timestamp-section .body .timestamp{border-left:2px solid #bdbdbd;display:flex;font-size:18px;font-weight:400;justify-items:center;margin-left:5px;padding:10px 0;width:100%}.timestamp-section .body .timestamp:first-child{padding-top:7px}.timestamp-section .body .timestamp:last-child{padding-bottom:7px}.timestamp-section .body .timestamp:before{align-self:center;background-color:var(--background-color);border:2px solid #828282;border-radius:10px;content:"";height:10px;left:-1px;position:relative;transform:translatex(-50%);width:10px}.timestamp-section .body .timestamp .date{align-self:center;color:#828282;margin-left:5px;margin-right:5px;min-width:115px;width:115px}@media(min-width:768px){.timestamp-section .body .timestamp .date{min-width:200px;width:200px}}.timestamp-section .body .timestamp .activity{line-height:23px;width:100%}.project-section{align-items:center;justify-content:center}.project-section,.project-section .project{display:flex;flex-direction:column;width:100%}.project-section .project{margin-bottom:30px;padding:15px}.project-section .project .head{font-size:20px;font-weight:700;line-height:30px;margin-bottom:10px}.project-section .project .body{display:flex;flex-direction:column;width:100%}.project-section .project .body .thumbnail{margin-bottom:10px;width:100%}.project-section .project .body .tech-stack{display:flex;margin-bottom:10px}.project-section .project .body .tech-stack .tech{background-color:var(--chip-background-color);border-radius:10px;font-size:15px;font-weight:500;margin-right:5px;padding:5px 7px}.project-section .project .body .description{font-size:16px;font-weight:400;line-height:1.4}@media(min-width:768px){.project-section .project .body{flex-direction:column}.project-section .project .body .content{margin-top:0}}.post-header{border-bottom:1px solid var(--post-card-border-color);display:flex;flex-direction:column;justify-content:center;margin-bottom:40px;margin-top:20px;padding-bottom:10px;width:100%;word-break:keep-all}.post-header .emoji{font-size:78px;margin-bottom:20px}.post-header .categories{margin-bottom:5px}.post-header .categories .category{color:var(--primary-text-color);font-weight:600;margin-right:4px}.post-header .categories .category:hover{text-decoration:underline}.post-header .title{color:var(--primary-text-color);font-size:32px;font-weight:600;line-height:1.3;margin-bottom:6px}.post-header .info{color:var(--secondary-text-color);display:flex;flex-wrap:wrap;font-size:16px;font-weight:500;line-height:1.5;width:100%}.post-header .info .author{margin-right:4px}.post-header .info strong{color:var(--primary-text-color);font-weight:600}.post-navigator{column-gap:1.4%;display:grid;grid-template-columns:49.3% 49.3%;width:100%}.post-navigator .post-card{border:1px solid var(--post-card-border-color);border-radius:6px;color:var(--primary-text-color);cursor:pointer;display:flex;flex-direction:column;padding:15px;transition:transform .2s;width:100%}.post-navigator .post-card:hover .title{text-decoration:underline}.post-navigator .post-card.prev{margin-right:auto}.post-navigator .post-card.next{margin-left:auto}.post-navigator .post-card .direction{color:gray;font-size:14px;font-weight:500;margin-bottom:5px}.post-navigator .post-card .title{font-size:16px;font-weight:600;line-height:1.4;margin-bottom:7px}.markdown .octicon{fill:currentColor;display:inline-block;vertical-align:text-bottom}.markdown .anchor{float:left;line-height:1;margin-left:-20px;padding-right:4px}.markdown .anchor:focus{outline:none}.markdown h1 .octicon-link,.markdown h2 .octicon-link,.markdown h3 .octicon-link,.markdown h4 .octicon-link,.markdown h5 .octicon-link,.markdown h6 .octicon-link{color:#1b1f23;vertical-align:middle;visibility:hidden}.markdown h1:hover .anchor,.markdown h2:hover .anchor,.markdown h3:hover .anchor,.markdown h4:hover .anchor,.markdown h5:hover .anchor,.markdown h6:hover .anchor{text-decoration:none}.markdown h1:hover .anchor .octicon-link,.markdown h2:hover .anchor .octicon-link,.markdown h3:hover .anchor .octicon-link,.markdown h4:hover .anchor .octicon-link,.markdown h5:hover .anchor .octicon-link,.markdown h6:hover .anchor .octicon-link{visibility:visible}.markdown h1:hover .anchor .octicon-link:before,.markdown h2:hover .anchor .octicon-link:before,.markdown h3:hover .anchor .octicon-link:before,.markdown h4:hover .anchor .octicon-link:before,.markdown h5:hover .anchor .octicon-link:before,.markdown h6:hover .anchor .octicon-link:before{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' aria-hidden='true' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'/%3E%3C/svg%3E");content:" ";display:inline-block;height:16px;width:16px}.markdown{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;word-wrap:break-word;color:var(--content-text-color);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:16px;font-weight:500;line-height:1.5}.markdown details{display:block}.markdown summary{display:list-item}.markdown a{background-color:initial}.markdown a:active,.markdown a:hover{outline-width:0}.markdown strong{font-weight:inherit;font-weight:bolder}.markdown h1{margin:.67em 0}.markdown img{border-style:none}.markdown code,.markdown kbd,.markdown pre{font-family:monospace,monospace;font-size:1em}.markdown hr{box-sizing:initial;overflow:visible}.markdown input{font:inherit;margin:0;overflow:visible}.markdown [type=checkbox]{box-sizing:border-box;padding:0}.markdown *{box-sizing:border-box}.markdown input{font-family:inherit;font-size:inherit;line-height:inherit}.markdown a{border-bottom:.05em solid;border-bottom-color:var(--link-text-color);border-left-color:var(--link-text-color);border-right-color:var(--link-text-color);border-top-color:var(--link-text-color);color:var(--link-text-color);text-decoration:none}.markdown a.anchor{border-bottom:none}.markdown strong{font-weight:700}.markdown hr{background:transparent;border-bottom:1px solid var(--markdown-blockquote-border-color);height:0;margin:15px 0;overflow:hidden}.markdown hr:after,.markdown hr:before{content:"";display:table}.markdown hr:after{clear:both}.markdown table{border-collapse:collapse;border-spacing:0}.markdown td,.markdown th{padding:0}.markdown details summary{cursor:pointer}.markdown h1,.markdown h2,.markdown h3,.markdown h4,.markdown h5,.markdown h6{margin-bottom:0;margin-top:0}.markdown h1{font-size:32px}.markdown h1,.markdown h2{font-weight:600}.markdown h2{font-size:24px}.markdown h3{font-size:20px}.markdown h3,.markdown h4{font-weight:600}.markdown h4{font-size:16px}.markdown h5{font-size:14px}.markdown h5,.markdown h6{font-weight:600}.markdown h6{font-size:12px}.markdown p{margin-bottom:10px;margin-top:0}.markdown blockquote{margin:0}.markdown ol,.markdown ul{margin-bottom:0;margin-top:0;padding-left:0}.markdown ol ol,.markdown ul ol{list-style-type:lower-roman}.markdown ol ol ol,.markdown ol ul ol,.markdown ul ol ol,.markdown ul ul ol{list-style-type:lower-alpha}.markdown dd{margin-left:0}.markdown code,.markdown pre{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px}.markdown code.language-text{border-radius:3px;font-size:85%;padding:.2em .4em}.markdown :not(pre)>code.language-text{background:hsla(44,6%,50%,.15);color:#eb5757;overflow-wrap:break-word}.markdown pre{margin-bottom:0;margin-top:0}.markdown input::-webkit-inner-spin-button,.markdown input::-webkit-outer-spin-button{-webkit-appearance:none;appearance:none;margin:0}.markdown :checked+.radio-label{border-color:#0366d6;position:relative;z-index:1}.markdown .border{border:1px solid var(--markdown-border-color)!important}.markdown .border-0{border:0!important}.markdown .border-bottom{border-bottom:1px solid var(--markdown-border-color)!important}.markdown .rounded-1{border-radius:3px!important}.markdown .bg-white{background-color:transparent!important}.markdown .bg-gray-light{background-color:#fafbfc!important}.markdown .text-gray-light{color:#6a737d!important}.markdown .pl-3,.markdown .px-3{padding-left:16px!important}.markdown .px-3{padding-right:16px!important}.markdown .f6{font-size:12px!important}.markdown .lh-condensed{line-height:1.25!important}.markdown .text-bold{font-weight:600!important}.markdown .pl-c{color:#6a737d}.markdown .pl-c1,.markdown .pl-s .pl-v{color:#005cc5}.markdown .pl-e,.markdown .pl-en{color:#6f42c1}.markdown .pl-s .pl-s1,.markdown .pl-smi{color:#24292e}.markdown .pl-ent{color:#22863a}.markdown .pl-k{color:#d73a49}.markdown .pl-pds,.markdown .pl-s,.markdown .pl-s .pl-pse .pl-s1,.markdown .pl-sr,.markdown .pl-sr .pl-cce,.markdown .pl-sr .pl-sra,.markdown .pl-sr .pl-sre{color:#032f62}.markdown .pl-smw,.markdown .pl-v{color:#e36209}.markdown .pl-bu{color:#b31d28}.markdown .pl-ii{background-color:#b31d28;color:#fafbfc}.markdown .pl-c2{background-color:#d73a49;color:#fafbfc}.markdown .pl-c2:before{content:"^M"}.markdown .pl-sr .pl-cce{color:#22863a;font-weight:700}.markdown .pl-ml{color:#735c0f}.markdown .pl-mh,.markdown .pl-mh .pl-en,.markdown .pl-ms{color:#005cc5;font-weight:700}.markdown .pl-mi{color:#24292e;font-style:italic}.markdown .pl-mb{color:#24292e;font-weight:700}.markdown .pl-md{background-color:#ffeef0;color:#b31d28}.markdown .pl-mi1{background-color:#f0fff4;color:#22863a}.markdown .pl-mc{background-color:#ffebda;color:#e36209}.markdown .pl-mi2{background-color:#005cc5;color:#f6f8fa}.markdown .pl-mdr{color:#6f42c1;font-weight:700}.markdown .pl-ba{color:#586069}.markdown .pl-sg{color:#959da5}.markdown .pl-corl{color:#032f62;text-decoration:underline}.markdown .mb-0{margin-bottom:0!important}.markdown .my-2{margin-bottom:8px!important;margin-top:8px!important}.markdown .pl-0{padding-left:0!important}.markdown .py-0{padding-bottom:0!important;padding-top:0!important}.markdown .pl-1{padding-left:4px!important}.markdown .pl-2{padding-left:8px!important}.markdown .py-2{padding-bottom:8px!important;padding-top:8px!important}.markdown .pl-3{padding-left:16px!important}.markdown .pl-4{padding-left:24px!important}.markdown .pl-5{padding-left:32px!important}.markdown .pl-6{padding-left:40px!important}.markdown .pl-7{padding-left:48px!important}.markdown .pl-8{padding-left:64px!important}.markdown .pl-9{padding-left:80px!important}.markdown .pl-10{padding-left:96px!important}.markdown .pl-11{padding-left:112px!important}.markdown .pl-12{padding-left:128px!important}.markdown hr{border-bottom-color:#eee}.markdown kbd{background-color:#fafbfc;border:1px solid #d1d5da;border-radius:3px;box-shadow:inset 0 -1px 0 #d1d5da;color:#444d56;display:inline-block;font:11px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;line-height:10px;padding:3px 5px;vertical-align:middle}.markdown:after,.markdown:before{content:"";display:table}.markdown:after{clear:both}.markdown>:first-child{margin-top:0!important}.markdown>:last-child{margin-bottom:0!important}.markdown a:not([href]){color:inherit;text-decoration:none}.markdown blockquote,.markdown details,.markdown dl,.markdown ol,.markdown p,.markdown pre,.markdown table,.markdown ul{margin-bottom:16px;margin-top:0}.markdown hr{background-color:var(--markdown-border-color);border:0;height:.25em;margin:24px 0;padding:0}.markdown blockquote{border-left:.25em solid var(--markdown-blockquote-border-color);color:#6a737d;padding:0 1em}.markdown blockquote>:first-child{margin-top:0}.markdown blockquote>:last-child{margin-bottom:0}.markdown h1,.markdown h2,.markdown h3,.markdown h4,.markdown h5,.markdown h6{font-weight:600;line-height:1.25;margin-bottom:16px;margin-top:24px}.markdown h1{font-size:2em}.markdown h2{font-size:1.5em}.markdown h3{font-size:1.25em}.markdown h4{font-size:1em}.markdown h5{font-size:.875em}.markdown h6{color:#6a737d;font-size:.85em}.markdown ol,.markdown ul{padding-left:2em}.markdown ol ol,.markdown ol ul,.markdown ul ol,.markdown ul ul{margin-bottom:0;margin-top:0}.markdown ol{list-style-type:decimal}.markdown ul{list-style-type:disc}.markdown li{word-wrap:break-all;display:list-item;text-align:-webkit-match-parent}.markdown li>p{margin-top:16px}.markdown li+li{margin-top:.25em}.markdown dl{padding:0}.markdown dl dt{font-size:1em;font-style:italic;font-weight:600;margin-top:16px;padding:0}.markdown dl dd{margin-bottom:16px;padding:0 16px}.markdown table{display:block;overflow:auto;width:100%}.markdown table th{font-weight:600}.markdown table td,.markdown table th{border:1px solid var(--markdown-table-border-color);padding:6px 13px}.markdown table tr{border-top:1px solid var(--markdown-table-border-color)}.markdown table tr:nth-child(2n){background-color:var(--markdown-table-even-cell-background-color)}.markdown img{background-color:transparent;box-sizing:initial;display:block;margin:0 auto;max-width:100%}.markdown img[align=right]{padding-left:20px}.markdown img[align=left]{padding-right:20px}.markdown code{background-color:rgba(27,31,35,.05);border-radius:3px;font-size:85%;margin:0;padding:.2em .4em}.markdown pre{word-wrap:normal}.markdown pre>code{background:transparent;border:0;font-size:100%;margin:0;padding:0;white-space:pre;word-break:normal}.markdown .highlight{margin-bottom:16px}.markdown .highlight pre{margin-bottom:0;word-break:normal}.markdown .highlight pre,.markdown pre{background-color:#f6f8fa;border-radius:3px;font-size:85%;line-height:1.45;overflow:auto;padding:16px}.markdown pre code{word-wrap:normal;background-color:initial;border:0;display:inline;line-height:inherit;margin:0;max-width:auto;overflow:visible;padding:0}.markdown .commit-tease-sha{color:#444d56;display:inline-block;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:90%}.markdown .full-commit .btn-outline:not(:disabled):hover{border-color:#005cc5;color:#005cc5}.markdown .blob-wrapper{overflow-x:auto;overflow-y:hidden}.markdown .blob-wrapper-embedded{max-height:240px;overflow-y:auto}.markdown .blob-num{color:rgba(27,31,35,.3);cursor:pointer;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px;line-height:20px;min-width:50px;padding-left:10px;padding-right:10px;text-align:right;-webkit-user-select:none;-ms-user-select:none;user-select:none;vertical-align:top;white-space:nowrap;width:1%}.markdown .blob-num:hover{color:rgba(27,31,35,.6)}.markdown .blob-num:before{content:attr(data-line-number)}.markdown .blob-code{line-height:20px;padding-left:10px;padding-right:10px;position:relative;vertical-align:top}.markdown .blob-code-inner{word-wrap:normal;color:#24292e;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px;overflow:visible;white-space:pre}.markdown .pl-token.active,.markdown .pl-token:hover{background:#ffea7f;cursor:pointer}.markdown .tab-size[data-tab-size="1"]{-moz-tab-size:1;-o-tab-size:1;tab-size:1}.markdown .tab-size[data-tab-size="2"]{-moz-tab-size:2;-o-tab-size:2;tab-size:2}.markdown .tab-size[data-tab-size="3"]{-moz-tab-size:3;-o-tab-size:3;tab-size:3}.markdown .tab-size[data-tab-size="4"]{-moz-tab-size:4;-o-tab-size:4;tab-size:4}.markdown .tab-size[data-tab-size="5"]{-moz-tab-size:5;-o-tab-size:5;tab-size:5}.markdown .tab-size[data-tab-size="6"]{-moz-tab-size:6;-o-tab-size:6;tab-size:6}.markdown .tab-size[data-tab-size="7"]{-moz-tab-size:7;-o-tab-size:7;tab-size:7}.markdown .tab-size[data-tab-size="8"]{-moz-tab-size:8;-o-tab-size:8;tab-size:8}.markdown .tab-size[data-tab-size="9"]{-moz-tab-size:9;-o-tab-size:9;tab-size:9}.markdown .tab-size[data-tab-size="10"]{-moz-tab-size:10;-o-tab-size:10;tab-size:10}.markdown .tab-size[data-tab-size="11"]{-moz-tab-size:11;-o-tab-size:11;tab-size:11}.markdown .tab-size[data-tab-size="12"]{-moz-tab-size:12;-o-tab-size:12;tab-size:12}.markdown .task-list-item{list-style-type:none}.markdown .task-list-item+.task-list-item{margin-top:3px}.markdown .task-list-item input{margin:0 .2em .25em -1.6em;vertical-align:middle}.markdown .table-of-contents{align-items:flex-start;display:flex;flex-direction:column;justify-content:center;position:fixed;right:0;top:75px;width:340px}@media(max-width:1300px){.markdown .table-of-contents{display:none}}.markdown .table-of-contents ul{cursor:pointer;list-style-type:none}.markdown .table-of-contents ul li a{border-bottom:none;color:var(--secondary-text-color);font-size:14px;height:30px;padding:6px 2px;width:100%}.markdown .table-of-contents ul p{margin:0}.markdown .gatsby-resp-image-wrapper{display:flex!important;justify-content:center!important;max-height:560px!important;width:100%!important}.markdown .gatsby-resp-image-wrapper img{height:auto!important;max-height:560px!important;max-width:100%!important;position:relative!important;width:auto!important}.markdown .gatsby-resp-image-wrapper+em{color:#6a737d;display:block;font-size:15px;font-style:italic;text-align:center}code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#ccc;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}.post-content{margin-bottom:20px;width:100%}.category-page-header-wrapper,.post-content{display:flex;flex-direction:column;justify-content:center}.category-page-header-wrapper{align-items:center;margin-bottom:30px;margin-top:30px}.category-page-header-wrapper .category-page-title{border-bottom:3px solid var(--primary-text-color);font-size:40px;font-weight:700;margin-bottom:15px;padding-bottom:7px;text-align:center;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content}.category-page-header-wrapper .category-page-subtitle{font-size:20px;font-weight:500;padding-bottom:10px;text-align:center}.post-card-wrapper{display:flex;justify-content:center;min-height:150px;width:100%}.post-card-wrapper .post-card{border:1px solid var(--post-card-border-color);border-radius:6px;color:var(--primary-text-color);cursor:pointer;display:flex;flex-direction:column;height:100%;margin-bottom:15px;max-width:720px;padding:15px;transition:transform .2s;width:100%}.post-card-wrapper .post-card:hover .title{text-decoration:underline}@media(min-width:768px){.post-card-wrapper .post-card{margin-bottom:0}}.post-card-wrapper .post-card .title{font-size:18px;font-weight:600;line-height:1.4;margin-bottom:7px}.post-card-wrapper .post-card .description{-webkit-line-clamp:3;-webkit-box-orient:vertical;color:var(--primary-text-color);display:-webkit-box;font-size:13px;line-height:20px;margin-bottom:10px;overflow:hidden;text-overflow:ellipsis}.post-card-wrapper .post-card .info{color:var(--about-link-icon-color);display:flex;font-size:14px;justify-content:space-between;margin-top:auto}.post-card-wrapper .post-card .info .categories{display:flex}.post-card-wrapper .post-card .info .categories .category{margin-left:4px}.post-card-wrapper .post-card .info .categories .category:hover{text-decoration:underline}.post-card-column-wrapper{display:flex;justify-content:center;width:100%}.post-card-column-wrapper .post-card-column{align-items:center;display:flex;flex-direction:column}.post-card-column-wrapper .post-card-column .post-card-wrapper{margin-bottom:10px}.post-card-column-wrapper .post-card-column .more-post-card-button{background-color:var(--button-background-color);font-size:15px;font-weight:500;height:40px}.post-tabs-wrapper{align-self:flex-start;display:flex;flex-direction:column;justify-content:center;top:0;width:100%}.post-tabs-wrapper .post-tabs{display:flex;height:40px;justify-content:center;margin-bottom:12px;max-width:760px;width:100%}.post-tabs-wrapper .post-tabs .mui-tabs .MuiTab-root{color:var(--tab-text-color);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:17px;font-weight:500;height:40px;min-height:auto;min-width:auto;padding:10px 12px;transition:all .2s ease}.post-tabs-wrapper .post-tabs .mui-tabs .Mui-selected,.post-tabs-wrapper .post-tabs .mui-tabs .MuiTab-root :hover{color:var(--tab-hover-text-color);transition:all .2s ease}.post-tabs-wrapper .post-tabs .mui-tabs .Mui-selected{background-color:var(--tab-selected-background-color);border-radius:8px;font-weight:600}.post-tabs-wrapper .post-tabs .mui-tabs .MuiTabScrollButton-root{height:40px;width:20px}.post-tabs-wrapper .post-tabs .mui-tabs .MuiTabs-scrollable{height:40px}.post-tabs-wrapper .post-tabs .mui-tabs .MuiTabs-indicator{display:none}</style><meta name="generator" content="Gatsby 3.14.5"/><style data-emotion="css-global o6gwfi">html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;box-sizing:border-box;-webkit-text-size-adjust:100%;}*,*::before,*::after{box-sizing:inherit;}strong,b{font-weight:700;}body{margin:0;color:rgba(0, 0, 0, 0.87);font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:400;font-size:1rem;line-height:1.5;letter-spacing:0.00938em;background-color:#fff;}@media print{body{background-color:#fff;}}body::backdrop{background-color:#fff;}</style><style data-emotion="css-global 1prfaxn">@-webkit-keyframes mui-auto-fill{from{display:block;}}@keyframes mui-auto-fill{from{display:block;}}@-webkit-keyframes mui-auto-fill-cancel{from{display:block;}}@keyframes mui-auto-fill-cancel{from{display:block;}}</style><style data-emotion="css 1l6di18 feqhe6 11tfndm mnn31 vubbuv 1yxmbwk 6flbmm">.css-1l6di18.Mui-focused .MuiAutocomplete-clearIndicator{visibility:visible;}@media (pointer: fine){.css-1l6di18:hover .MuiAutocomplete-clearIndicator{visibility:visible;}}.css-1l6di18 .MuiAutocomplete-tag{margin:3px;max-width:calc(100% - 6px);}.css-1l6di18 .MuiAutocomplete-inputRoot{-webkit-box-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;}.MuiAutocomplete-hasPopupIcon.css-1l6di18 .MuiAutocomplete-inputRoot,.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiAutocomplete-inputRoot{padding-right:30px;}.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiAutocomplete-inputRoot{padding-right:56px;}.css-1l6di18 .MuiAutocomplete-inputRoot .MuiAutocomplete-input{width:0;min-width:30px;}.css-1l6di18 .MuiInput-root{padding-bottom:1px;}.css-1l6di18 .MuiInput-root .MuiInput-input{padding:4px 4px 4px 0px;}.css-1l6di18 .MuiInput-root.MuiInputBase-sizeSmall .MuiInput-input{padding:2px 4px 3px 0;}.css-1l6di18 .MuiOutlinedInput-root{padding:9px;}.MuiAutocomplete-hasPopupIcon.css-1l6di18 .MuiOutlinedInput-root,.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiOutlinedInput-root{padding-right:39px;}.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiOutlinedInput-root{padding-right:65px;}.css-1l6di18 .MuiOutlinedInput-root .MuiAutocomplete-input{padding:7.5px 4px 7.5px 6px;}.css-1l6di18 .MuiOutlinedInput-root .MuiAutocomplete-endAdornment{right:9px;}.css-1l6di18 .MuiOutlinedInput-root.MuiInputBase-sizeSmall{padding:6px;}.css-1l6di18 .MuiOutlinedInput-root.MuiInputBase-sizeSmall .MuiAutocomplete-input{padding:2.5px 4px 2.5px 6px;}.css-1l6di18 .MuiFilledInput-root{padding-top:19px;padding-left:8px;}.MuiAutocomplete-hasPopupIcon.css-1l6di18 .MuiFilledInput-root,.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiFilledInput-root{padding-right:39px;}.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiFilledInput-root{padding-right:65px;}.css-1l6di18 .MuiFilledInput-root .MuiFilledInput-input{padding:7px 4px;}.css-1l6di18 .MuiFilledInput-root .MuiAutocomplete-endAdornment{right:9px;}.css-1l6di18 .MuiFilledInput-root.MuiInputBase-sizeSmall{padding-bottom:1px;}.css-1l6di18 .MuiFilledInput-root.MuiInputBase-sizeSmall .MuiFilledInput-input{padding:2.5px 4px;}.css-1l6di18 .MuiInputBase-hiddenLabel{padding-top:8px;}.css-1l6di18 .MuiAutocomplete-input{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;text-overflow:ellipsis;opacity:1;}.css-feqhe6{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;position:relative;min-width:0;padding:0;margin:0;border:0;vertical-align:top;width:100%;}.css-11tfndm{font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:400;font-size:1rem;line-height:1.4375em;letter-spacing:0.00938em;color:rgba(0, 0, 0, 0.87);box-sizing:border-box;position:relative;cursor:text;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:100%;position:relative;}.css-11tfndm.Mui-disabled{color:rgba(0, 0, 0, 0.38);cursor:default;}label+.css-11tfndm{margin-top:16px;}.css-11tfndm:after{border-bottom:2px solid #1976d2;left:0;bottom:0;content:"";position:absolute;right:0;-webkit-transform:scaleX(0);-moz-transform:scaleX(0);-ms-transform:scaleX(0);transform:scaleX(0);-webkit-transition:-webkit-transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;transition:transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;pointer-events:none;}.css-11tfndm.Mui-focused:after{-webkit-transform:scaleX(1);-moz-transform:scaleX(1);-ms-transform:scaleX(1);transform:scaleX(1);}.css-11tfndm.Mui-error:after{border-bottom-color:#d32f2f;-webkit-transform:scaleX(1);-moz-transform:scaleX(1);-ms-transform:scaleX(1);transform:scaleX(1);}.css-11tfndm:before{border-bottom:1px solid rgba(0, 0, 0, 0.42);left:0;bottom:0;content:"\00a0";position:absolute;right:0;-webkit-transition:border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;pointer-events:none;}.css-11tfndm:hover:not(.Mui-disabled):before{border-bottom:2px solid rgba(0, 0, 0, 0.87);}@media (hover: none){.css-11tfndm:hover:not(.Mui-disabled):before{border-bottom:1px solid rgba(0, 0, 0, 0.42);}}.css-11tfndm.Mui-disabled:before{border-bottom-style:dotted;}.css-mnn31{font:inherit;letter-spacing:inherit;color:currentColor;padding:4px 0 5px;border:0;box-sizing:content-box;background:none;height:1.4375em;margin:0;-webkit-tap-highlight-color:transparent;display:block;min-width:0;width:100%;-webkit-animation-name:mui-auto-fill-cancel;animation-name:mui-auto-fill-cancel;-webkit-animation-duration:10ms;animation-duration:10ms;}.css-mnn31::-webkit-input-placeholder{color:currentColor;opacity:0.42;-webkit-transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-mnn31::-moz-placeholder{color:currentColor;opacity:0.42;-webkit-transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-mnn31:-ms-input-placeholder{color:currentColor;opacity:0.42;-webkit-transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-mnn31::-ms-input-placeholder{color:currentColor;opacity:0.42;-webkit-transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-mnn31:focus{outline:0;}.css-mnn31:invalid{box-shadow:none;}.css-mnn31::-webkit-search-decoration{-webkit-appearance:none;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31::-webkit-input-placeholder{opacity:0!important;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31::-moz-placeholder{opacity:0!important;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:-ms-input-placeholder{opacity:0!important;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31::-ms-input-placeholder{opacity:0!important;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:focus::-webkit-input-placeholder{opacity:0.42;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:focus::-moz-placeholder{opacity:0.42;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:focus:-ms-input-placeholder{opacity:0.42;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:focus::-ms-input-placeholder{opacity:0.42;}.css-mnn31.Mui-disabled{opacity:1;-webkit-text-fill-color:rgba(0, 0, 0, 0.38);}.css-mnn31:-webkit-autofill{-webkit-animation-duration:5000s;animation-duration:5000s;-webkit-animation-name:mui-auto-fill;animation-name:mui-auto-fill;}.css-vubbuv{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:1em;height:1em;display:inline-block;fill:currentColor;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;font-size:1.5rem;}.css-1yxmbwk{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;position:relative;box-sizing:border-box;-webkit-tap-highlight-color:transparent;background-color:transparent;outline:0;border:0;margin:0;border-radius:0;padding:0;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;vertical-align:middle;-moz-appearance:none;-webkit-appearance:none;-webkit-text-decoration:none;text-decoration:none;color:inherit;text-align:center;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;font-size:1.5rem;padding:8px;border-radius:50%;overflow:visible;color:rgba(0, 0, 0, 0.54);-webkit-transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-1yxmbwk::-moz-focus-inner{border-style:none;}.css-1yxmbwk.Mui-disabled{pointer-events:none;cursor:default;}@media print{.css-1yxmbwk{-webkit-print-color-adjust:exact;color-adjust:exact;}}.css-1yxmbwk:hover{background-color:rgba(0, 0, 0, 0.04);}@media (hover: none){.css-1yxmbwk:hover{background-color:transparent;}}.css-1yxmbwk.Mui-disabled{background-color:transparent;color:rgba(0, 0, 0, 0.26);}.css-6flbmm{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:1em;height:1em;display:inline-block;fill:currentColor;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;font-size:2.1875rem;}</style><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GSPTK2B65F"></script><script>
+    window.GATSBY_GTAG_PLUGIN_GA_TRACKING_ID = (
+      'G-GSPTK2B65F'
+    );
+    window.GATSBY_GTAG_PLUGIN_ANONYMIZE = true;
+
+    var options = {
+      send_page_view: false
+    };
+    if (true) {
+      options.anonymize_ip = true;
+    }
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', 'G-GSPTK2B65F', options);
+  </script><link rel="icon" href="/favicon-32x32.png?v=fae257d65054f3b79b365f6b90168dd5" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=fae257d65054f3b79b365f6b90168dd5"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=fae257d65054f3b79b365f6b90168dd5"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=fae257d65054f3b79b365f6b90168dd5"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=fae257d65054f3b79b365f6b90168dd5"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=fae257d65054f3b79b365f6b90168dd5"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=fae257d65054f3b79b365f6b90168dd5"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=fae257d65054f3b79b365f6b90168dd5"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=fae257d65054f3b79b365f6b90168dd5"/><style type="text/css">
+    .anchor.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .anchor.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg,
+    h1 .anchor:focus svg,
+    h2 .anchor:focus svg,
+    h3 .anchor:focus svg,
+    h4 .anchor:focus svg,
+    h5 .anchor:focus svg,
+    h6 .anchor:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><title data-react-helmet="true">숙박업 분석하기 (2) - EDA</title><meta data-react-helmet="true" name="viewport" content="initial-scale=1, width=device-width"/><meta data-react-helmet="true" property="og:title" content="숙박업 분석하기 (2) - EDA"/><meta data-react-helmet="true" property="og:site_title" content="숙박업 분석하기 (2) - EDA"/><meta data-react-helmet="true" name="description" content="이번 장에서는 전처리가 완료된 숙박업 데이터 EDA를 통해 숙박업 상태를 간략히 알아보자 toPandas()를 활용하여 EDA를 진행하자 갱신일자 확인하기 분석을 진행하기전 갱신일자 현황을 알아보자 위 자료는 2018년도 8월부터 2022년도 3월까지 특정주기로 갱신된 데이터인 것을 확인 1.영업 상태와 폐업상태 건수를 알아보자 상세영업상태명을 영업, 폐업, 휴업 3가지로 분류 ※ 영업, 휴업을 제외한 자료는 모두 폐업으로 분류  2.운영기간의 분포를 파악하자 운영기간이라는 새로운 변수를 아래와 같은 식을 통해 생성 운영기간(년도) = 폐업기간 - 인허가일자를 통해 운영기간을 구함 우선 인허가일자와 폐업기간 속 오류를 정정하는 작업 시행 운영기간을 아래와 같이 구분하여 비율을 파악해보자 5년이하, 6~10년도, 11년-20년, 21년-30년, 31년-40년, 41년이상  3. 숙박업이 발달한 지역 알아보기 5_1.PNG 세종시,창원시, 경남 고성군의 경우 아래와 같이 구글맵에서 나…"/><meta data-react-helmet="true" property="og:description" content="이번 장에서는 전처리가 완료된 숙박업 데이터 EDA를 통해 숙박업 상태를 간략히 알아보자 toPandas()를 활용하여 EDA를 진행하자 갱신일자 확인하기 분석을 진행하기전 갱신일자 현황을 알아보자 위 자료는 2018년도 8월부터 2022년도 3월까지 특정주기로 갱신된 데이터인 것을 확인 1.영업 상태와 폐업상태 건수를 알아보자 상세영업상태명을 영업, 폐업, 휴업 3가지로 분류 ※ 영업, 휴업을 제외한 자료는 모두 폐업으로 분류  2.운영기간의 분포를 파악하자 운영기간이라는 새로운 변수를 아래와 같은 식을 통해 생성 운영기간(년도) = 폐업기간 - 인허가일자를 통해 운영기간을 구함 우선 인허가일자와 폐업기간 속 오류를 정정하는 작업 시행 운영기간을 아래와 같이 구분하여 비율을 파악해보자 5년이하, 6~10년도, 11년-20년, 21년-30년, 31년-40년, 41년이상  3. 숙박업이 발달한 지역 알아보기 5_1.PNG 세종시,창원시, 경남 고성군의 경우 아래와 같이 구글맵에서 나…"/><meta data-react-helmet="true" property="og:author" content="Han-기록소"/><meta data-react-helmet="true" property="og:image" content="/og-image.png"/><meta data-react-helmet="true" property="og:type" content="website"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxK.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"/><style>@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff")}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link as="script" rel="preload" href="/webpack-runtime-b0a3ec690b6a27de8e30.js"/><link as="script" rel="preload" href="/framework-0e1bf37de02f7cef2174.js"/><link as="script" rel="preload" href="/app-1c48eadf34e7f53f402f.js"/><link as="script" rel="preload" href="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-3528d048b96f92ca0d99.js"/><link as="script" rel="preload" href="/component---src-templates-blog-template-js-ef83b594aa693e649d30.js"/><link as="fetch" rel="preload" href="/page-data/PySpark/[PySpark] 숙박업 분석하기 (2) - EDA/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1073350324.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1956554647.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2938748437.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper"><header class="page-header-wrapper"><div class="page-header"><div class="front-section"><a class="link" href="/">Han-기록소</a></div><div class="trailing-section"><a class="link" href="/about">about</a><a class="link" href="/posts">posts</a><div class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-1l6di18" role="combobox" aria-expanded="false"><div class="search-input-wrapper"><div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root search-input css-feqhe6"><div class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-11tfndm"><input type="text" aria-invalid="false" autoComplete="off" value="" class="MuiInput-input MuiInputBase-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-mnn31" aria-autocomplete="list" autoCapitalize="none" spellcheck="false"/><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium search-icon css-vubbuv" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="SearchOutlinedIcon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div></div></div></div></div></div></header><main class="page-content"><header class="post-header"><div class="emoji">👨‍💻</div><div class="info"><div class="categories"><a class="category" href="/posts/Data_Analysis">Data_Analysis</a></div></div><h1 class="title">숙박업 분석하기 (2) - EDA</h1><div class="info"><div class="author">posted by <strong>HwanHee Park</strong>,</div> <!-- -->April 21, 2022</div></header><div class="post-content"><div class="markdown"><p>이번 장에서는 전처리가 완료된 숙박업 데이터 EDA를 통해 숙박업 상태를 간략히 알아보자</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">import</span> pyspark
+<span class="token keyword">from</span> pyspark<span class="token punctuation">.</span>sql <span class="token keyword">import</span> SparkSession
+<span class="token keyword">from</span> pyspark<span class="token punctuation">.</span>sql<span class="token punctuation">.</span>functions <span class="token keyword">import</span> <span class="token operator">*</span>
+<span class="token keyword">import</span> os
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+<span class="token keyword">import</span> seaborn <span class="token keyword">as</span> sns
+<span class="token keyword">import</span> warnings
+warnings<span class="token punctuation">.</span>filterwarnings<span class="token punctuation">(</span><span class="token string">'ignore'</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">from</span> matplotlib <span class="token keyword">import</span> font_manager<span class="token punctuation">,</span>rc
+<span class="token keyword">import</span> matplotlib
+
+font_path <span class="token operator">=</span> <span class="token string">'C:\\Windows\\Fonts\\gulim.ttc'</span>
+
+<span class="token comment">#폰트 이름 얻어오기</span>
+font_name <span class="token operator">=</span> font_manager<span class="token punctuation">.</span>FontProperties<span class="token punctuation">(</span>fname<span class="token operator">=</span>font_path<span class="token punctuation">)</span><span class="token punctuation">.</span>get_name<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">#font 설정</span>
+matplotlib<span class="token punctuation">.</span>rc<span class="token punctuation">(</span><span class="token string">'font'</span><span class="token punctuation">,</span>family<span class="token operator">=</span>font_name<span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># SparkSession</span>
+spark <span class="token operator">=</span>  pyspark<span class="token punctuation">.</span>sql<span class="token punctuation">.</span>SparkSession \
+         <span class="token punctuation">.</span>builder \
+         <span class="token punctuation">.</span>config<span class="token punctuation">(</span><span class="token string">"spark.driver.extraClassPath"</span><span class="token punctuation">,</span> <span class="token string">r"C:\\Program Files\\PostgreSQL\\14\\bin\\postgresql-42.3.3.jar"</span><span class="token punctuation">)</span> \
+         <span class="token punctuation">.</span>getOrCreate<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">lodge <span class="token operator">=</span> spark<span class="token punctuation">.</span>read<span class="token punctuation">.</span>parquet<span class="token punctuation">(</span><span class="token string">"C:\\Users\\USER\\Desktop\\Analysis\\Proceed\\Spark\\lodge_analysis\\lodge.parquet"</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">lodge<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">+-----+------------+------------+----------------+--------------+----------+--------+--------+-------+
+| 번호|개방서비스명|    사업장명|개방자치단체코드|상세영업상태명|인허가일자|폐업일자|갱신일자|   면적|
++-----+------------+------------+----------------+--------------+----------+--------+--------+-------+
+|39267|      숙박업|  산호장여관|         5670000|          폐업|  19780731|20030331| 2021-07|  77.17|
+|39268|      숙박업|    새한여관|         5670000|          폐업|  19800220|20071218| 2021-07| 272.00|
+|39269|      숙박업|        삼성|         5670000|          폐업|  19700811|19990123| 2021-07|  86.94|
+|39270|      숙박업|      승정원|         5670000|          폐업|  20120625|20171214| 2021-07| 292.50|
+|39271|      숙박업|    에스모텔|         5670000|          폐업|  20030116|20160125| 2021-07| 351.80|
+|39272|      숙박업|      소라텔|         5670000|          폐업|  20070501|20121220| 2021-07| 400.00|
+|39273|      숙박업|    삼성모텔|         5670000|          폐업|  19920605|20120308| 2021-07| 434.85|
+|39274|      숙박업|  정수장여관|         5670000|          폐업|  20120410|20171206| 2021-07| 368.33|
+|39275|      숙박업|      그린텔|         5670000|          폐업|  20120412|20120425| 2021-07| 264.00|
+|39276|      숙박업|  브이원모텔|         5670000|          폐업|  20040311|20180704| 2021-07|1113.60|
+|39277|      숙박업|프린스장여관|         5670000|          폐업|  19971216|20121129| 2021-07| 579.24|
+|39278|      숙박업|        송정|         5670000|          폐업|  19650406|20070420| 2021-07|  62.00|
+|39279|      숙박업|        대성|         5670000|          폐업|  19810702|20001116| 2021-07|  36.37|
+|39280|      숙박업|      수림장|         5670000|          폐업|  19800904|20091224| 2021-07|  72.25|
+|39281|      숙박업|맥스 인 모텔|         5670000|          폐업|  19801008|20200203| 2021-07| 201.32|
+|39282|      숙박업|  열린여인숙|         5670000|          폐업|  19710115|20071114| 2021-07|    .00|
+|39283|      숙박업|        명보|         5670000|          폐업|  19710217|20020325| 2021-07|  72.00|
+|39284|      숙박업|        송죽|         5670000|          폐업|  19650907|20070411| 2021-07|  58.80|
+|39285|      숙박업|    로얄파크|         5670000|          폐업|  19850130|20061215| 2021-07| 216.22|
+|39286|      숙박업|      청미장|         5670000|          폐업|  19811214|20051108| 2021-07| 138.84|
+|39287|      숙박업|        금천|         5670000|          폐업|  19820115|20021202| 2021-07| 152.25|
+|39288|      숙박업|      영남장|         5670000|          폐업|  19740814|20140304| 2021-07|  95.04|
+|39289|      숙박업|    그린파크|         5670000|          폐업|  19631025|19991231| 2021-07| 487.00|
+|39290|      숙박업|      퀸모텔|         5670000|          폐업|  20031111|20070406| 2021-07| 795.31|
+|39291|      숙박업|르네상스모텔|         5670000|          폐업|  20031222|20151127| 2021-07|1399.08|
+|39292|      숙박업|        대명|         5670000|          폐업|  19881026|19981202| 2021-07| 225.28|
+|39293|      숙박업|      드림텔|         5670000|          폐업|  20030619|20051221| 2021-07|1016.00|
+|39294|      숙박업|  컨벤션호텔|         5670000|          폐업|  20030219|20050704| 2021-07|1532.80|
+|39295|      숙박업|모리스장여관|         5670000|          폐업|  19960910|20070830| 2021-07| 501.24|
+|39296|      숙박업|  스카이모텔|         5670000|          폐업|  20070712|20070830| 2021-07| 209.00|
+|39297|      숙박업|    부창여관|         5670000|          폐업|  19881021|20040623| 2021-07| 643.00|
+|39298|      숙박업|        부일|         5670000|          폐업|  19861222|20121120| 2021-07| 332.27|
+|39299|      숙박업|  금호여인숙|         5670000|          폐업|  20101213|20110816| 2021-07|    .00|
+|39300|      숙박업|        만복|         5670000|          폐업|  19710326|20020523| 2021-07|    .00|
+|39301|      숙박업|        상춘|         5670000|          폐업|  19711012|20091215| 2021-07|    .00|
+|39302|      숙박업|      부성장|         5670000|          폐업|  19720506|20070420| 2021-07| 151.08|
+|39303|      숙박업|        진주|         5670000|          폐업|  19580428|20180124| 2021-07|  63.46|
+|39304|      숙박업|        제일|         5670000|          폐업|  19581223|20010129| 2021-07|    .00|
+|39305|      숙박업|        고려|         5670000|          폐업|  19600310|20090122| 2021-07|    .00|
+|39306|      숙박업|숲속산장모텔|         5670000|          폐업|  20030211|20190705| 2021-07| 856.98|
+|39307|      숙박업|    타워모텔|         5670000|          폐업|  20010216|20100510| 2021-07| 366.78|
+|39308|      숙박업|  초원장여관|         5670000|          폐업|  19950119|20130802| 2021-07| 827.24|
+|39309|      숙박업|  대우장여관|         5670000|          폐업|  19860526|20130712| 2021-07| 369.02|
+|39310|      숙박업|    기린여관|         5670000|          폐업|  19860628|20030210| 2021-07| 273.92|
+|39311|      숙박업|      성수장|         5670000|          폐업|  19801125|20060613| 2021-07| 254.02|
+|39312|      숙박업|      흥일장|         5670000|          폐업|  19810415|20000228| 2021-07| 101.66|
+|39313|      숙박업|      성빈장|         5670000|          폐업|  19740327|20120727| 2021-07|    .00|
+|39314|      숙박업|      천애장|         5670000|          폐업|  19740409|20061219| 2021-07|    .00|
+|39315|      숙박업|  삼화장여관|         5670000|          폐업|  19780104|20110607| 2021-07|  92.25|
+|39316|      숙박업|        양성|         5670000|          폐업|  19700618|20070411| 2021-07|  82.00|
+|39317|      숙박업|        백옥|         5670000|          폐업|  19701218|20070411| 2021-07|    .00|
+|39318|      숙박업|    네오모텔|         5670000|          폐업|  20030729|20111031| 2021-07|1894.62|
+|39319|      숙박업|      백악장|         5670000|          폐업|  20020906|20080513| 2021-07| 566.48|
+|39320|      숙박업|      새누리|         5670000|          폐업|  20090825|20121010| 2021-07| 586.53|
+|39321|      숙박업|  동궁장모텔|         5670000|          폐업|  20131101|20141111| 2021-07| 393.75|
+|39322|      숙박업|        로얄|         5670000|          폐업|  20131119|20140617| 2021-07| 650.00|
+|39323|      숙박업|    대암모텔|         5670000|          폐업|  20031107|20031229| 2021-07|1035.00|
+|39324|      숙박업|    루비모텔|         5670000|          폐업|  20030902|20031231| 2021-07| 412.00|
+|39325|      숙박업|    하나모텔|         5670000|          폐업|  20030423|20030430| 2021-07| 510.00|
+|39326|      숙박업|  아이존모텔|         5670000|          폐업|  20030429|20060518| 2021-07| 661.00|
+|39327|      숙박업|      그린텔|         5670000|          폐업|  20120914|20130515| 2021-07| 497.70|
+|39328|      숙박업|    새누리장|         5670000|          폐업|  20121010|20131021| 2021-07|    .00|
+|39329|      숙박업|  신성장여관|         5670000|          폐업|  19960215|20220209| 2022-02| 335.19|
+|39330|      숙박업|  럭셔리모텔|         5670000|          폐업|  20120427|20130801| 2021-07| 488.92|
+|39331|      숙박업|        목화|         5670000|          폐업|  19630220|20020927| 2021-07|    .00|
+|39332|      숙박업|        대산|         5670000|          폐업|  19640917|20050329| 2021-07|  35.41|
+|39333|      숙박업|        신덕|         5670000|          폐업|  19641105|20200514| 2021-07|    .00|
+|39334|      숙박업|        명진|         5670000|          폐업|  19651221|20050510| 2021-07|  62.87|
+|39335|      숙박업|      동호장|         5670000|          폐업|  19730824|20070411| 2021-07| 110.25|
+|39336|      숙박업|코리아나모텔|         5670000|          폐업|  20040727|20121120| 2021-07| 805.98|
+|39337|      숙박업|      새나라|         5670000|          폐업|  19650830|20060703| 2021-07|  64.00|
+|39338|      숙박업|      금산장|         5670000|          폐업|  19920713|20070411| 2021-07| 589.68|
+|39339|      숙박업|북면온천여관|         5670000|          폐업|  19980119|20040831| 2021-07|1362.00|
+|39340|      숙박업|    정임여관|         5670000|          폐업|  19900728|20041203| 2021-07| 187.27|
+|39341|      숙박업|      우일장|         5670000|          폐업|  19741119|20161026| 2021-07| 113.36|
+|39342|      숙박업|      궁전장|         5670000|          폐업|  20020509|20160719| 2021-07| 495.00|
+|39343|      숙박업|  백악장여관|         5670000|          폐업|  19900723|20100906| 2021-07| 566.48|
+|39344|      숙박업|      진양장|         5670000|          폐업|  19830725|20050418| 2021-07|  64.07|
+|39345|      숙박업|  궁전장여관|         5670000|          폐업|  19781114|20000601| 2021-07| 135.70|
+|39346|      숙박업|  신라장여관|         5670000|          폐업|  19800117|20070604| 2021-07| 271.98|
+|39347|      숙박업|  동양장여관|         5670000|          폐업|  19931122|20110804| 2021-07| 321.32|
+|39348|      숙박업|        동정|         5670000|          폐업|  19890201|20030415| 2021-07| 379.74|
+|39349|      숙박업|    수복여관|         5670000|          폐업|  19711112|20020202| 2021-07| 119.00|
+|39350|      숙박업|  가인장여관|         5670000|          폐업|  19940117|20160118| 2021-07| 440.76|
+|39351|      숙박업|  동보장여관|         5670000|          폐업|  19941206|20210119| 2021-07| 459.36|
+|39352|      숙박업|  오렌지모텔|         5670000|          폐업|  19870124|20160531| 2021-07| 207.90|
+|39353|      숙박업|  호반장여관|         5670000|          폐업|  19891213|20201102| 2021-07| 390.96|
+|39354|      숙박업|  용호장여관|         5670000|          폐업|  19861231|20031209| 2021-07| 796.80|
+|39355|      숙박업|        마일|         5670000|          폐업|  19750626|20190923| 2021-07|    .00|
+|39356|      숙박업|        가포|         5670000|          폐업|  19630605|20031024| 2021-07|    .00|
+|39357|      숙박업|        호성|         5670000|          폐업|  19680930|20120713| 2021-07|  93.76|
+|39358|      숙박업|        미성|         5670000|          폐업|  19690107|20070411| 2021-07| 203.90|
+|39359|      숙박업|        세화|         5670000|          폐업|  19691013|20070207| 2021-07|  83.33|
+|39360|      숙박업|        창신|         5670000|          폐업|  19720919|20050318| 2021-07|  64.59|
+|39361|      숙박업|      청하장|         5670000|          폐업|  19721226|20180810| 2021-07| 190.28|
+|39362|      숙박업|    바비런던|         5670000|          폐업|  19670602|20070420| 2021-07| 684.00|
+|39363|      숙박업|        송미|         5670000|          폐업|  19670620|20070411| 2021-07|  85.80|
+|39364|      숙박업|        순풍|         5670000|          폐업|  19810324|20081120| 2021-07| 135.30|
+|39365|      숙박업|        청자|         5670000|          폐업|  19700109|20000522| 2021-07|  32.50|
+|39366|      숙박업|        몽고|         5670000|          폐업|  19700910|20000429| 2021-07|  60.67|
++-----+------------+------------+----------------+--------------+----------+--------+--------+-------+
+only showing top 100 rows</code></pre></div>
+<p>toPandas()를 활용하여 EDA를 진행하자</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">lodge_df <span class="token operator">=</span> lodge<span class="token punctuation">.</span>toPandas<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">lodge_df<span class="token punctuation">.</span>info<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">&lt;class 'pandas.core.frame.DataFrame'>
+RangeIndex: 67328 entries, 0 to 67327
+Data columns (total 9 columns):
+ #   Column    Non-Null Count  Dtype 
+---  ------    --------------  ----- 
+ 0   번호        67328 non-null  object
+ 1   개방서비스명    67328 non-null  object
+ 2   사업장명      67328 non-null  object
+ 3   개방자치단체코드  67328 non-null  int32 
+ 4   상세영업상태명   67328 non-null  object
+ 5   인허가일자     67328 non-null  int32 
+ 6   폐업일자      67328 non-null  int32 
+ 7   갱신일자      67328 non-null  object
+ 8   면적        67328 non-null  object
+dtypes: int32(3), object(6)
+memory usage: 3.9+ MB</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">lodge_df</code></pre></div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}</code></pre></div>
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>번호</th>
+      <th>개방서비스명</th>
+      <th>사업장명</th>
+      <th>개방자치단체코드</th>
+      <th>상세영업상태명</th>
+      <th>인허가일자</th>
+      <th>폐업일자</th>
+      <th>갱신일자</th>
+      <th>면적</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>39267</td>
+      <td>숙박업</td>
+      <td>산호장여관</td>
+      <td>5670000</td>
+      <td>폐업</td>
+      <td>19780731</td>
+      <td>20030331</td>
+      <td>2021-07</td>
+      <td>77.17</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>39268</td>
+      <td>숙박업</td>
+      <td>새한여관</td>
+      <td>5670000</td>
+      <td>폐업</td>
+      <td>19800220</td>
+      <td>20071218</td>
+      <td>2021-07</td>
+      <td>272.00</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>39269</td>
+      <td>숙박업</td>
+      <td>삼성</td>
+      <td>5670000</td>
+      <td>폐업</td>
+      <td>19700811</td>
+      <td>19990123</td>
+      <td>2021-07</td>
+      <td>86.94</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>39270</td>
+      <td>숙박업</td>
+      <td>승정원</td>
+      <td>5670000</td>
+      <td>폐업</td>
+      <td>20120625</td>
+      <td>20171214</td>
+      <td>2021-07</td>
+      <td>292.50</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>39271</td>
+      <td>숙박업</td>
+      <td>에스모텔</td>
+      <td>5670000</td>
+      <td>폐업</td>
+      <td>20030116</td>
+      <td>20160125</td>
+      <td>2021-07</td>
+      <td>351.80</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>67323</th>
+      <td>618</td>
+      <td>자동차야영장업</td>
+      <td>캠핑스타</td>
+      <td>6510000</td>
+      <td>등록취소</td>
+      <td>20160308</td>
+      <td>20220311</td>
+      <td>2019-10</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>67324</th>
+      <td>619</td>
+      <td>자동차야영장업</td>
+      <td>지리산 호수공원 오토캠핑장</td>
+      <td>4870000</td>
+      <td>등록취소</td>
+      <td>20200909</td>
+      <td>20220311</td>
+      <td>2021-05</td>
+      <td>30870.0</td>
+    </tr>
+    <tr>
+      <th>67325</th>
+      <td>620</td>
+      <td>자동차야영장업</td>
+      <td>마린오토캠핑장</td>
+      <td>4620000</td>
+      <td>직권말소</td>
+      <td>20160624</td>
+      <td>20161018</td>
+      <td>2018-08</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>67326</th>
+      <td>621</td>
+      <td>자동차야영장업</td>
+      <td>명사십리 신리야영장</td>
+      <td>4990000</td>
+      <td>직권말소</td>
+      <td>20190722</td>
+      <td>20190826</td>
+      <td>2019-08</td>
+      <td>28359.0</td>
+    </tr>
+    <tr>
+      <th>67327</th>
+      <td>622</td>
+      <td>자동차야영장업</td>
+      <td>인제나르샤파크 캠핑장</td>
+      <td>4330000</td>
+      <td>직권말소</td>
+      <td>20160602</td>
+      <td>20200507</td>
+      <td>2020-05</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<p>67328 rows × 9 columns</p>
+</div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">code <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span><span class="token string">"C:\\Users\\USER\\Desktop\\Dataset\\lodge_industry\\자치단체코드.csv"</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'cp949'</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">code<span class="token punctuation">.</span>info<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">&lt;class 'pandas.core.frame.DataFrame'>
+RangeIndex: 230 entries, 0 to 229
+Data columns (total 2 columns):
+ #   Column  Non-Null Count  Dtype 
+---  ------  --------------  ----- 
+ 0   지역구명    230 non-null    object
+ 1   자치단체코드  230 non-null    int64 
+dtypes: int64(1), object(1)
+memory usage: 3.7+ KB</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>code<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    lodge_df<span class="token punctuation">[</span><span class="token string">'개방자치단체코드'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>lodge_df<span class="token punctuation">[</span><span class="token string">'개방자치단체코드'</span><span class="token punctuation">]</span> <span class="token operator">==</span> code<span class="token punctuation">[</span><span class="token string">'자치단체코드'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">=</span> code<span class="token punctuation">[</span><span class="token string">'지역구명'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">lodge_df<span class="token punctuation">[</span><span class="token string">'개방자치단체코드'</span><span class="token punctuation">]</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">0        창원시
+1        창원시
+2        창원시
+3        창원시
+4        창원시
+        ... 
+67323    제주시
+67324    구례군
+67325    태안군
+67326    완도군
+67327    인제군
+Name: 개방자치단체코드, Length: 67328, dtype: object</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 개방자치단체코드 -> 지역</span>
+lodge_df<span class="token punctuation">.</span>rename<span class="token punctuation">(</span>columns <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'개방자치단체코드'</span><span class="token punctuation">:</span><span class="token string">'지역'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>inplace<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">lodge_df</code></pre></div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}</code></pre></div>
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>번호</th>
+      <th>개방서비스명</th>
+      <th>사업장명</th>
+      <th>지역</th>
+      <th>상세영업상태명</th>
+      <th>인허가일자</th>
+      <th>폐업일자</th>
+      <th>갱신일자</th>
+      <th>면적</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>39267</td>
+      <td>숙박업</td>
+      <td>산호장여관</td>
+      <td>창원시</td>
+      <td>폐업</td>
+      <td>19780731</td>
+      <td>20030331</td>
+      <td>2021-07</td>
+      <td>77.17</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>39268</td>
+      <td>숙박업</td>
+      <td>새한여관</td>
+      <td>창원시</td>
+      <td>폐업</td>
+      <td>19800220</td>
+      <td>20071218</td>
+      <td>2021-07</td>
+      <td>272.00</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>39269</td>
+      <td>숙박업</td>
+      <td>삼성</td>
+      <td>창원시</td>
+      <td>폐업</td>
+      <td>19700811</td>
+      <td>19990123</td>
+      <td>2021-07</td>
+      <td>86.94</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>39270</td>
+      <td>숙박업</td>
+      <td>승정원</td>
+      <td>창원시</td>
+      <td>폐업</td>
+      <td>20120625</td>
+      <td>20171214</td>
+      <td>2021-07</td>
+      <td>292.50</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>39271</td>
+      <td>숙박업</td>
+      <td>에스모텔</td>
+      <td>창원시</td>
+      <td>폐업</td>
+      <td>20030116</td>
+      <td>20160125</td>
+      <td>2021-07</td>
+      <td>351.80</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>67323</th>
+      <td>618</td>
+      <td>자동차야영장업</td>
+      <td>캠핑스타</td>
+      <td>제주시</td>
+      <td>등록취소</td>
+      <td>20160308</td>
+      <td>20220311</td>
+      <td>2019-10</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>67324</th>
+      <td>619</td>
+      <td>자동차야영장업</td>
+      <td>지리산 호수공원 오토캠핑장</td>
+      <td>구례군</td>
+      <td>등록취소</td>
+      <td>20200909</td>
+      <td>20220311</td>
+      <td>2021-05</td>
+      <td>30870.0</td>
+    </tr>
+    <tr>
+      <th>67325</th>
+      <td>620</td>
+      <td>자동차야영장업</td>
+      <td>마린오토캠핑장</td>
+      <td>태안군</td>
+      <td>직권말소</td>
+      <td>20160624</td>
+      <td>20161018</td>
+      <td>2018-08</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>67326</th>
+      <td>621</td>
+      <td>자동차야영장업</td>
+      <td>명사십리 신리야영장</td>
+      <td>완도군</td>
+      <td>직권말소</td>
+      <td>20190722</td>
+      <td>20190826</td>
+      <td>2019-08</td>
+      <td>28359.0</td>
+    </tr>
+    <tr>
+      <th>67327</th>
+      <td>622</td>
+      <td>자동차야영장업</td>
+      <td>인제나르샤파크 캠핑장</td>
+      <td>인제군</td>
+      <td>직권말소</td>
+      <td>20160602</td>
+      <td>20200507</td>
+      <td>2020-05</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<p>67328 rows × 9 columns</p>
+</div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">temp1 <span class="token operator">=</span> <span class="token punctuation">(</span>lodge_df<span class="token punctuation">[</span><span class="token string">'폐업일자'</span><span class="token punctuation">]</span><span class="token operator">/</span><span class="token number">10000</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token builtin">round</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+temp2 <span class="token operator">=</span> <span class="token punctuation">(</span>lodge_df<span class="token punctuation">[</span><span class="token string">'인허가일자'</span><span class="token punctuation">]</span><span class="token operator">/</span><span class="token number">10000</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token builtin">round</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 운영기간이라는 변수 생성</span>
+<span class="token comment"># 운영기간 = 폐업일자 - 인허가일자 후 </span>
+lodge_df<span class="token punctuation">[</span><span class="token string">'운영기간'</span><span class="token punctuation">]</span> <span class="token operator">=</span> temp1 <span class="token operator">-</span> temp2</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">lodge_df</code></pre></div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}</code></pre></div>
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>번호</th>
+      <th>개방서비스명</th>
+      <th>사업장명</th>
+      <th>지역</th>
+      <th>상세영업상태명</th>
+      <th>인허가일자</th>
+      <th>폐업일자</th>
+      <th>갱신일자</th>
+      <th>면적</th>
+      <th>운영기간</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>39267</td>
+      <td>숙박업</td>
+      <td>산호장여관</td>
+      <td>창원시</td>
+      <td>폐업</td>
+      <td>19780731</td>
+      <td>20030331</td>
+      <td>2021-07</td>
+      <td>77.17</td>
+      <td>25.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>39268</td>
+      <td>숙박업</td>
+      <td>새한여관</td>
+      <td>창원시</td>
+      <td>폐업</td>
+      <td>19800220</td>
+      <td>20071218</td>
+      <td>2021-07</td>
+      <td>272.00</td>
+      <td>27.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>39269</td>
+      <td>숙박업</td>
+      <td>삼성</td>
+      <td>창원시</td>
+      <td>폐업</td>
+      <td>19700811</td>
+      <td>19990123</td>
+      <td>2021-07</td>
+      <td>86.94</td>
+      <td>29.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>39270</td>
+      <td>숙박업</td>
+      <td>승정원</td>
+      <td>창원시</td>
+      <td>폐업</td>
+      <td>20120625</td>
+      <td>20171214</td>
+      <td>2021-07</td>
+      <td>292.50</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>39271</td>
+      <td>숙박업</td>
+      <td>에스모텔</td>
+      <td>창원시</td>
+      <td>폐업</td>
+      <td>20030116</td>
+      <td>20160125</td>
+      <td>2021-07</td>
+      <td>351.80</td>
+      <td>13.0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>67323</th>
+      <td>618</td>
+      <td>자동차야영장업</td>
+      <td>캠핑스타</td>
+      <td>제주시</td>
+      <td>등록취소</td>
+      <td>20160308</td>
+      <td>20220311</td>
+      <td>2019-10</td>
+      <td>0.0</td>
+      <td>6.0</td>
+    </tr>
+    <tr>
+      <th>67324</th>
+      <td>619</td>
+      <td>자동차야영장업</td>
+      <td>지리산 호수공원 오토캠핑장</td>
+      <td>구례군</td>
+      <td>등록취소</td>
+      <td>20200909</td>
+      <td>20220311</td>
+      <td>2021-05</td>
+      <td>30870.0</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>67325</th>
+      <td>620</td>
+      <td>자동차야영장업</td>
+      <td>마린오토캠핑장</td>
+      <td>태안군</td>
+      <td>직권말소</td>
+      <td>20160624</td>
+      <td>20161018</td>
+      <td>2018-08</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>67326</th>
+      <td>621</td>
+      <td>자동차야영장업</td>
+      <td>명사십리 신리야영장</td>
+      <td>완도군</td>
+      <td>직권말소</td>
+      <td>20190722</td>
+      <td>20190826</td>
+      <td>2019-08</td>
+      <td>28359.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>67327</th>
+      <td>622</td>
+      <td>자동차야영장업</td>
+      <td>인제나르샤파크 캠핑장</td>
+      <td>인제군</td>
+      <td>직권말소</td>
+      <td>20160602</td>
+      <td>20200507</td>
+      <td>2020-05</td>
+      <td>0</td>
+      <td>4.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>67328 rows × 10 columns</p>
+</div>
+<h3 id="갱신일자-확인하기" style="position:relative;"><a href="#%EA%B0%B1%EC%8B%A0%EC%9D%BC%EC%9E%90-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0" aria-label="갱신일자 확인하기 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>갱신일자 확인하기</h3>
+<p>분석을 진행하기전 갱신일자 현황을 알아보자</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">renewal_date <span class="token operator">=</span> lodge_df<span class="token punctuation">[</span><span class="token string">'갱신일자'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value_counts<span class="token punctuation">(</span><span class="token punctuation">)</span>
+renewal_date</code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">2018-08    28001
+2021-07     2517
+2021-12     2102
+2022-01     2004
+2021-08     1567
+2018-11     1456
+2020-08     1364
+2021-10     1312
+2021-09     1241
+2021-04     1164
+2021-11     1157
+2021-06     1114
+2020-12     1093
+2021-05     1074
+2022-02     1066
+2019-07     1059
+2021-02     1040
+2018-10     1035
+2021-01      981
+2021-03      956
+2020-02      855
+2020-07      845
+2020-11      804
+2018-12      801
+2020-06      753
+2019-12      707
+2020-05      702
+2020-01      694
+2020-10      640
+2020-04      637
+2019-01      628
+2020-03      626
+2020-09      586
+2019-06      578
+2019-08      551
+2019-11      516
+2019-03      492
+2019-05      460
+2019-10      452
+2019-09      435
+2019-04      413
+2019-02      390
+2018-09      332
+2022-03      128
+Name: 갱신일자, dtype: int64</code></pre></div>
+<p>위 자료는 2018년도 8월부터 2022년도 3월까지 특정주기로 갱신된 데이터인 것을 확인</p>
+<h3 id="1영업-상태와-폐업상태-건수를-알아보자" style="position:relative;"><a href="#1%EC%98%81%EC%97%85-%EC%83%81%ED%83%9C%EC%99%80-%ED%8F%90%EC%97%85%EC%83%81%ED%83%9C-%EA%B1%B4%EC%88%98%EB%A5%BC-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90" aria-label="1영업 상태와 폐업상태 건수를 알아보자 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.영업 상태와 폐업상태 건수를 알아보자</h3>
+<p>상세영업상태명을 영업, 폐업, 휴업 3가지로 분류</p>
+<p>※ 영업, 휴업을 제외한 자료는 모두 폐업으로 분류</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">lodge_df<span class="token punctuation">[</span><span class="token string">'상세영업상태명'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>lodge_df<span class="token punctuation">[</span><span class="token string">'상세영업상태명'</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">'영업중'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'영업'</span>
+lodge_df<span class="token punctuation">[</span><span class="token string">'상세영업상태명'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">(</span>lodge_df<span class="token punctuation">[</span><span class="token string">'상세영업상태명'</span><span class="token punctuation">]</span> <span class="token operator">!=</span> <span class="token string">'영업'</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span> <span class="token punctuation">(</span>lodge_df<span class="token punctuation">[</span><span class="token string">'상세영업상태명'</span><span class="token punctuation">]</span> <span class="token operator">!=</span> <span class="token string">'휴업'</span><span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">=</span><span class="token string">'폐업'</span>  </code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">current_status <span class="token operator">=</span> lodge_df<span class="token punctuation">[</span><span class="token string">'상세영업상태명'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value_counts<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+status_df <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>current_status<span class="token punctuation">)</span>
+status_df <span class="token operator">=</span> status_df<span class="token punctuation">.</span>reset_index<span class="token punctuation">(</span><span class="token punctuation">)</span>
+status_df<span class="token punctuation">.</span>rename<span class="token punctuation">(</span>columns <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'index'</span> <span class="token punctuation">:</span> <span class="token string">'영업상태'</span><span class="token punctuation">}</span><span class="token punctuation">,</span> inplace <span class="token operator">=</span> <span class="token boolean">True</span><span class="token punctuation">)</span>
+
+status_df</code></pre></div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}</code></pre></div>
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>영업상태</th>
+      <th>상세영업상태명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>영업</td>
+      <td>39135</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>폐업</td>
+      <td>27830</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>휴업</td>
+      <td>363</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># pie 차트 형태로 나타내기</span>
+plt<span class="token punctuation">.</span>figure<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>pie<span class="token punctuation">(</span>status_df<span class="token punctuation">[</span><span class="token string">'상세영업상태명'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> labels<span class="token operator">=</span>status_df<span class="token punctuation">[</span><span class="token string">'영업상태'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>  autopct<span class="token operator">=</span><span class="token string">'%.1f%%'</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">([&lt;matplotlib.patches.Wedge at 0x2004c35c608>,
+  &lt;matplotlib.patches.Wedge at 0x2004c35cdc8>,
+  &lt;matplotlib.patches.Wedge at 0x2004c366688>],
+ [Text(-0.27777047090880896, 1.0643512415979504, '영업'),
+  Text(0.25970348918010755, -1.068903221862334, '폐업'),
+  Text(1.0998422094675733, -0.01863100301881176, '휴업')],
+ [Text(-0.1515111659502594, 0.5805552226897911, '58.1%'),
+  Text(0.141656448643695, -0.5830381210158184, '41.3%'),
+  Text(0.5999139324368581, -0.010162365282988231, '0.5%')])</code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 449px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAADr0lEQVQ4y22UXWgdRRTHz92NhaTdSaLWmmvuTBIRCyIKjYgKKhVBRdQHoaAPEUREiKSSZiZJk5nUD6SKor6ICKE1fjQIwWRGcqWx4KsfRUGhoj4UUQmC0FI17e7OkTM7N7mVDvw5M3tmfud/docFaBtCuc358JcId/+LNT6+lF735k8hx6VNhXKkGqe1chedgf/DhLLQu/cpuHEJk9bzxv5FuPaVb2PetcDApUuraEFIdwlYTPADn9T4xDI0nvu4l48vPSOU+4BLe0Io9zmX9j2u3IhQdjtXFriySXuhMLiMD2R7dfuEUO4PoRy2xKXFtvVpLt2j0URNtNonp1QpgmrBobQvtQ5zafOoQihX0Fwol3PKVeCJ6C4hY8SCaD2NiREhLbYBsDG26Pn4khfKeS6tD8WkK+KaoA+JylR4pzSpRVgPtckjMG7eglSOvZDOt9zH9n8Uym6LUNgkC+WejBvyzcPK+qo16wfUyqYESYZYCLWCQi0/IqZWoX90IaUXmYb+pVvgMhzOA6ia+0G1HOZXyybWZROvkU3sl03kqolcruZiYhXFRPOtxuiHMPwFJtXXDV/YrglFrVG7zg+qFRJeLtdQSOtvn5wv9kwdKW6aOlLcMH20GJqYLwanj240Zhawrt9fvAcROvp3d4bLXF0de5ycDChbDKll3CU/wyvlcb9v6nD51exweVZfVa6bvuL3ub7i9KF6cWpmV3Fqrr7x/Qv9+N2LjWOId8BtAx1dBGq1PE+O6nI175Un/N7Jd0o3c2+JptOj2YZodiDq7VsyIeaouxBnO1/768AOwJM7E2hIlw4oC0Nq+fEr5BrerD668O7BfeUF3Vui6cBSMyx0t/eGBZUt6RCLwjA8b3ruw+cZ/DaepXCLWqjBfgQYw8656dGf13UD0SQ5Ocp1j/eaeTQZep35UmceCawzRMNyNIziSdSshpoBCeBphF9mr09/1UOAc/Awmi4Codd0gEAEZPj3dObPTAYgwXOsoKS70DBAw9IK+CwCLgF8PbsnwUMAue4ZiyBSQU4CoHJE8yKCCDzSDkOdAfyp++Gc3gnndS+UurvmNQOv2f1o2A/kIrYXot9y9Y3X2Z1eZwRLCESidRixSktJjB1o2INo2OteZ4to2DGvs1fPTGYPfPpYJ5Q6I6UtGJrs4n8iQcgdJUILmwUywDkGZyczwLd7aOtliP8AvswSxN3VOcMu/ddud0qbUFM7wWmycTBL8HB3B+KtgG90A673AZ6rh73t4z+YG8VwE/JLrAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="png"
+        title="png"
+        src="/static/9f9fef18cf352ada8be26283f975fa93/053a9/output_26_1.png"
+        srcset="/static/9f9fef18cf352ada8be26283f975fa93/e9ff0/output_26_1.png 180w,
+/static/9f9fef18cf352ada8be26283f975fa93/f21e7/output_26_1.png 360w,
+/static/9f9fef18cf352ada8be26283f975fa93/053a9/output_26_1.png 449w"
+        sizes="(max-width: 449px) 100vw, 449px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<h3 id="2운영기간의-분포를-파악하자" style="position:relative;"><a href="#2%EC%9A%B4%EC%98%81%EA%B8%B0%EA%B0%84%EC%9D%98-%EB%B6%84%ED%8F%AC%EB%A5%BC-%ED%8C%8C%EC%95%85%ED%95%98%EC%9E%90" aria-label="2운영기간의 분포를 파악하자 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.운영기간의 분포를 파악하자</h3>
+<p>운영기간이라는 새로운 변수를 아래와 같은 식을 통해 생성</p>
+<p>운영기간(년도) = 폐업기간 - 인허가일자를 통해 운영기간을 구함</p>
+<ul>
+<li>우선 인허가일자와 폐업기간 속 오류를 정정하는 작업 시행</li>
+</ul>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">lodge_df<span class="token punctuation">[</span><span class="token string">'인허가일자'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>sort_values<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">65386           0
+61838           0
+55414           0
+55416           0
+55419           0
+           ...   
+54742    20220228
+54743    20220228
+34531    20220228
+34532    20220228
+64686    20220228
+Name: 인허가일자, Length: 67328, dtype: int32</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 한국 정부 설립일 1948년 8월 15일 전에 허가가 된 자료들은 설립일로 변경</span>
+lodge_df<span class="token punctuation">[</span><span class="token string">'인허가일자'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>lodge_df<span class="token punctuation">[</span><span class="token string">'인허가일자'</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">1931109</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">19931109</span>
+lodge_df<span class="token punctuation">[</span><span class="token string">'인허가일자'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>lodge_df<span class="token punctuation">[</span><span class="token string">'인허가일자'</span><span class="token punctuation">]</span> <span class="token operator">&lt;=</span> <span class="token number">19480815</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">19480815</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">lodge_df<span class="token punctuation">[</span><span class="token string">'폐업일자'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>sort_values<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">59790           0
+61838           0
+2078         2014
+18528      199909
+11873      200003
+           ...   
+38824    20220311
+38825    20220311
+38826    20220311
+38828    20220311
+33663    20220311
+Name: 폐업일자, Length: 67328, dtype: int32</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 폐업일자가 48년도 이전으로 나타난 경우 19480101로 변경</span>
+lodge_df<span class="token punctuation">[</span><span class="token string">'폐업일자'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>lodge_df<span class="token punctuation">[</span><span class="token string">'폐업일자'</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">2014</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">20140000</span>
+lodge_df<span class="token punctuation">[</span><span class="token string">'폐업일자'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>lodge_df<span class="token punctuation">[</span><span class="token string">'폐업일자'</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">199909</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">19990900</span>
+lodge_df<span class="token punctuation">[</span><span class="token string">'폐업일자'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>lodge_df<span class="token punctuation">[</span><span class="token string">'폐업일자'</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">200003</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">20000300</span>
+lodge_df<span class="token punctuation">[</span><span class="token string">'폐업일자'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>lodge_df<span class="token punctuation">[</span><span class="token string">'폐업일자'</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">200009</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">20000900</span>
+lodge_df<span class="token punctuation">[</span><span class="token string">'폐업일자'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>lodge_df<span class="token punctuation">[</span><span class="token string">'폐업일자'</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">200204</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">20020400</span>
+lodge_df<span class="token punctuation">[</span><span class="token string">'폐업일자'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>lodge_df<span class="token punctuation">[</span><span class="token string">'폐업일자'</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">2001123</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">20010123</span>
+lodge_df<span class="token punctuation">[</span><span class="token string">'폐업일자'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>lodge_df<span class="token punctuation">[</span><span class="token string">'폐업일자'</span><span class="token punctuation">]</span> <span class="token operator">&lt;=</span> <span class="token number">19480814</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">19480815</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">temp1 <span class="token operator">=</span> <span class="token punctuation">(</span>lodge_df<span class="token punctuation">[</span><span class="token string">'폐업일자'</span><span class="token punctuation">]</span><span class="token operator">/</span><span class="token number">10000</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token builtin">round</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+temp2 <span class="token operator">=</span> <span class="token punctuation">(</span>lodge_df<span class="token punctuation">[</span><span class="token string">'인허가일자'</span><span class="token punctuation">]</span><span class="token operator">/</span><span class="token number">10000</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token builtin">round</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">temp1<span class="token punctuation">.</span>describe<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">count    67328.000000
+mean      2017.290147
+std          7.395865
+min       1948.000000
+25%       2014.000000
+50%       2022.000000
+75%       2022.000000
+max       2022.000000
+Name: 폐업일자, dtype: float64</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">temp2<span class="token punctuation">.</span>describe<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">count    67328.000000
+mean      1999.503891
+std         15.368706
+min       1948.000000
+25%       1988.000000
+50%       2002.000000
+75%       2014.000000
+max       2022.000000
+Name: 인허가일자, dtype: float64</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">lodge_df<span class="token punctuation">[</span><span class="token string">'운영기간'</span><span class="token punctuation">]</span> <span class="token operator">=</span> temp1 <span class="token operator">-</span> temp2</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">lodge_df<span class="token punctuation">[</span><span class="token string">'운영기간'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>describe<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">count    67328.000000
+mean        17.786255
+std         13.367892
+min          0.000000
+25%          6.000000
+50%         17.000000
+75%         27.000000
+max         74.000000
+Name: 운영기간, dtype: float64</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">lodge_df<span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span><span class="token string">"C:\\Users\\USER\\Desktop\\Dataset\\lodge_industry\\lodge.csv"</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">,</span> index<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">)</span></code></pre></div>
+<p>운영기간을 아래와 같이 구분하여 비율을 파악해보자</p>
+<p>5년이하, 6~10년도, 11년-20년, 21년-30년, 31년-40년, 41년이상</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">period_1 <span class="token operator">=</span> lodge_df<span class="token punctuation">[</span><span class="token string">'번호'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>lodge_df<span class="token punctuation">[</span><span class="token string">'운영기간'</span><span class="token punctuation">]</span> <span class="token operator">&lt;=</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">.</span>count<span class="token punctuation">(</span><span class="token punctuation">)</span>
+period_2 <span class="token operator">=</span> lodge_df<span class="token punctuation">[</span><span class="token string">'번호'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">(</span>lodge_df<span class="token punctuation">[</span><span class="token string">'운영기간'</span><span class="token punctuation">]</span> <span class="token operator">>=</span> <span class="token number">6</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span> <span class="token punctuation">(</span>lodge_df<span class="token punctuation">[</span><span class="token string">'운영기간'</span><span class="token punctuation">]</span> <span class="token operator">&lt;=</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">.</span>count<span class="token punctuation">(</span><span class="token punctuation">)</span>
+period_3 <span class="token operator">=</span> lodge_df<span class="token punctuation">[</span><span class="token string">'번호'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">(</span>lodge_df<span class="token punctuation">[</span><span class="token string">'운영기간'</span><span class="token punctuation">]</span> <span class="token operator">>=</span> <span class="token number">11</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span> <span class="token punctuation">(</span>lodge_df<span class="token punctuation">[</span><span class="token string">'운영기간'</span><span class="token punctuation">]</span> <span class="token operator">&lt;=</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">.</span>count<span class="token punctuation">(</span><span class="token punctuation">)</span>
+period_4 <span class="token operator">=</span> lodge_df<span class="token punctuation">[</span><span class="token string">'번호'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">(</span>lodge_df<span class="token punctuation">[</span><span class="token string">'운영기간'</span><span class="token punctuation">]</span> <span class="token operator">>=</span> <span class="token number">21</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span> <span class="token punctuation">(</span>lodge_df<span class="token punctuation">[</span><span class="token string">'운영기간'</span><span class="token punctuation">]</span> <span class="token operator">&lt;=</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">.</span>count<span class="token punctuation">(</span><span class="token punctuation">)</span>
+period_5 <span class="token operator">=</span> lodge_df<span class="token punctuation">[</span><span class="token string">'번호'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">(</span>lodge_df<span class="token punctuation">[</span><span class="token string">'운영기간'</span><span class="token punctuation">]</span> <span class="token operator">>=</span> <span class="token number">31</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span> <span class="token punctuation">(</span>lodge_df<span class="token punctuation">[</span><span class="token string">'운영기간'</span><span class="token punctuation">]</span> <span class="token operator">&lt;=</span><span class="token number">40</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">.</span>count<span class="token punctuation">(</span><span class="token punctuation">)</span>
+period_6 <span class="token operator">=</span> lodge_df<span class="token punctuation">[</span><span class="token string">'번호'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>lodge_df<span class="token punctuation">[</span><span class="token string">'운영기간'</span><span class="token punctuation">]</span> <span class="token operator">>=</span> <span class="token number">41</span><span class="token punctuation">]</span><span class="token punctuation">.</span>count<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">period_3</code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">15364</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 데이터프레임으로 만들고 Pie 차트 생성</span>
+period <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">'운영기간'</span><span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token string">'5년이하'</span><span class="token punctuation">,</span><span class="token string">'6~10년'</span><span class="token punctuation">,</span><span class="token string">'11년~20년'</span><span class="token punctuation">,</span><span class="token string">'21~30년'</span><span class="token punctuation">,</span><span class="token string">'31~40년'</span><span class="token punctuation">,</span><span class="token string">'41년 이상'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                      <span class="token string">'count'</span><span class="token punctuation">:</span><span class="token punctuation">[</span>period_1<span class="token punctuation">,</span>period_2<span class="token punctuation">,</span>period_3<span class="token punctuation">,</span>period_4<span class="token punctuation">,</span>period_5<span class="token punctuation">,</span>period_6<span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">period</code></pre></div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}</code></pre></div>
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>운영기간</th>
+      <th>count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>5년이하</td>
+      <td>15621</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>6~10년</td>
+      <td>10778</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>11년~20년</td>
+      <td>15364</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>21~30년</td>
+      <td>12558</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>31~40년</td>
+      <td>8690</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>41년 이상</td>
+      <td>4317</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># pie 차트 형태로 나타내기</span>
+colors <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'red'</span><span class="token punctuation">,</span> <span class="token string">'orange'</span><span class="token punctuation">,</span> <span class="token string">'yellow'</span><span class="token punctuation">,</span> <span class="token string">'lightgreen'</span><span class="token punctuation">,</span> <span class="token string">'skyblue'</span><span class="token punctuation">,</span><span class="token string">'purple'</span><span class="token punctuation">]</span>
+
+plt<span class="token punctuation">.</span>figure<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>pie<span class="token punctuation">(</span>period<span class="token punctuation">[</span><span class="token string">'count'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> labels<span class="token operator">=</span>period<span class="token punctuation">[</span><span class="token string">'운영기간'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> colors<span class="token operator">=</span>colors<span class="token punctuation">,</span> autopct<span class="token operator">=</span><span class="token string">'%.1f%%'</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">([&lt;matplotlib.patches.Wedge at 0x20046d0c808>,
+  &lt;matplotlib.patches.Wedge at 0x2004783dcc8>,
+  &lt;matplotlib.patches.Wedge at 0x2004783d348>,
+  &lt;matplotlib.patches.Wedge at 0x20046d0dd08>,
+  &lt;matplotlib.patches.Wedge at 0x20046c04408>,
+  &lt;matplotlib.patches.Wedge at 0x20048244288>],
+ [Text(0.8205043395252873, 0.7326476839656099, '5년이하'),
+  Text(-0.4181049594406049, 1.017442009596208, '6~10년'),
+  Text(-1.099167184528615, -0.042796033174087755, '11년~20년'),
+  Text(-0.2497172067103892, -1.0712802232248857, '21~30년'),
+  Text(0.7597575682132678, -0.7954674333639699, '31~40년'),
+  Text(1.0777583984691492, -0.2200836989175137, '41년 이상')],
+ [Text(0.4475478215592476, 0.39962600943578713, '23.2%'),
+  Text(-0.22805725060396628, 0.5549683688706589, '16.0%'),
+  Text(-0.5995457370156081, -0.023343290822229683, '22.8%'),
+  Text(-0.1362093854783941, -0.584334667213574, '18.7%'),
+  Text(0.4144132190254187, -0.4338913272894381, '12.9%'),
+  Text(0.5878682173468086, -0.12004565395500746, '6.4%')])</code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 488px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 92.22222222222223%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsSAAALEgHS3X78AAADyklEQVQ4y3WUb0hedRTHP/c+z+OWCaPaslmUrCG1YBaxGHuxKBgRvaheFNWLSHAQwvai3hiCbNZ8HnV6r4ptRVsxdS3KZGztT/8Guc2tNLHcWkQW5SL1+aNz83H33t85cZ/H/SnbgcM59/L7fX7fc+7vXPiPrSuDB+4CVdAjRPQgyEcgbSDLQaJEFGwFQhduYNqdj8VL4K3nKAAKdAD0Vyyzj2J1Wa53cJNE86AQeml+770LYKEaF95bDZrG1h4428g9/h4S2sl38jHj2kBSopxR2K02a/S6/eXAigXA0Iex9WxO7bO6l5R2o9qFag8qtfklYqGSX751HlpUAouKFsC+IaKnQAd5WkJIJ2q68bK7CEwPRjcRCBi18RQkB4ftIbQSYiGr9DqglYsBxaIkZRTVbjzzAXpxFxJ8guhLmBAU2OhlMALBvJYnp4EsRA5fURkERMLjRNiigoriySRGezH6Pqq9qDyRB3o2cgHUgC/5+PWVL+5h548IbWo6l58UQVUIVFHJYuQoxuyzRNfkgKr21S7JfJxTKJ2HWoyM5Mv1fW4T4Y8Q5HmYwENyULFEhwn8O/HDUj0ixosUGN8qMB7RwCOqcxSs94lxiZjNypUUAjcfP06JKmMhZGYGM5tFRCwNn3+W8mBnV7fX8Vh70B7bHLRSaVrYaNrtzUGbtUk7qHq8hVf5kDfy+k+ezGmPijKYK1kJRHMwGcmuDZrTzZKY/NzUnZmTut5RqX3lkKle1mRqqNUatpjNsa2rgFgxyws5dgw8j8h8Y9pCoAheCPs+uz5oSr0tTsZRd7zNNAz9buqHk7rt7KQk+s7726q/0roHdwzUg81wubWK+6522DZiYcS+XxU/LPP07Aa/MbVDnKSjLRMt4mYapemXfvPmiQnd2vebxH9IefFzUxofvbAxPjDB7qRGCll87WJngqVXVL52fPYpTSTfkda04zf/3SQNfzaKO7Vdm8/vDeKDaT8+NOnVD0xo/Nvx3oqfTud6VLnnAEu55dq0dKQTdE+/bv04t5aG5M4aN+2om3LUTbuhGyflSJgnRs5p/UBa40MTn74QfzecuMLVG56JLllWgoWVB4rA0YsvcmCmIj+kyU5aM8761kzrfjftTjkpR52Uq26m6XLT6Bf9205nK2r2KzOqlD60dvH//r6+vPg8h2Zepqv/ET7TnfYJ7Qtfx6r7q+9un2l/2Em1rHOS7SvC6xsf+ovaU4c5qGrdvqKMG5qbdq/mVb1VkbJHyxYN6iCNY420ZlycVBsXFOJDY5HEoMn1rujWZf+C/AMvn5CAa4myZAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="png"
+        title="png"
+        src="/static/20e48bba1ac012a32fef541393ced750/bd48c/output_44_1.png"
+        srcset="/static/20e48bba1ac012a32fef541393ced750/e9ff0/output_44_1.png 180w,
+/static/20e48bba1ac012a32fef541393ced750/f21e7/output_44_1.png 360w,
+/static/20e48bba1ac012a32fef541393ced750/bd48c/output_44_1.png 488w"
+        sizes="(max-width: 488px) 100vw, 488px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<h3 id="3-숙박업이-발달한-지역-알아보기" style="position:relative;"><a href="#3-%EC%88%99%EB%B0%95%EC%97%85%EC%9D%B4-%EB%B0%9C%EB%8B%AC%ED%95%9C-%EC%A7%80%EC%97%AD-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0" aria-label="3 숙박업이 발달한 지역 알아보기 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. 숙박업이 발달한 지역 알아보기</h3>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 0이거나 999로 표기된 자료는 알수없음으로 변경</span>
+lodge_df<span class="token punctuation">[</span><span class="token string">'지역'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>lodge_df<span class="token punctuation">[</span><span class="token string">'지역'</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'알수없음'</span>
+lodge_df<span class="token punctuation">[</span><span class="token string">'지역'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>lodge_df<span class="token punctuation">[</span><span class="token string">'지역'</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">999</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'알수없음'</span>                </code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">lodge_count <span class="token operator">=</span> lodge_df<span class="token punctuation">[</span><span class="token string">'지역'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value_counts<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">lodge_count<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">서울특별시    9765
+부산광역시    4742
+인천광역시    2985
+대구광역시    1932
+대전광역시    1561
+광주광역시    1494
+제주시      1468
+창원시      1364
+울산광역시    1233
+전주시      1222
+태안군      1059
+여수시      1026
+경주시      1012
+수원시       981
+서귀포시      968
+강릉시       878
+가평군       877
+청주시       804
+포항시       769
+성남시       742
+순천시       615
+보령시       612
+양양군       601
+목포시       601
+부천시       594
+춘천시       519
+고성군       511
+구미시       493
+거제시       491
+진주시       487
+Name: 지역, dtype: int64</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">lodge_count<span class="token punctuation">.</span>tail<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">광주시     93
+군포시     92
+진천군     89
+장성군     84
+성주군     83
+봉화군     83
+예천군     79
+장흥군     79
+곡성군     79
+옥천군     78
+함안군     72
+영동군     68
+의성군     68
+고령군     66
+군위군     59
+청양군     58
+진도군     57
+증평군     53
+순창군     48
+하남시     47
+함평군     46
+진안군     44
+알수없음    40
+의령군     38
+임실군     35
+영양군     35
+계룡시     29
+장수군     26
+의왕시     21
+과천시      9
+Name: 지역, dtype: int64</code></pre></div>
+<p><img src="attachment:5_1.PNG" alt="5_1.PNG"></p>
+<p>세종시,창원시, 경남 고성군의 경우 아래와 같이 구글맵에서 나타나지 않아 제외</p>
+<p><img src="attachment:9_2.PNG" alt="9_2.PNG"><img src="attachment:9_1.PNG" alt="9_1.PNG"></p>
+<h3 id="4면적-분포-확인하기" style="position:relative;"><a href="#4%EB%A9%B4%EC%A0%81-%EB%B6%84%ED%8F%AC-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0" aria-label="4면적 분포 확인하기 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4.면적 분포 확인하기</h3>
+<p>소재지면적에 대한 자세한 조항이 없기 때문에 데이터 및 소재지라는 점을 봤을 때 대지면적으로 판단하는 것이 옳다고 판단</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">size <span class="token operator">=</span> lodge_df<span class="token punctuation">[</span><span class="token string">'면적'</span><span class="token punctuation">]</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">size<span class="token punctuation">.</span>sort_values<span class="token punctuation">(</span>ascending<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">27939    9999.66
+58416    9999.02
+52110    9999.00
+50813    9999.00
+50828    9999.00
+          ...   
+17099        .00
+17098        .00
+6053         .00
+6054         .00
+17213        .00
+Name: 면적, Length: 67328, dtype: object</code></pre></div>
+<h3 id="trouble-shooting" style="position:relative;"><a href="#trouble-shooting" aria-label="trouble shooting permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Trouble Shooting</h3>
+<ol>
+<li>
+<p>면적 데이터 타입이 object를 int 형으로 변환</p>
+</li>
+<li>
+<p>일반적인 면적 분포를 파악하기 알고 싶었으나 사업장의 면적과 같은 부분은 자치구에서 중요하게 관리하는 부분이 아니라 아래와 같이 신뢰하기 힘든 데이터가 다수 포함. box plot을 통해 이상값은 0(알수없음)으로 변경</p>
+</li>
+</ol>
+<p><img src="attachment:9_4.PNG" alt="9_4.PNG"></p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 1. 데이터형 변환</span>
+lodge_df<span class="token punctuation">[</span><span class="token string">'면적'</span><span class="token punctuation">]</span> <span class="token operator">=</span> lodge_df<span class="token punctuation">[</span><span class="token string">'면적'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>astype<span class="token punctuation">(</span><span class="token string">'float'</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 2. 면적의 최대값 설정하기</span>
+<span class="token comment"># boxplot 에서 이상값 경계치를 최대값으로 설정</span>
+<span class="token comment"># 0으로 설정된 부분은 중앙값으로 대체</span>
+
+find_max <span class="token operator">=</span> lodge_df<span class="token punctuation">[</span><span class="token string">'면적'</span><span class="token punctuation">]</span>
+
+<span class="token comment"># 중앙 값 확인</span>
+find_max<span class="token punctuation">.</span>describe<span class="token punctuation">(</span><span class="token punctuation">)</span> </code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">count    6.732800e+04
+mean     4.301137e+03
+std      4.170719e+05
+min      0.000000e+00
+25%      8.320000e+01
+50%      3.355200e+02
+75%      8.560000e+02
+max      9.933791e+07
+Name: 면적, dtype: float64</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 건물부지 최소크기는 60이므로 그 이하의 값은 중앙값으로 대체</span>
+<span class="token comment"># 98년도 이전 건물에는 해당 x -- 하지만 숙박업종 특성상 최소값을 지정하는 것이 옳다고 판단</span>
+find_max<span class="token punctuation">[</span>find_max <span class="token operator">&lt;=</span> <span class="token number">60</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">335</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 5000이상의 값을 0으로 한뒤 boxplot으로 최대값 확인</span>
+find_max<span class="token punctuation">[</span>find_max <span class="token operator">>=</span> <span class="token number">5000</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">plt<span class="token punctuation">.</span>boxplot<span class="token punctuation">(</span>find_max<span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">{'whiskers': [&lt;matplotlib.lines.Line2D at 0x200471a50c8>,
+  &lt;matplotlib.lines.Line2D at 0x20047624148>],
+ 'caps': [&lt;matplotlib.lines.Line2D at 0x200476240c8>,
+  &lt;matplotlib.lines.Line2D at 0x2004762aec8>],
+ 'boxes': [&lt;matplotlib.lines.Line2D at 0x20047179488>],
+ 'medians': [&lt;matplotlib.lines.Line2D at 0x2004762afc8>],
+ 'fliers': [&lt;matplotlib.lines.Line2D at 0x20047603fc8>],
+ 'means': []}</code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 379px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 65.55555555555556%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAABrElEQVQ4y61STU/bQBAdClz6A0CIlrb8ufyO+ORTjrlEOUS59uYGW0IgLtQKyoFTkKM4sqrmAzXZzUb7gbG9i9Z10CZNSA886WnHM7Nv33oHAOBjqVT6OpvNLjnnd4yxn4wxf0lKqZ8kid/pdPwoivw4jvOc2cMYuxVC3I9GowoopcDzvBMhxLPaACllvnqep3q9nnoL8/n8CgDg0LKsc875rBBIpJTpkhpKqdR13TQIgjzOsiw1e6SUsd6LEHJyh81m85RzjgtBaZ76V08p13VVEAR5nGXZ+i3yJoxxSzs8sG3723sK7tVqtc+bBHW4TdA8d13wQ7VaPdvlUD/K/zrcr1QqX3Y5dBxHdbvd3Q71ozQajU+m4BLLT72GYSgxxis5AysOD8vlsh6baSGo5zHR1COkV0ppghBKFotFIoRYqRVxXAg6UK/Xod1uH1NKX69pUoOgP+p3+KAef4WK0cXWPoTQDUwmE7Bt+2g4HH4nhHjaNsb4wiQhpDUYDLzxeJzH63WM8Q9CyHUURWXo9/tgWRYQQkBKCWmarlDnBOf5v34S/J+62TedTuEFq96WUYpKuSIAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="png"
+        title="png"
+        src="/static/e4afa60f3fa60053c7a0552016c2b565/811d1/output_61_1.png"
+        srcset="/static/e4afa60f3fa60053c7a0552016c2b565/e9ff0/output_61_1.png 180w,
+/static/e4afa60f3fa60053c7a0552016c2b565/f21e7/output_61_1.png 360w,
+/static/e4afa60f3fa60053c7a0552016c2b565/811d1/output_61_1.png 379w"
+        sizes="(max-width: 379px) 100vw, 379px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>위 과정을 통해 max값을 1500으로 설정</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">lodge_df<span class="token punctuation">[</span><span class="token string">'면적'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>lodge_df<span class="token punctuation">[</span><span class="token string">'면적'</span><span class="token punctuation">]</span> <span class="token operator">>=</span> <span class="token number">1500.1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">lodge_df<span class="token punctuation">[</span><span class="token string">'면적'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>describe<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">count    67328.000000
+mean       391.468432
+std        340.166903
+min          0.000000
+25%        134.657500
+50%        335.000000
+75%        515.840000
+max       1500.000000
+Name: 면적, dtype: float64</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">bins <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">100</span><span class="token punctuation">,</span><span class="token number">300</span><span class="token punctuation">,</span><span class="token number">500</span><span class="token punctuation">,</span><span class="token number">700</span><span class="token punctuation">,</span><span class="token number">900</span><span class="token punctuation">,</span><span class="token number">1100</span><span class="token punctuation">,</span><span class="token number">1300</span><span class="token punctuation">,</span><span class="token number">1500</span><span class="token punctuation">]</span>
+labels <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'알수없음'</span><span class="token punctuation">,</span><span class="token string">'100미만'</span><span class="token punctuation">,</span> <span class="token string">'100이상~300미만'</span><span class="token punctuation">,</span> <span class="token string">'300이상~500미만'</span><span class="token punctuation">,</span> <span class="token string">'500이상~700미만'</span><span class="token punctuation">,</span>
+          <span class="token string">'700이상~900미만'</span><span class="token punctuation">,</span><span class="token string">'900이상~1100미만'</span><span class="token punctuation">,</span><span class="token string">'1100이상~1300미만'</span><span class="token punctuation">,</span><span class="token string">'1300이상~1500'</span><span class="token punctuation">]</span>
+size_bins <span class="token operator">=</span> pd<span class="token punctuation">.</span>cut<span class="token punctuation">(</span>lodge_df<span class="token punctuation">[</span><span class="token string">'면적'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> bins<span class="token punctuation">,</span> right<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> labels<span class="token operator">=</span>labels<span class="token punctuation">)</span>
+
+size_bins</code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">0              100미만
+1        100이상~300미만
+2              100미만
+3        100이상~300미만
+4        300이상~500미만
+            ...     
+67323    300이상~500미만
+67324           알수없음
+67325    300이상~500미만
+67326           알수없음
+67327    300이상~500미만
+Name: 면적, Length: 67328, dtype: category
+Categories (9, object): ['알수없음' &lt; '100미만' &lt; '100이상~300미만' &lt; '300이상~500미만' ... '700이상~900미만' &lt; '900이상~1100미만' &lt; '1100이상~1300미만' &lt; '1300이상~1500']</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">count_size <span class="token operator">=</span> size_bins<span class="token punctuation">.</span>value_counts<span class="token punctuation">(</span>sort<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
+
+count_size</code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">알수없음              8778
+100미만             4845
+100이상~300미만      13215
+300이상~500미만      23203
+500이상~700미만       5999
+700이상~900미만       4103
+900이상~1100미만      3419
+1100이상~1300미만     2051
+1300이상~1500       1715
+Name: 면적, dtype: int64</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">plt<span class="token punctuation">.</span>figure<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">)</span>            
+bars <span class="token operator">=</span> plt<span class="token punctuation">.</span>bar<span class="token punctuation">(</span>labels<span class="token punctuation">,</span> count_size<span class="token punctuation">)</span>
+
+<span class="token comment"># access the bar attributes to place the text in the appropriate location</span>
+<span class="token keyword">for</span> bar <span class="token keyword">in</span> bars<span class="token punctuation">:</span>
+    yval <span class="token operator">=</span> bar<span class="token punctuation">.</span>get_height<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>text<span class="token punctuation">(</span>bar<span class="token punctuation">.</span>get_x<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">0.3</span><span class="token punctuation">,</span> yval <span class="token operator">+</span> <span class="token number">0.2</span><span class="token punctuation">,</span> yval<span class="token punctuation">)</span></code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 32.22222222222222%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsSAAALEgHS3X78AAABdElEQVQY031Q3StDcRg+Vy7kTkqUWgj3yt+jkLJ8tYtFuXDjwhXJjZB85WMbS1jZ7LeZGGe+Y+Zjxo6PzTZNjnPO+/5enW0phaeei+fpeZ+eXkEURYOqqhEAeNI0TQLQpE9FlYi45DiJSnW9a9LpfSKjFVWT9MwvjAJATJblXcHlctYgckLOidNPWAMPlNe8SGI4kdF65j/ow4S9/UAlEVdyHuq8jb3j3O4tDm+GsKhjCffDrxlfBURAjsg5InLk/JuQK7wWLg78VfG0LFv2wviY+tCICFaOolDQYoG22QCUmuxwGEnqB3+TczVbqIQEerup8V6+UH6LlQadIbKKdzTkClF51yq1zx1SRfca9TuC1DThJ99VnDzBZ4okPugsmiIFOAFmX8WzC18EomQJO5ccBpPFa5zybxQa590NY9uuarPN0zzuY1VmG6sf8bLi1nnWOLrlLutc8HRO77DaHjsbWD9mHZPbbMZ36e5bDviSb+mpLzU2mbP/BLKKAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="png"
+        title="png"
+        src="/static/85f27671a3b48a691bb96059e3267a3a/37523/output_67_0.png"
+        srcset="/static/85f27671a3b48a691bb96059e3267a3a/e9ff0/output_67_0.png 180w,
+/static/85f27671a3b48a691bb96059e3267a3a/f21e7/output_67_0.png 360w,
+/static/85f27671a3b48a691bb96059e3267a3a/37523/output_67_0.png 720w,
+/static/85f27671a3b48a691bb96059e3267a3a/f1901/output_67_0.png 942w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">lodge_df</code></pre></div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}</code></pre></div>
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>번호</th>
+      <th>개방서비스명</th>
+      <th>사업장명</th>
+      <th>지역</th>
+      <th>상세영업상태명</th>
+      <th>인허가일자</th>
+      <th>폐업일자</th>
+      <th>갱신일자</th>
+      <th>면적</th>
+      <th>운영기간</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>39267</td>
+      <td>숙박업</td>
+      <td>산호장여관</td>
+      <td>창원시</td>
+      <td>폐업</td>
+      <td>19780731</td>
+      <td>20030331</td>
+      <td>2021-07</td>
+      <td>77.17</td>
+      <td>25.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>39268</td>
+      <td>숙박업</td>
+      <td>새한여관</td>
+      <td>창원시</td>
+      <td>폐업</td>
+      <td>19800220</td>
+      <td>20071218</td>
+      <td>2021-07</td>
+      <td>272.00</td>
+      <td>27.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>39269</td>
+      <td>숙박업</td>
+      <td>삼성</td>
+      <td>창원시</td>
+      <td>폐업</td>
+      <td>19700811</td>
+      <td>19990123</td>
+      <td>2021-07</td>
+      <td>86.94</td>
+      <td>29.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>39270</td>
+      <td>숙박업</td>
+      <td>승정원</td>
+      <td>창원시</td>
+      <td>폐업</td>
+      <td>20120625</td>
+      <td>20171214</td>
+      <td>2021-07</td>
+      <td>292.50</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>39271</td>
+      <td>숙박업</td>
+      <td>에스모텔</td>
+      <td>창원시</td>
+      <td>폐업</td>
+      <td>20030116</td>
+      <td>20160125</td>
+      <td>2021-07</td>
+      <td>351.80</td>
+      <td>13.0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>67323</th>
+      <td>618</td>
+      <td>자동차야영장업</td>
+      <td>캠핑스타</td>
+      <td>제주시</td>
+      <td>폐업</td>
+      <td>20160308</td>
+      <td>20220311</td>
+      <td>2019-10</td>
+      <td>335.00</td>
+      <td>6.0</td>
+    </tr>
+    <tr>
+      <th>67324</th>
+      <td>619</td>
+      <td>자동차야영장업</td>
+      <td>지리산 호수공원 오토캠핑장</td>
+      <td>구례군</td>
+      <td>폐업</td>
+      <td>20200909</td>
+      <td>20220311</td>
+      <td>2021-05</td>
+      <td>0.00</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>67325</th>
+      <td>620</td>
+      <td>자동차야영장업</td>
+      <td>마린오토캠핑장</td>
+      <td>태안군</td>
+      <td>폐업</td>
+      <td>20160624</td>
+      <td>20161018</td>
+      <td>2018-08</td>
+      <td>335.00</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>67326</th>
+      <td>621</td>
+      <td>자동차야영장업</td>
+      <td>명사십리 신리야영장</td>
+      <td>완도군</td>
+      <td>폐업</td>
+      <td>20190722</td>
+      <td>20190826</td>
+      <td>2019-08</td>
+      <td>0.00</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>67327</th>
+      <td>622</td>
+      <td>자동차야영장업</td>
+      <td>인제나르샤파크 캠핑장</td>
+      <td>인제군</td>
+      <td>폐업</td>
+      <td>20160602</td>
+      <td>20200507</td>
+      <td>2020-05</td>
+      <td>335.00</td>
+      <td>4.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>67328 rows × 10 columns</p>
+</div>
+<h3 id="5년도별-인허가-및-폐업상황-그래프로-확인" style="position:relative;"><a href="#5%EB%85%84%EB%8F%84%EB%B3%84-%EC%9D%B8%ED%97%88%EA%B0%80-%EB%B0%8F-%ED%8F%90%EC%97%85%EC%83%81%ED%99%A9-%EA%B7%B8%EB%9E%98%ED%94%84%EB%A1%9C-%ED%99%95%EC%9D%B8" aria-label="5년도별 인허가 및 폐업상황 그래프로 확인 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>5.년도별 인허가 및 폐업상황 그래프로 확인</h3>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">lodge_df<span class="token punctuation">[</span><span class="token string">'인허가일자'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>describe<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">count    6.732800e+04
+mean     1.999573e+07
+std      1.536549e+05
+min      1.948082e+07
+25%      1.988030e+07
+50%      2.002040e+07
+75%      2.014072e+07
+max      2.022023e+07
+Name: 인허가일자, dtype: float64</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">lodge_df<span class="token punctuation">[</span><span class="token string">'폐업일자'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>describe<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">count    6.732800e+04
+mean     2.017336e+07
+std      7.383296e+04
+min      1.948082e+07
+25%      2.014110e+07
+50%      2.022031e+07
+75%      2.022031e+07
+max      2.022031e+07
+Name: 폐업일자, dtype: float64</code></pre></div>
+<p>1948년부터 2022년도까지의 허가 및 폐업건수를 확인해보자</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">lodge_df<span class="token punctuation">[</span><span class="token string">'start_year'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span>lodge_df<span class="token punctuation">[</span><span class="token string">'인허가일자'</span><span class="token punctuation">]</span><span class="token operator">/</span><span class="token number">10000</span><span class="token punctuation">)</span><span class="token punctuation">.</span>astype<span class="token punctuation">(</span><span class="token string">'int'</span><span class="token punctuation">)</span>
+lodge_df<span class="token punctuation">[</span><span class="token string">'end_year'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span>lodge_df<span class="token punctuation">[</span><span class="token string">'폐업일자'</span><span class="token punctuation">]</span><span class="token operator">/</span><span class="token number">10000</span><span class="token punctuation">)</span><span class="token punctuation">.</span>astype<span class="token punctuation">(</span><span class="token string">'int'</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">start <span class="token operator">=</span> lodge_df<span class="token punctuation">[</span><span class="token string">'start_year'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value_counts<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">start <span class="token operator">=</span> start<span class="token punctuation">.</span>sort_values<span class="token punctuation">(</span>ascending<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">start<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">2003    4742
+2015    2826
+2016    2630
+2017    2364
+2018    2154
+2021    2087
+2000    2077
+2019    2063
+2002    1989
+2001    1833
+Name: start_year, dtype: int64</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token builtin">len</span><span class="token punctuation">(</span>start<span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">71</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">start <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>start<span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">start<span class="token punctuation">[</span><span class="token string">'year'</span><span class="token punctuation">]</span> <span class="token operator">=</span> start<span class="token punctuation">.</span>index</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">start</code></pre></div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}</code></pre></div>
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>start_year</th>
+      <th>year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2003</th>
+      <td>4742</td>
+      <td>2003</td>
+    </tr>
+    <tr>
+      <th>2015</th>
+      <td>2826</td>
+      <td>2015</td>
+    </tr>
+    <tr>
+      <th>2016</th>
+      <td>2630</td>
+      <td>2016</td>
+    </tr>
+    <tr>
+      <th>2017</th>
+      <td>2364</td>
+      <td>2017</td>
+    </tr>
+    <tr>
+      <th>2018</th>
+      <td>2154</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1954</th>
+      <td>2</td>
+      <td>1954</td>
+    </tr>
+    <tr>
+      <th>1955</th>
+      <td>2</td>
+      <td>1955</td>
+    </tr>
+    <tr>
+      <th>1952</th>
+      <td>1</td>
+      <td>1952</td>
+    </tr>
+    <tr>
+      <th>1957</th>
+      <td>1</td>
+      <td>1957</td>
+    </tr>
+    <tr>
+      <th>1949</th>
+      <td>1</td>
+      <td>1949</td>
+    </tr>
+  </tbody>
+</table>
+<p>71 rows × 2 columns</p>
+</div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">end <span class="token operator">=</span> lodge_df<span class="token punctuation">[</span><span class="token string">'end_year'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value_counts<span class="token punctuation">(</span><span class="token punctuation">)</span>
+end <span class="token operator">=</span> end<span class="token punctuation">.</span>sort_values<span class="token punctuation">(</span>ascending<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token builtin">len</span><span class="token punctuation">(</span>end<span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">47</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">end<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">2022    39889
+2003     2275
+2018     1851
+2021     1721
+2020     1617
+2019     1538
+2017     1538
+2006     1327
+2005     1327
+2004     1286
+Name: end_year, dtype: int64</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">end <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>end<span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">end<span class="token punctuation">[</span><span class="token string">'year'</span><span class="token punctuation">]</span> <span class="token operator">=</span> end<span class="token punctuation">.</span>index</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">end</code></pre></div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}</code></pre></div>
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>end_year</th>
+      <th>year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2022</th>
+      <td>39889</td>
+      <td>2022</td>
+    </tr>
+    <tr>
+      <th>2003</th>
+      <td>2275</td>
+      <td>2003</td>
+    </tr>
+    <tr>
+      <th>2018</th>
+      <td>1851</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <th>2021</th>
+      <td>1721</td>
+      <td>2021</td>
+    </tr>
+    <tr>
+      <th>2020</th>
+      <td>1617</td>
+      <td>2020</td>
+    </tr>
+    <tr>
+      <th>2019</th>
+      <td>1538</td>
+      <td>2019</td>
+    </tr>
+    <tr>
+      <th>2017</th>
+      <td>1538</td>
+      <td>2017</td>
+    </tr>
+    <tr>
+      <th>2006</th>
+      <td>1327</td>
+      <td>2006</td>
+    </tr>
+    <tr>
+      <th>2005</th>
+      <td>1327</td>
+      <td>2005</td>
+    </tr>
+    <tr>
+      <th>2004</th>
+      <td>1286</td>
+      <td>2004</td>
+    </tr>
+    <tr>
+      <th>2016</th>
+      <td>1182</td>
+      <td>2016</td>
+    </tr>
+    <tr>
+      <th>2007</th>
+      <td>1177</td>
+      <td>2007</td>
+    </tr>
+    <tr>
+      <th>2002</th>
+      <td>1039</td>
+      <td>2002</td>
+    </tr>
+    <tr>
+      <th>2015</th>
+      <td>985</td>
+      <td>2015</td>
+    </tr>
+    <tr>
+      <th>2008</th>
+      <td>928</td>
+      <td>2008</td>
+    </tr>
+    <tr>
+      <th>2012</th>
+      <td>911</td>
+      <td>2012</td>
+    </tr>
+    <tr>
+      <th>2014</th>
+      <td>900</td>
+      <td>2014</td>
+    </tr>
+    <tr>
+      <th>2010</th>
+      <td>823</td>
+      <td>2010</td>
+    </tr>
+    <tr>
+      <th>2011</th>
+      <td>811</td>
+      <td>2011</td>
+    </tr>
+    <tr>
+      <th>2009</th>
+      <td>775</td>
+      <td>2009</td>
+    </tr>
+    <tr>
+      <th>2013</th>
+      <td>756</td>
+      <td>2013</td>
+    </tr>
+    <tr>
+      <th>2001</th>
+      <td>612</td>
+      <td>2001</td>
+    </tr>
+    <tr>
+      <th>2000</th>
+      <td>444</td>
+      <td>2000</td>
+    </tr>
+    <tr>
+      <th>1999</th>
+      <td>358</td>
+      <td>1999</td>
+    </tr>
+    <tr>
+      <th>1998</th>
+      <td>263</td>
+      <td>1998</td>
+    </tr>
+    <tr>
+      <th>1997</th>
+      <td>230</td>
+      <td>1997</td>
+    </tr>
+    <tr>
+      <th>1995</th>
+      <td>202</td>
+      <td>1995</td>
+    </tr>
+    <tr>
+      <th>1996</th>
+      <td>166</td>
+      <td>1996</td>
+    </tr>
+    <tr>
+      <th>1994</th>
+      <td>124</td>
+      <td>1994</td>
+    </tr>
+    <tr>
+      <th>1993</th>
+      <td>110</td>
+      <td>1993</td>
+    </tr>
+    <tr>
+      <th>1992</th>
+      <td>39</td>
+      <td>1992</td>
+    </tr>
+    <tr>
+      <th>1991</th>
+      <td>31</td>
+      <td>1991</td>
+    </tr>
+    <tr>
+      <th>1987</th>
+      <td>23</td>
+      <td>1987</td>
+    </tr>
+    <tr>
+      <th>1989</th>
+      <td>23</td>
+      <td>1989</td>
+    </tr>
+    <tr>
+      <th>1990</th>
+      <td>21</td>
+      <td>1990</td>
+    </tr>
+    <tr>
+      <th>1986</th>
+      <td>6</td>
+      <td>1986</td>
+    </tr>
+    <tr>
+      <th>1985</th>
+      <td>4</td>
+      <td>1985</td>
+    </tr>
+    <tr>
+      <th>1988</th>
+      <td>3</td>
+      <td>1988</td>
+    </tr>
+    <tr>
+      <th>1948</th>
+      <td>3</td>
+      <td>1948</td>
+    </tr>
+    <tr>
+      <th>1967</th>
+      <td>2</td>
+      <td>1967</td>
+    </tr>
+    <tr>
+      <th>1975</th>
+      <td>2</td>
+      <td>1975</td>
+    </tr>
+    <tr>
+      <th>1984</th>
+      <td>1</td>
+      <td>1984</td>
+    </tr>
+    <tr>
+      <th>1968</th>
+      <td>1</td>
+      <td>1968</td>
+    </tr>
+    <tr>
+      <th>1983</th>
+      <td>1</td>
+      <td>1983</td>
+    </tr>
+    <tr>
+      <th>1980</th>
+      <td>1</td>
+      <td>1980</td>
+    </tr>
+    <tr>
+      <th>1974</th>
+      <td>1</td>
+      <td>1974</td>
+    </tr>
+    <tr>
+      <th>1972</th>
+      <td>1</td>
+      <td>1972</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">year <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1948</span><span class="token punctuation">,</span><span class="token number">2023</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    year<span class="token punctuation">.</span>append<span class="token punctuation">(</span>i<span class="token punctuation">)</span> </code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">year_df <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>year<span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">year_df<span class="token punctuation">[</span><span class="token string">'year'</span><span class="token punctuation">]</span> <span class="token operator">=</span> year_df<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># start</span>
+start <span class="token operator">=</span> pd<span class="token punctuation">.</span>merge<span class="token punctuation">(</span>year_df<span class="token punctuation">,</span>start<span class="token punctuation">,</span>how<span class="token operator">=</span><span class="token string">'outer'</span><span class="token punctuation">,</span> on<span class="token operator">=</span><span class="token string">'year'</span><span class="token punctuation">)</span>
+start <span class="token operator">=</span> start<span class="token punctuation">.</span>fillna<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># end</span>
+end <span class="token operator">=</span> pd<span class="token punctuation">.</span>merge<span class="token punctuation">(</span>year_df<span class="token punctuation">,</span>end<span class="token punctuation">,</span>how<span class="token operator">=</span><span class="token string">'outer'</span><span class="token punctuation">,</span> on<span class="token operator">=</span><span class="token string">'year'</span><span class="token punctuation">)</span>
+end <span class="token operator">=</span> end<span class="token punctuation">.</span>fillna<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 위 분석 1 과정을 통해 현재 운영중인 39135 업소를 2022에서 제외</span>
+end<span class="token punctuation">[</span><span class="token string">'end_year'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">74</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span>end<span class="token punctuation">[</span><span class="token string">'end_year'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">74</span><span class="token punctuation">]</span> <span class="token operator">-</span> <span class="token number">39135</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">plt<span class="token punctuation">.</span>figure<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">15</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>year<span class="token punctuation">,</span> start<span class="token punctuation">[</span><span class="token string">'start_year'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> label<span class="token operator">=</span><span class="token string">"open"</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>year<span class="token punctuation">,</span> end<span class="token punctuation">[</span><span class="token string">'end_year'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> label<span class="token operator">=</span><span class="token string">'closed'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>legend<span class="token punctuation">(</span>loc<span class="token operator">=</span><span class="token string">'upper right'</span><span class="token punctuation">,</span> fontsize<span class="token operator">=</span><span class="token number">14</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">&lt;matplotlib.legend.Legend at 0x2004873ad48></code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 46.666666666666664%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsSAAALEgHS3X78AAABaElEQVQoz5VQ7WobMRC89+gz5E8b+nZ9g15iQx+sYDDYOE2gzXF1pbvT3Um6/dIWKbZx0x8hC4N2B3Y0O1XTNDdE9JuZO2Y2zGzfggjbKYAFJCsiFgCM7TrXtu33arPZfE4p6XvLBVSW014SZSKdvf9ZHQ6HjyKChU9J0htV1iUlF/A0F07yPiI+Vvv9/pOI0EnwP6tnKr/XvYt04QJQEQSAp+zwH8HXAtdC5yJJ2g8uWy3+xojigXTJgrvd7vaV4PUpF7C85EEsyUxLmvtjUsaEogkXL94ZDTE+VdvtNjtcTjnQGZyUAgohJ/LApffAPINQBCQIEwU/0zQ6UopIEDXG8FD9em5umUkTowqBMoICLPm38sYlKiGoCpY5QzmWc3N0wniJIS6LqR5+PH5wQ1/3f9q1d7Y+ts3ammM9dcdVdOY+OHM32nYdxq52pl3H0dZu6Ffz7O9jCHfjNK1CCF/H0X0bhuHLX+0eri1likDkAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="png"
+        title="png"
+        src="/static/8b4ca2f9bcf8a318f8489557725607d1/37523/output_93_1.png"
+        srcset="/static/8b4ca2f9bcf8a318f8489557725607d1/e9ff0/output_93_1.png 180w,
+/static/8b4ca2f9bcf8a318f8489557725607d1/f21e7/output_93_1.png 360w,
+/static/8b4ca2f9bcf8a318f8489557725607d1/37523/output_93_1.png 720w,
+/static/8b4ca2f9bcf8a318f8489557725607d1/96658/output_93_1.png 881w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>위 과정에서 2003년도에 큰 변화가 생긴 이유</li>
+</ul>
+<p><img src="attachment:10_1.PNG" alt="10_1.PNG">
+[출처]<a href="http://www.sukbakmagazine.com/news/articleView.html?idxno=52799">http://www.sukbakmagazine.com/news/articleView.html?idxno=52799</a></p>
+<h3 id="6-변수-간-상관관계-알아보기" style="position:relative;"><a href="#6-%EB%B3%80%EC%88%98-%EA%B0%84-%EC%83%81%EA%B4%80%EA%B4%80%EA%B3%84-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0" aria-label="6 변수 간 상관관계 알아보기 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>6. 변수 간 상관관계 알아보기</h3>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">lodge_df<span class="token punctuation">.</span>corr<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}</code></pre></div>
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>인허가일자</th>
+      <th>폐업일자</th>
+      <th>면적</th>
+      <th>운영기간</th>
+      <th>start_year</th>
+      <th>end_year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>인허가일자</th>
+      <td>1.000000</td>
+      <td>0.493592</td>
+      <td>0.053949</td>
+      <td>-0.876587</td>
+      <td>0.999997</td>
+      <td>0.493592</td>
+    </tr>
+    <tr>
+      <th>폐업일자</th>
+      <td>0.493592</td>
+      <td>1.000000</td>
+      <td>0.079687</td>
+      <td>-0.014153</td>
+      <td>0.493536</td>
+      <td>0.999994</td>
+    </tr>
+    <tr>
+      <th>면적</th>
+      <td>0.053949</td>
+      <td>0.079687</td>
+      <td>1.000000</td>
+      <td>-0.017867</td>
+      <td>0.053939</td>
+      <td>0.079792</td>
+    </tr>
+    <tr>
+      <th>운영기간</th>
+      <td>-0.876587</td>
+      <td>-0.014153</td>
+      <td>-0.017867</td>
+      <td>1.000000</td>
+      <td>-0.876621</td>
+      <td>-0.014149</td>
+    </tr>
+    <tr>
+      <th>start_year</th>
+      <td>0.999997</td>
+      <td>0.493536</td>
+      <td>0.053939</td>
+      <td>-0.876621</td>
+      <td>1.000000</td>
+      <td>0.493536</td>
+    </tr>
+    <tr>
+      <th>end_year</th>
+      <td>0.493592</td>
+      <td>0.999994</td>
+      <td>0.079792</td>
+      <td>-0.014149</td>
+      <td>0.493536</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">corr <span class="token operator">=</span> lodge_df<span class="token punctuation">.</span>corr<span class="token punctuation">(</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>subplots<span class="token punctuation">(</span>figsize <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">15</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+sns<span class="token punctuation">.</span>heatmap<span class="token punctuation">(</span>corr<span class="token punctuation">[</span><span class="token punctuation">(</span>corr <span class="token operator">>=</span> <span class="token number">0.3</span><span class="token punctuation">)</span> <span class="token operator">|</span> <span class="token punctuation">(</span>corr <span class="token operator">&lt;=</span> <span class="token operator">-</span><span class="token number">0.3</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span> cmap <span class="token operator">=</span> <span class="token string">'viridis'</span><span class="token punctuation">,</span> vmax <span class="token operator">=</span> <span class="token number">0.9</span><span class="token punctuation">,</span> linewidth <span class="token operator">=</span> <span class="token number">0.1</span><span class="token punctuation">,</span> annot <span class="token operator">=</span> <span class="token boolean">True</span><span class="token punctuation">,</span> annot_kws <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'size'</span><span class="token punctuation">:</span> <span class="token number">15</span><span class="token punctuation">}</span><span class="token punctuation">,</span> square <span class="token operator">=</span> <span class="token boolean">True</span><span class="token punctuation">)</span>
+</code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">&lt;matplotlib.axes._subplots.AxesSubplot at 0x20047647e08></code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 86.66666666666667%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAAAsSAAALEgHS3X78AAAElElEQVQ4y22TfUxTVxjGT7Ys2ZKFLbot2USjsrEhRAl+i6hb9SK2FAoFwfLRwmx0GR8VZxZn1OE0jE75avxItmXD+IdhY6tKxG0mc8KKFlEoG0JBVgaXIrTQ0km5957zLL3o9sf2/vWc5Dm/nOd930PYxHpFkI/xYCxy5LIziS+wG/jiO7v4nikHD4D3Ppzk8994j99IdvIfKtJ45onmMRrJX3NyfIFdP2LqyJ3c3bF/8yN+/om+3nCOjN5blgl3BOAOh9W5FZqWfOTbstA95UCoJtxeaOblIpYko2TVNsC7FBhdiGbnO9C05KGwTYe8jrLEdteCM82/R6jJjbaN2p6h9RgYWi1dcW6nZkcarelOpi7/PQqA+if99ITuFC1aV06ri8to78ha2u9aTa86E6nZoZHqftPgbI+BO9e7oa7ubryKmBzFO/a2G5DVZqQ/9G9neBgBjEYCsy1g8hsFPCmXNIh37bnY1WbEZacy5KVwRwPeOG73nSzLgdsaFdE1qrN3305FeouWXu5dx8DPR3D4ZbBZuwwJQUVJksX9qW7obUpktmjxzf34kJfODC8AJhZxb98osWRcNySTK4ON6ubR7/D9iJX2e84zBGohTZ8Gmz4DNl0DFvgSlAZkuCc4jib+W1h5K3onLoS8VPSfBmg9t9S635LQdEBFWBDqx4lCPWPsycGTC3HoaUjuFWDSGBj+UyEvpXOaC/v6A0v0hfJk4vV5Nf8CKWNMeAwshDT8EuhYAhid/B8gY4yJlM75uWdrD1ve/NysJBU5tUmHUytg2nSI3mhole+JIgUTHGDBX8BmrkOcKAUCejywleIjVSXKthzCj+d/DnmpIIoy8PnycktUZaWaJJAUzWaSjuVEQeuPNMhAKrB/BgL2F+hYHBB4AXcbo7CeaBFHOJwtOy8DJUEOzc0zHbPEflytJNrFGRnZ4buw/ZkkerHqoszwz/gg0dm56OI4fH0KBF2vo70hHtpXdFA+p0T98XoZ6JvxycBXCz6xrCw1q4nfuSlpzBGLQFcUvdSdxkxdpTjYuQdOf48MnByfRNFaI9Rh6TianArP/Vj4OqNw1ZHKTJ0l9FDn+6h27+NiMqosawo/VZKHjmVaTEQAnnB6qV/BUm7mIPfXDDimuua+3qgXKS/mYzlJRfHKRMC/FBhfiGsDW1jKTR3V27Kxb1jPrVWcssSnHUsm7R0J6QND6zA8tIo2OXew4107mdmRxgb9naFIzOf1s6PpFcy4/CA7uaeI/cGvYX+6VrFmZxI73pVJTzoy8ZVXx21YUWFRKI6oSEnX3iSjPQcZNoPQ3L9VxNgiCfwSCbOtIgOkUBdDgwcgDQoDYsGtLCnLZpCsfZwI90KB8ZEAIretfq28VhVXpiLG5mxd0R0dctvycNW5FXAvwSwfARZsfbxtEiQqybrP34O99kzo2/Jg7eMA92IER94CELNjzVNFX6gWFWjIvlZjjMmurzO0Flb/9EBVKQ1G1Uy7Yqog3KqcCaIKTDILovCZ8EisGQj0mYtu55wqtBVWNw2kVDJXVFXAFVsHbIhcSXI0iWGa6L8ByijTsGr1EIUAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="png"
+        title="png"
+        src="/static/2a0d2792337caea649bb50d5c54d2662/37523/output_97_1.png"
+        srcset="/static/2a0d2792337caea649bb50d5c54d2662/e9ff0/output_97_1.png 180w,
+/static/2a0d2792337caea649bb50d5c54d2662/f21e7/output_97_1.png 360w,
+/static/2a0d2792337caea649bb50d5c54d2662/37523/output_97_1.png 720w,
+/static/2a0d2792337caea649bb50d5c54d2662/ea7fb/output_97_1.png 788w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 저장하기</span>
+lodge_df<span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span><span class="token string">"C:\\Users\\USER\\Desktop\\Analysis\\Proceed\\Spark\\lodge_analysis\\lodge_analysis.csv"</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">,</span> index<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">)</span></code></pre></div>
+<div class="table-of-contents">
+<ul>
+<li><a href="#%EA%B0%B1%EC%8B%A0%EC%9D%BC%EC%9E%90-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0">갱신일자 확인하기</a></li>
+<li><a href="#1%EC%98%81%EC%97%85-%EC%83%81%ED%83%9C%EC%99%80-%ED%8F%90%EC%97%85%EC%83%81%ED%83%9C-%EA%B1%B4%EC%88%98%EB%A5%BC-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90">1.영업 상태와 폐업상태 건수를 알아보자</a></li>
+<li><a href="#2%EC%9A%B4%EC%98%81%EA%B8%B0%EA%B0%84%EC%9D%98-%EB%B6%84%ED%8F%AC%EB%A5%BC-%ED%8C%8C%EC%95%85%ED%95%98%EC%9E%90">2.운영기간의 분포를 파악하자</a></li>
+<li><a href="#3-%EC%88%99%EB%B0%95%EC%97%85%EC%9D%B4-%EB%B0%9C%EB%8B%AC%ED%95%9C-%EC%A7%80%EC%97%AD-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0">3. 숙박업이 발달한 지역 알아보기</a></li>
+<li><a href="#4%EB%A9%B4%EC%A0%81-%EB%B6%84%ED%8F%AC-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0">4.면적 분포 확인하기</a></li>
+<li><a href="#trouble-shooting">Trouble Shooting</a></li>
+<li><a href="#5%EB%85%84%EB%8F%84%EB%B3%84-%EC%9D%B8%ED%97%88%EA%B0%80-%EB%B0%8F-%ED%8F%90%EC%97%85%EC%83%81%ED%99%A9-%EA%B7%B8%EB%9E%98%ED%94%84%EB%A1%9C-%ED%99%95%EC%9D%B8">5.년도별 인허가 및 폐업상황 그래프로 확인</a></li>
+<li><a href="#6-%EB%B3%80%EC%88%98-%EA%B0%84-%EC%83%81%EA%B4%80%EA%B4%80%EA%B3%84-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0">6. 변수 간 상관관계 알아보기</a></li>
+</ul>
+</div></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/PySpark/[PySpark] 숙박업 분석하기 (1)- 데이터 수집 및 전처리/"><div class="direction">이전 글</div><div class="title">숙박업 분석하기 (1) - 데이터 수집 및 전처리</div></a></div><div class="post-navigator-card-wrapper"></div></div><div class="utterances"></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2022<!-- --> <a href="https://github.com/Han-Archives">Han-기록소</a> powered by<a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog"> zoomkoding-gatsby-blog</a></p></footer><div class="dark-mode-button-wrapper"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium dark-mode-button css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge dark-mode-icon css-6flbmm" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="DarkModeIcon"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path></svg></button></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/PySpark/[PySpark] 숙박업 분석하기 (2) - EDA/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-cd840d73727c2e366b63.js"],"app":["/app-1c48eadf34e7f53f402f.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-3c26d4b7e3608ed0ece4.js"],"component---src-pages-404-js":["/component---src-pages-404-js-4917da7ef5b541e98a81.js"],"component---src-pages-about-js":["/component---src-pages-about-js-b5804eba3d16afcb3700.js"],"component---src-pages-index-js":["/component---src-pages-index-js-bc882cd03f70c89c8148.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-ef83b594aa693e649d30.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-fea460fedd50cffb10cd.js"]};/*]]>*/</script><script src="/polyfill-cd840d73727c2e366b63.js" nomodule=""></script><script src="/component---src-templates-blog-template-js-ef83b594aa693e649d30.js" async=""></script><script src="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-3528d048b96f92ca0d99.js" async=""></script><script src="/app-1c48eadf34e7f53f402f.js" async=""></script><script src="/framework-0e1bf37de02f7cef2174.js" async=""></script><script src="/webpack-runtime-b0a3ec690b6a27de8e30.js" async=""></script></body></html>
