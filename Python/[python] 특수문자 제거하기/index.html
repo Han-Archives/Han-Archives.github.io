@@ -66,34 +66,67 @@
         }
       }
     })
-  </script><title data-react-helmet="true">서울 생활 이동 [1] - 데이터 설명 및 전처리</title><meta data-react-helmet="true" name="viewport" content="initial-scale=1, width=device-width"/><meta data-react-helmet="true" property="og:title" content="서울 생활 이동 [1] - 데이터 설명 및 전처리"/><meta data-react-helmet="true" property="og:site_title" content="서울 생활 이동 [1] - 데이터 설명 및 전처리"/><meta data-react-helmet="true" name="description" content="서울 생활이동 데이터 분석 (1) - 분석 과제 서울시 생활이동 데이터란? 언제 어디서 어디로 얼마나 이동하였는지, 소요시간은 얼마나 걸렸는지에 대한 데이터 ※ 동네산책과 같이 특정지점에서 체류시간이 짧은 이동 및 매우 가까운 근거리 이동은 제외 1_1.PNG - 데이터 설명 데이터에 적혀있는 항목은 아래와 같이 구성되어 있음 대상연월 : 데이터의 기록 날짜 요일 : 요일 도착 시간 : 도착 시군구 코드에 도착한 시간 출발 시군구 코드 : 추후에 서울시에서 제공한 시군구로 변환 (ex) 11010 -&gt; “서울특별시 종로구”) 도착 시군구 코드 : 추후에 서울시에서 제공한 시군구로 변환 (ex) 11010 -&gt; “서울특별시 종로구”) 성별 나이 : 5세 별로 끊어서 기록 이동유형 : H: 야간상주지, W: 주간상주지, E: 기타지역 평균 이동시간 이동인구 : KT의 휴대폰 데이터를 이용하여 한 개 이동의 출발지에서 도착지 간 이동한 인구수 - 데이터 전처리 1. 시간별 데이터를 하나…"/><meta data-react-helmet="true" property="og:description" content="서울 생활이동 데이터 분석 (1) - 분석 과제 서울시 생활이동 데이터란? 언제 어디서 어디로 얼마나 이동하였는지, 소요시간은 얼마나 걸렸는지에 대한 데이터 ※ 동네산책과 같이 특정지점에서 체류시간이 짧은 이동 및 매우 가까운 근거리 이동은 제외 1_1.PNG - 데이터 설명 데이터에 적혀있는 항목은 아래와 같이 구성되어 있음 대상연월 : 데이터의 기록 날짜 요일 : 요일 도착 시간 : 도착 시군구 코드에 도착한 시간 출발 시군구 코드 : 추후에 서울시에서 제공한 시군구로 변환 (ex) 11010 -&gt; “서울특별시 종로구”) 도착 시군구 코드 : 추후에 서울시에서 제공한 시군구로 변환 (ex) 11010 -&gt; “서울특별시 종로구”) 성별 나이 : 5세 별로 끊어서 기록 이동유형 : H: 야간상주지, W: 주간상주지, E: 기타지역 평균 이동시간 이동인구 : KT의 휴대폰 데이터를 이용하여 한 개 이동의 출발지에서 도착지 간 이동한 인구수 - 데이터 전처리 1. 시간별 데이터를 하나…"/><meta data-react-helmet="true" property="og:author" content="Han-기록소"/><meta data-react-helmet="true" property="og:image" content="/og-image.png"/><meta data-react-helmet="true" property="og:type" content="website"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"/><style>@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff")}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link as="script" rel="preload" href="/webpack-runtime-b0a3ec690b6a27de8e30.js"/><link as="script" rel="preload" href="/framework-0e1bf37de02f7cef2174.js"/><link as="script" rel="preload" href="/app-1c48eadf34e7f53f402f.js"/><link as="script" rel="preload" href="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-3528d048b96f92ca0d99.js"/><link as="script" rel="preload" href="/component---src-templates-blog-template-js-ef83b594aa693e649d30.js"/><link as="fetch" rel="preload" href="/page-data/Seoul_Movement/Seoul_movement [1] - 데이터 설명 및 전처리/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1073350324.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1956554647.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2938748437.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper"><header class="page-header-wrapper"><div class="page-header"><div class="front-section"><a class="link" href="/">Han-기록소</a></div><div class="trailing-section"><a class="link" href="/about">about</a><a class="link" href="/posts">posts</a><div class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-1l6di18" role="combobox" aria-expanded="false"><div class="search-input-wrapper"><div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root search-input css-feqhe6"><div class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-11tfndm"><input type="text" aria-invalid="false" autoComplete="off" value="" class="MuiInput-input MuiInputBase-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-mnn31" aria-autocomplete="list" autoCapitalize="none" spellcheck="false"/><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium search-icon css-vubbuv" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="SearchOutlinedIcon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div></div></div></div></div></div></header><main class="page-content"><header class="post-header"><div class="emoji">👨‍💻</div><div class="info"><div class="categories"><a class="category" href="/posts/Data_Analysis">Data_Analysis</a></div></div><h1 class="title">서울 생활 이동 [1] - 데이터 설명 및 전처리</h1><div class="info"><div class="author">posted by <strong>HwanHee Park</strong>,</div> <!-- -->January 18, 2022</div></header><div class="post-content"><div class="markdown"><h2 id="서울-생활이동-데이터-분석-1" style="position:relative;"><a href="#%EC%84%9C%EC%9A%B8-%EC%83%9D%ED%99%9C%EC%9D%B4%EB%8F%99-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%84%9D-1" aria-label="서울 생활이동 데이터 분석 1 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>서울 생활이동 데이터 분석 (1)</h2>
-<h3 id="--분석-과제" style="position:relative;"><a href="#--%EB%B6%84%EC%84%9D-%EA%B3%BC%EC%A0%9C" aria-label="  분석 과제 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>- 분석 과제</h3>
-<h4 id="서울시-생활이동-데이터란" style="position:relative;"><a href="#%EC%84%9C%EC%9A%B8%EC%8B%9C-%EC%83%9D%ED%99%9C%EC%9D%B4%EB%8F%99-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%9E%80" aria-label="서울시 생활이동 데이터란 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>서울시 생활이동 데이터란?</h4>
-<p>언제 어디서 어디로 얼마나 이동하였는지, 소요시간은 얼마나 걸렸는지에 대한 데이터</p>
-<p>※ 동네산책과 같이 특정지점에서 체류시간이 짧은 이동 및 매우 가까운 근거리 이동은 제외</p>
-<p><img src="/f117e7d604b38a133f87075f90ec0003/1_1.png" alt="1_1.PNG"></p>
-<h3 id="--데이터-설명" style="position:relative;"><a href="#--%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%84%A4%EB%AA%85" aria-label="  데이터 설명 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>- 데이터 설명</h3>
-<p>데이터에 적혀있는 항목은 아래와 같이 구성되어 있음</p>
-<ul>
-<li>대상연월 : 데이터의 기록 날짜</li>
-<li>요일 : 요일</li>
-<li>도착 시간 : 도착 시군구 코드에 도착한 시간</li>
-<li>출발 시군구 코드 : 추후에 서울시에서 제공한 시군구로 변환 (ex) 11010 -> “서울특별시 종로구”)</li>
-<li>도착 시군구 코드 : 추후에 서울시에서 제공한 시군구로 변환 (ex) 11010 -> “서울특별시 종로구”)</li>
-<li>성별</li>
-<li>나이 : 5세 별로 끊어서 기록</li>
-<li>이동유형 : H: 야간상주지, W: 주간상주지, E: 기타지역</li>
-<li>평균 이동시간</li>
-<li>이동인구 : KT의 휴대폰 데이터를 이용하여 한 개 이동의 출발지에서 도착지 간 이동한 인구수</li>
-</ul>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
-<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
-<span class="token keyword">import</span> re
-<span class="token keyword">import</span> os
+  </script><title data-react-helmet="true">(python)특수문자 제거하기</title><meta data-react-helmet="true" name="viewport" content="initial-scale=1, width=device-width"/><meta data-react-helmet="true" property="og:title" content="(python)특수문자 제거하기"/><meta data-react-helmet="true" property="og:site_title" content="(python)특수문자 제거하기"/><meta data-react-helmet="true" name="description" content="특수문자 제거하기 데이터 전처리 과정에서 많이 하는 일 중 하나가 특수문자 제거 혹은 다른 값 대체하는 것 replace re 모듈 대체로 replace 보다는 re 모듈을 사용해서 문자열을 제외한다. 1. 문자열 2. 리스트 주의! 만약 아래와 같은 에러 코드가 발생한다면 리스트를 str(list)로 변환하면 된다. TypeError: expected strings or bytes-like object 제외 혹은 대체해야할 대상이 많은 경우 리스트로 만들어 위 과정을 한번에 진행 가능하다. 3. DataFrame 제품의 제조사 및 불필요 단어 제외하기"/><meta data-react-helmet="true" property="og:description" content="특수문자 제거하기 데이터 전처리 과정에서 많이 하는 일 중 하나가 특수문자 제거 혹은 다른 값 대체하는 것 replace re 모듈 대체로 replace 보다는 re 모듈을 사용해서 문자열을 제외한다. 1. 문자열 2. 리스트 주의! 만약 아래와 같은 에러 코드가 발생한다면 리스트를 str(list)로 변환하면 된다. TypeError: expected strings or bytes-like object 제외 혹은 대체해야할 대상이 많은 경우 리스트로 만들어 위 과정을 한번에 진행 가능하다. 3. DataFrame 제품의 제조사 및 불필요 단어 제외하기"/><meta data-react-helmet="true" property="og:author" content="Han-기록소"/><meta data-react-helmet="true" property="og:image" content="/og-image.png"/><meta data-react-helmet="true" property="og:type" content="website"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"/><style>@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff")}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link as="script" rel="preload" href="/webpack-runtime-b0a3ec690b6a27de8e30.js"/><link as="script" rel="preload" href="/framework-0e1bf37de02f7cef2174.js"/><link as="script" rel="preload" href="/app-1c48eadf34e7f53f402f.js"/><link as="script" rel="preload" href="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-3528d048b96f92ca0d99.js"/><link as="script" rel="preload" href="/component---src-templates-blog-template-js-ef83b594aa693e649d30.js"/><link as="fetch" rel="preload" href="/page-data/Python/[python] 특수문자 제거하기/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1073350324.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1956554647.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2938748437.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper"><header class="page-header-wrapper"><div class="page-header"><div class="front-section"><a class="link" href="/">Han-기록소</a></div><div class="trailing-section"><a class="link" href="/about">about</a><a class="link" href="/posts">posts</a><div class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-1l6di18" role="combobox" aria-expanded="false"><div class="search-input-wrapper"><div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root search-input css-feqhe6"><div class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-11tfndm"><input type="text" aria-invalid="false" autoComplete="off" value="" class="MuiInput-input MuiInputBase-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-mnn31" aria-autocomplete="list" autoCapitalize="none" spellcheck="false"/><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium search-icon css-vubbuv" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="SearchOutlinedIcon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div></div></div></div></div></div></header><main class="page-content"><header class="post-header"><div class="emoji">💻</div><div class="info"><div class="categories"><a class="category" href="/posts/Python">Python</a></div></div><h1 class="title">(python)특수문자 제거하기</h1><div class="info"><div class="author">posted by <strong>HwanHee Park</strong>,</div> <!-- -->August 11, 2022</div></header><div class="post-content"><div class="markdown"><h3 id="특수문자-제거하기" style="position:relative;"><a href="#%ED%8A%B9%EC%88%98%EB%AC%B8%EC%9E%90-%EC%A0%9C%EA%B1%B0%ED%95%98%EA%B8%B0" aria-label="특수문자 제거하기 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>특수문자 제거하기</h3>
+<p>데이터 전처리 과정에서 많이 하는 일 중 하나가 특수문자 제거 혹은 다른 값 대체하는 것</p>
+<h3 id="replace" style="position:relative;"><a href="#replace" aria-label="replace permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>replace</h3>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">ex1 <span class="token operator">=</span> <span class="token string">'Is you a believer?'</span>
 
-os<span class="token punctuation">.</span>chdir<span class="token punctuation">(</span><span class="token string">r"C:\\Users\\USER\Desktop\\Project\\Proceed\\Seoul_population_movement\\생활이동_자치구_202109"</span><span class="token punctuation">)</span></code></pre></div>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">ex_data <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span><span class="token string">"sep_mov_01.csv"</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'cp949'</span><span class="token punctuation">)</span></code></pre></div>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">ex_data<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span></code></pre></div>
+ex1<span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">,</span><span class="token string">'the'</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">'Is you the believer?'</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">ex1<span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">'?'</span><span class="token punctuation">,</span><span class="token string">''</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">'Is you a believer'</code></pre></div>
+<h3 id="re-모듈" style="position:relative;"><a href="#re-%EB%AA%A8%EB%93%88" aria-label="re 모듈 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>re 모듈</h3>
+<p>대체로 replace 보다는 re 모듈을 사용해서 문자열을 제외한다.</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">import</span> re
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd</code></pre></div>
+<h4 id="1-문자열" style="position:relative;"><a href="#1-%EB%AC%B8%EC%9E%90%EC%97%B4" aria-label="1 문자열 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. 문자열</h4>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">text <span class="token operator">=</span> <span class="token string">'My life, my love, my drive, it came from...'</span>
+
+<span class="token comment"># 특수문자 제외</span>
+text <span class="token operator">=</span> text<span class="token punctuation">.</span>lower<span class="token punctuation">(</span><span class="token punctuation">)</span>
+text <span class="token operator">=</span> re<span class="token punctuation">.</span>sub<span class="token punctuation">(</span><span class="token string">r'[^\w\s]'</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">,</span> text<span class="token punctuation">)</span>
+
+text</code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">'my life my love my drive it came from'</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 값 대체</span>
+result <span class="token operator">=</span> re<span class="token punctuation">.</span>sub<span class="token punctuation">(</span><span class="token string">'my'</span><span class="token punctuation">,</span> <span class="token string">'your'</span><span class="token punctuation">,</span> text<span class="token punctuation">)</span>
+
+result</code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">'your life your love your drive it came from'</code></pre></div>
+<h4 id="2-리스트" style="position:relative;"><a href="#2-%EB%A6%AC%EC%8A%A4%ED%8A%B8" aria-label="2 리스트 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. 리스트</h4>
+<p>주의! 만약 아래와 같은 에러 코드가 발생한다면 리스트를 str(list)로 변환하면 된다.</p>
+<p>TypeError: expected strings or bytes-like object</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'./data/lyric_7years.txt'</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+    lines <span class="token operator">=</span> <span class="token punctuation">[</span>line<span class="token punctuation">.</span>rstrip<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">for</span> line <span class="token keyword">in</span> f<span class="token punctuation">]</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">lines <span class="token operator">=</span> <span class="token builtin">str</span><span class="token punctuation">(</span>lines<span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">lines</code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">'[\'Once I was seven years old, my mama told me\', "Go make yourself some friends or you\'ll be lonely", \'Once I was seven years old\', \'It was a big big world, but we thought we were bigger\', \'Pushing each other to the limits, we were learning quicker\', \'By 11 smoking herb and drinking burning liquor\', \'Never rich so we were out to make that steady figure\', \'Once I was 11 years old, my daddy told me\', "Go get yourself a wife or you\'ll be lonely", \'Once I was 11 years old\', \'I always had that dream like my daddy before me\', \'So I started writing songs, I started writing stories\', \'Something about the glory, just always seemed to bore me\', "\'Cause only those I really love will ever really know me", \'Once I was 20 years old, my story got told\', \'Before the morning sun, when life was lonely\', \'Once I was 20 years old\', \'(Lukas Graham)\', "I only see my goals, I don\'t believe in failure", "\'Cause I know the smallest voices, they can make it major", \'I got my boys with me atleast those in favor\', "And if we don\'t meet before I leave, I hope I\'ll see you later", \'Once I was 20 years old, my story got told\', "I was writing \'bout everything, I saw before me", \'Once I was 20 years old\', "Soon we\'ll be 30 years old, our songs have been sold", "We\'ve traveled around the world and we\'re still roaming", "Soon we\'ll be 30 years old", "I\'m still learning about life", \'My woman brought children for me\', \'So I can sing them all my songs\', \'And I can tell them stories\', \'Most of my boys are with me\', \'Some are still out seeking glory\', \'And some I had to leave behind\', "My brother I\'m still sorry", "Soon I\'ll be 60 years old, my daddy got 61", \'Remember life and then your life becomes a better one\', \'I made the man so happy when I wrote a letter once\', \'I hope my children come and visit, once or twice a month\', "Soon I\'ll be 60 years old, will I think the world is cold", \'Or will I have a lot of children who can warm me\', "Soon I\'ll be 60 years old", "Soon I\'ll be 60 years old, will I think the world is cold", \'Or will I have a lot of children who can hold me\', "Soon I\'ll be 60 years old", \'Once I was seven years old, my mama told me\', "Go make yourself some friends or you\'ll be lonely", \'Once I was seven years old\', \'Once I was seven years old\']'</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 특수문자 제외</span>
+lines <span class="token operator">=</span> re<span class="token punctuation">.</span>sub<span class="token punctuation">(</span><span class="token string">r'[^\w\s]'</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">,</span> lines<span class="token punctuation">)</span>
+
+lines</code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">'Once I was seven years old my mama told me Go make yourself some friends or youll be lonely Once I was seven years old It was a big big world but we thought we were bigger Pushing each other to the limits we were learning quicker By 11 smoking herb and drinking burning liquor Never rich so we were out to make that steady figure Once I was 11 years old my daddy told me Go get yourself a wife or youll be lonely Once I was 11 years old I always had that dream like my daddy before me So I started writing songs I started writing stories Something about the glory just always seemed to bore me Cause only those I really love will ever really know me Once I was 20 years old my story got told Before the morning sun when life was lonely Once I was 20 years old Lukas Graham I only see my goals I dont believe in failure Cause I know the smallest voices they can make it major I got my boys with me atleast those in favor And if we dont meet before I leave I hope Ill see you later Once I was 20 years old my story got told I was writing bout everything I saw before me Once I was 20 years old Soon well be 30 years old our songs have been sold Weve traveled around the world and were still roaming Soon well be 30 years old Im still learning about life My woman brought children for me So I can sing them all my songs And I can tell them stories Most of my boys are with me Some are still out seeking glory And some I had to leave behind My brother Im still sorry Soon Ill be 60 years old my daddy got 61 Remember life and then your life becomes a better one I made the man so happy when I wrote a letter once I hope my children come and visit once or twice a month Soon Ill be 60 years old will I think the world is cold Or will I have a lot of children who can warm me Soon Ill be 60 years old Soon Ill be 60 years old will I think the world is cold Or will I have a lot of children who can hold me Soon Ill be 60 years old Once I was seven years old my mama told me Go make yourself some friends or youll be lonely Once I was seven years old Once I was seven years old'</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 값 대체하기 mama -> mother</span>
+lines <span class="token operator">=</span> re<span class="token punctuation">.</span>sub<span class="token punctuation">(</span><span class="token string">'mama'</span><span class="token punctuation">,</span><span class="token string">'mother'</span><span class="token punctuation">,</span>lines<span class="token punctuation">)</span>
+
+lines</code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">'Once I was seven years old my mother told me Go make yourself some friends or youll be lonely Once I was seven years old It was a big big world but we thought we were bigger Pushing each other to the limits we were learning quicker By 11 smoking herb and drinking burning liquor Never rich so we were out to make that steady figure Once I was 11 years old my daddy told me Go get yourself a wife or youll be lonely Once I was 11 years old I always had that dream like my daddy before me So I started writing songs I started writing stories Something about the glory just always seemed to bore me Cause only those I really love will ever really know me Once I was 20 years old my story got told Before the morning sun when life was lonely Once I was 20 years old Lukas Graham I only see my goals I dont believe in failure Cause I know the smallest voices they can make it major I got my boys with me atleast those in favor And if we dont meet before I leave I hope Ill see you later Once I was 20 years old my story got told I was writing bout everything I saw before me Once I was 20 years old Soon well be 30 years old our songs have been sold Weve traveled around the world and were still roaming Soon well be 30 years old Im still learning about life My woman brought children for me So I can sing them all my songs And I can tell them stories Most of my boys are with me Some are still out seeking glory And some I had to leave behind My brother Im still sorry Soon Ill be 60 years old my daddy got 61 Remember life and then your life becomes a better one I made the man so happy when I wrote a letter once I hope my children come and visit once or twice a month Soon Ill be 60 years old will I think the world is cold Or will I have a lot of children who can warm me Soon Ill be 60 years old Soon Ill be 60 years old will I think the world is cold Or will I have a lot of children who can hold me Soon Ill be 60 years old Once I was seven years old my mother told me Go make yourself some friends or youll be lonely Once I was seven years old Once I was seven years old'</code></pre></div>
+<p>제외 혹은 대체해야할 대상이 많은 경우 리스트로 만들어 위 과정을 한번에 진행 가능하다.</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">remove_list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'I '</span><span class="token punctuation">,</span> <span class="token string">'my '</span><span class="token punctuation">,</span><span class="token string">'me '</span><span class="token punctuation">,</span><span class="token string">'you'</span><span class="token punctuation">,</span><span class="token string">'was'</span><span class="token punctuation">,</span><span class="token string">'we'</span><span class="token punctuation">,</span><span class="token string">'the '</span><span class="token punctuation">,</span><span class="token string">'a '</span><span class="token punctuation">]</span>
+
+exception <span class="token operator">=</span> <span class="token string">'|'</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span>remove_list<span class="token punctuation">)</span> <span class="token comment"># I는 각 요소를 분리한다는 의미</span>
+
+result <span class="token operator">=</span> re<span class="token punctuation">.</span>sub<span class="token punctuation">(</span>exception<span class="token punctuation">,</span><span class="token string">''</span><span class="token punctuation">,</span>lines<span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">result</code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">'Once  seven years old mother told Go make rself sofriends or ll be lonely Once  seven years old It  big big world but  thought  re bigger Pushing each other to limits  re learning quicker By 11 smoking herb and drinking burning liquor Never rich so  re out to make that steady figure Once  11 years old daddy told Go get rself wife or ll be lonely Once  11 years old always had that dream like daddy before So started writing songs started writing stories Something about glory just always seemed to bore Cause only those really love will ever really know Once  20 years old story got told Before morning sun when life  lonely Once  20 years old Lukas Graham only see goals dont believe in failure Cause know smallest voices they can make it major got boys with atleast those in favor And if  dont meet before leave hope Ill see  later Once  20 years old story got told  writing bout everything saw before Once  20 years old Soon ll be 30 years old our songs have been sold Weve traveled around world and re still roaming Soon ll be 30 years old Im still learning about life My woman brought children for So can sing them all songs And can tell them stories Most of boys are with Soare still out seeking glory And sohad to leave behind My brother Im still sorry Soon Ill be 60 years old daddy got 61 Remember life and then r life becomes better one made man so happy when wrote letter once hope children coand visit once or twice month Soon Ill be 60 years old will think world is cold Or will have lot of children who can warm Soon Ill be 60 years old Soon Ill be 60 years old will think world is cold Or will have lot of children who can hold Soon Ill be 60 years old Once  seven years old mother told Go make rself sofriends or ll be lonely Once  seven years old Once  seven years old'</code></pre></div>
+<h4 id="3-dataframe" style="position:relative;"><a href="#3-dataframe" aria-label="3 dataframe permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. DataFrame</h4>
+<p>제품의 제조사 및 불필요 단어 제외하기</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">df <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span><span class="token string">"./data/ramen.csv"</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span>
+
+df <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>df<span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">df <span class="token operator">=</span> df<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">'판매장소'</span><span class="token punctuation">,</span><span class="token string">'제품명'</span><span class="token punctuation">,</span><span class="token string">'용량'</span><span class="token punctuation">,</span><span class="token string">'가격(원)'</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+
+df</code></pre></div>
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -111,175 +144,100 @@ os<span class="token punctuation">.</span>chdir<span class="token punctuation">(
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>대상연월</th>
-      <th>요일</th>
-      <th>도착시간</th>
-      <th>출발 시군구 코드</th>
-      <th>도착 시군구 코드</th>
-      <th>성별</th>
-      <th>나이</th>
-      <th>이동유형</th>
-      <th>평균 이동 시간(분)</th>
-      <th>이동인구(합)</th>
+      <th>판매장소</th>
+      <th>제품명</th>
+      <th>용량</th>
+      <th>가격(원)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>202109</td>
-      <td>일</td>
-      <td>1</td>
-      <td>11060</td>
-      <td>31230</td>
-      <td>M</td>
-      <td>60</td>
-      <td>EE</td>
-      <td>80</td>
-      <td>3.5</td>
+      <td>롯데백화점(롯데백화점본점)</td>
+      <td>[농심]신라면</td>
+      <td>600.0g</td>
+      <td>4,500</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>202109</td>
-      <td>일</td>
-      <td>1</td>
-      <td>11220</td>
-      <td>26000</td>
-      <td>M</td>
-      <td>35</td>
-      <td>EE</td>
-      <td>120</td>
-      <td>*</td>
+      <td>신세계백화점(신세계백화점본점)</td>
+      <td>[농심]신라면</td>
+      <td>600.0g</td>
+      <td>4,500</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>202109</td>
-      <td>일</td>
-      <td>1</td>
-      <td>11050</td>
-      <td>31120</td>
-      <td>F</td>
-      <td>20</td>
-      <td>EE</td>
-      <td>10</td>
-      <td>*</td>
+      <td>롯데백화점</td>
+      <td>[농심]신라면</td>
+      <td>600.0g</td>
+      <td>4,500</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>202109</td>
-      <td>일</td>
-      <td>1</td>
-      <td>11250</td>
-      <td>11240</td>
-      <td>M</td>
-      <td>60</td>
-      <td>HE</td>
-      <td>40</td>
-      <td>10.52</td>
+      <td>롯데백화점</td>
+      <td>[농심]신라면</td>
+      <td>600.0g</td>
+      <td>4,500</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>202109</td>
-      <td>일</td>
-      <td>1</td>
-      <td>11230</td>
-      <td>11110</td>
-      <td>F</td>
-      <td>15</td>
-      <td>EE</td>
-      <td>50</td>
-      <td>4.11</td>
+      <td>현대백화점(현대백화점미아점)</td>
+      <td>[농심]신라면</td>
+      <td>600.0g</td>
+      <td>3,900</td>
     </tr>
     <tr>
-      <th>5</th>
-      <td>202109</td>
-      <td>일</td>
-      <td>1</td>
-      <td>11190</td>
-      <td>11190</td>
-      <td>F</td>
-      <td>20</td>
-      <td>WW</td>
-      <td>20</td>
-      <td>42.34</td>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
-      <th>6</th>
-      <td>202109</td>
-      <td>일</td>
-      <td>1</td>
-      <td>11230</td>
-      <td>11050</td>
-      <td>M</td>
-      <td>55</td>
-      <td>WH</td>
-      <td>10</td>
-      <td>16.49</td>
+      <th>1243</th>
+      <td>현대그린마트</td>
+      <td>[오뚜기]진라면 순한맛</td>
+      <td>600.0g</td>
+      <td>3,450</td>
     </tr>
     <tr>
-      <th>7</th>
-      <td>202109</td>
-      <td>일</td>
-      <td>1</td>
-      <td>11010</td>
-      <td>11040</td>
-      <td>M</td>
-      <td>25</td>
-      <td>EH</td>
-      <td>30</td>
-      <td>4.51</td>
+      <th>1244</th>
+      <td>세이브마트</td>
+      <td>[오뚜기]진라면 순한맛</td>
+      <td>600.0g</td>
+      <td>2,980</td>
     </tr>
     <tr>
-      <th>8</th>
-      <td>202109</td>
-      <td>일</td>
-      <td>1</td>
-      <td>11110</td>
-      <td>21000</td>
-      <td>F</td>
-      <td>35</td>
-      <td>HE</td>
-      <td>90</td>
-      <td>3.03</td>
+      <th>1245</th>
+      <td>하모니마트 기산점</td>
+      <td>[오뚜기]진라면 순한맛</td>
+      <td>600.0g</td>
+      <td>3,450</td>
     </tr>
     <tr>
-      <th>9</th>
-      <td>202109</td>
-      <td>일</td>
-      <td>1</td>
-      <td>31060</td>
-      <td>11180</td>
-      <td>F</td>
-      <td>25</td>
-      <td>HE</td>
-      <td>10</td>
-      <td>*</td>
+      <th>1246</th>
+      <td>마트킹 안녕점</td>
+      <td>[오뚜기]진라면 순한맛</td>
+      <td>600.0g</td>
+      <td>3,480</td>
+    </tr>
+    <tr>
+      <th>1247</th>
+      <td>에코마트</td>
+      <td>[오뚜기]진라면 순한맛</td>
+      <td>600.0g</td>
+      <td>3,280</td>
     </tr>
   </tbody>
 </table>
+<p>1248 rows × 4 columns</p>
 </div>
-<h3 id="--데이터-전처리" style="position:relative;"><a href="#--%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%B2%98%EB%A6%AC" aria-label="  데이터 전처리 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>- 데이터 전처리</h3>
-<h4 id="1-시간별-데이터를-하나의-데이터로-합치기" style="position:relative;"><a href="#1-%EC%8B%9C%EA%B0%84%EB%B3%84-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC-%ED%95%98%EB%82%98%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A1%9C-%ED%95%A9%EC%B9%98%EA%B8%B0" aria-label="1 시간별 데이터를 하나의 데이터로 합치기 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. 시간별 데이터를 하나의 데이터로 합치기</h4>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># upload data</span>
-<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">25</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token keyword">if</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">:</span>
-        <span class="token builtin">globals</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token string">'data_{}'</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span><span class="token string">"sep_mov_0"</span><span class="token operator">+</span><span class="token builtin">str</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">".csv"</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">"cp949"</span><span class="token punctuation">)</span>
-    <span class="token keyword">if</span> i<span class="token operator">>=</span><span class="token number">10</span><span class="token punctuation">:</span>
-        <span class="token builtin">globals</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token string">'data_{}'</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span><span class="token string">"sep_mov_"</span><span class="token operator">+</span><span class="token builtin">str</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">".csv"</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">"cp949"</span><span class="token punctuation">)</span></code></pre></div>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment">## 데이터 합치기</span>
-data <span class="token operator">=</span> pd<span class="token punctuation">.</span>concat<span class="token punctuation">(</span><span class="token punctuation">[</span>data_1<span class="token punctuation">,</span> data_2<span class="token punctuation">,</span> data_3<span class="token punctuation">,</span>data_4<span class="token punctuation">,</span>data_5<span class="token punctuation">,</span>data_6<span class="token punctuation">,</span>data_7<span class="token punctuation">,</span>data_8<span class="token punctuation">,</span>data_9<span class="token punctuation">,</span>data_10<span class="token punctuation">,</span>data_11<span class="token punctuation">,</span>data_12<span class="token punctuation">]</span><span class="token punctuation">)</span>
-temp <span class="token operator">=</span> pd<span class="token punctuation">.</span>concat<span class="token punctuation">(</span><span class="token punctuation">[</span>data_13<span class="token punctuation">,</span>data_14<span class="token punctuation">,</span>data_15<span class="token punctuation">,</span>data_16<span class="token punctuation">,</span>data_17<span class="token punctuation">,</span>data_18<span class="token punctuation">,</span>data_19<span class="token punctuation">,</span>data_20<span class="token punctuation">,</span>data_21<span class="token punctuation">,</span>data_22<span class="token punctuation">,</span>data_23<span class="token punctuation">,</span>data_24<span class="token punctuation">]</span><span class="token punctuation">)</span>
-data <span class="token operator">=</span> pd<span class="token punctuation">.</span>concat<span class="token punctuation">(</span><span class="token punctuation">[</span>data<span class="token punctuation">,</span>temp<span class="token punctuation">]</span><span class="token punctuation">)</span>
-temp <span class="token operator">=</span> <span class="token boolean">None</span></code></pre></div>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment">## 통합 데이터 저장</span>
-<span class="token comment"># chdir 변경</span>
-os<span class="token punctuation">.</span>chdir<span class="token punctuation">(</span><span class="token string">r"C:\\Users\\USER\\Desktop\\Project\\Proceed\\Seoul_population_movement"</span><span class="token punctuation">)</span>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">regex <span class="token operator">=</span> <span class="token string">"\[.*\]|\s-\s.*"</span>
 
-data<span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span><span class="token string">"origin_sep_movement.csv"</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span></code></pre></div>
-<h4 id="2-출발시군-도착시군-코드를-실제-지역으로-변환" style="position:relative;"><a href="#2-%EC%B6%9C%EB%B0%9C%EC%8B%9C%EA%B5%B0-%EB%8F%84%EC%B0%A9%EC%8B%9C%EA%B5%B0-%EC%BD%94%EB%93%9C%EB%A5%BC-%EC%8B%A4%EC%A0%9C-%EC%A7%80%EC%97%AD%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98" aria-label="2 출발시군 도착시군 코드를 실제 지역으로 변환 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. 출발시군, 도착시군 코드를 실제 지역으로 변환</h4>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 구 코드</span>
-gu_code <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_excel<span class="token punctuation">(</span><span class="token string">"replace_code.xlsx"</span><span class="token punctuation">)</span>
-
-gu_code<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span></code></pre></div>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>df<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    df<span class="token punctuation">[</span><span class="token string">'제품명'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> re<span class="token punctuation">.</span>sub<span class="token punctuation">(</span>regex<span class="token punctuation">,</span><span class="token string">''</span><span class="token punctuation">,</span>df<span class="token punctuation">[</span><span class="token string">'제품명'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment"># 괄호</span>
+    df<span class="token punctuation">[</span><span class="token string">'제품명'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> re<span class="token punctuation">.</span>sub<span class="token punctuation">(</span><span class="token string">'순한맛'</span><span class="token punctuation">,</span><span class="token string">''</span><span class="token punctuation">,</span>df<span class="token punctuation">[</span><span class="token string">'제품명'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">df</code></pre></div>
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -297,126 +255,91 @@ gu_code<span class="token punctuation">.</span>head<span class="token punctuatio
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>시도</th>
-      <th>시군구</th>
-      <th>name</th>
-      <th>full name</th>
+      <th>판매장소</th>
+      <th>제품명</th>
+      <th>용량</th>
+      <th>가격(원)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>11000</td>
-      <td>11010</td>
-      <td>종로구</td>
-      <td>서울특별시 종로구</td>
+      <td>롯데백화점(롯데백화점본점)</td>
+      <td>신라면</td>
+      <td>600.0g</td>
+      <td>4,500</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>11000</td>
-      <td>11020</td>
-      <td>중구</td>
-      <td>서울특별시 중구</td>
+      <td>신세계백화점(신세계백화점본점)</td>
+      <td>신라면</td>
+      <td>600.0g</td>
+      <td>4,500</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>11000</td>
-      <td>11030</td>
-      <td>용산구</td>
-      <td>서울특별시 용산구</td>
+      <td>롯데백화점</td>
+      <td>신라면</td>
+      <td>600.0g</td>
+      <td>4,500</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>11000</td>
-      <td>11040</td>
-      <td>성동구</td>
-      <td>서울특별시 성동구</td>
+      <td>롯데백화점</td>
+      <td>신라면</td>
+      <td>600.0g</td>
+      <td>4,500</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>11000</td>
-      <td>11050</td>
-      <td>광진구</td>
-      <td>서울특별시 광진구</td>
+      <td>현대백화점(현대백화점미아점)</td>
+      <td>신라면</td>
+      <td>600.0g</td>
+      <td>3,900</td>
     </tr>
     <tr>
-      <th>5</th>
-      <td>11000</td>
-      <td>11060</td>
-      <td>동대문구</td>
-      <td>서울특별시 동대문구</td>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
-      <th>6</th>
-      <td>11000</td>
-      <td>11070</td>
-      <td>중랑구</td>
-      <td>서울특별시 중랑구</td>
+      <th>1243</th>
+      <td>현대그린마트</td>
+      <td>진라면</td>
+      <td>600.0g</td>
+      <td>3,450</td>
     </tr>
     <tr>
-      <th>7</th>
-      <td>11000</td>
-      <td>11080</td>
-      <td>성북구</td>
-      <td>서울특별시 성북구</td>
+      <th>1244</th>
+      <td>세이브마트</td>
+      <td>진라면</td>
+      <td>600.0g</td>
+      <td>2,980</td>
     </tr>
     <tr>
-      <th>8</th>
-      <td>11000</td>
-      <td>11090</td>
-      <td>강북구</td>
-      <td>서울특별시 강북구</td>
+      <th>1245</th>
+      <td>하모니마트 기산점</td>
+      <td>진라면</td>
+      <td>600.0g</td>
+      <td>3,450</td>
     </tr>
     <tr>
-      <th>9</th>
-      <td>11000</td>
-      <td>11100</td>
-      <td>도봉구</td>
-      <td>서울특별시 도봉구</td>
+      <th>1246</th>
+      <td>마트킹 안녕점</td>
+      <td>진라면</td>
+      <td>600.0g</td>
+      <td>3,480</td>
+    </tr>
+    <tr>
+      <th>1247</th>
+      <td>에코마트</td>
+      <td>진라면</td>
+      <td>600.0g</td>
+      <td>3,280</td>
     </tr>
   </tbody>
 </table>
-</div>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token builtin">len</span><span class="token punctuation">(</span>gu_code<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    data<span class="token punctuation">[</span><span class="token string">'출발 시군구 코드'</span><span class="token punctuation">]</span> <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'출발 시군구 코드'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>replace<span class="token punctuation">(</span>gu_code<span class="token punctuation">[</span><span class="token string">'시군구'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> gu_code<span class="token punctuation">[</span><span class="token string">'full name'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
-    data<span class="token punctuation">[</span><span class="token string">'도착 시군구 코드'</span><span class="token punctuation">]</span> <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'도착 시군구 코드'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>replace<span class="token punctuation">(</span>gu_code<span class="token punctuation">[</span><span class="token string">'시군구'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> gu_code<span class="token punctuation">[</span><span class="token string">'full name'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></code></pre></div>
-<h4 id="3-wh-hw를-출퇴근으로-변경그-외-모두-이동으로-변환" style="position:relative;"><a href="#3-wh-hw%EB%A5%BC-%EC%B6%9C%ED%87%B4%EA%B7%BC%EC%9C%BC%EB%A1%9C-%EB%B3%80%EA%B2%BD%EA%B7%B8-%EC%99%B8-%EB%AA%A8%EB%91%90-%EC%9D%B4%EB%8F%99%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98" aria-label="3 wh hw를 출퇴근으로 변경그 외 모두 이동으로 변환 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. WH, HW를 출퇴근으로 변경,그 외 모두 이동으로 변환</h4>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">data<span class="token punctuation">[</span><span class="token string">'이동유형'</span><span class="token punctuation">]</span> <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'이동유형'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">'WH'</span><span class="token punctuation">,</span> <span class="token string">'출퇴근'</span><span class="token punctuation">)</span>
-data<span class="token punctuation">[</span><span class="token string">'이동유형'</span><span class="token punctuation">]</span> <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'이동유형'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">'HW'</span><span class="token punctuation">,</span> <span class="token string">'출퇴근'</span><span class="token punctuation">)</span>
-data<span class="token punctuation">[</span><span class="token string">'이동유형'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span>re<span class="token punctuation">.</span>sub<span class="token punctuation">(</span><span class="token string">'[A-Za-z]'</span><span class="token punctuation">,</span><span class="token string">'이동'</span><span class="token punctuation">,</span>s<span class="token punctuation">)</span> <span class="token keyword">for</span> s <span class="token keyword">in</span> data<span class="token punctuation">[</span><span class="token string">'이동유형'</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
-data<span class="token punctuation">[</span><span class="token string">'이동유형'</span><span class="token punctuation">]</span> <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'이동유형'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">'이동이동'</span><span class="token punctuation">,</span> <span class="token string">'이동'</span><span class="token punctuation">)</span></code></pre></div>
-<h4 id="4-이동인구합의-를-알수없음으로-변경" style="position:relative;"><a href="#4-%EC%9D%B4%EB%8F%99%EC%9D%B8%EA%B5%AC%ED%95%A9%EC%9D%98-%EB%A5%BC-%EC%95%8C%EC%88%98%EC%97%86%EC%9D%8C%EC%9C%BC%EB%A1%9C-%EB%B3%80%EA%B2%BD" aria-label="4 이동인구합의 를 알수없음으로 변경 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4. 이동인구(합)의 *를 알수없음으로 변경</h4>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">data<span class="token punctuation">[</span><span class="token string">'이동인구(합)'</span><span class="token punctuation">]</span> <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'이동인구(합)'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">'*'</span><span class="token punctuation">,</span> <span class="token string">'알수없음'</span><span class="token punctuation">)</span></code></pre></div>
-<h4 id="5-컬럼명을-변경" style="position:relative;"><a href="#5-%EC%BB%AC%EB%9F%BC%EB%AA%85%EC%9D%84-%EB%B3%80%EA%B2%BD" aria-label="5 컬럼명을 변경 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>5. 컬럼명을 변경</h4>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">data<span class="token punctuation">.</span>columns <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'날짜'</span><span class="token punctuation">,</span><span class="token string">'요일'</span><span class="token punctuation">,</span><span class="token string">'도착한 시간'</span><span class="token punctuation">,</span><span class="token string">'출발지'</span><span class="token punctuation">,</span><span class="token string">'도착지'</span><span class="token punctuation">,</span><span class="token string">'성별'</span><span class="token punctuation">,</span><span class="token string">'나이'</span><span class="token punctuation">,</span><span class="token string">'이동유형'</span><span class="token punctuation">,</span><span class="token string">'이동 시간(분)'</span><span class="token punctuation">,</span> <span class="token string">'이동인구'</span><span class="token punctuation">]</span></code></pre></div>
-<h4 id="6-저장" style="position:relative;"><a href="#6-%EC%A0%80%EC%9E%A5" aria-label="6 저장 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>6. 저장</h4>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">data<span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span><span class="token string">"seoul_sep_movement.csv"</span><span class="token punctuation">)</span></code></pre></div>
-<div class="table-of-contents">
-<ul>
-<li>
-<p><a href="#%EC%84%9C%EC%9A%B8-%EC%83%9D%ED%99%9C%EC%9D%B4%EB%8F%99-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%84%9D-1">서울 생활이동 데이터 분석 (1)</a></p>
-<ul>
-<li>
-<p><a href="#--%EB%B6%84%EC%84%9D-%EA%B3%BC%EC%A0%9C">- 분석 과제</a></p>
-<ul>
-<li><a href="#%EC%84%9C%EC%9A%B8%EC%8B%9C-%EC%83%9D%ED%99%9C%EC%9D%B4%EB%8F%99-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%9E%80">서울시 생활이동 데이터란?</a></li>
-</ul>
-</li>
-<li>
-<p><a href="#--%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%84%A4%EB%AA%85">- 데이터 설명</a></p>
-</li>
-<li>
-<p><a href="#--%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%B2%98%EB%A6%AC">- 데이터 전처리</a></p>
-<ul>
-<li><a href="#1-%EC%8B%9C%EA%B0%84%EB%B3%84-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC-%ED%95%98%EB%82%98%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A1%9C-%ED%95%A9%EC%B9%98%EA%B8%B0">1. 시간별 데이터를 하나의 데이터로 합치기</a></li>
-<li><a href="#2-%EC%B6%9C%EB%B0%9C%EC%8B%9C%EA%B5%B0-%EB%8F%84%EC%B0%A9%EC%8B%9C%EA%B5%B0-%EC%BD%94%EB%93%9C%EB%A5%BC-%EC%8B%A4%EC%A0%9C-%EC%A7%80%EC%97%AD%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98">2. 출발시군, 도착시군 코드를 실제 지역으로 변환</a></li>
-<li><a href="#3-wh-hw%EB%A5%BC-%EC%B6%9C%ED%87%B4%EA%B7%BC%EC%9C%BC%EB%A1%9C-%EB%B3%80%EA%B2%BD%EA%B7%B8-%EC%99%B8-%EB%AA%A8%EB%91%90-%EC%9D%B4%EB%8F%99%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98">3. WH, HW를 출퇴근으로 변경,그 외 모두 이동으로 변환</a></li>
-<li><a href="#4-%EC%9D%B4%EB%8F%99%EC%9D%B8%EA%B5%AC%ED%95%A9%EC%9D%98-%EB%A5%BC-%EC%95%8C%EC%88%98%EC%97%86%EC%9D%8C%EC%9C%BC%EB%A1%9C-%EB%B3%80%EA%B2%BD">4. 이동인구(합)의 *를 알수없음으로 변경</a></li>
-<li><a href="#5-%EC%BB%AC%EB%9F%BC%EB%AA%85%EC%9D%84-%EB%B3%80%EA%B2%BD">5. 컬럼명을 변경</a></li>
-<li><a href="#6-%EC%A0%80%EC%9E%A5">6. 저장</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/Month of Birth_Korea/월별 출생 수 분석 [1] - 한국 사례/"><div class="direction">이전 글</div><div class="title">월별 출생 수 분석 [1] - 한국 사례</div></a></div><div class="post-navigator-card-wrapper"><a class="post-card next" href="/Seoul_Movement/Seoul_movement [4] - 연관분석/"><div class="direction">다음 글</div><div class="title">서울 생활 이동 [4] - 연관성 분석</div></a></div></div><div class="utterances"></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2022<!-- --> <a href="https://github.com/Han-Archives">Han-기록소</a> powered by<a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog"> zoomkoding-gatsby-blog</a></p></footer><div class="dark-mode-button-wrapper"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium dark-mode-button css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge dark-mode-icon css-6flbmm" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="DarkModeIcon"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path></svg></button></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/Seoul_Movement/Seoul_movement [1] - 데이터 설명 및 전처리/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-cd840d73727c2e366b63.js"],"app":["/app-1c48eadf34e7f53f402f.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-3c26d4b7e3608ed0ece4.js"],"component---src-pages-404-js":["/component---src-pages-404-js-4917da7ef5b541e98a81.js"],"component---src-pages-about-js":["/component---src-pages-about-js-b5804eba3d16afcb3700.js"],"component---src-pages-index-js":["/component---src-pages-index-js-bc882cd03f70c89c8148.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-ef83b594aa693e649d30.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-fea460fedd50cffb10cd.js"]};/*]]>*/</script><script src="/polyfill-cd840d73727c2e366b63.js" nomodule=""></script><script src="/component---src-templates-blog-template-js-ef83b594aa693e649d30.js" async=""></script><script src="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-3528d048b96f92ca0d99.js" async=""></script><script src="/app-1c48eadf34e7f53f402f.js" async=""></script><script src="/framework-0e1bf37de02f7cef2174.js" async=""></script><script src="/webpack-runtime-b0a3ec690b6a27de8e30.js" async=""></script></body></html>
+<p>1248 rows × 4 columns</p>
+</div></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/PySpark/[PySpark] 숙박업 분석하기 (3) - MLlib/"><div class="direction">이전 글</div><div class="title">숙박업 분석하기 (3) - MLlib</div></a></div><div class="post-navigator-card-wrapper"><a class="post-card next" href="/Python/[python] 튜플/"><div class="direction">다음 글</div><div class="title">(python)튜플</div></a></div></div><div class="utterances"></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2022<!-- --> <a href="https://github.com/Han-Archives">Han-기록소</a> powered by<a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog"> zoomkoding-gatsby-blog</a></p></footer><div class="dark-mode-button-wrapper"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium dark-mode-button css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge dark-mode-icon css-6flbmm" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="DarkModeIcon"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path></svg></button></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/Python/[python] 특수문자 제거하기/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-cd840d73727c2e366b63.js"],"app":["/app-1c48eadf34e7f53f402f.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-3c26d4b7e3608ed0ece4.js"],"component---src-pages-404-js":["/component---src-pages-404-js-4917da7ef5b541e98a81.js"],"component---src-pages-about-js":["/component---src-pages-about-js-b5804eba3d16afcb3700.js"],"component---src-pages-index-js":["/component---src-pages-index-js-bc882cd03f70c89c8148.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-ef83b594aa693e649d30.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-fea460fedd50cffb10cd.js"]};/*]]>*/</script><script src="/polyfill-cd840d73727c2e366b63.js" nomodule=""></script><script src="/component---src-templates-blog-template-js-ef83b594aa693e649d30.js" async=""></script><script src="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-3528d048b96f92ca0d99.js" async=""></script><script src="/app-1c48eadf34e7f53f402f.js" async=""></script><script src="/framework-0e1bf37de02f7cef2174.js" async=""></script><script src="/webpack-runtime-b0a3ec690b6a27de8e30.js" async=""></script></body></html>
