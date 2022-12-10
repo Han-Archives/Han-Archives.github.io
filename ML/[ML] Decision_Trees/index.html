@@ -66,303 +66,118 @@
         }
       }
     })
-  </script><title data-react-helmet="true">리스트</title><meta data-react-helmet="true" name="viewport" content="initial-scale=1, width=device-width"/><meta data-react-helmet="true" property="og:title" content="리스트"/><meta data-react-helmet="true" property="og:site_title" content="리스트"/><meta data-react-helmet="true" name="description" content="list () 목차: 상품 리스트 중첩 리스트 상품리스트 의류와 신발을 판매하는 상점에서 판매 리스트를 작성하자. 상품 리스트 생성 상품 명 변경 새로운 상품 추가 상품 제거 3.새로운 아이템 추가 특정 아이템 제거하기 중첩 리스트 Rerference https://docs.python.org/ko/3/tutorial/datastructures.html"/><meta data-react-helmet="true" property="og:description" content="list () 목차: 상품 리스트 중첩 리스트 상품리스트 의류와 신발을 판매하는 상점에서 판매 리스트를 작성하자. 상품 리스트 생성 상품 명 변경 새로운 상품 추가 상품 제거 3.새로운 아이템 추가 특정 아이템 제거하기 중첩 리스트 Rerference https://docs.python.org/ko/3/tutorial/datastructures.html"/><meta data-react-helmet="true" property="og:author" content="Han-기록소"/><meta data-react-helmet="true" property="og:image" content="/og-image.png"/><meta data-react-helmet="true" property="og:type" content="website"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"/><style>@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff")}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link as="script" rel="preload" href="/webpack-runtime-b0a3ec690b6a27de8e30.js"/><link as="script" rel="preload" href="/framework-0e1bf37de02f7cef2174.js"/><link as="script" rel="preload" href="/app-1c48eadf34e7f53f402f.js"/><link as="script" rel="preload" href="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-3528d048b96f92ca0d99.js"/><link as="script" rel="preload" href="/component---src-templates-blog-template-js-ef83b594aa693e649d30.js"/><link as="fetch" rel="preload" href="/page-data/Python/[python] 리스트/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1073350324.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1956554647.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2938748437.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper"><header class="page-header-wrapper"><div class="page-header"><div class="front-section"><a class="link" href="/">Han-기록소</a></div><div class="trailing-section"><a class="link" href="/about">about</a><a class="link" href="/posts">posts</a><div class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-1l6di18" role="combobox" aria-expanded="false"><div class="search-input-wrapper"><div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root search-input css-feqhe6"><div class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-11tfndm"><input type="text" aria-invalid="false" autoComplete="off" value="" class="MuiInput-input MuiInputBase-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-mnn31" aria-autocomplete="list" autoCapitalize="none" spellcheck="false"/><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium search-icon css-vubbuv" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="SearchOutlinedIcon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div></div></div></div></div></div></header><main class="page-content"><header class="post-header"><div class="emoji">💻</div><div class="info"><div class="categories"><a class="category" href="/posts/Python">Python</a></div></div><h1 class="title">리스트</h1><div class="info"><div class="author">posted by <strong>HwanHee Park</strong>,</div> <!-- -->August 17, 2022</div></header><div class="post-content"><div class="markdown"><h2 id="list-" style="position:relative;"><a href="#list-" aria-label="list  permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>list ()</h2>
-<h3 id="목차" style="position:relative;"><a href="#%EB%AA%A9%EC%B0%A8" aria-label="목차 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>목차:</h3>
-<ol>
-<li>상품 리스트</li>
-<li>중첩 리스트</li>
-</ol>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment">## modules</span>
-<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd</code></pre></div>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment">## 데이터</span>
-df <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span><span class="token string">"C:/Users/USER/Project/everyday_python/data/ex_item_list.csv"</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'cp949'</span><span class="token punctuation">)</span>
-
-df<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span></code></pre></div>
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">.dataframe tbody tr th {
-    vertical-align: top;
-}
-
-.dataframe thead th {
-    text-align: right;
-}</code></pre></div>
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>아이템</th>
-      <th>분류</th>
-      <th>가격</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>A_shirt</td>
-      <td>의류</td>
-      <td>30000</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>B_shirt</td>
-      <td>의류</td>
-      <td>35000</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>A_t-shirt</td>
-      <td>의류</td>
-      <td>15000</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>B_t-shirt</td>
-      <td>의류</td>
-      <td>14000</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>C_t-shirt</td>
-      <td>의류</td>
-      <td>13000</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>E_pants</td>
-      <td>의류</td>
-      <td>30000</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>F_pants</td>
-      <td>의류</td>
-      <td>20000</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>G_pants</td>
-      <td>의류</td>
-      <td>25000</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>A_Jacket</td>
-      <td>의류</td>
-      <td>70000</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>A_shoes</td>
-      <td>신발</td>
-      <td>40000</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-<h3 id="상품리스트" style="position:relative;"><a href="#%EC%83%81%ED%92%88%EB%A6%AC%EC%8A%A4%ED%8A%B8" aria-label="상품리스트 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>상품리스트</h3>
-<p>의류와 신발을 판매하는 상점에서 판매 리스트를 작성하자.</p>
-<ol>
-<li>상품 리스트 생성</li>
-<li>상품 명 변경</li>
-<li>새로운 상품 추가</li>
-<li>상품 제거</li>
-</ol>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 1.상품 리스트 생성</span>
-item <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span>df<span class="token punctuation">[</span><span class="token string">'아이템'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-item</code></pre></div>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">['A_shirt',
- 'B_shirt',
- 'A_t-shirt',
- 'B_t-shirt',
- 'C_t-shirt',
- 'E_pants',
- 'F_pants',
- 'G_pants',
- 'A_Jacket',
- 'A_shoes',
- 'B_shoes',
- 'C_shoes',
- 'D_sneakers',
- 'E_sneakers',
- 'F_boots',
- 'G_boots',
- 'A_gloves',
- 'A_sunglasses',
- 'B_sunglasses',
- 'A_bag']</code></pre></div>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment">#명칭을 통해 리스트 검색</span>
-match <span class="token operator">=</span> <span class="token punctuation">[</span>s <span class="token keyword">for</span> s <span class="token keyword">in</span> item <span class="token keyword">if</span> <span class="token string">"shoes"</span> <span class="token keyword">in</span> s<span class="token punctuation">]</span>
-
-match</code></pre></div>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">['A_shoes', 'B_shoes', 'C_shoes']</code></pre></div>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 2. 상품 명 변경 A_t_shirt -> D_t_shirt</span>
-<span class="token comment"># 방법 2-1. 리스트 위치를 통해 변경</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"변경 전 상품 명: "</span> <span class="token operator">+</span>item<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-
-item<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'D_t_shirt'</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"변경 후 상품 명: "</span> <span class="token operator">+</span>item<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span></code></pre></div>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">변경 전 상품 명: A_t-shirt
-변경 후 상품 명: D_t_shirt</code></pre></div>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 방법 2-2. 명칭을 통해 변경 C_shoes -> F_shoes</span>
-
-search_item <span class="token operator">=</span> <span class="token string">"C_shoes"</span>
-trans_item <span class="token operator">=</span> <span class="token string">"F_shoes"</span>
-item_index <span class="token operator">=</span> <span class="token punctuation">[</span>i <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">if</span> search_item <span class="token keyword">in</span> item<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span>
-item<span class="token punctuation">[</span>item_index<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">=</span> trans_item</code></pre></div>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">item</code></pre></div>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">['A_shirt',
- 'B_shirt',
- 'D_t_shirt',
- 'B_t-shirt',
- 'C_t-shirt',
- 'E_pants',
- 'F_pants',
- 'G_pants',
- 'A_Jacket',
- 'A_shoes',
- 'B_shoes',
- 'F_shoes',
- 'D_sneakers',
- 'E_sneakers',
- 'F_boots',
- 'G_boots',
- 'A_gloves',
- 'A_sunglasses',
- 'B_sunglasses',
- 'A_bag']</code></pre></div>
-<p>3.새로운 아이템 추가</p>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">new_item <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'C_shirt'</span><span class="token punctuation">,</span><span class="token string">'G_shoes'</span><span class="token punctuation">,</span><span class="token string">'B_bag'</span><span class="token punctuation">]</span>
-
-<span class="token comment"># 방법 3-1. + 합치기</span>
-item_a <span class="token operator">=</span> item<span class="token operator">+</span>new_item
-
-item_a</code></pre></div>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">['A_shirt',
- 'B_shirt',
- 'D_t_shirt',
- 'B_t-shirt',
- 'C_t-shirt',
- 'E_pants',
- 'F_pants',
- 'G_pants',
- 'A_Jacket',
- 'A_shoes',
- 'B_shoes',
- 'F_shoes',
- 'D_sneakers',
- 'E_sneakers',
- 'F_boots',
- 'G_boots',
- 'A_gloves',
- 'A_sunglasses',
- 'B_sunglasses',
- 'A_bag',
- 'C_shirt',
- 'G_shoes',
- 'B_bag']</code></pre></div>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 방법 3-2. append 하기</span>
-item_b <span class="token operator">=</span> item
-<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>new_item<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    item_b<span class="token punctuation">.</span>append<span class="token punctuation">(</span>new_item<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
-    
-item_b</code></pre></div>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">['A_shirt',
- 'B_shirt',
- 'D_t_shirt',
- 'B_t-shirt',
- 'C_t-shirt',
- 'E_pants',
- 'F_pants',
- 'G_pants',
- 'A_Jacket',
- 'A_shoes',
- 'B_shoes',
- 'F_shoes',
- 'D_sneakers',
- 'E_sneakers',
- 'F_boots',
- 'G_boots',
- 'A_gloves',
- 'A_sunglasses',
- 'B_sunglasses',
- 'A_bag',
- 'C_shirt',
- 'G_shoes',
- 'B_bag',
- 'C_shirt',
- 'G_shoes',
- 'B_bag']</code></pre></div>
-<ol start="4">
-<li>특정 아이템 제거하기</li>
-</ol>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 방법 4-1. 인덱스로 제거</span>
-<span class="token comment"># D_t_shirt를 제거</span>
-<span class="token keyword">del</span> item_a<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span>
-
-item_a</code></pre></div>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">['A_shirt',
- 'B_shirt',
- 'B_t-shirt',
- 'C_t-shirt',
- 'E_pants',
- 'F_pants',
- 'G_pants',
- 'A_Jacket',
- 'A_shoes',
- 'B_shoes',
- 'F_shoes',
- 'D_sneakers',
- 'E_sneakers',
- 'F_boots',
- 'G_boots',
- 'A_gloves',
- 'A_sunglasses',
- 'B_sunglasses',
- 'A_bag',
- 'C_shirt',
- 'G_shoes',
- 'B_bag']</code></pre></div>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 방법 2 아이템 명으로 제거하기</span>
-search_item <span class="token operator">=</span> <span class="token string">"G_pants"</span>
-item_index <span class="token operator">=</span> <span class="token punctuation">[</span>i <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>item_a<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">if</span> search_item <span class="token keyword">in</span> item_a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span>
-<span class="token keyword">del</span> item_a<span class="token punctuation">[</span>item_index<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
-
-item_a</code></pre></div>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">['A_shirt',
- 'B_shirt',
- 'B_t-shirt',
- 'C_t-shirt',
- 'E_pants',
- 'F_pants',
- 'A_Jacket',
- 'A_shoes',
- 'B_shoes',
- 'F_shoes',
- 'D_sneakers',
- 'E_sneakers',
- 'F_boots',
- 'G_boots',
- 'A_gloves',
- 'A_sunglasses',
- 'B_sunglasses',
- 'A_bag',
- 'C_shirt',
- 'G_shoes',
- 'B_bag']</code></pre></div>
-<h3 id="중첩-리스트" style="position:relative;"><a href="#%EC%A4%91%EC%B2%A9-%EB%A6%AC%EC%8A%A4%ED%8A%B8" aria-label="중첩 리스트 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>중첩 리스트</h3>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">a <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'파인애플'</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">'바나나'</span><span class="token punctuation">,</span><span class="token string">'사과'</span><span class="token punctuation">,</span><span class="token string">'배'</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token string">'수박'</span><span class="token punctuation">,</span><span class="token string">'참외'</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
-
-<span class="token comment"># 사과를 찾는법</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-
-<span class="token comment"># 수박을 찾는법</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span></code></pre></div>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">사과
-수박</code></pre></div>
-<h3 id="rerference" style="position:relative;"><a href="#rerference" aria-label="rerference permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Rerference</h3>
-<p><a href="https://docs.python.org/ko/3/tutorial/datastructures.html">https://docs.python.org/ko/3/tutorial/datastructures.html</a></p></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/Python/[python] 예외처리/"><div class="direction">이전 글</div><div class="title">예외처리</div></a></div><div class="post-navigator-card-wrapper"><a class="post-card next" href="/ML/[ML] Cross_Validation/"><div class="direction">다음 글</div><div class="title">Cross_Validation</div></a></div></div><div class="utterances"></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2022<!-- --> <a href="https://github.com/Han-Archives">Han-기록소</a> powered by<a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog"> zoomkoding-gatsby-blog</a></p></footer><div class="dark-mode-button-wrapper"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium dark-mode-button css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge dark-mode-icon css-6flbmm" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="DarkModeIcon"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path></svg></button></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/Python/[python] 리스트/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-cd840d73727c2e366b63.js"],"app":["/app-1c48eadf34e7f53f402f.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-3c26d4b7e3608ed0ece4.js"],"component---src-pages-404-js":["/component---src-pages-404-js-4917da7ef5b541e98a81.js"],"component---src-pages-about-js":["/component---src-pages-about-js-b5804eba3d16afcb3700.js"],"component---src-pages-index-js":["/component---src-pages-index-js-bc882cd03f70c89c8148.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-ef83b594aa693e649d30.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-fea460fedd50cffb10cd.js"]};/*]]>*/</script><script src="/polyfill-cd840d73727c2e366b63.js" nomodule=""></script><script src="/component---src-templates-blog-template-js-ef83b594aa693e649d30.js" async=""></script><script src="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-3528d048b96f92ca0d99.js" async=""></script><script src="/app-1c48eadf34e7f53f402f.js" async=""></script><script src="/framework-0e1bf37de02f7cef2174.js" async=""></script><script src="/webpack-runtime-b0a3ec690b6a27de8e30.js" async=""></script></body></html>
+  </script><title data-react-helmet="true">Decision_Trees</title><meta data-react-helmet="true" name="viewport" content="initial-scale=1, width=device-width"/><meta data-react-helmet="true" property="og:title" content="Decision_Trees"/><meta data-react-helmet="true" property="og:site_title" content="Decision_Trees"/><meta data-react-helmet="true" name="description" content="Decision Trees Decision Tree(결정 트리)는 지도 학습에서 분류 및 회귀에 사용되는 모델 중 하나로 불순도가 낮아지는 방향으로 가지를 계속해서 분할. ML 알고리즘 중에서 가장 직관적인 알고리즘 dt_main.PNG 특징 쉽게 이해할 수 있고 해석이 간편하다. 별도의 전처리 없이 쉽게 사용이 가능하다. RandomForest 모형의 구성 요소 불순도 불순도란 다양한 요소들이 섞여있는 정도를 의미. 대표적인 불순도 척도로 지니 계수와 엔트로피가 사용된다. 지니 계수 지니 계수란 경제적 불평등을 나타내는 용어로 0에 가까울 수록 평등하고 1에 가까울 수록 불평등을 나타낸다. 의사 결정 트리에서의 지니계수는 이와 약간 달리 0.5값을 가질 때를 가장 불순도가 높다고 판단하며 지니계수가 0에 근접하도록 분할을 진행한다. &lt;지니계수를 구하는 공식&gt;
+dt_gini.PNG 엔트로피 엔트로피란 정보이득을 나타내는 지표로 순도가 높을 때 얻는 정보 이득은 증가, 불순도가 높을…"/><meta data-react-helmet="true" property="og:description" content="Decision Trees Decision Tree(결정 트리)는 지도 학습에서 분류 및 회귀에 사용되는 모델 중 하나로 불순도가 낮아지는 방향으로 가지를 계속해서 분할. ML 알고리즘 중에서 가장 직관적인 알고리즘 dt_main.PNG 특징 쉽게 이해할 수 있고 해석이 간편하다. 별도의 전처리 없이 쉽게 사용이 가능하다. RandomForest 모형의 구성 요소 불순도 불순도란 다양한 요소들이 섞여있는 정도를 의미. 대표적인 불순도 척도로 지니 계수와 엔트로피가 사용된다. 지니 계수 지니 계수란 경제적 불평등을 나타내는 용어로 0에 가까울 수록 평등하고 1에 가까울 수록 불평등을 나타낸다. 의사 결정 트리에서의 지니계수는 이와 약간 달리 0.5값을 가질 때를 가장 불순도가 높다고 판단하며 지니계수가 0에 근접하도록 분할을 진행한다. &lt;지니계수를 구하는 공식&gt;
+dt_gini.PNG 엔트로피 엔트로피란 정보이득을 나타내는 지표로 순도가 높을 때 얻는 정보 이득은 증가, 불순도가 높을…"/><meta data-react-helmet="true" property="og:author" content="Han-기록소"/><meta data-react-helmet="true" property="og:image" content="/og-image.png"/><meta data-react-helmet="true" property="og:type" content="website"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"/><style>@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff")}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link as="script" rel="preload" href="/webpack-runtime-b0a3ec690b6a27de8e30.js"/><link as="script" rel="preload" href="/framework-0e1bf37de02f7cef2174.js"/><link as="script" rel="preload" href="/app-1c48eadf34e7f53f402f.js"/><link as="script" rel="preload" href="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-3528d048b96f92ca0d99.js"/><link as="script" rel="preload" href="/component---src-templates-blog-template-js-ef83b594aa693e649d30.js"/><link as="fetch" rel="preload" href="/page-data/ML/[ML] Decision_Trees/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1073350324.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1956554647.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2938748437.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper"><header class="page-header-wrapper"><div class="page-header"><div class="front-section"><a class="link" href="/">Han-기록소</a></div><div class="trailing-section"><a class="link" href="/about">about</a><a class="link" href="/posts">posts</a><div class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-1l6di18" role="combobox" aria-expanded="false"><div class="search-input-wrapper"><div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root search-input css-feqhe6"><div class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-11tfndm"><input type="text" aria-invalid="false" autoComplete="off" value="" class="MuiInput-input MuiInputBase-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-mnn31" aria-autocomplete="list" autoCapitalize="none" spellcheck="false"/><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium search-icon css-vubbuv" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="SearchOutlinedIcon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div></div></div></div></div></div></header><main class="page-content"><header class="post-header"><div class="emoji">📝</div><div class="info"><div class="categories"><a class="category" href="/posts/ML">ML</a></div></div><h1 class="title">Decision_Trees</h1><div class="info"><div class="author">posted by <strong>HwanHee Park</strong>,</div> <!-- -->September 25, 2022</div></header><div class="post-content"><div class="markdown"><h2 id="decision-trees" style="position:relative;"><a href="#decision-trees" aria-label="decision trees permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Decision Trees</h2>
+<p>Decision Tree(결정 트리)는 <em>지도 학습에서 분류 및 회귀에 사용되는 모델</em> 중 하나로 불순도가 낮아지는 방향으로 가지를 계속해서 분할.</p>
+<p><strong>ML 알고리즘 중에서 가장 직관적인 알고리즘</strong></p>
+<p><img src="attachment:dt_main.PNG" alt="dt_main.PNG"></p>
+<h3 id="특징" style="position:relative;"><a href="#%ED%8A%B9%EC%A7%95" aria-label="특징 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>특징</h3>
+<ul>
+<li>쉽게 이해할 수 있고 해석이 간편하다.</li>
+<li>별도의 전처리 없이 쉽게 사용이 가능하다.</li>
+<li>RandomForest 모형의 구성 요소</li>
+</ul>
+<h3 id="불순도" style="position:relative;"><a href="#%EB%B6%88%EC%88%9C%EB%8F%84" aria-label="불순도 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>불순도</h3>
+<p><em>불순도란 다양한 요소들이 섞여있는 정도</em>를 의미. 대표적인 불순도 척도로 <strong>지니 계수</strong>와 <strong>엔트로피</strong>가 사용된다.</p>
+<h4 id="지니-계수" style="position:relative;"><a href="#%EC%A7%80%EB%8B%88-%EA%B3%84%EC%88%98" aria-label="지니 계수 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>지니 계수</h4>
+<p>지니 계수란 경제적 불평등을 나타내는 용어로 <strong>0에 가까울 수록 평등하고 1에 가까울 수록 불평등</strong>을 나타낸다.</p>
+<p>의사 결정 트리에서의 지니계수는 이와 약간 달리 <strong>0.5값을 가질 때를 가장 불순도가 높다</strong>고 판단하며 지니계수가 0에 근접하도록 분할을 진행한다.</p>
+<p><strong>&#x3C;지니계수를 구하는 공식></strong>
+<img src="attachment:dt_gini.PNG" alt="dt_gini.PNG"></p>
+<h4 id="엔트로피" style="position:relative;"><a href="#%EC%97%94%ED%8A%B8%EB%A1%9C%ED%94%BC" aria-label="엔트로피 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>엔트로피</h4>
+<p>엔트로피란 정보이득을 나타내는 지표로 순도가 높을 때 얻는 정보 이득은 증가, 불순도가 높을수록 얻는 정보 이득은 감소. 지니 계수와 마찬가지로 엔트로피가 0에 가까울수록 좋으며 불순도가 낮아진다는 의미로 해석할 수 있다.</p>
+<p><strong>&#x3C;엔트로피를 구하는 공식></strong>
+<img src="attachment:dt_entropy.PNG" alt="dt_entropy.PNG"></p>
+<h4 id="불순도를-줄여나가는-과정" style="position:relative;"><a href="#%EB%B6%88%EC%88%9C%EB%8F%84%EB%A5%BC-%EC%A4%84%EC%97%AC%EB%82%98%EA%B0%80%EB%8A%94-%EA%B3%BC%EC%A0%95" aria-label="불순도를 줄여나가는 과정 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>불순도를 줄여나가는 과정</h4>
+<p><img src="attachment:dt_0.PNG" alt="dt_0.PNG"></p>
+<h3 id="decision-tree-알고리즘-유형" style="position:relative;"><a href="#decision-tree-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%9C%A0%ED%98%95" aria-label="decision tree 알고리즘 유형 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Decision Tree 알고리즘 유형</h3>
+<ul>
+<li>ID3</li>
+</ul>
+<blockquote>
+<p>반복적으로 이분하는 알고리즘. 불순도로 엔트로피를 사용하며 독립변수가 범주형일 때만 사용가능. 연속형 독립변수 사용 불가.</p>
+</blockquote>
+<ul>
+<li>C4.5</li>
+</ul>
+<blockquote>
+<p>ID3의 단점을 보완한 알고리즘. 연속형 독립변수도 사용 가능</p>
+</blockquote>
+<ul>
+<li>CART (Classification And Regression Tree)</li>
+</ul>
+<blockquote>
+<p>가장 널리 사용되는 알고리즘. 분류 및 회귀 문제에서 사용 가능하며 분류 문제의 경우 불순도로 지니계수를, 회귀 문제의 경우 불순도로 분산을 사용하여 분류 진행.</p>
+</blockquote>
+<ul>
+<li>Chi-square (Chi-square automatic interaction detection)</li>
+</ul>
+<blockquote>
+<p>CART 알고리즘과 마찬가지로 분류 및 회귀 문제에서 사용 가능. 분류 문제의 경우 불순도로 카이제곱 검정값을, 회귀 문제의 경우 F 검정값으로 다지 분할을 진행</p>
+</blockquote>
+<h4 id="decision-tree-parameter" style="position:relative;"><a href="#decision-tree-parameter" aria-label="decision tree parameter permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Decision Tree Parameter</h4>
+<p>결정 트리 알고리즘에서 설정해야 할 파라미터는 다음과 같다.</p>
+<ul>
+<li><strong>min_sample_split</strong></li>
+</ul>
+<blockquote>
+<p>노드 분할을 위한 최소 샘플 데이터의 수</p>
+</blockquote>
+<ul>
+<li><strong>min_samples_leaf</strong></li>
+</ul>
+<blockquote>
+<p>말단 노드가 되기 위한 최소한의 샘플 수</p>
+</blockquote>
+<ul>
+<li><strong>max_features</strong></li>
+</ul>
+<blockquote>
+<p>최적의 분할을 위해 고려해야 할 특징들의 갯수</p>
+</blockquote>
+<ul>
+<li><strong>max_depth</strong></li>
+</ul>
+<blockquote>
+<p>트리의 최대 깊이</p>
+</blockquote>
+<ul>
+<li><strong>max_leaf_nodes</strong></li>
+</ul>
+<blockquote>
+<p>말단 노드의 최대 개수</p>
+</blockquote>
+<h3 id="reference" style="position:relative;"><a href="#reference" aria-label="reference permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Reference</h3>
+<p>[1] <a href="https://di-bigdata-study.tistory.com/2">https://di-bigdata-study.tistory.com/2</a></p>
+<p>[2] <a href="https://scikit-learn.org/stable/modules/tree.html">https://scikit-learn.org/stable/modules/tree.html</a></p>
+<p>[3] <a href="https://www.jcchouinard.com/decision-trees-in-machine-learning/">https://www.jcchouinard.com/decision-trees-in-machine-learning/</a></p>
+<div class="table-of-contents">
+<ul>
+<li>
+<p><a href="#decision-trees">Decision Trees</a></p>
+<ul>
+<li>
+<p><a href="#%ED%8A%B9%EC%A7%95">특징</a></p>
+</li>
+<li>
+<p><a href="#%EB%B6%88%EC%88%9C%EB%8F%84">불순도</a></p>
+<ul>
+<li><a href="#%EC%A7%80%EB%8B%88-%EA%B3%84%EC%88%98">지니 계수</a></li>
+<li><a href="#%EC%97%94%ED%8A%B8%EB%A1%9C%ED%94%BC">엔트로피</a></li>
+<li><a href="#%EB%B6%88%EC%88%9C%EB%8F%84%EB%A5%BC-%EC%A4%84%EC%97%AC%EB%82%98%EA%B0%80%EB%8A%94-%EA%B3%BC%EC%A0%95">불순도를 줄여나가는 과정</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#decision-tree-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%9C%A0%ED%98%95">Decision Tree 알고리즘 유형</a></p>
+<ul>
+<li><a href="#decision-tree-parameter">Decision Tree Parameter</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#reference">Reference</a></p>
+</li>
+</ul>
+</li>
+</ul>
+</div></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/ML/[ML] Cross_Validation/"><div class="direction">이전 글</div><div class="title">Cross_Validation</div></a></div><div class="post-navigator-card-wrapper"><a class="post-card next" href="/Python/[python] CSV,JSON,Pickle,Parquet/"><div class="direction">다음 글</div><div class="title">데이터 저장방식</div></a></div></div><div class="utterances"></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2022<!-- --> <a href="https://github.com/Han-Archives">Han-기록소</a> powered by<a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog"> zoomkoding-gatsby-blog</a></p></footer><div class="dark-mode-button-wrapper"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium dark-mode-button css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge dark-mode-icon css-6flbmm" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="DarkModeIcon"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path></svg></button></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/ML/[ML] Decision_Trees/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-cd840d73727c2e366b63.js"],"app":["/app-1c48eadf34e7f53f402f.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-3c26d4b7e3608ed0ece4.js"],"component---src-pages-404-js":["/component---src-pages-404-js-4917da7ef5b541e98a81.js"],"component---src-pages-about-js":["/component---src-pages-about-js-b5804eba3d16afcb3700.js"],"component---src-pages-index-js":["/component---src-pages-index-js-bc882cd03f70c89c8148.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-ef83b594aa693e649d30.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-fea460fedd50cffb10cd.js"]};/*]]>*/</script><script src="/polyfill-cd840d73727c2e366b63.js" nomodule=""></script><script src="/component---src-templates-blog-template-js-ef83b594aa693e649d30.js" async=""></script><script src="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-3528d048b96f92ca0d99.js" async=""></script><script src="/app-1c48eadf34e7f53f402f.js" async=""></script><script src="/framework-0e1bf37de02f7cef2174.js" async=""></script><script src="/webpack-runtime-b0a3ec690b6a27de8e30.js" async=""></script></body></html>
