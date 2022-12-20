@@ -66,417 +66,117 @@
         }
       }
     })
-  </script><title data-react-helmet="true">월별 출생 수 분석 [2] - 외국 사례</title><meta data-react-helmet="true" name="viewport" content="initial-scale=1, width=device-width"/><meta data-react-helmet="true" property="og:title" content="월별 출생 수 분석 [2] - 외국 사례"/><meta data-react-helmet="true" property="og:site_title" content="월별 출생 수 분석 [2] - 외국 사례"/><meta data-react-helmet="true" name="description" content="- 분석 과제 월별 출생 수 분석1에 이어 외국 사례를 파악하여 월별 출생 건수에 대한 특징을 알아보자. 살펴볼 국가로는 미국, 일본, 독일, 필리핀, 남아프리카, 브라질, 호주를 선택하여 진행함. ( 중국, 인도는 UN에서 데이터를 제공하지 않으므로 제외) - 데이터 출처 데이터는 UN에서 제공한 데이터를 사용하여 분석 진행하였습니다. 데이터 출처 : http://data.un.org/Data.aspx?d=POP&amp;f=tableCode%3A55 - 분석 진행 1. 미국의 출생이 많은 달은? 1.1요약 미국은 7월부터 9월에 태어나는 아이가 제일 많으며 2월, 4월이 제일 적게 태어났다. 또한 8월과 2월의 태어난 아이의 차이는 무려 30만으로 큰 차이가 보인다. 임신하는 달의 측면으로 보았을 때 11월이 제일 많았으며 특징으로 10월부터 1월 즉 연말에 많이 몰려있는 것을 볼 수 있다. 2.일본의 출생이 많은 달은? 2.1요약 일본도 미국과 비슷하게 7월부터 10월에 태어나는 아이…"/><meta data-react-helmet="true" property="og:description" content="- 분석 과제 월별 출생 수 분석1에 이어 외국 사례를 파악하여 월별 출생 건수에 대한 특징을 알아보자. 살펴볼 국가로는 미국, 일본, 독일, 필리핀, 남아프리카, 브라질, 호주를 선택하여 진행함. ( 중국, 인도는 UN에서 데이터를 제공하지 않으므로 제외) - 데이터 출처 데이터는 UN에서 제공한 데이터를 사용하여 분석 진행하였습니다. 데이터 출처 : http://data.un.org/Data.aspx?d=POP&amp;f=tableCode%3A55 - 분석 진행 1. 미국의 출생이 많은 달은? 1.1요약 미국은 7월부터 9월에 태어나는 아이가 제일 많으며 2월, 4월이 제일 적게 태어났다. 또한 8월과 2월의 태어난 아이의 차이는 무려 30만으로 큰 차이가 보인다. 임신하는 달의 측면으로 보았을 때 11월이 제일 많았으며 특징으로 10월부터 1월 즉 연말에 많이 몰려있는 것을 볼 수 있다. 2.일본의 출생이 많은 달은? 2.1요약 일본도 미국과 비슷하게 7월부터 10월에 태어나는 아이…"/><meta data-react-helmet="true" property="og:author" content="Han-기록소"/><meta data-react-helmet="true" property="og:image" content="/og-image.png"/><meta data-react-helmet="true" property="og:type" content="website"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"/><style>@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff")}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link as="script" rel="preload" href="/webpack-runtime-b0a3ec690b6a27de8e30.js"/><link as="script" rel="preload" href="/framework-0e1bf37de02f7cef2174.js"/><link as="script" rel="preload" href="/app-1c48eadf34e7f53f402f.js"/><link as="script" rel="preload" href="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-3528d048b96f92ca0d99.js"/><link as="script" rel="preload" href="/component---src-templates-blog-template-js-ef83b594aa693e649d30.js"/><link as="fetch" rel="preload" href="/page-data/Month of Birth_Korea/월별 출생 수 분석 [1] - 한국 사례/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1073350324.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1956554647.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2938748437.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper"><header class="page-header-wrapper"><div class="page-header"><div class="front-section"><a class="link" href="/">Han-기록소</a></div><div class="trailing-section"><a class="link" href="/about">about</a><a class="link" href="/posts">posts</a><div class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-1l6di18" role="combobox" aria-expanded="false"><div class="search-input-wrapper"><div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root search-input css-feqhe6"><div class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-11tfndm"><input type="text" aria-invalid="false" autoComplete="off" value="" class="MuiInput-input MuiInputBase-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-mnn31" aria-autocomplete="list" autoCapitalize="none" spellcheck="false"/><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium search-icon css-vubbuv" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="SearchOutlinedIcon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div></div></div></div></div></div></header><main class="page-content"><header class="post-header"><div class="emoji">👨‍💻</div><div class="info"><div class="categories"><a class="category" href="/posts/Data_Analysis">Data_Analysis</a></div></div><h1 class="title">월별 출생 수 분석 [1] - 한국 사례</h1><div class="info"><div class="author">posted by <strong>HwanHee Park</strong>,</div> <!-- -->January 17, 2022</div></header><div class="post-content"><div class="markdown"><h3 id="--분석-과제" style="position:relative;"><a href="#--%EB%B6%84%EC%84%9D-%EA%B3%BC%EC%A0%9C" aria-label="  분석 과제 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>- 분석 과제</h3>
-<p>이번에는 출생일과 관련된 자료를 통해 어떤 달에 아이가 많이 태어나고 다른 달과 통계적으로 차이가 있는지 없는지를 알아보고 차이가 있다면 어떠한 요인이 그러한 결과를 만들었는 지 확인해보자.</p>
-<h3 id="--데이터-출처" style="position:relative;"><a href="#--%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%B6%9C%EC%B2%98" aria-label="  데이터 출처 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>- 데이터 출처</h3>
-<p>데이터는 아래의 UN의 자료를 통해 수집하였음.</p>
-<p>출처 : <a href="http://data.un.org/Data.aspx?d=POP&#x26;f=tableCode%3A55">http://data.un.org/Data.aspx?d=POP&#x26;f=tableCode%3A55</a></p>
-<h3 id="--데이터-분석" style="position:relative;"><a href="#--%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%84%9D" aria-label="  데이터 분석 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>- 데이터 분석</h3>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment">## import modules</span>
-<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
-<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
-<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
-<span class="token keyword">from</span> matplotlib <span class="token keyword">import</span> font_manager<span class="token punctuation">,</span>rc
-<span class="token keyword">import</span> matplotlib</code></pre></div>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">font_path <span class="token operator">=</span> <span class="token string">'C:\\Windows\\Fonts\\gulim.ttc'</span>
-
-<span class="token comment">#폰트 이름 얻어오기</span>
-font_name <span class="token operator">=</span> font_manager<span class="token punctuation">.</span>FontProperties<span class="token punctuation">(</span>fname<span class="token operator">=</span>font_path<span class="token punctuation">)</span><span class="token punctuation">.</span>get_name<span class="token punctuation">(</span><span class="token punctuation">)</span>
-
-<span class="token comment">#font 설정</span>
-matplotlib<span class="token punctuation">.</span>rc<span class="token punctuation">(</span><span class="token string">'font'</span><span class="token punctuation">,</span>family<span class="token operator">=</span>font_name<span class="token punctuation">)</span></code></pre></div>
-<p>2015년부터 2019년까지 5년간의 출생데이터를 받았으며 csv파일에서 불필요한 컬럼과 text를 간단히 제거한 후 분석 진행</p>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment">## update Data</span>
-df <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span><span class="token string">"C:\\Users\\USER\\Desktop\\Data\\birth_date\\birth_month_korea.csv"</span><span class="token punctuation">)</span></code></pre></div>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">df</code></pre></div>
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">.dataframe tbody tr th {
-    vertical-align: top;
-}
-
-.dataframe thead th {
-    text-align: right;
-}</code></pre></div>
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Country or Area</th>
-      <th>Year</th>
-      <th>Month</th>
-      <th>Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Republic of Korea</td>
-      <td>2019</td>
-      <td>Total</td>
-      <td>302676</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Republic of Korea</td>
-      <td>2019</td>
-      <td>January</td>
-      <td>30271</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Republic of Korea</td>
-      <td>2019</td>
-      <td>February</td>
-      <td>25710</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Republic of Korea</td>
-      <td>2019</td>
-      <td>March</td>
-      <td>27049</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Republic of Korea</td>
-      <td>2019</td>
-      <td>April</td>
-      <td>26104</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>60</th>
-      <td>Republic of Korea</td>
-      <td>2015</td>
-      <td>August</td>
-      <td>35207</td>
-    </tr>
-    <tr>
-      <th>61</th>
-      <td>Republic of Korea</td>
-      <td>2015</td>
-      <td>September</td>
-      <td>36444</td>
-    </tr>
-    <tr>
-      <th>62</th>
-      <td>Republic of Korea</td>
-      <td>2015</td>
-      <td>October</td>
-      <td>36702</td>
-    </tr>
-    <tr>
-      <th>63</th>
-      <td>Republic of Korea</td>
-      <td>2015</td>
-      <td>November</td>
-      <td>33467</td>
-    </tr>
-    <tr>
-      <th>64</th>
-      <td>Republic of Korea</td>
-      <td>2015</td>
-      <td>December</td>
-      <td>31910</td>
-    </tr>
-  </tbody>
-</table>
-<p>65 rows × 4 columns</p>
-</div>
-<p>분석의 목적은 각 년도별 출생을 파악하는 것이 아닌 각 달별로 차이가 있는지를 파악하는 것이기 때문에 Month 별로 값을 더하자</p>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">df2 <span class="token operator">=</span> df<span class="token punctuation">.</span>groupby<span class="token punctuation">(</span><span class="token string">'Month'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token string">'Value'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token builtin">sum</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">df2 <span class="token operator">=</span> df2<span class="token punctuation">.</span>sort_values<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">kor_birth <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>df2<span class="token punctuation">)</span>
-kor_birth <span class="token operator">=</span> kor_birth<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token comment"># Delete Total</span>
-
-kor_birth<span class="token punctuation">.</span>reset_index<span class="token punctuation">(</span>inplace<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span></code></pre></div>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">kor_birth<span class="token punctuation">[</span><span class="token string">'월'</span><span class="token punctuation">]</span> <span class="token operator">=</span> kor_birth<span class="token punctuation">[</span><span class="token string">'Month'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">'January'</span><span class="token punctuation">:</span><span class="token string">'1월'</span><span class="token punctuation">,</span>
-                               <span class="token string">'February'</span><span class="token punctuation">:</span><span class="token string">'2월'</span><span class="token punctuation">,</span>
-                               <span class="token string">'March'</span><span class="token punctuation">:</span><span class="token string">'3월'</span><span class="token punctuation">,</span>
-                               <span class="token string">'April'</span><span class="token punctuation">:</span><span class="token string">'4월'</span><span class="token punctuation">,</span>
-                               <span class="token string">'May'</span><span class="token punctuation">:</span><span class="token string">'5월'</span><span class="token punctuation">,</span>
-                               <span class="token string">'June'</span><span class="token punctuation">:</span><span class="token string">'6월'</span><span class="token punctuation">,</span>
-                               <span class="token string">'July'</span><span class="token punctuation">:</span><span class="token string">'7월'</span><span class="token punctuation">,</span>
-                               <span class="token string">'August'</span><span class="token punctuation">:</span><span class="token string">'8월'</span><span class="token punctuation">,</span>
-                               <span class="token string">'September'</span><span class="token punctuation">:</span><span class="token string">'9월'</span><span class="token punctuation">,</span>
-                               <span class="token string">'October'</span><span class="token punctuation">:</span><span class="token string">'10월'</span><span class="token punctuation">,</span>
-                               <span class="token string">'November'</span><span class="token punctuation">:</span><span class="token string">'11월'</span><span class="token punctuation">,</span>
-                               <span class="token string">'December'</span><span class="token punctuation">:</span><span class="token string">'12월'</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
-kor_birth <span class="token operator">=</span> kor_birth<span class="token punctuation">.</span>sort_values<span class="token punctuation">(</span>by<span class="token operator">=</span><span class="token string">'Value'</span> <span class="token punctuation">,</span>ascending<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
-
-kor_birth</code></pre></div>
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">.dataframe tbody tr th {
-    vertical-align: top;
-}
-
-.dataframe thead th {
-    text-align: right;
-}</code></pre></div>
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Month</th>
-      <th>Value</th>
-      <th>월</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>11</th>
-      <td>January</td>
-      <td>178622</td>
-      <td>1월</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>March</td>
-      <td>168692</td>
-      <td>3월</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>April</td>
-      <td>157394</td>
-      <td>4월</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>May</td>
-      <td>154426</td>
-      <td>5월</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>February</td>
-      <td>154323</td>
-      <td>2월</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>July</td>
-      <td>152205</td>
-      <td>7월</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>September</td>
-      <td>151060</td>
-      <td>9월</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>August</td>
-      <td>150991</td>
-      <td>8월</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>October</td>
-      <td>148238</td>
-      <td>10월</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>June</td>
-      <td>147610</td>
-      <td>6월</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>November</td>
-      <td>139929</td>
-      <td>11월</td>
-    </tr>
-    <tr>
-      <th>0</th>
-      <td>December</td>
-      <td>128442</td>
-      <td>12월</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">plt<span class="token punctuation">.</span>figure<span class="token punctuation">(</span>figsize<span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>bar<span class="token punctuation">(</span>kor_birth<span class="token punctuation">[</span><span class="token string">'월'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> kor_birth<span class="token punctuation">[</span><span class="token string">'Value'</span><span class="token punctuation">]</span><span class="token punctuation">)</span></code></pre></div>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">&lt;BarContainer object of 12 artists></code></pre></div>
+  </script><title data-react-helmet="true">RNN</title><meta data-react-helmet="true" name="viewport" content="initial-scale=1, width=device-width"/><meta data-react-helmet="true" property="og:title" content="RNN"/><meta data-react-helmet="true" property="og:site_title" content="RNN"/><meta data-react-helmet="true" name="description" content="RNN 이전 시점 정보(시계열 데이터)에 대해 적합한 인공신경망 모델 활용 분야 기계 번역 음성 인식 챗봇 이미지/비디오 파악 감성 분석 대표 알고리즘 대표적인 RNN 알고리즘으로 RNN(Vanilla), LSTM, GRU 등이 있다. 진행 과정 RNN은 은닉층의 노드에서 활성화 함수를 통해 나온 결과값을 출력층 방향으로도 보내면서, 다시 은닉층 노드의 다음 계산의 입력으로 보내는 특징을 갖는다. 
+출처 : https://ko.wikipedia.org/wiki/%EC%88%9C%ED%99%98_%EC%8B%A0%EA%B2%BD%EB%A7%9D 예시 rnn_4.PNG 종류 Many to One 순차적인 x값들로 하나의 y값을 예측 One to many 하나의 시점(이미지) x로 순차적인 y 값들을 예측 Many to many 순차적인 X 값들로 순차적인 y 값들을 예측 rnn_2.PNG
+출처: http://cs231n.stanford.edu/slides/2017/cs231n_2017…"/><meta data-react-helmet="true" property="og:description" content="RNN 이전 시점 정보(시계열 데이터)에 대해 적합한 인공신경망 모델 활용 분야 기계 번역 음성 인식 챗봇 이미지/비디오 파악 감성 분석 대표 알고리즘 대표적인 RNN 알고리즘으로 RNN(Vanilla), LSTM, GRU 등이 있다. 진행 과정 RNN은 은닉층의 노드에서 활성화 함수를 통해 나온 결과값을 출력층 방향으로도 보내면서, 다시 은닉층 노드의 다음 계산의 입력으로 보내는 특징을 갖는다. 
+출처 : https://ko.wikipedia.org/wiki/%EC%88%9C%ED%99%98_%EC%8B%A0%EA%B2%BD%EB%A7%9D 예시 rnn_4.PNG 종류 Many to One 순차적인 x값들로 하나의 y값을 예측 One to many 하나의 시점(이미지) x로 순차적인 y 값들을 예측 Many to many 순차적인 X 값들로 순차적인 y 값들을 예측 rnn_2.PNG
+출처: http://cs231n.stanford.edu/slides/2017/cs231n_2017…"/><meta data-react-helmet="true" property="og:author" content="Han-기록소"/><meta data-react-helmet="true" property="og:image" content="/og-image.png"/><meta data-react-helmet="true" property="og:type" content="website"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"/><style>@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff")}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link as="script" rel="preload" href="/webpack-runtime-b0a3ec690b6a27de8e30.js"/><link as="script" rel="preload" href="/framework-0e1bf37de02f7cef2174.js"/><link as="script" rel="preload" href="/app-1c48eadf34e7f53f402f.js"/><link as="script" rel="preload" href="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-3528d048b96f92ca0d99.js"/><link as="script" rel="preload" href="/component---src-templates-blog-template-js-ef83b594aa693e649d30.js"/><link as="fetch" rel="preload" href="/page-data/DL/[DL] RNN/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1073350324.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1956554647.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2938748437.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper"><header class="page-header-wrapper"><div class="page-header"><div class="front-section"><a class="link" href="/">Han-기록소</a></div><div class="trailing-section"><a class="link" href="/about">about</a><a class="link" href="/posts">posts</a><div class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-1l6di18" role="combobox" aria-expanded="false"><div class="search-input-wrapper"><div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root search-input css-feqhe6"><div class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-11tfndm"><input type="text" aria-invalid="false" autoComplete="off" value="" class="MuiInput-input MuiInputBase-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-mnn31" aria-autocomplete="list" autoCapitalize="none" spellcheck="false"/><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium search-icon css-vubbuv" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="SearchOutlinedIcon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div></div></div></div></div></div></header><main class="page-content"><header class="post-header"><div class="emoji">📝</div><div class="info"><div class="categories"><a class="category" href="/posts/DL">DL</a></div></div><h1 class="title">RNN</h1><div class="info"><div class="author">posted by <strong>HwanHee Park</strong>,</div> <!-- -->December 19, 2022</div></header><div class="post-content"><div class="markdown"><h2 id="rnn" style="position:relative;"><a href="#rnn" aria-label="rnn permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>RNN</h2>
+<p>이전 시점 정보(시계열 데이터)에 대해 적합한 인공신경망 모델</p>
+<h4 id="활용-분야" style="position:relative;"><a href="#%ED%99%9C%EC%9A%A9-%EB%B6%84%EC%95%BC" aria-label="활용 분야 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>활용 분야</h4>
+<ul>
+<li>기계 번역</li>
+<li>음성 인식</li>
+<li>챗봇</li>
+<li>이미지/비디오 파악</li>
+<li>감성 분석</li>
+</ul>
+<h4 id="대표-알고리즘" style="position:relative;"><a href="#%EB%8C%80%ED%91%9C-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" aria-label="대표 알고리즘 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>대표 알고리즘</h4>
+<p>대표적인 RNN 알고리즘으로 RNN(Vanilla), LSTM, GRU 등이 있다.</p>
+<h3 id="진행-과정" style="position:relative;"><a href="#%EC%A7%84%ED%96%89-%EA%B3%BC%EC%A0%95" aria-label="진행 과정 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>진행 과정</h3>
+<p>RNN은 은닉층의 노드에서 활성화 함수를 통해 나온 결과값을 출력층 방향으로도 보내면서, 다시 은닉층 노드의 다음 계산의 입력으로 보내는 특징을 갖는다.</p>
 <p><span
       class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 613px; "
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
     >
       <span
     class="gatsby-resp-image-background-image"
-    style="padding-bottom: 49.44444444444444%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAACUklEQVQoz22RXUvcQBSG9/f0L2iLrsX9UverZgu2lwWl4GUVt9AfoHaT3SS0IKKu4mXxuk1rJoks+NELP4qCpVUrRaurrslmszNz5CTZuwZezstM5nnPmYkAQOTy/HRsbetnrXb45zNtNTWgrsY9V0PPWk3Ncx3NbTpa07F9Obat2aHuGvfa7V3ji23bZr1en48gEKgjjS1vw8hcDaY+7cL272s4/NuAk2sHfv2z4bLRgobbBo9ycNsMKOPwv6/teccB0L2dGa1uwdPZ9VbP9FcaF3Walg1fedXyVfi4QV/O1WhWMemrxU06vrpDX69s0zlyTMnRhYdAp+nudoCz2GFCIjQlEZ6WTUClJAIZJagDZQOGZBNDISkR6Jtdh+jMN+gv6RAr6Wx89Tscndf3A6B3PzO2vAUJkbQTIuF4EEGDFQNyquVXDMirFsRF3d/DAAQLHzbQs4RIYP/0KgS6d0GHHWDFgIwcHMqGYAQiPFbSfY8whGPIQJmwjGLBwVkH2LwJgXoHyDOyyQfKBs8qJh+sGHgNPKdaPFbSfZ+UCI+LOs+rFk+VCcWQg9OrvQDYvp8OO/QSImFDsskyislwlKxiscGKwdKyyXKqxfC+0CclwuIiYXnVYqmyEQDPrkOgcyONVjchXtKxSxjyRzRwFH9krLiWU0yIldYhXTEgKer+/7nw0RC4d3J5FAFwI42Ls0cj79cK3RMLwuPJRaF3akmIFpcKPcXqcF9xqdD7duVZtFgV0HdNLAjou9/MP++aWCj0v1sdfjK5KPRMzr8gOz+iD+jQOMUrxGMVAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    style="padding-bottom: 33.33333333333333%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAACLUlEQVQozyWRXUhTARiG3+ZMlmdLhG6CbrOEmEVEQUEURAy90SvBogIXaWPq3I/NNcvW3I9Nxe3sdHLq5k9zO87fYi2HZel20qa1NBTW0qQyCAZF3Z046716+S6e73v4wHEc5q41Im4LEcs2RjJ7owV8+HnonAycpResfVSy1jFB/LAMY8HKSJYtAfE3Uz9et43sTViDxAf7KN5aAzhwuhaYavMKU34WO/TEpbR7XPt56h3Py+WBP+e/5kSdU9h0BmtS5JhimZ7GlouRp6kJzdLDSaS7A3UpMlSz1h3AoqUvh8jPzx4jPHO1vbDBPH2xTu872Tq+JZI3e46Z+1eKrAMxnKifEd9yRMoUaqrkaJgTGruel2oMvccr3CmRsSNcptDQJQP++axRFsiXrrH1U53M+sf2wMZtKpI565n7+9gR/WUCx2Hgycrl+75VttWb1Kssw+X63tVPGveKVtUZOd/06H3KPLhqryyCCCDyCEKch4L9BbkABN4XhkMPQoqSHtafXcLnFftUyHdX+ObBe0NKacufPWjxNxw2DtZI1T2lMAwpj9iYJuk+I4DdEBAEIUDoi0XgS94Btaitot7oVJ6EDrM7lACFJtxlK3cFk1aQcW0tGVNfpxaaQcXV1fRSUz29aAAZa1SSMXU1HdMj+pvkgf+Vv3McIlw56EQ1/184wpuQj2yDywQw/3IDrrgMvrUrqJDZ0ccWYyajg+wCA+ezYjDbVXB5dVkjHvgPpX8GgEViUSYAAAAASUVORK5CYII='); background-size: cover; display: block;"
   ></span>
   <img
         class="gatsby-resp-image-image"
-        alt="output_12_1.png"
-        title="output_12_1.png"
-        src="/static/fb2b719e1c7e7ddc340d970b27b27cae/5754a/output_12_1.png"
-        srcset="/static/fb2b719e1c7e7ddc340d970b27b27cae/e9ff0/output_12_1.png 180w,
-/static/fb2b719e1c7e7ddc340d970b27b27cae/f21e7/output_12_1.png 360w,
-/static/fb2b719e1c7e7ddc340d970b27b27cae/5754a/output_12_1.png 613w"
-        sizes="(max-width: 613px) 100vw, 613px"
+        alt="rnn_6.png"
+        title="rnn_6.png"
+        src="/static/4506af311185faaf6ea5e37dc1bc0964/37523/rnn_6.png"
+        srcset="/static/4506af311185faaf6ea5e37dc1bc0964/e9ff0/rnn_6.png 180w,
+/static/4506af311185faaf6ea5e37dc1bc0964/f21e7/rnn_6.png 360w,
+/static/4506af311185faaf6ea5e37dc1bc0964/37523/rnn_6.png 720w,
+/static/4506af311185faaf6ea5e37dc1bc0964/302a4/rnn_6.png 1080w,
+/static/4506af311185faaf6ea5e37dc1bc0964/c1b63/rnn_6.png 1200w"
+        sizes="(max-width: 720px) 100vw, 720px"
         style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
         loading="lazy"
         decoding="async"
       />
-    </span></p>
-<p>위 데이터를 통해 1월에 생일을 가지는 사람이 제일 많고 12월에 태어난 아이들이 제일 적다는 것을 알 수 있다. 한달의 차이로 5만명의 차이라는 큰 격차가 발생한 이유가 무엇일까?</p>
-<p>달 별로 출산율의 차이가 있는 지 확인하기 전에 임신한 달을 파악하여 특징적인 부분이 있는지 확인해보자.</p>
-<p>임신기간은 일반적으로 280일로 알려져 있으나 이는 월경 주기에 따른 평균일로써 실제 임신기간은 266일로 보는 것이 맞다.[2]</p>
-<p>따라서 임신기간을 9개월로 계산하여 아래와 같이 진행하자. ex) December -> March</p>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">kor_birth<span class="token punctuation">[</span><span class="token string">'Pregnant_Month'</span><span class="token punctuation">]</span> <span class="token operator">=</span> kor_birth<span class="token punctuation">[</span><span class="token string">'월'</span><span class="token punctuation">]</span>
-
-<span class="token comment"># 값을 대체하기 ex) 12월 -> 3월, 1월 -> 4월</span>
-kor_birth<span class="token punctuation">[</span><span class="token string">'Pregnant_Month'</span><span class="token punctuation">]</span> <span class="token operator">=</span> kor_birth<span class="token punctuation">[</span><span class="token string">'Pregnant_Month'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">'1월'</span><span class="token punctuation">:</span><span class="token string">'4월'</span><span class="token punctuation">,</span>
-                                                              <span class="token string">'2월'</span><span class="token punctuation">:</span><span class="token string">'5월'</span><span class="token punctuation">,</span>
-                                                              <span class="token string">'3월'</span><span class="token punctuation">:</span><span class="token string">'6월'</span><span class="token punctuation">,</span>
-                                                              <span class="token string">'4월'</span><span class="token punctuation">:</span><span class="token string">'7월'</span><span class="token punctuation">,</span>
-                                                              <span class="token string">'5월'</span><span class="token punctuation">:</span><span class="token string">'8월'</span><span class="token punctuation">,</span>
-                                                              <span class="token string">'6월'</span><span class="token punctuation">:</span><span class="token string">'9월'</span><span class="token punctuation">,</span>
-                                                              <span class="token string">'7월'</span><span class="token punctuation">:</span><span class="token string">'10월'</span><span class="token punctuation">,</span>
-                                                              <span class="token string">'8월'</span><span class="token punctuation">:</span><span class="token string">'11월'</span><span class="token punctuation">,</span>
-                                                              <span class="token string">'9월'</span><span class="token punctuation">:</span><span class="token string">'12월'</span><span class="token punctuation">,</span>
-                                                              <span class="token string">'10월'</span><span class="token punctuation">:</span><span class="token string">'1월'</span><span class="token punctuation">,</span>
-                                                              <span class="token string">'11월'</span><span class="token punctuation">:</span><span class="token string">'2월'</span><span class="token punctuation">,</span>
-                                                              <span class="token string">'12월'</span><span class="token punctuation">:</span><span class="token string">'3월'</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
-kor_birth</code></pre></div>
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">.dataframe tbody tr th {
-    vertical-align: top;
-}
-
-.dataframe thead th {
-    text-align: right;
-}</code></pre></div>
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Month</th>
-      <th>Value</th>
-      <th>월</th>
-      <th>Pregnant_Month</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>11</th>
-      <td>January</td>
-      <td>178622</td>
-      <td>1월</td>
-      <td>4월</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>March</td>
-      <td>168692</td>
-      <td>3월</td>
-      <td>6월</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>April</td>
-      <td>157394</td>
-      <td>4월</td>
-      <td>7월</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>May</td>
-      <td>154426</td>
-      <td>5월</td>
-      <td>8월</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>February</td>
-      <td>154323</td>
-      <td>2월</td>
-      <td>5월</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>July</td>
-      <td>152205</td>
-      <td>7월</td>
-      <td>10월</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>September</td>
-      <td>151060</td>
-      <td>9월</td>
-      <td>12월</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>August</td>
-      <td>150991</td>
-      <td>8월</td>
-      <td>11월</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>October</td>
-      <td>148238</td>
-      <td>10월</td>
-      <td>1월</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>June</td>
-      <td>147610</td>
-      <td>6월</td>
-      <td>9월</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>November</td>
-      <td>139929</td>
-      <td>11월</td>
-      <td>2월</td>
-    </tr>
-    <tr>
-      <th>0</th>
-      <td>December</td>
-      <td>128442</td>
-      <td>12월</td>
-      <td>3월</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-<h3 id="--결론" style="position:relative;"><a href="#--%EA%B2%B0%EB%A1%A0" aria-label="  결론 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>- 결론</h3>
-<p>가장 임신을 많이한 달은 4월로 나타났으며 제일 임신을 적게한 달은 3월로 나타났다.</p>
+    </span>
+출처 : <a href="https://ko.wikipedia.org/wiki/%EC%88%9C%ED%99%98_%EC%8B%A0%EA%B2%BD%EB%A7%9D">https://ko.wikipedia.org/wiki/%EC%88%9C%ED%99%98_%EC%8B%A0%EA%B2%BD%EB%A7%9D</a></p>
+<h4 id="예시" style="position:relative;"><a href="#%EC%98%88%EC%8B%9C" aria-label="예시 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>예시</h4>
+<p><img src="/5c2ccd3021e4e86ea316ac88af1d8d06/rnn_4.png" alt="rnn_4.PNG"></p>
+<h3 id="종류" style="position:relative;"><a href="#%EC%A2%85%EB%A5%98" aria-label="종류 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>종류</h3>
+<ul>
+<li>Many to One</li>
+</ul>
+<blockquote>
+<p>순차적인 x값들로 하나의 y값을 예측</p>
+</blockquote>
+<ul>
+<li>One to many</li>
+</ul>
+<blockquote>
+<p>하나의 시점(이미지) x로 순차적인 y 값들을 예측</p>
+</blockquote>
+<ul>
+<li>Many to many</li>
+</ul>
+<blockquote>
+<p>순차적인 X 값들로 순차적인 y 값들을 예측</p>
+</blockquote>
+<p><img src="/e390954adcf20d505c1655f3a8a44a1c/rnn_2.png" alt="rnn_2.PNG">
+출처: <a href="http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture10.pdf">http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture10.pdf</a></p>
+<h3 id="rnn-vanila-rnn-" style="position:relative;"><a href="#rnn-vanila-rnn-" aria-label="rnn vanila rnn  permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>RNN( Vanila RNN )</h3>
+<p><img src="/38cbbc7cd825845ceac0aed2e5c55782/rnn_3.png" alt="rnn_3.PNG"></p>
+<h3 id="lstm" style="position:relative;"><a href="#lstm" aria-label="lstm permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>LSTM</h3>
+<p>기존 RNN 모델에 장기기억(long-term-memory)를 추가한 모델</p>
+<p><img src="/9f7211db34363b04a9400d44fb6c82eb/rnn_5.png" alt="rnn_5.PNG"></p>
+<h3 id="gru" style="position:relative;"><a href="#gru" aria-label="gru permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>GRU</h3>
+<p>LSTM 보다 간단한 구조지만 성능 면에서 밀리지 않는 RNN 모델</p>
+<p><img src="/02d85bd586ebbde56cefdecfe10ce42a/rnn_7.png" alt="rnn_7.PNG"></p>
+<h3 id="reference" style="position:relative;"><a href="#reference" aria-label="reference permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Reference</h3>
+<p>[1] <a href="http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture10.pdf">http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture10.pdf</a></p>
+<p>[2] <a href="http://dprogrammer.org/rnn-lstm-gru">http://dprogrammer.org/rnn-lstm-gru</a></p>
+<p>[3] <a href="https://www.youtube.com/watch?v=8HyCNIVRbSU">https://www.youtube.com/watch?v=8HyCNIVRbSU</a></p>
 <div class="table-of-contents">
 <ul>
-<li><a href="#--%EB%B6%84%EC%84%9D-%EA%B3%BC%EC%A0%9C">- 분석 과제</a></li>
-<li><a href="#--%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%B6%9C%EC%B2%98">- 데이터 출처</a></li>
-<li><a href="#--%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%84%9D">- 데이터 분석</a></li>
-<li><a href="#--%EA%B2%B0%EB%A1%A0">- 결론</a></li>
+<li>
+<p><a href="#rnn">RNN</a></p>
+<ul>
+<li>
+<ul>
+<li><a href="#%ED%99%9C%EC%9A%A9-%EB%B6%84%EC%95%BC">활용 분야</a></li>
+<li><a href="#%EB%8C%80%ED%91%9C-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98">대표 알고리즘</a></li>
 </ul>
-</div></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/Month of Birth_Korea/월별 출생 수 분석 [2] - 외국 사례/"><div class="direction">이전 글</div><div class="title">월별 출생 수 분석 [2] - 외국 사례</div></a></div><div class="post-navigator-card-wrapper"><a class="post-card next" href="/Seoul_Movement/Seoul_movement [1] - 데이터 설명 및 전처리/"><div class="direction">다음 글</div><div class="title">서울 생활 이동 [1] - 데이터 설명 및 전처리</div></a></div></div><div class="utterances"></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2022<!-- --> <a href="https://github.com/Han-Archives">Han-기록소</a> powered by<a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog"> zoomkoding-gatsby-blog</a></p></footer><div class="dark-mode-button-wrapper"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium dark-mode-button css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge dark-mode-icon css-6flbmm" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="DarkModeIcon"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path></svg></button></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/Month of Birth_Korea/월별 출생 수 분석 [1] - 한국 사례/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-cd840d73727c2e366b63.js"],"app":["/app-1c48eadf34e7f53f402f.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-3c26d4b7e3608ed0ece4.js"],"component---src-pages-404-js":["/component---src-pages-404-js-4917da7ef5b541e98a81.js"],"component---src-pages-about-js":["/component---src-pages-about-js-b5804eba3d16afcb3700.js"],"component---src-pages-index-js":["/component---src-pages-index-js-bc882cd03f70c89c8148.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-ef83b594aa693e649d30.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-fea460fedd50cffb10cd.js"]};/*]]>*/</script><script src="/polyfill-cd840d73727c2e366b63.js" nomodule=""></script><script src="/component---src-templates-blog-template-js-ef83b594aa693e649d30.js" async=""></script><script src="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-3528d048b96f92ca0d99.js" async=""></script><script src="/app-1c48eadf34e7f53f402f.js" async=""></script><script src="/framework-0e1bf37de02f7cef2174.js" async=""></script><script src="/webpack-runtime-b0a3ec690b6a27de8e30.js" async=""></script></body></html>
+</li>
+<li>
+<p><a href="#%EC%A7%84%ED%96%89-%EA%B3%BC%EC%A0%95">진행 과정</a></p>
+<ul>
+<li><a href="#%EC%98%88%EC%8B%9C">예시</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#%EC%A2%85%EB%A5%98">종류</a></p>
+</li>
+<li>
+<p><a href="#rnn-vanila-rnn-">RNN( Vanila RNN )</a></p>
+</li>
+<li>
+<p><a href="#lstm">LSTM</a></p>
+</li>
+<li>
+<p><a href="#gru">GRU</a></p>
+</li>
+<li>
+<p><a href="#reference">Reference</a></p>
+</li>
+</ul>
+</li>
+</ul>
+</div></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/DL/[DL] CNN_Architectures/"><div class="direction">이전 글</div><div class="title">CNN Architecture</div></a></div><div class="post-navigator-card-wrapper"></div></div><div class="utterances"></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2022<!-- --> <a href="https://github.com/Han-Archives">Han-기록소</a> powered by<a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog"> zoomkoding-gatsby-blog</a></p></footer><div class="dark-mode-button-wrapper"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium dark-mode-button css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge dark-mode-icon css-6flbmm" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="DarkModeIcon"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path></svg></button></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/DL/[DL] RNN/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-cd840d73727c2e366b63.js"],"app":["/app-1c48eadf34e7f53f402f.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-3c26d4b7e3608ed0ece4.js"],"component---src-pages-404-js":["/component---src-pages-404-js-4917da7ef5b541e98a81.js"],"component---src-pages-about-js":["/component---src-pages-about-js-b5804eba3d16afcb3700.js"],"component---src-pages-index-js":["/component---src-pages-index-js-bc882cd03f70c89c8148.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-ef83b594aa693e649d30.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-fea460fedd50cffb10cd.js"]};/*]]>*/</script><script src="/polyfill-cd840d73727c2e366b63.js" nomodule=""></script><script src="/component---src-templates-blog-template-js-ef83b594aa693e649d30.js" async=""></script><script src="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-3528d048b96f92ca0d99.js" async=""></script><script src="/app-1c48eadf34e7f53f402f.js" async=""></script><script src="/framework-0e1bf37de02f7cef2174.js" async=""></script><script src="/webpack-runtime-b0a3ec690b6a27de8e30.js" async=""></script></body></html>
